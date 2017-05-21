@@ -23,9 +23,13 @@ module.exports = {
     },
     ComponentsList: {
       item: {
-        Link: {
-          color: 'red'
-        }
+        '& a': {
+          color: '#fff !important',
+          'fontWeight': 500
+        },
+        '& a:hover': {
+            color: '#cdbfe3 !important'
+          }
       }
     }
   },
