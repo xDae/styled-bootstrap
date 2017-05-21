@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
 
 import {
@@ -69,7 +69,7 @@ const StyledButton = styled.button`
   user-select: none;
   border: ${btnDefaults.inputBtnBorderWidth} solid transparent;
 
-  ${buttonSize(btnDefaults.btnPaddingY, btnDefaults.btnPaddingX, defaults.fontSizeBase, btnDefaults.btnBorderRadius)};
+  ${buttonSize(btnDefaults.btnPaddingY, btnDefaults.btnPaddingX, defaults.fontSizeBase, btnBorderRadius)};
   ${transition(btnDefaults.btnTransition)};
 
   // Share hover and focus styles
@@ -150,10 +150,6 @@ const StyledButton = styled.button`
   }}
 `;
 
-class Button extends Component {
-  render() {
-    return <StyledButton {...this.props}>{this.props.children}</StyledButton>;
-  }
-}
+const Button = props => <StyledButton {...props}>{props.children}</StyledButton>;
 
 export default Button;

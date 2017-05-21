@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
@@ -73,15 +73,10 @@ const StyledBadge = styled.span`
   }}
 `;
 
-
-class Badge extends Component {
-  render() {
-    return <StyledBadge {...this.props}>{this.props.children}</StyledBadge>;
-  }
-}
+const Badge = props => <StyledBadge {...props}>{props.children}</StyledBadge>;
 
 Badge.propTypes = {
-  type: PropTypes.oneOf(['primary', 'success', 'info', 'warning', 'danger']),
+  type: PropTypes.oneOf(['default', 'primary', 'success', 'info', 'warning', 'danger']),
   pill: PropTypes.bool
 }
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { borderRadius } from '../../utils/border-radius';
@@ -56,10 +56,6 @@ const StyledAlert = styled.div`
   }}
 `;
 
-class Alert extends Component {
-  render() {
-    return <StyledAlert {...this.props}>{this.props.children}</StyledAlert>;
-  }
-}
+const Alert = props => <StyledAlert {...props}>{props.children}</StyledAlert>;
 
 export default Alert;

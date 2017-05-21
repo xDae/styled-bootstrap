@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
 
 import * as defaults from '../../defaultTheme';
@@ -17,10 +17,6 @@ const StyledH2 = styled.h2`
   font-size: ${defaults.fontSizeH2}
 `;
 
-class H2 extends Component {
-  render() {
-    return <StyledH2 {...this.props}>{this.props.children}</StyledH2>;
-  }
-}
+const H2 = props => <StyledH2 {...props}>{props.children}</StyledH2>;
 
 export default H2;
