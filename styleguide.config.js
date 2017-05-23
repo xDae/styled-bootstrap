@@ -25,11 +25,12 @@ module.exports = {
       item: {
         '& a': {
           color: '#fff !important',
-          'fontWeight': 500
+          fontWeight: 500
         },
         '& a:hover': {
-            color: '#cdbfe3 !important'
-          }
+          fontWeight: 500,
+          color: '#cdbfe3 !important'
+        }
       }
     }
   },

@@ -4,10 +4,10 @@ import styled, { css } from 'styled-components';
 import * as defaults from '../../defaultTheme';
 
 const headingsDefaults = css`
-  marginBottom: ${defaults.headingsMarginBottom};
-  fontFamily: ${defaults.headingsFontFamily};
-  fontWeight: ${defaults.headingsFontWeight};
-  lineHeight: ${defaults.headingsLineHeight};
+  margin-bottom: ${defaults.headingsMarginBottom};
+  font-family: ${defaults.headingsFontFamily};
+  font-weight: ${defaults.headingsFontWeight};
+  line-height: ${defaults.headingsLineHeight};
   color: ${defaults.headingsColor};
 `;
 

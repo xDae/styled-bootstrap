@@ -35,7 +35,7 @@ const StyledAlert = styled.div`
   border: ${alertBorderWidth} solid transparent;
 
   a {
-    font-weight: ${alertLinkFontWeight};
+    font-weight: ${props => props.theme.alertLinkFontWeight || alertLinkFontWeight};
   }
 
   ${borderRadius(alertBorderRadius)}
@@ -43,7 +43,11 @@ const StyledAlert = styled.div`
   ${props => {
     switch(props.type) {
       case 'success':
-        return alertVariant(alertSuccessBg, alertSuccessBorderColor, alertSuccessText);
+        return alertVariant(
+          props.theme.alertSuccessBg || alertSuccessBg,
+          props.theme.alertSuccessBorderColor || alertSuccessBorderColor,
+          props.theme.alertSuccessText || alertSuccessText
+        );
       case 'info':
         return alertVariant(alertInfoBg, alertInfoBorderColor, alertInfoText);
       case 'warning':
