@@ -4,12 +4,12 @@ Bootstrap includes six predefined button styles, each serving its own semantic p
 const margin = { marginRight: 6, marginBottom: 6 };
 
 <div>
-  <Button style={margin} type="primary">Push Me</Button> 
-  <Button style={margin} type="secondary">Push Me</Button> 
-  <Button style={margin} type="info">Push Me</Button> 
-  <Button style={margin} type="success">Push Me</Button> 
-  <Button style={margin} type="warning">Push Me</Button> 
-  <Button style={margin} type="danger">Push Me</Button> 
+  <Button style={margin} color="primary">Push Me</Button> 
+  <Button style={margin} color="secondary">Push Me</Button> 
+  <Button style={margin} color="info">Push Me</Button> 
+  <Button style={margin} color="success">Push Me</Button> 
+  <Button style={margin} color="warning">Push Me</Button> 
+  <Button style={margin} color="danger">Push Me</Button> 
 </div>
 ```
 
@@ -21,12 +21,12 @@ In need of a button, but not the hefty background colors they bring? Add the `ou
 const margin = { marginRight: 6, marginBottom: 6 };
 
 <div>
-  <Button style={margin} type="primary" outline>Push Me</Button>
-  <Button style={margin} type="secondary" outline>Push Me</Button>
-  <Button style={margin} type="info" outline>Push Me</Button>
-  <Button style={margin} type="success" outline>Push Me</Button>
-  <Button style={margin} type="warning" outline>Push Me</Button>
-  <Button style={margin} type="danger" outline>Push Me</Button>
+  <Button style={margin} color="primary" outline>Push Me</Button>
+  <Button style={margin} color="secondary" outline>Push Me</Button>
+  <Button style={margin} color="info" outline>Push Me</Button>
+  <Button style={margin} color="success" outline>Push Me</Button>
+  <Button style={margin} color="warning" outline>Push Me</Button>
+  <Button style={margin} color="danger" outline>Push Me</Button>
 </div>
 ```
 
@@ -40,12 +40,27 @@ Fancy larger or smaller buttons? Add `size="large"` or `size="small"` for additi
 const margin = { marginRight: 6, marginBottom: 6 };
 
 <div>
-  <Button style={margin} type="primary" size="large">Push Me</Button>
-  <Button style={margin} type="secondary" size="large">Push Me</Button>
-  <Button style={margin} type="info" size="large">Push Me</Button>
-  <Button style={margin} type="success" size="large">Push Me</Button>
-  <Button style={margin} type="warning" size="large">Push Me</Button>
-  <Button style={margin} type="danger" size="large">Push Me</Button>
+  <Button style={margin} color="primary" size="large">Push Me</Button>
+  <Button style={margin} color="secondary" size="large">Push Me</Button>
+  <Button style={margin} color="info" size="large">Push Me</Button>
+  <Button style={margin} color="success" size="large">Push Me</Button>
+  <Button style={margin} color="warning" size="large">Push Me</Button>
+  <Button style={margin} color="danger" size="large">Push Me</Button>
+</div>
+```
+
+#### Active Buttons
+
+```
+const margin = { marginRight: 6, marginBottom: 6 };
+
+<div>
+  <Button style={margin} color="primary" active>Push Me</Button>
+  <Button style={margin} color="secondary" active>Push Me</Button>
+  <Button style={margin} color="info" active>Push Me</Button>
+  <Button style={margin} color="success" active>Push Me</Button>
+  <Button style={margin} color="warning" active>Push Me</Button>
+  <Button style={margin} color="danger" active>Push Me</Button>
 </div>
 ```
 
@@ -55,11 +70,26 @@ const margin = { marginRight: 6, marginBottom: 6 };
 const margin = { marginRight: 6, marginBottom: 6 };
 
 <div>
-  <Button style={margin} type="primary" size="small">Push Me</Button>
-  <Button style={margin} type="secondary" size="small">Push Me</Button>
-  <Button style={margin} type="info" size="small">Push Me</Button>
-  <Button style={margin} type="success" size="small">Push Me</Button>
-  <Button style={margin} type="warning" size="small">Push Me</Button>
-  <Button style={margin} type="danger" size="small">Push Me</Button>
+  <Button style={margin} color="primary" size="small">Push Me</Button>
+  <Button style={margin} color="secondary" size="small">Push Me</Button>
+  <Button style={margin} color="info" size="small">Push Me</Button>
+  <Button style={margin} color="success" size="small">Push Me</Button>
+  <Button style={margin} color="warning" size="small">Push Me</Button>
+  <Button style={margin} color="danger" size="small">Push Me</Button>
+</div>
+```
+
+#### Block Buttons
+
+```
+const margin = { marginBottom: 6 };
+
+<div>
+  <Button style={margin} color="primary" block>Push Me</Button>
+  <Button style={margin} color="secondary" block>Push Me</Button>
+  <Button style={margin} color="info" block>Push Me</Button>
+  <Button style={margin} color="success" block>Push Me</Button>
+  <Button style={margin} color="warning" block>Push Me</Button>
+  <Button style={margin} color="danger" block>Push Me</Button>
 </div>
 ```

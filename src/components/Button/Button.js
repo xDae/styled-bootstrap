@@ -9,21 +9,9 @@ import {
 
 import { hoverFocus } from '../../utils/hover';
 import { transition } from '../../utils/transition';
+import { boxShadow } from '../../utils/box-shadow';
 
 import * as defaults from '../../defaultTheme';
-
-const btnDefaults = {
-  btnFontWeight: 'normal',
-  btnLineHeight: '1.25',
-  inputBtnBorderWidth: '1px',
-  btnPaddingY: '0.5rem',
-  btnPaddingX: '1rem',
-  btnBorderRadius: '0.25rem',
-  btnTransition: 'all .2s ease-in-out',
-  btnFocusBoxShadow: '0 0 0 2px rgba($brand-primary, .25)',
-  btnActiveBoxShadow: 'inset 0 3px 5px rgba($black,.125)',
-  cursorDisabled: 'not-allowed',
-};
 
 const btnPrimaryColor = '#fff';
 const btnPrimaryBg = '#0275d8';
@@ -59,18 +47,29 @@ const btnBorderRadius = defaults.borderRadius;
 const btnBorderRadiusLg = defaults.borderRadiusLg;
 const btnBorderRadiusSm = defaults.borderRadiusSm;
 
-const StyledButton = styled.button`
+const StyledButton = styled.button.attrs({
+  btnFontWeight: props => props.theme.btnFontWeight,
+  btnLineHeight: props => props.theme.btnLineHeight,
+  inputBtnBorderWidth: props => props.theme.inputBtnBorderWidth,
+  btnPaddingY: props => props.theme.btnPaddingY || '0.5rem',
+  btnPaddingX: props => props.theme.btnPaddingX || '1rem',
+  btnBorderRadius: props => props.theme.btnBorderRadius || '0.25rem',
+  btnTransition: props => props.theme.btnTransition || 'all .2s ease-in-out',
+  btnFocusBoxShadow: props => props.theme.btnFocusBoxShadow || `0 0 0 2px rgba(${defaults.brandPrimary}, 0.25)`,
+  btnActiveBoxShadow: props => props.theme.btnActiveBoxShadow || `inset 0 3px 5px rgba(${defaults.black}, 0.125)`,
+  cursorDisabled: props => props.theme.cursorDisabled || 'not-allowed',
+})`
   display: inline-block;
-  font-weight: ${btnDefaults.btnFontWeight};
-  line-height: ${btnDefaults.btnLineHeight};
+  font-weight: ${props => props.theme.btnFontWeight};
+  line-height: ${props => props.theme.btnLineHeight};
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: ${btnDefaults.inputBtnBorderWidth} solid transparent;
+  border: ${props => props.theme.inputBtnBorderWidth} solid transparent;
 
-  ${buttonSize(btnDefaults.btnPaddingY, btnDefaults.btnPaddingX, defaults.fontSizeBase, btnBorderRadius)};
-  ${transition(btnDefaults.btnTransition)};
+  ${props => buttonSize(props.theme.btnPaddingY, props.theme.btnPaddingX, props.theme.fontSizeBase || '1rem', btnBorderRadius)};
+  ${props => transition(props.theme.btnTransition)};
 
   // Share hover and focus styles
   ${hoverFocus(css`
@@ -80,26 +79,20 @@ const StyledButton = styled.button`
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: ${btnDefaults.btnFocusBoxShadow};
+    box-shadow: ${props => props.theme.btnFocusBoxShadow};
   }
 
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
-    cursor: ${btnDefaults.cursorDisabled};
+    cursor: ${props => props.theme.cursorDisabled};
     opacity: .65;
     // @include box-shadow(none);
   }
 
-  &:active,
-  &.active {
-    background-image: none;
-    // @include box-shadow(${btnDefaults.btnFocusBoxShadow}, ${btnDefaults.btnActiveBoxShadow});
-  }
-
   // Alternate buttons
   ${props => {
-    switch(props.type) {
+    switch(props.color) {
       case 'primary':
         return buttonVariant(btnPrimaryColor, btnPrimaryBg, btnPrimaryBorder);
       case 'secondary':
@@ -119,7 +112,7 @@ const StyledButton = styled.button`
 
   ${props => {
     if (props.outline) {
-      switch(props.type) {
+      switch(props.color) {
         case 'primary':
           return buttonOutlineVariant(btnPrimaryBg);
         case 'secondary':
@@ -148,8 +141,34 @@ const StyledButton = styled.button`
         return null;
     }
   }}
+
+  ${props => props.active && css`
+    background-image: none;
+    // ${boxShadow(props.theme.btnFocusBoxShadow)}
+  `}
+
+  ${props => props.block && css`
+    display: block;
+    width: 100%;
+  `}
 `;
 
+
 const Button = props => <StyledButton {...props}>{props.children}</StyledButton>;
+
+Button.defaultProps = {
+  theme: {
+    btnFontWeight: 'normal',
+    btnLineHeight: 1.25,
+    inputBtnBorderWidth: '1px',
+    btnPaddingY: '0.5rem',
+    btnPaddingX: '1rem',
+    btnBorderRadius: '0.25rem',
+    btnTransition: 'all .2s ease-in-out',
+    btnFocusBoxShadow: `0 0 0 2px rgba(${defaults.brandPrimary}, 0.25)`,
+    btnActiveBoxShadow: `inset 0 3px 5px rgba(${defaults.black}, 0.125)`,
+    cursorDisabled: 'not-allowed',
+  }
+};
 
 export default Button;

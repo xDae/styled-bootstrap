@@ -5,6 +5,7 @@ module.exports = {
   highlightTheme: 'material',
   components: 'src/components/**/[A-Z]*.js',
   styleguideDir: 'docs',
+  skipComponentsWithoutExample: true,
   theme: {
     color: {
       base: '#333',

@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 import * as defaults from '../../defaultTheme';
 
-const headingsDefaults = css`
+const Heading = styled.h1`
   margin-bottom: ${defaults.headingsMarginBottom};
   font-family: ${defaults.headingsFontFamily};
   font-weight: ${defaults.headingsFontWeight};
@@ -11,12 +11,10 @@ const headingsDefaults = css`
   color: ${defaults.headingsColor};
 `;
 
-const StyledH1 = styled.h1`
-  ${headingsDefaults}
-
-  font-size: ${defaults.fontSizeH1}
+Heading.H1 = Heading.withComponent('h1').extend`
+  font-size: ${defaults.fontSizeH1};
 `;
 
-const H1 = props => <StyledH1 {...props}>{props.children}</StyledH1>;
+const H1 = props => <Heading.H1 {...props}>{props.children}</Heading.H1>;
 
-export default H1;
+export default Heading.H1;
