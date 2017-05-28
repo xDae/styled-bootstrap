@@ -1,6 +1,6 @@
 {
   "name": "styled-bootstrap",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "dependencies": {
     "polished": "^1.1.2",
