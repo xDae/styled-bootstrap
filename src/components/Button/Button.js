@@ -7,7 +7,7 @@ import {
   buttonOutlineVariant
 } from '../../utils/button';
 
-import { hoverFocus } from '../../utils/hover';
+import { hoverFocus, hover } from '../../utils/hover';
 import { transition } from '../../utils/transition';
 import { boxShadow } from '../../utils/box-shadow';
 
@@ -37,6 +37,8 @@ const btnDangerColor = defaults.white;
 const btnDangerBg = defaults.brandDanger;
 const btnDangerBorder = btnDangerBg;
 
+const btnLinkDisabledColor = defaults.grayLight;
+
 const btnPaddingXsm = '.5rem';
 const btnPaddingYsm = '.25rem';
 
@@ -47,18 +49,7 @@ const btnBorderRadius = defaults.borderRadius;
 const btnBorderRadiusLg = defaults.borderRadiusLg;
 const btnBorderRadiusSm = defaults.borderRadiusSm;
 
-const StyledButton = styled.button.attrs({
-  btnFontWeight: props => props.theme.btnFontWeight,
-  btnLineHeight: props => props.theme.btnLineHeight,
-  inputBtnBorderWidth: props => props.theme.inputBtnBorderWidth,
-  btnPaddingY: props => props.theme.btnPaddingY || '0.5rem',
-  btnPaddingX: props => props.theme.btnPaddingX || '1rem',
-  btnBorderRadius: props => props.theme.btnBorderRadius || '0.25rem',
-  btnTransition: props => props.theme.btnTransition || 'all .2s ease-in-out',
-  btnFocusBoxShadow: props => props.theme.btnFocusBoxShadow || `0 0 0 2px rgba(${defaults.brandPrimary}, 0.25)`,
-  btnActiveBoxShadow: props => props.theme.btnActiveBoxShadow || `inset 0 3px 5px rgba(${defaults.black}, 0.125)`,
-  cursorDisabled: props => props.theme.cursorDisabled || 'not-allowed',
-})`
+const Button = styled.button`
   display: inline-block;
   font-weight: ${props => props.theme.btnFontWeight};
   line-height: ${props => props.theme.btnLineHeight};
@@ -110,6 +101,44 @@ const StyledButton = styled.button.attrs({
     }
   }}
 
+  ${props => props.color === 'link' && css`
+    font-weight: ${defaults.fontWeightNormal};
+    color: ${defaults.linkColor};
+    border-radius: 0;
+
+    &,
+    &:active,
+    &.active,
+    &:disabled {
+      background-color: transparent;
+      // @include box-shadow(none);
+    }
+
+    &,
+    &:focus,
+    &:active {
+      border-color: transparent;
+    }
+
+    ${hover(css`
+      border-color: transparent;
+    `)}
+
+    ${hoverFocus(css`
+      color: ${defaults.linkHoverColor};
+      text-decoration: ${defaults.linkHoverDecoration};
+      background-color: transparent;
+    `)}
+
+    &:disabled {
+      color: ${btnLinkDisabledColor};
+
+      ${hoverFocus(css`
+        text-decoration: none;
+      `)}
+    }
+  `}
+
   ${props => {
     if (props.outline) {
       switch(props.color) {
@@ -153,8 +182,7 @@ const StyledButton = styled.button.attrs({
   `}
 `;
 
-
-const Button = props => <StyledButton {...props}>{props.children}</StyledButton>;
+Button.Link = Button.withComponent('a');
 
 Button.defaultProps = {
   theme: {

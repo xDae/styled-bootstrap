@@ -29,7 +29,7 @@ const alertDangerBg = defaults.stateDangerBg;
 const alertDangerText = defaults.stateDangerText;
 const alertDangerBorderColor = defaults.stateDangerBorderColor;
 
-const StyledAlert = styled.div`
+const Alert = styled.div`
   padding: ${alertPaddingY} ${alertPaddingX};
   margin-bottom: ${alertMarginBottom};
   border: ${alertBorderWidth} solid transparent;
@@ -59,7 +59,5 @@ const StyledAlert = styled.div`
     }
   }}
 `;
-
-const Alert = props => <StyledAlert {...props}>{props.children}</StyledAlert>;
 
 export default Alert;

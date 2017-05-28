@@ -211,3 +211,19 @@ export const badgePillPaddingX = '.6em';
 // Use a higher than normal value to ensure completely rounded edges when
 // customizing padding or fontSize on labels.
 export const badgePillBorderRadius = '10rem';
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+export const gridColumns = 12;
+export const gridGutterWidthBase = '30px';
+export const gridGutterWidths = {
+  xs: gridGutterWidthBase,
+  sm: gridGutterWidthBase,
+  md: gridGutterWidthBase,
+  lg: gridGutterWidthBase,
+  xl: gridGutterWidthBase
+};
+

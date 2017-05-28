@@ -24,7 +24,7 @@ export const badgePaddingX = '.4em';
 export const badgePillPaddingX = '.6em';
 export const badgePillBorderRadius = '10rem';
 
-const StyledBadge = styled.span`
+const Badge = styled.span`
   display: inline-block;
   padding: ${badgePaddingY} ${badgePaddingX};
   font-size: ${badgeFontSize};
@@ -72,8 +72,6 @@ const StyledBadge = styled.span`
     }
   }}
 `;
-
-const Badge = props => <StyledBadge {...props}>{props.children}</StyledBadge>;
 
 Badge.propTypes = {
   type: PropTypes.oneOf(['default', 'primary', 'success', 'info', 'warning', 'danger']),
