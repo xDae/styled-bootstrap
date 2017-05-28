@@ -6,10 +6,10 @@
     "polished": "^1.1.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "styled-components": "^2.0.0-19"
+    "styled-components": "^2.0.0"
   },
   "devDependencies": {
-    "react-scripts": "^1.0.5",
+    "react-scripts": "^1.0.7",
     "react-styleguidist": "^5.2.1"
   },
   "scripts": {
