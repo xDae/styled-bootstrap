@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 
 import Button from '../../src/components/Button/Button';
 
@@ -55,5 +55,16 @@ export default storiesOf('Buttons', module)
       <Button style={margin} color="success" block>Success Button</Button>
       <Button style={margin} color="warning" block>Warning Button</Button>
       <Button style={margin} color="danger" block>Danger Button</Button>
+    </div>
+  ))
+  .add('Link Buttons', () => (
+    <div>
+      <Button.Link style={margin} color="primary" href="#">Primary Button</Button.Link>
+      <Button.Link style={margin} color="secondary" href="#">Secondary Button</Button.Link>
+      <Button.Link style={margin} color="info" href="#">Info Button</Button.Link>
+      <Button.Link style={margin} color="success" href="#">Success Button</Button.Link>
+      <Button.Link style={margin} color="warning" href="#">Warning Button</Button.Link>
+      <Button.Link style={margin} color="danger" href="#">Danger Button</Button.Link>
+      <Button.Link style={margin} color="link" href="#">Link Button</Button.Link>
     </div>
   ));

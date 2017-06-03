@@ -24,13 +24,17 @@
     "styled-components": "^2.0.0"
   },
   "devDependencies": {
-    "@kadira/storybook": "^2.35.3",
+    "@storybook/react": "3.0.0",
+    "@storybook/addons": "3.0.0",
+    "@storybook/addon-actions": "3.0.0",
+    "@storybook/addon-links": "3.0.0",
     "babel-cli": "^6.24.0",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.2.1",
     "babel-jest": "^20.0.3",
     "babel-preset-env": "^1.2.2",
     "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.24.1",
     "enzyme": "^2.8.0",
     "eslint": "^3.18.0",
     "eslint-config-react-app": "^1.0.4",
@@ -54,7 +58,7 @@
     "build": "rimraf lib && babel src --out-dir lib --ignore test.js --copy-files",
     "test": "jest",
     "test:watch": "jest --watch",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
     "publish": "np"
   },

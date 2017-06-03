@@ -1,9 +1,7 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 
 import Heading from '../../src/components/Headings/Headings';
-
-// const margin = { marginRight: 6, marginBottom: 6 };
 
 export default storiesOf('Headings', module)
   .add('Semantic Headers', () => (

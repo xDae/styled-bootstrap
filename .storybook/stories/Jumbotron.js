@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 
 import Jumbotron from '../../src/components/Jumbotron/Jumbotron';
 import Button from '../../src/components/Button/Button';
