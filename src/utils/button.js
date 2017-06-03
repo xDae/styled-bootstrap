@@ -90,10 +90,10 @@ export function buttonOutlineVariant(color, colorHover = '#fff') {
   `;
 }
 
-export function buttonSize(paddingY, paddingX, fontSize, _borderRadius) {
+export function buttonSize(paddingY, paddingX, fontSize, radius) {
   return css`
     padding: ${paddingY} ${paddingX};
     font-size: ${fontSize};
-    ${borderRadius(_borderRadius)}
+    ${borderRadius(radius)}
   `;
 }

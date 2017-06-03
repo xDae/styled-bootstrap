@@ -10,7 +10,7 @@ export function borderRadius(radius = '0.25rem') {
   }
 }
 
-export function borderTopTadius(radius) {
+export function borderTopRadius(radius) {
   if (enableRounded) {
     return css`
       border-top-right-radius: ${radius};

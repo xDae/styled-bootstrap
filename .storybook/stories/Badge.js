@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
 
-import Badge from '../../src/components/Badges/Badges';
+import Badge from '../../src/components/Badge/Badge';
 
 const margin = { marginRight: 6, marginBottom: 6 };
 
-export default storiesOf('Badges', module)
+export default storiesOf('Badge', module)
   .add('Badges', () => (
     <div>
       <h1>Example heading <Badge>New</Badge></h1>
@@ -16,7 +16,7 @@ export default storiesOf('Badges', module)
       <h6>Example heading <Badge>New</Badge></h6>
     </div>
   ))
-  .add('Default Bages', () => (
+  .add('Default Badges', () => (
     <div>
       <Badge style={margin}>Default</Badge>
       <Badge style={margin} type="primary">Primary</Badge>

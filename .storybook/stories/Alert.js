@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
 
-import Alert from '../../src/components/Alerts/Alerts';
+import Alert from '../../src/components/Alert/Alert';
 
-export default storiesOf('Alerts', module)
-  .add('Alerts', () => (
+export default storiesOf('Alert', module)
+  .add('Alert', () => (
     <div>
       <Alert type="success">
         <strong>Well done!</strong> You successfully read <a href="#">this important alert message</a>.
