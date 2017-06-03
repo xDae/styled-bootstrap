@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { darken } from'polished';
 
 import { borderRadius } from '../../utils/border-radius';
 import { hoverFocus } from '../../utils/hover';
@@ -10,11 +11,12 @@ import * as defaults from '../../defaultTheme';
 const Dropdown = styled.div`
   position: relative;
 
+  // TODO: style inner styled Component, not the div
   ${props => props.isOpen && css`
-      > div {
-        display: block!important;
-      }
-    `}
+    > div {
+      display: block!important;
+    }
+  `}
 `;
 
 Dropdown.Menu = styled.div`
@@ -85,7 +87,7 @@ const theme = {
   dropdownBoxShadow: `0 .5rem 1rem ${sassRgba(defaults.black, .175)}`,
 
   dropdownLinkColor: defaults.grayDark,
-  dropdownLinkHoverColor: `darken(${defaults.grayDark}, 5%)`,
+  dropdownLinkHoverColor: darken(0.05, defaults.grayDark),
   dropdownLinkHoverBg: defaults.grayLightest,
 
   dropdownLinkActiveColor: defaults.componentActiveColor,
