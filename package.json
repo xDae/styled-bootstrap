@@ -59,7 +59,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 9009",
-    "build-storybook": "build-storybook",
+    "build-storybook": "rimraf docs && build-storybook -o docs",
     "publish": "np"
   },
   "jest": {

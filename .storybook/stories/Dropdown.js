@@ -32,7 +32,38 @@ class DropdownWrapper extends Component {
     super(props, context);
 
     this.state = {
-      isOpen: false
+      isOpen: true
+    }
+  }
+
+  toggleDropdown = () => {
+    this.setState(({ isOpen }) => ({
+      isOpen: !isOpen
+    }));
+  };
+
+  render() {
+    return (
+      <Dropdown isOpen={this.state.isOpen}>
+        <ButtonWithCaret color="secondary" onClick={this.toggleDropdown}>Dropdown button</ButtonWithCaret>
+        <Dropdown.Menu>
+          <Dropdown.Item href="#">Action</Dropdown.Item>
+          <Dropdown.Item href="#" active>Active item</Dropdown.Item>
+          <Dropdown.Item href="#">Another action</Dropdown.Item>
+          <Dropdown.Item href="#" disabled>disabled item</Dropdown.Item>
+          <Dropdown.Item href="#">Something else here</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+    );
+  }
+}
+
+class DropdownWithDivider extends Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      isOpen: true
     }
   }
 
@@ -49,7 +80,40 @@ class DropdownWrapper extends Component {
         <Dropdown.Menu>
           <Dropdown.Item href="#">Action</Dropdown.Item>
           <Dropdown.Item href="#">Another action</Dropdown.Item>
+          <Dropdown.Item href="#" disabled>disabled item</Dropdown.Item>
           <Dropdown.Item href="#">Something else here</Dropdown.Item>
+          <Dropdown.Divider />
+          <Dropdown.Item href="#">Active item</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+    );
+  }
+}
+
+class DropdownWithHeader extends Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      isOpen: true
+    }
+  }
+
+  toggleDropdown = () => {
+    this.setState(({ isOpen }) => ({
+      isOpen: !isOpen
+    }));
+  };
+
+  render() {
+    return (
+      <Dropdown isOpen={this.state.isOpen}>
+        <ButtonWithCaret color="secondary" onClick={this.toggleDropdown}>Dropdown button</ButtonWithCaret>
+        <Dropdown.Menu>
+          <Dropdown.Header>Dropdown header</Dropdown.Header>
+          <Dropdown.Item href="#">Another action</Dropdown.Item>
+          <Dropdown.Item href="#">Something else here</Dropdown.Item>
+          <Dropdown.Item href="#">Something here</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
     );
@@ -60,4 +124,10 @@ class DropdownWrapper extends Component {
 export default storiesOf('Dropdown', module)
   .add('Dropdown', () => (
     <DropdownWrapper />
+  ))
+  .add('Dropdown with Divider', () => (
+    <DropdownWithDivider />
+  ))
+  .add('Dropdown with Header', () => (
+    <DropdownWithHeader />
   ));

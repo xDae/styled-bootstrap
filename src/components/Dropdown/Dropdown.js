@@ -2,9 +2,12 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { darken } from'polished';
 
+import Heading from '../Headings/Headings';
+
 import { borderRadius } from '../../utils/border-radius';
 import { hoverFocus } from '../../utils/hover';
 import { sassRgba } from '../../utils/sassRgba';
+import { navDivider } from '../../utils/nav-divider';
 
 import * as defaults from '../../defaultTheme';
 
@@ -58,22 +61,33 @@ Dropdown.Item = styled.a`
     background-color: ${props => props.theme.dropdownLinkHoverBg};
   `)};
 
-  &.active,
-  &:active {
-    color: ${props => props.theme.dropdownLinkActiveColor};
+  ${props => props.active && css`
+    color: ${props.theme.dropdownLinkActiveColor};
     text-decoration: none;
-    background-color: ${props => props.theme.dropdownLinkActiveBg};
-  }
+    background-color: ${props.theme.dropdownLinkActiveBg};
+  `}
 
-  &.disabled,
-  &:disabled {
-    color: ${props => props.theme.dropdownLinkDisabledColor};
-    background-color: transparent;
-    // Remove CSS gradients if they're enabled
-    // @if $enable-gradients {
-    //   background-image: none;
-    // }
-  }
+  ${props => props.disabled && css`
+      color: ${props.theme.dropdownLinkDisabledColor}!important;
+      background-color: transparent!important;
+
+    ${defaults.enableGradients && `
+      background-image: none;
+    `}
+  `}
+`;
+
+Dropdown.Divider = styled.div`
+  ${navDivider(props => props.theme.dropdownDividerBg)}
+`;
+
+Dropdown.Header = styled(Heading)`
+  display: block;
+  ${({ theme }) => `padding: ${theme.dropdownPaddingY} ${theme.dropdownItemPaddingX};`}
+  margin-bottom: 0;
+  font-size: ${defaults.fontSizeSm};
+  color: ${({ theme }) => theme.dropdownHeaderColor};
+  white-space: nowrap;
 `;
 
 const theme = {
@@ -104,5 +118,7 @@ const theme = {
 Dropdown.defaultProps = { theme };
 Dropdown.Menu.defaultProps = { theme };
 Dropdown.Item.defaultProps = { theme };
+Dropdown.Divider.defaultProps = { theme };
+Dropdown.Header.defaultProps = { theme };
 
 export default Dropdown;
