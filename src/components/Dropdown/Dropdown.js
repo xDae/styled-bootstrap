@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, { css } from 'styled-components';
 import { darken } from'polished';
 
@@ -6,6 +5,7 @@ import Heading from '../Headings/Headings';
 
 import { borderRadius } from '../../utils/border-radius';
 import { hoverFocus } from '../../utils/hover';
+import { boxShadow } from '../../utils/box-shadow';
 import { sassRgba } from '../../utils/sassRgba';
 import { navDivider } from '../../utils/nav-divider';
 
@@ -14,10 +14,9 @@ import * as defaults from '../../defaultTheme';
 const Dropdown = styled.div`
   position: relative;
 
-  // TODO: style inner styled Component, not the div
   ${props => props.isOpen && css`
-    > div {
-      display: block!important;
+    ${Dropdown.Menu} {
+      display: block;
     }
   `}
 `;
@@ -38,15 +37,15 @@ Dropdown.Menu = styled.div`
   list-style: none;
   background-color: ${props => props.theme.dropdownBg};
   background-clip: padding-box;
-  ${props => `border: ${props.theme.dropdownBorderWidth} solid ${props.theme.dropdownBorderColor};`}
+  ${({ theme }) => `border: ${theme.dropdownBorderWidth} solid ${theme.dropdownBorderColor};`}
   ${borderRadius(defaults.borderRadius)}
-  // @include box-shadow($dropdown-box-shadow);
+  ${boxShadow(defaults.dropdownBoxShadow)};
 `;
 
 Dropdown.Item = styled.a`
   display: block;
   width: 100%;
-  ${props => `padding: ${props.theme.dropdownItemPaddingY} ${props.theme.dropdownItemPaddingX};`}
+  ${({ theme }) => `padding: ${theme.dropdownItemPaddingY} ${theme.dropdownItemPaddingX};`}
   clear: both;
   font-weight: ${defaults.fontWeightNormal};
   color: ${props => props.theme.dropdownLinkColor};
@@ -78,7 +77,7 @@ Dropdown.Item = styled.a`
 `;
 
 Dropdown.Divider = styled.div`
-  ${navDivider(props => props.theme.dropdownDividerBg)}
+  ${props => navDivider(props.theme.dropdownDividerBg)}
 `;
 
 Dropdown.Header = styled(Heading)`

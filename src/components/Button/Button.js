@@ -17,7 +17,7 @@ import {
   inputBtnPaddingYSm,
   inputBtnPaddingXsm,
   inputBtnLineHeightSm,
-  inputBtnPaddingYLg,
+  inputBtnPaddingYlg,
   inputBtnPaddingXlg,
   inputBtnLineHeightLg,
   btnFontWeight,
@@ -64,6 +64,14 @@ const Button = styled.button`
   vertical-align: middle;
   user-select: none;
   border: ${props => props.theme.inputBtnBorderWidth} solid transparent;
+
+  ${props => !props.size && buttonSize(
+    props.theme.inputBtnPaddingY,
+    props.theme.inputBtnPaddingX,
+    props.theme.fontSizeBase,
+    props.theme.inputBtnLineHeight,
+    props.theme.btnBorderRadius
+  )}
 
   ${props => transition(props.theme.btnTransition)}
 
@@ -164,7 +172,7 @@ const Button = styled.button`
   }}
 
   ${props => props.size === 'large' && buttonSize(
-    props.theme.inputBtnPaddingYLg,
+    props.theme.inputBtnPaddingYlg,
     props.theme.inputBtnPaddingXlg,
     props.theme.fontSizeLg,
     props.theme.inputBtnLineHeightLg,
@@ -177,14 +185,6 @@ const Button = styled.button`
     props.theme.fontSizeSm,
     props.theme.inputBtnLineHeightSm,
     props.theme.btnBorderRadiusSm
-  )}
-
-  ${props => !props.size && buttonSize(
-    props.theme.inputBtnPaddingY,
-    props.theme.inputBtnPaddingX,
-    props.theme.fontSizeBase,
-    props.theme.inputBtnLineHeight,
-    props.theme.btnBorderRadius
   )}
 
   ${props => props.active && css`
@@ -208,7 +208,7 @@ Button.defaultProps = {
     inputBtnPaddingYSm,
     inputBtnPaddingXsm,
     inputBtnLineHeightSm,
-    inputBtnPaddingYLg,
+    inputBtnPaddingYlg,
     inputBtnPaddingXlg,
     inputBtnLineHeightLg,
     btnFontWeight,

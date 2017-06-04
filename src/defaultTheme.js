@@ -1,4 +1,4 @@
-import { darken } from 'polished';
+import { darken, lighten } from 'polished';
 
 import { sassRgba } from './utils/sassRgba';
 
@@ -224,11 +224,11 @@ export const inputBtnPaddingY = '.5rem';
 export const inputBtnPaddingX = '1rem';
 export const inputBtnLineHeight = 1.25;
 
-export const inputBtnPaddingYSm = '.25rem';
+export const inputBtnPaddingYsm = '.25rem';
 export const inputBtnPaddingXsm = '.5rem';
 export const inputBtnLineHeightSm =  1.5;
 
-export const inputBtnPaddingYLg = '.5rem';
+export const inputBtnPaddingYlg = '.5rem';
 export const inputBtnPaddingXlg = '1rem';
 export const inputBtnLineHeightLg = 1.5;
 
@@ -282,6 +282,49 @@ export const inputColor = gray;
 export const inputBorderColor = sassRgba(black, .15);
 export const inputBtnBorderWidth = borderWidth; // For form controls ans
 export const inputBoxShadow = `inset 0 1px 1px ${sassRgba(black, .075)}`;
+
+export const inputBorderRadius = borderRadius;
+export const inputBorderRadiusLg = borderRadiusLg;
+export const inputBorderRadiusSm = borderRadiusSm;
+export const inputBgFocus = inputBg;
+export const inputBorderColorFocus = lighten(.25, brandPrimary);
+export const inputBoxShadowFocus = `${inputBoxShadow}, ${sassRgba(inputBorderColorFocus, .6)}`;
+export const inputColorFocus = inputColor;
+export const inputColorPlaceholder = grayLight;
+
+export const inputHeight = ((fontSizeBase * inputBtnLineHeight) + (inputBtnPaddingY * 2));
+export const inputHeightLg = ((fontSizeLg * inputBtnLineHeightLg) + (inputBtnPaddingYlg * 2));
+export const inputHeightSm = ((fontSizeSm * inputBtnLineHeightSm) + (inputBtnPaddingYsm * 2));
+
+export const inputTransition = `borderColor ease-in-out .15s, box-shadow ease-in-out .15s`;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+export const dropdownMinWidth = '10rem';
+export const dropdownPaddingY = '.5rem';
+export const dropdownMarginTop = '.125rem';
+export const dropdownBg = white;
+export const dropdownBorderColor = sassRgba(black, .15);
+export const dropdownBorderWidth = borderWidth;
+export const dropdownDividerBg = grayLighter;
+export const dropdownBoxShadow = `0 .5rem 1rem ${sassRgba(black, .175)}`;
+
+export const dropdownLinkColor = grayDark;
+export const dropdownLinkHoverColor = darken(0.05, grayDark);
+export const dropdownLinkHoverBg = grayLightest;
+
+export const $dropdownLinkActiveColor = componentActiveColor;
+export const $dropdownLinkActiveBg = componentActiveBg;
+
+export const $dropdownLinkDisabledColor = grayLight;
+
+export const $dropdownItemPaddingY = '.25rem';
+export const dropdownItemPaddingX = '1.5rem';
+
+export const dropdownHeaderColor = grayLight;
 
 
 // Alerts

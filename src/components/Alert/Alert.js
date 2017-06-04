@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { borderRadius } from '../../utils/border-radius';
 import { alertVariant } from '../../utils/alerts';
 
+import { StyledCloseIcon } from '../CloseIcon/CloseIcon';
+
 import {
   alertPaddingY,
   alertPaddingX,
@@ -49,6 +51,15 @@ const Alert = styled.div`
         return null;
     }
   }}
+
+  ${StyledCloseIcon} {
+    position: relative;
+    float: right;
+    top: -${props => props.theme.alertPaddingY};
+    right: -${props => props.theme.alertPaddingX};
+    ${props => `padding: ${props.theme.alertPaddingY} ${props.theme.alertPaddingX};`}
+    color: inherit;
+  }
 `;
 
 Alert.defaultProps = {

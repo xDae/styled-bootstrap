@@ -27,17 +27,6 @@ injectGlobal`
   }
 `;
 
-const alertPaddingY = '.75rem';
-const alertPaddingX = '1.25rem';
-
-const AlertClose = styled(CloseIcon)`
-  position: relative;
-  top: -${alertPaddingY};
-  right: -${alertPaddingX};
-  ${({ theme }) => `padding: ${alertPaddingY} ${alertPaddingX};`}
-  color: inherit;
-`;
-
 class DismissableAlert extends Component {
   constructor(props, context) {
     super(props, context);
@@ -62,22 +51,22 @@ class DismissableAlert extends Component {
         transitionLeaveTimeout={500}
       >
         {!this.state.success && <Alert type="success" >
-          <AlertClose onClick={() => this.closeAlert('success')} />
+          <CloseIcon onClick={() => this.closeAlert('success')} />
           <strong>Well done!</strong> You successfully read <a href="#">this important alert message</a>.
         </Alert>}
 
         {!this.state.info && <Alert type="info">
-          <AlertClose onClick={() => this.closeAlert('info')} />
+          <CloseIcon onClick={() => this.closeAlert('info')} />
           <strong>Heads up!</strong> This <a href="#">alert needs your attention</a>, but it's not super important.
         </Alert>}
 
         {!this.state.warning && <Alert type="warning">
-          <AlertClose onClick={() => this.closeAlert('warning')} />
+          <CloseIcon onClick={() => this.closeAlert('warning')} />
           <strong>Warning!</strong> Better check yourself, you're <a href="#">not looking too good</a>.
         </Alert>}
 
         {!this.state.danger && <Alert type="danger">
-          <AlertClose onClick={() => this.closeAlert('danger')} />
+          <CloseIcon onClick={() => this.closeAlert('danger')} />
           <strong>Oh snap!</strong> <a href="#">Change a few things up</a> and try submitting again.
         </Alert>}
       </CSSTransitionGroup>

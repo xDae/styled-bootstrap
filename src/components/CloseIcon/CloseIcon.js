@@ -11,8 +11,7 @@ import {
 
 import { hoverFocus } from '../../utils/hover';
 
-const StyledCloseIcon = styled.button`
-  float: right;
+export const StyledCloseIcon = styled.button`
   font-size: ${props => props.theme.closeFontSize};
   font-weight: ${props => props.theme.closeFontWeight};
   line-height: 1;
@@ -26,12 +25,10 @@ const StyledCloseIcon = styled.button`
     opacity: .75;
   `)};
 
-  // button.close {
-    padding: 0;
-    background: transparent;
-    border: 0;
-    -webkit-appearance: none;
-  // }
+  padding: 0;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
 `;
 
 const CloseIcon = props => {
