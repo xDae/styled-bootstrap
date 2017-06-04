@@ -14,7 +14,7 @@ import {
   inputBtnPaddingY,
   inputBtnPaddingX,
   inputBtnLineHeight,
-  inputBtnPaddingYSm,
+  inputBtnPaddingYsm,
   inputBtnPaddingXsm,
   inputBtnLineHeightSm,
   inputBtnPaddingYlg,
@@ -180,7 +180,7 @@ const Button = styled.button`
   )}
 
   ${props => props.size === 'small' && buttonSize(
-    props.theme.inputBtnPaddingYSm,
+    props.theme.inputBtnPaddingYsm,
     props.theme.inputBtnPaddingXsm,
     props.theme.fontSizeSm,
     props.theme.inputBtnLineHeightSm,
@@ -205,7 +205,7 @@ Button.defaultProps = {
     inputBtnPaddingY,
     inputBtnPaddingX,
     inputBtnLineHeight,
-    inputBtnPaddingYSm,
+    inputBtnPaddingYsm,
     inputBtnPaddingXsm,
     inputBtnLineHeightSm,
     inputBtnPaddingYlg,
