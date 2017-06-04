@@ -1,63 +1,81 @@
-import React from 'react';
 import styled from 'styled-components';
 
 import { borderRadius } from '../../utils/border-radius';
 import { alertVariant } from '../../utils/alerts';
 
-import * as defaults from '../../defaultTheme';
-
-const alertPaddingY = '.75rem';
-const alertPaddingX = '1.25rem';
-const alertMarginBottom = '1rem';
-const alertBorderRadius = defaults.borderRadius;
-const alertLinkFontWeight = defaults.fontWeightBold;
-const alertBorderWidth = defaults.borderWidth;
-
-const alertSuccessBg = defaults.stateSuccessBg;
-const alertSuccessText = defaults.stateSuccessText;
-const alertSuccessBorderColor =  defaults.stateSuccessBorderColor;
-
-const alertInfoBg = defaults.stateInfoBg;
-const alertInfoText = defaults.stateInfoText;
-const alertInfoBorderColor = defaults.stateInfoBorderColor;
-
-const alertWarningBg = defaults.stateWarningBg;
-const alertWarningText = defaults.stateWarningText;
-const alertWarningBorderColor =  defaults.stateWarningBorderColor;
-
-const alertDangerBg = defaults.stateDangerBg;
-const alertDangerText = defaults.stateDangerText;
-const alertDangerBorderColor = defaults.stateDangerBorderColor;
+import {
+  alertPaddingY,
+  alertPaddingX,
+  alertMarginBottom,
+  alertBorderRadius,
+  alertLinkFontWeight,
+  alertBorderWidth,
+  alertSuccessBg,
+  alertSuccessText,
+  alertSuccessBorderColor,
+  alertInfoBg,
+  alertInfoText,
+  alertInfoBorderColor,
+  alertWarningBg,
+  alertWarningText,
+  alertWarningBorderColor,
+  alertDangerBg,
+  alertDangerText,
+  alertDangerBorderColor,
+} from '../../defaultTheme';
 
 const Alert = styled.div`
-  padding: ${alertPaddingY} ${alertPaddingX};
-  margin-bottom: ${alertMarginBottom};
-  border: ${alertBorderWidth} solid transparent;
+  ${props => `padding: ${props.theme.alertPaddingY} ${props.theme.alertPaddingX};`}
+  margin-bottom: ${props => props.theme.alertMarginBottom};
+  border: ${props => props.theme.alertBorderWidth} solid transparent;
 
   a {
-    font-weight: ${props => props.theme.alertLinkFontWeight || alertLinkFontWeight};
+    font-weight: ${props => props.theme.alertLinkFontWeight};
   }
 
-  ${borderRadius(alertBorderRadius)}
+  ${props => borderRadius(props.theme.alertBorderRadius)}
 
-  ${props => {
-    switch(props.type) {
+  ${({ theme, type }) => {
+    switch(type) {
       case 'success':
-        return alertVariant(
-          props.theme.alertSuccessBg || alertSuccessBg,
-          props.theme.alertSuccessBorderColor || alertSuccessBorderColor,
-          props.theme.alertSuccessText || alertSuccessText
-        );
+        return alertVariant(theme.alertSuccessBg, theme.alertSuccessBorderColor, theme.alertSuccessText);
       case 'info':
-        return alertVariant(alertInfoBg, alertInfoBorderColor, alertInfoText);
+        return alertVariant(theme.alertInfoBg, theme.alertInfoBorderColor, theme.alertInfoText);
       case 'warning':
-        return alertVariant(alertWarningBg, alertWarningBorderColor, alertWarningText);
+        return alertVariant(theme.alertWarningBg, theme.alertWarningBorderColor, theme.alertWarningText);
       case 'danger':
-        return alertVariant(alertDangerBg, alertDangerBorderColor, alertDangerText);
+        return alertVariant(theme.alertDangerBg, theme.alertDangerBorderColor, theme.alertDangerText);
       default:
         return null;
     }
   }}
 `;
+
+Alert.defaultProps = {
+  theme: {
+    alertPaddingY,
+    alertPaddingX,
+    alertMarginBottom,
+    alertBorderRadius,
+    alertLinkFontWeight,
+    alertBorderWidth,
+
+    alertSuccessBg,
+    alertSuccessText,
+    alertSuccessBorderColor,
+
+    alertInfoBg,
+    alertInfoText,
+    alertInfoBorderColor,
+
+    alertWarningBg,
+    alertWarningText,
+    alertWarningBorderColor,
+
+    alertDangerBg,
+    alertDangerText,
+    alertDangerBorderColor,
+  }
+};
 
 export default Alert;

@@ -19,20 +19,20 @@ export default storiesOf('Badge', module)
   .add('Default Badges', () => (
     <div>
       <Badge style={margin}>Default</Badge>
-      <Badge style={margin} type="primary">Primary</Badge>
-      <Badge style={margin} type="success">Success</Badge>
-      <Badge style={margin} type="info">Info</Badge>
-      <Badge style={margin} type="warning">Warning</Badge>
-      <Badge style={margin} type="danger">Danger</Badge>
+      <Badge style={margin} color="primary">Primary</Badge>
+      <Badge style={margin} color="success">Success</Badge>
+      <Badge style={margin} color="info">Info</Badge>
+      <Badge style={margin} color="warning">Warning</Badge>
+      <Badge style={margin} color="danger">Danger</Badge>
     </div>
   ))
   .add('Pill Badges', () => (
     <div>
       <Badge style={margin} pill>Default</Badge>
-      <Badge style={margin} type="primary" pill>Primary</Badge>
-      <Badge style={margin} type="success" pill>Success</Badge>
-      <Badge style={margin} type="info" pill>Info</Badge>
-      <Badge style={margin} type="warning" pill>Warning</Badge>
-      <Badge style={margin} type="danger" pill>Danger</Badge>
+      <Badge style={margin} color="primary" pill>Primary</Badge>
+      <Badge style={margin} color="success" pill>Success</Badge>
+      <Badge style={margin} color="info" pill>Info</Badge>
+      <Badge style={margin} color="warning" pill>Warning</Badge>
+      <Badge style={margin} color="danger" pill>Danger</Badge>
     </div>
   ));

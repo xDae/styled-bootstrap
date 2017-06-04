@@ -1,5 +1,8 @@
 import { darken } from 'polished';
 
+import { sassRgba } from './utils/sassRgba';
+
+
 // General variable structure
 
 // Colors
@@ -137,7 +140,7 @@ export const transitionCollapse = 'height 0.35s ease';
 
 // Fonts
 //
-// Font, line-height, and color for body text, headings, and more.
+// Font, lineHeight, and color for body text, headings, and more.
 
 export const fontFamilySansSerif = `-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif`;
 export const fontFamilySerif = `Georgia, "Times New Roman", Times, serif`;
@@ -213,6 +216,102 @@ export const badgePillPaddingX = '.6em';
 export const badgePillBorderRadius = '10rem';
 
 
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+
+export const inputBtnPaddingY = '.5rem';
+export const inputBtnPaddingX = '1rem';
+export const inputBtnLineHeight = 1.25;
+
+export const inputBtnPaddingYSm = '.25rem';
+export const inputBtnPaddingXsm = '.5rem';
+export const inputBtnLineHeightSm =  1.5;
+
+export const inputBtnPaddingYLg = '.5rem';
+export const inputBtnPaddingXlg = '1rem';
+export const inputBtnLineHeightLg = 1.5;
+
+export const btnFontWeight = fontWeightNormal;
+export const btnBoxShadow = `inset 0 1px 0 ${sassRgba(white, .15)}, 0 1px 1px ${sassRgba(black, .075)}`;
+export const btnFocusBoxShadow = `0 0 0 2px ${sassRgba(brandPrimary, .25)}`;
+export const btnActiveBoxShadow = `inset 0 3px 5px rgba($black,.125)`;
+
+export const btnPrimaryColor = white;
+export const btnPrimaryBg = brandPrimary;
+export const btnPrimaryBorderColor = btnPrimaryBg;
+
+export const btnSecondaryColor = grayDark;
+export const btnSecondaryBg = white;
+export const btnSecondaryBorderColor = '#ccc';
+
+export const btnInfoColor = white;
+export const btnInfoBg = brandInfo;
+export const btnInfoBorderColor = btnInfoBg;
+
+export const  btnSuccessColor = white;
+export const  btnSuccessBg = brandSuccess;
+export const  btnSuccessBorderColor = btnSuccessBg;
+
+export const btnWarningColor = white;
+export const btnWarningBg = brandWarning;
+export const btnWarningBorderColor = btnWarningBg;
+
+export const btnDangerColor = white;
+export const btnDangerBg = brandDanger;
+export const btnDangerBorderColor = btnDangerBg;
+
+export const btnLinkDisabledColor = grayLight;
+
+export const btnBlockSpacingY = '.5rem';
+
+// Allows for customizing button radius independently from global border radius
+export const btnBorderRadius = borderRadius;
+export const btnBorderRadiusLg = borderRadiusLg;
+export const btnBorderRadiusSm = borderRadiusSm;
+
+export const btnTransition = 'all .2s ease-in-out';
+
+
+// Forms
+
+export const inputBg = white;
+export const inputBgDisabled = grayLighter;
+
+export const inputColor = gray;
+export const inputBorderColor = sassRgba(black, .15);
+export const inputBtnBorderWidth = borderWidth; // For form controls ans
+export const inputBoxShadow = `inset 0 1px 1px ${sassRgba(black, .075)}`;
+
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+export const alertPaddingY = '.75rem';
+export const alertPaddingX = '1.25rem';
+export const alertMarginBottom = '1rem';
+export const alertBorderRadius = borderRadius;
+export const alertLinkFontWeight = fontWeightBold;
+export const alertBorderWidth = borderWidth;
+
+export const alertSuccessBg = stateSuccessBg;
+export const alertSuccessText = stateSuccessText;
+export const alertSuccessBorderColor = stateSuccessBorderColor;
+
+export const alertInfoBg = stateInfoBg;
+export const alertInfoText = stateInfoText;
+export const alertInfoBorderColor = stateInfoBorderColor;
+
+export const alertWarningBg = stateWarningBg;
+export const alertWarningText = stateWarningText;
+export const alertWarningBorderColor = stateWarningBorderColor;
+
+export const alertDangerBg = stateDangerBg;
+export const alertDangerText = stateDangerText;
+export const alertDangerBorderColor = stateDangerBorderColor;
+
+
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
@@ -227,3 +326,13 @@ export const gridGutterWidths = {
   xl: gridGutterWidthBase
 };
 
+
+// Breadcrumbs
+
+export const breadcrumbPaddingY = '.75rem';
+export const breadcrumbPaddingX = '1rem';
+export const breadcrumbItemPadding = '.5rem';
+export const breadcrumbBg = grayLighter;
+export const breadcrumbDividerColor = grayLight;
+export const breadcrumbActiveColor = grayLight;
+export const breadcrumbDivider = '"/"';

@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, { css } from 'styled-components';
 
 import {
@@ -11,56 +10,62 @@ import { hoverFocus, hover } from '../../utils/hover';
 import { transition } from '../../utils/transition';
 import { boxShadow } from '../../utils/box-shadow';
 
-import * as defaults from '../../defaultTheme';
-
-const btnPrimaryColor = '#fff';
-const btnPrimaryBg = '#0275d8';
-const btnPrimaryBorder = '#0275d8';
-
-const btnSecondaryColor = defaults.grayDark;
-const btnSecondaryBg = defaults.white;
-const btnSecondaryBorder = '#ccc';
-
-const btnInfoColor = defaults.white;
-const btnInfoBg = defaults.brandInfo;
-const btnInfoBorder = btnInfoBg;
-
-const btnSuccessColor = defaults.white;
-const btnSuccessBg = defaults.brandSuccess;
-const btnSuccessBorder = btnSuccessBg;
-
-const btnWarningColor = defaults.white;
-const btnWarningBg = defaults.brandWarning;
-const btnWarningBorder = btnWarningBg;
-
-const btnDangerColor = defaults.white;
-const btnDangerBg = defaults.brandDanger;
-const btnDangerBorder = btnDangerBg;
-
-const btnLinkDisabledColor = defaults.grayLight;
-
-const btnPaddingXsm = '.5rem';
-const btnPaddingYsm = '.25rem';
-
-const btnPaddingXlg = '1.5rem';
-const btnPaddingYlg = '.75rem';
-
-const btnBorderRadius = defaults.borderRadius;
-const btnBorderRadiusLg = defaults.borderRadiusLg;
-const btnBorderRadiusSm = defaults.borderRadiusSm;
+import {
+  inputBtnPaddingY,
+  inputBtnPaddingX,
+  inputBtnLineHeight,
+  inputBtnPaddingYSm,
+  inputBtnPaddingXsm,
+  inputBtnLineHeightSm,
+  inputBtnPaddingYLg,
+  inputBtnPaddingXlg,
+  inputBtnLineHeightLg,
+  btnFontWeight,
+  btnBoxShadow,
+  btnFocusBoxShadow,
+  btnActiveBoxShadow,
+  btnPrimaryColor,
+  btnPrimaryBg,
+  btnPrimaryBorderColor,
+  btnSecondaryColor,
+  btnSecondaryBg,
+  btnSecondaryBorderColor,
+  btnInfoColor,
+  btnInfoBg,
+  btnInfoBorderColor,
+  btnSuccessColor,
+  btnSuccessBg,
+  btnSuccessBorderColor,
+  btnWarningColor,
+  btnWarningBg,
+  btnWarningBorderColor,
+  btnDangerColor,
+  btnDangerBg,
+  btnDangerBorderColor,
+  btnLinkDisabledColor,
+  btnBlockSpacingY,
+  btnBorderRadius,
+  btnBorderRadiusLg,
+  btnBorderRadiusSm,
+  btnTransition,
+  fontSizeBase,
+  inputBtnBorderWidth,
+  fontSizeLg,
+  fontSizeSm,
+  fontWeightNormal,
+  linkColor
+} from '../../defaultTheme';
 
 const Button = styled.button`
   display: inline-block;
   font-weight: ${props => props.theme.btnFontWeight};
-  line-height: ${props => props.theme.btnLineHeight};
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
   border: ${props => props.theme.inputBtnBorderWidth} solid transparent;
 
-  ${props => buttonSize(props.theme.btnPaddingY, props.theme.btnPaddingX, props.theme.fontSizeBase || '1rem', btnBorderRadius)};
-  ${props => transition(props.theme.btnTransition)};
+  ${props => transition(props.theme.btnTransition)}
 
   // Share hover and focus styles
   ${hoverFocus(css`
@@ -73,7 +78,6 @@ const Button = styled.button`
     box-shadow: ${props => props.theme.btnFocusBoxShadow};
   }
 
-  // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
     cursor: ${props => props.theme.cursorDisabled};
@@ -81,29 +85,28 @@ const Button = styled.button`
     // @include box-shadow(none);
   }
 
-  // Alternate buttons
-  ${props => {
-    switch(props.color) {
+  ${({ theme, color }) => {
+    switch(color) {
       case 'primary':
-        return buttonVariant(btnPrimaryColor, btnPrimaryBg, btnPrimaryBorder);
+        return buttonVariant(theme.btnPrimaryColor, theme.btnPrimaryBg, theme.btnPrimaryBorderColor);
       case 'secondary':
-        return buttonVariant(btnSecondaryColor, btnSecondaryBg, btnSecondaryBorder);
+        return buttonVariant(theme.btnSecondaryColor, theme.btnSecondaryBg, theme.btnSecondaryBorderColor);
       case 'info':
-        return buttonVariant(btnInfoColor, btnInfoBg, btnInfoBorder);
+        return buttonVariant(theme.btnInfoColor, theme.btnInfoBg, theme.btnInfoBorderColor);
       case 'success':
-        return buttonVariant(btnSuccessColor, btnSuccessBg, btnSuccessBorder);
+        return buttonVariant(theme.btnSuccessColor, theme.btnSuccessBg, theme.btnSuccessBorderColor);
       case 'warning':
-        return buttonVariant(btnWarningColor, btnWarningBg, btnWarningBorder);
+        return buttonVariant(theme.btnWarningColor, theme.btnWarningBg, theme.btnWarningBorderColor);
       case 'danger':
-        return buttonVariant(btnDangerColor, btnDangerBg, btnDangerBorder);
+        return buttonVariant(theme.btnDangerColor, theme.btnDangerBg, theme.btnDangerBorderColor);
       default:
         return null;
     }
   }}
 
   ${props => props.color === 'link' && css`
-    font-weight: ${defaults.fontWeightNormal};
-    color: ${defaults.linkColor};
+    font-weight: ${props => props.theme.fontWeightNormal};
+    color: ${props => props.theme.linkColor};
     border-radius: 0;
 
     &,
@@ -111,7 +114,7 @@ const Button = styled.button`
     &.active,
     &:disabled {
       background-color: transparent;
-      // @include box-shadow(none);
+      /** @include box-shadow(none); */
     }
 
     &,
@@ -125,8 +128,8 @@ const Button = styled.button`
     `)}
 
     ${hoverFocus(css`
-      color: ${defaults.linkHoverColor};
-      text-decoration: ${defaults.linkHoverDecoration};
+      color: ${props => props.theme.linkHoverColor};
+      text-decoration: ${props => props.theme.linkHoverDecoration};
       background-color: transparent;
     `)}
 
@@ -139,37 +142,50 @@ const Button = styled.button`
     }
   `}
 
-  ${props => {
-    if (props.outline) {
-      switch(props.color) {
+  ${({ theme, outline, color }) => {
+    if (outline) {
+      switch(color) {
         case 'primary':
-          return buttonOutlineVariant(btnPrimaryBg);
+          return buttonOutlineVariant(theme.btnPrimaryBg);
         case 'secondary':
-          return buttonOutlineVariant(btnSecondaryBorder);
+          return buttonOutlineVariant(theme.btnSecondaryBorder);
         case 'info':
-          return buttonOutlineVariant(btnInfoBg);
+          return buttonOutlineVariant(theme.btnInfoBg);
         case 'success':
-          return buttonOutlineVariant(btnSuccessBg);
+          return buttonOutlineVariant(theme.btnSuccessBg);
         case 'warning':
-          return buttonOutlineVariant(btnWarningBg);
+          return buttonOutlineVariant(theme.btnWarningBg);
         case 'danger':
-          return buttonOutlineVariant(btnDangerBg);
+          return buttonOutlineVariant(theme.btnDangerBg);
         default:
           return null;
       }
     }
   }}
 
-  ${props => {
-    switch(props.size) {
-      case 'large':
-        return buttonSize(btnPaddingYlg, btnPaddingXlg, defaults.fontSizeLg, btnBorderRadiusLg);
-      case 'small':
-        return buttonSize(btnPaddingYsm, btnPaddingXsm, defaults.fontSizeSm, btnBorderRadiusSm);
-      default:
-        return null;
-    }
-  }}
+  ${props => props.size === 'large' && buttonSize(
+    props.theme.inputBtnPaddingYLg,
+    props.theme.inputBtnPaddingXlg,
+    props.theme.fontSizeLg,
+    props.theme.inputBtnLineHeightLg,
+    props.theme.btnBorderRadiusLg
+  )}
+
+  ${props => props.size === 'small' && buttonSize(
+    props.theme.inputBtnPaddingYSm,
+    props.theme.inputBtnPaddingXsm,
+    props.theme.fontSizeSm,
+    props.theme.inputBtnLineHeightSm,
+    props.theme.btnBorderRadiusSm
+  )}
+
+  ${props => !props.size && buttonSize(
+    props.theme.inputBtnPaddingY,
+    props.theme.inputBtnPaddingX,
+    props.theme.fontSizeBase,
+    props.theme.inputBtnLineHeight,
+    props.theme.btnBorderRadius
+  )}
 
   ${props => props.active && css`
     background-image: none;
@@ -186,16 +202,49 @@ Button.Link = Button.withComponent('a');
 
 Button.defaultProps = {
   theme: {
-    btnFontWeight: 'normal',
-    btnLineHeight: 1.25,
-    inputBtnBorderWidth: '1px',
-    btnPaddingY: '0.5rem',
-    btnPaddingX: '1rem',
-    btnBorderRadius: '0.25rem',
-    btnTransition: 'all .2s ease-in-out',
-    btnFocusBoxShadow: `0 0 0 2px rgba(${defaults.brandPrimary}, 0.25)`,
-    btnActiveBoxShadow: `inset 0 3px 5px rgba(${defaults.black}, 0.125)`,
-    cursorDisabled: 'not-allowed',
+    inputBtnPaddingY,
+    inputBtnPaddingX,
+    inputBtnLineHeight,
+    inputBtnPaddingYSm,
+    inputBtnPaddingXsm,
+    inputBtnLineHeightSm,
+    inputBtnPaddingYLg,
+    inputBtnPaddingXlg,
+    inputBtnLineHeightLg,
+    btnFontWeight,
+    btnBoxShadow,
+    btnFocusBoxShadow,
+    btnActiveBoxShadow,
+    btnPrimaryColor,
+    btnPrimaryBg,
+    btnPrimaryBorderColor,
+    btnSecondaryColor,
+    btnSecondaryBg,
+    btnSecondaryBorderColor,
+    btnInfoColor,
+    btnInfoBg,
+    btnInfoBorderColor,
+    btnSuccessColor,
+    btnSuccessBg,
+    btnSuccessBorderColor,
+    btnWarningColor,
+    btnWarningBg,
+    btnWarningBorderColor,
+    btnDangerColor,
+    btnDangerBg,
+    btnDangerBorderColor,
+    btnLinkDisabledColor,
+    btnBlockSpacingY,
+    btnBorderRadius,
+    btnBorderRadiusLg,
+    btnBorderRadiusSm,
+    btnTransition,
+    fontSizeBase,
+    inputBtnBorderWidth,
+    fontSizeLg,
+    fontSizeSm,
+    fontWeightNormal,
+    linkColor
   }
 };
 

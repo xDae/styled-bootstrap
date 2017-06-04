@@ -25,10 +25,10 @@
     "styled-components": "^2.0.0"
   },
   "devDependencies": {
-    "@storybook/react": "3.0.0",
-    "@storybook/addons": "3.0.0",
     "@storybook/addon-actions": "3.0.0",
     "@storybook/addon-links": "3.0.0",
+    "@storybook/addons": "3.0.0",
+    "@storybook/react": "3.0.0",
     "babel-cli": "^6.24.0",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.2.1",
@@ -43,6 +43,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
+    "flow-bin": "^0.47.0",
     "jest": "^20.0.4",
     "np": "^2.13.1",
     "react": "^15.4.2",

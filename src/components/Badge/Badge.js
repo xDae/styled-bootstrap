@@ -1,36 +1,33 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
 import { borderRadius } from '../../utils/border-radius';
 import { badgeVariant } from '../../utils/badges';
 
-import * as defaults from '../../defaultTheme';
-
-export const badgeDefaultBg = defaults.grayLight;
-export const badgePrimaryBg = defaults.brandPrimary;
-export const badgeSuccessBg = defaults.brandSuccess;
-export const badgeInfoBg = defaults.brandInfo;
-export const badgeWarningBg = defaults.brandWarning;
-export const badgeDangerBg =  defaults.brandDanger;
-
-export const badgeColor = defaults.white;
-export const badgeLinkHoverColor = defaults.white;
-export const badgeFontSize = '75%';
-export const badgeFontWeight = defaults.fontWeightBold;
-export const badgePaddingY = '.25em';
-export const badgePaddingX = '.4em';
-
-export const badgePillPaddingX = '.6em';
-export const badgePillBorderRadius = '10rem';
+import {
+  badgeDefaultBg,
+  badgePrimaryBg,
+  badgeSuccessBg,
+  badgeInfoBg,
+  badgeWarningBg,
+  badgeDangerBg,
+  badgeColor,
+  badgeLinkHoverColor,
+  badgeFontSize,
+  badgeFontWeight,
+  badgePaddingY,
+  badgePaddingX,
+  badgePillPaddingX,
+  badgePillBorderRadius,
+} from '../../defaultTheme';
 
 const Badge = styled.span`
   display: inline-block;
-  padding: ${badgePaddingY} ${badgePaddingX};
-  font-size: ${badgeFontSize};
-  font-weight: ${badgeFontWeight};
+  ${props => `padding: ${props.theme.badgePaddingY} ${props.theme.badgePaddingX};`}
+  font-size: ${props => props.theme.badgeFontSize};
+  font-weight: ${props => props.badgeFontWeight};
   line-height: 1;
-  color: ${badgeColor};
+  color: ${props => props.theme.badgeColor};
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -42,45 +39,63 @@ const Badge = styled.span`
     display: none;
   }
 
-  ${props => {
-    switch(props.type) {
+  ${({ theme, color}) => {
+    switch(color) {
       case 'default':
-        return badgeVariant(badgeDefaultBg);
+        return badgeVariant(theme.badgeDefaultBg);
       case 'primary':
-        return badgeVariant(badgePrimaryBg);
+        return badgeVariant(theme.badgePrimaryBg);
       case 'success':
-        return badgeVariant(badgeSuccessBg);
+        return badgeVariant(theme.badgeSuccessBg);
       case 'info':
-        return badgeVariant(badgeInfoBg);
+        return badgeVariant(theme.badgeInfoBg);
       case 'warning':
-        return badgeVariant(badgeWarningBg);
+        return badgeVariant(theme.badgeWarningBg);
       case 'danger':
-        return badgeVariant(badgeDangerBg);
+        return badgeVariant(theme.badgeDangerBg);
       default:
-        return badgeVariant(badgeDefaultBg);
+        return badgeVariant(theme.badgeDefaultBg);
     }
   }}
 
-  ${props => {
-    if (props.pill) {
+  ${({ theme, pill }) => {
+    if (pill) {
       return css`
-        padding-right: ${badgePillPaddingX};
-        padding-left: ${badgePillPaddingX};
+        padding-right: ${theme.badgePillPaddingX};
+        padding-left: ${theme.badgePillPaddingX};
 
-        ${borderRadius(badgePillBorderRadius)};
+        ${borderRadius(theme.badgePillBorderRadius)};
       `;
     }
   }}
 `;
 
 Badge.propTypes = {
-  type: PropTypes.oneOf(['default', 'primary', 'success', 'info', 'warning', 'danger']),
+  color: PropTypes.oneOf(['default', 'primary', 'success', 'info', 'warning', 'danger']),
   pill: PropTypes.bool
-}
+};
 
 Badge.defaultProps = {
-  type: 'default',
-  pill: false
-}
+  color: 'default',
+  pill: false,
+  theme: {
+    badgeDefaultBg,
+    badgePrimaryBg,
+    badgeSuccessBg,
+    badgeInfoBg,
+    badgeWarningBg,
+    badgeDangerBg,
+
+    badgeColor,
+    badgeLinkHoverColor,
+    badgeFontSize,
+    badgeFontWeight,
+    badgePaddingY,
+    badgePaddingX,
+
+    badgePillPaddingX,
+    badgePillBorderRadius
+  }
+};
 
 export default Badge;

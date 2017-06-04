@@ -1,18 +1,25 @@
-import React from 'react';
 import styled from 'styled-components';
 import { clearFix } from 'polished';
 
 import { borderRadius } from '../../utils/border-radius';
 
-import * as defaults from '../../defaultTheme';
+import {
+  breadcrumbPaddingY,
+  breadcrumbPaddingX,
+  breadcrumbItemPadding,
+  breadcrumbBg,
+  breadcrumbDividerColor,
+  breadcrumbActiveColor,
+  breadcrumbDivider
+} from '../../defaultTheme';
 
 const Breadcrumb = styled.div`
-  ${props => `padding: ${props.theme.breadcrumbPaddingY} ${props.theme.breadcrumbPaddingX};`};
+  ${({ theme }) => `padding: ${theme.breadcrumbPaddingY} ${theme.breadcrumbPaddingX};`};
   margin-bottom: 1rem;
   list-style: none;
   background-color: ${props => props.theme.breadcrumbBg};
 
-  ${borderRadius(defaults.bordeRadius)};
+  ${props => borderRadius(props.theme.bordeRadius)};
   ${clearFix()}
 `;
 
@@ -39,13 +46,13 @@ Breadcrumb.Item = styled.a`
 `;
 
 const theme = {
-  breadcrumbPaddingY: '.75rem',
-  breadcrumbPaddingX: '1rem',
-  breadcrumbItemPadding: '.5rem',
-  breadcrumbBg: defaults.grayLighter,
-  breadcrumbDividerColor: defaults.grayLight,
-  breadcrumbActiveColor: defaults.grayLight,
-  breadcrumbDivider: '"/"',
+  breadcrumbPaddingY,
+  breadcrumbPaddingX,
+  breadcrumbItemPadding,
+  breadcrumbBg,
+  breadcrumbDividerColor,
+  breadcrumbActiveColor,
+  breadcrumbDivider
 };
 
 Breadcrumb.defaultProps = { theme };
