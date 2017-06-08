@@ -18,12 +18,13 @@ import {
   badgePaddingY,
   badgePaddingX,
   badgePillPaddingX,
-  badgePillBorderRadius,
+  badgePillBorderRadius
 } from '../../defaultTheme';
 
 const Badge = styled.span`
   display: inline-block;
-  ${props => `padding: ${props.theme.badgePaddingY} ${props.theme.badgePaddingX};`}
+  ${props =>
+    `padding: ${props.theme.badgePaddingY} ${props.theme.badgePaddingX};`}
   font-size: ${props => props.theme.badgeFontSize};
   font-weight: ${props => props.badgeFontWeight};
   line-height: 1;
@@ -31,16 +32,15 @@ const Badge = styled.span`
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
+  -styled-mixin: ${borderRadius()};
 
-  ${borderRadius()}
-
-  // Empty badges collapse automatically
+  /* Empty badges collapse automatically */
   &:empty {
     display: none;
   }
 
-  ${({ theme, color}) => {
-    switch(color) {
+  ${({ theme, color }) => {
+    switch (color) {
       case 'default':
         return badgeVariant(theme.badgeDefaultBg);
       case 'primary':
@@ -58,20 +58,24 @@ const Badge = styled.span`
     }
   }}
 
-  ${({ theme, pill }) => {
-    if (pill) {
-      return css`
-        padding-right: ${theme.badgePillPaddingX};
-        padding-left: ${theme.badgePillPaddingX};
-
-        ${borderRadius(theme.badgePillBorderRadius)};
-      `;
-    }
-  }}
+  ${({ theme, pill }) =>
+    pill &&
+    css`
+    padding-right: ${theme.badgePillPaddingX};
+    padding-left: ${theme.badgePillPaddingX};
+    ${borderRadius(theme.badgePillBorderRadius)};
+  `}
 `;
 
 Badge.propTypes = {
-  color: PropTypes.oneOf(['default', 'primary', 'success', 'info', 'warning', 'danger']),
+  color: PropTypes.oneOf([
+    'default',
+    'primary',
+    'success',
+    'info',
+    'warning',
+    'danger'
+  ]),
   pill: PropTypes.bool
 };
 

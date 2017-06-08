@@ -23,11 +23,12 @@ import {
   alertWarningBorderColor,
   alertDangerBg,
   alertDangerText,
-  alertDangerBorderColor,
+  alertDangerBorderColor
 } from '../../defaultTheme';
 
 const Alert = styled.div`
-  ${props => `padding: ${props.theme.alertPaddingY} ${props.theme.alertPaddingX};`}
+  ${props =>
+    `padding: ${props.theme.alertPaddingY} ${props.theme.alertPaddingX};`}
   margin-bottom: ${props => props.theme.alertMarginBottom};
   border: ${props => props.theme.alertBorderWidth} solid transparent;
 
@@ -38,15 +39,31 @@ const Alert = styled.div`
   ${props => borderRadius(props.theme.alertBorderRadius)}
 
   ${({ theme, type }) => {
-    switch(type) {
+    switch (type) {
       case 'success':
-        return alertVariant(theme.alertSuccessBg, theme.alertSuccessBorderColor, theme.alertSuccessText);
+        return alertVariant(
+          theme.alertSuccessBg,
+          theme.alertSuccessBorderColor,
+          theme.alertSuccessText
+        );
       case 'info':
-        return alertVariant(theme.alertInfoBg, theme.alertInfoBorderColor, theme.alertInfoText);
+        return alertVariant(
+          theme.alertInfoBg,
+          theme.alertInfoBorderColor,
+          theme.alertInfoText
+        );
       case 'warning':
-        return alertVariant(theme.alertWarningBg, theme.alertWarningBorderColor, theme.alertWarningText);
+        return alertVariant(
+          theme.alertWarningBg,
+          theme.alertWarningBorderColor,
+          theme.alertWarningText
+        );
       case 'danger':
-        return alertVariant(theme.alertDangerBg, theme.alertDangerBorderColor, theme.alertDangerText);
+        return alertVariant(
+          theme.alertDangerBg,
+          theme.alertDangerBorderColor,
+          theme.alertDangerText
+        );
       default:
         return null;
     }
@@ -57,7 +74,8 @@ const Alert = styled.div`
     float: right;
     top: -${props => props.theme.alertPaddingY};
     right: -${props => props.theme.alertPaddingX};
-    ${props => `padding: ${props.theme.alertPaddingY} ${props.theme.alertPaddingX};`}
+    ${props =>
+      `padding: ${props.theme.alertPaddingY} ${props.theme.alertPaddingX};`}
     color: inherit;
   }
 `;
@@ -85,7 +103,7 @@ Alert.defaultProps = {
 
     alertDangerBg,
     alertDangerText,
-    alertDangerBorderColor,
+    alertDangerBorderColor
   }
 };
 

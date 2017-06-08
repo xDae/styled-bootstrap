@@ -36,12 +36,12 @@ class DismissableAlert extends Component {
       info: false,
       warning: false,
       danger: false
-    }
+    };
   }
 
   closeAlert = type => {
-    this.setState({ [type]: !this.state[type] } );
-  }
+    this.setState({ [type]: !this.state[type] });
+  };
 
   render() {
     return (
@@ -50,47 +50,63 @@ class DismissableAlert extends Component {
         transitionEnterTimeout={300}
         transitionLeaveTimeout={500}
       >
-        {!this.state.success && <Alert type="success" >
-          <CloseIcon onClick={() => this.closeAlert('success')} />
-          <strong>Well done!</strong> You successfully read <a href="#">this important alert message</a>.
-        </Alert>}
+        {!this.state.success &&
+          <Alert type="success">
+            <CloseIcon onClick={() => this.closeAlert('success')} />
+            <strong>Well done!</strong> You successfully read{' '}
+            <a href="#">this important alert message</a>.
+          </Alert>}
 
-        {!this.state.info && <Alert type="info">
-          <CloseIcon onClick={() => this.closeAlert('info')} />
-          <strong>Heads up!</strong> This <a href="#">alert needs your attention</a>, but it's not super important.
-        </Alert>}
+        {!this.state.info &&
+          <Alert type="info">
+            <CloseIcon onClick={() => this.closeAlert('info')} />
+            <strong>Heads up!</strong> This{' '}
+            <a href="#">alert needs your attention</a>, but it's not super
+            important.
+          </Alert>}
 
-        {!this.state.warning && <Alert type="warning">
-          <CloseIcon onClick={() => this.closeAlert('warning')} />
-          <strong>Warning!</strong> Better check yourself, you're <a href="#">not looking too good</a>.
-        </Alert>}
+        {!this.state.warning &&
+          <Alert type="warning">
+            <CloseIcon onClick={() => this.closeAlert('warning')} />
+            <strong>Warning!</strong> Better check yourself, you're{' '}
+            <a href="#">not looking too good</a>.
+          </Alert>}
 
-        {!this.state.danger && <Alert type="danger">
-          <CloseIcon onClick={() => this.closeAlert('danger')} />
-          <strong>Oh snap!</strong> <a href="#">Change a few things up</a> and try submitting again.
-        </Alert>}
+        {!this.state.danger &&
+          <Alert type="danger">
+            <CloseIcon onClick={() => this.closeAlert('danger')} />
+            <strong>Oh snap!</strong> <a href="#">Change a few things up</a> and
+            try submitting again.
+          </Alert>}
       </CSSTransitionGroup>
     );
   }
 }
 
 export default storiesOf('Alert', module)
-  .add('Alert', () => (
-    <div>
+  .add('Alert', () =>
+    <div style={{ padding: '1.5rem' }}>
       <Alert type="success">
-        <strong>Well done!</strong> You successfully read <a href="#">this important alert message</a>.
+        <strong>Well done!</strong> You successfully read{' '}
+        <a href="#">this important alert message</a>.
       </Alert>
       <Alert type="info">
-        <strong>Heads up!</strong> This <a href="#">alert needs your attention</a>, but it's not super important.
+        <strong>Heads up!</strong> This{' '}
+        <a href="#">alert needs your attention</a>, but it's not super
+        important.
       </Alert>
       <Alert type="warning">
-        <strong>Warning!</strong> Better check yourself, you're <a href="#">not looking too good</a>.
+        <strong>Warning!</strong> Better check yourself, you're{' '}
+        <a href="#">not looking too good</a>.
       </Alert>
       <Alert type="danger">
-        <strong>Oh snap!</strong> <a href="#">Change a few things up</a> and try submitting again.
+        <strong>Oh snap!</strong> <a href="#">Change a few things up</a> and try
+        submitting again.
       </Alert>
     </div>
-  ))
-  .add('Alert with close Icon', () => (
-    <DismissableAlert />
-  ));
+  )
+  .add('Alert with close Icon', () =>
+    <div style={{ padding: '1.5rem' }}>
+      <DismissableAlert />
+    </div>
+  );

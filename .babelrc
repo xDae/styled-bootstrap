@@ -1,3 +1,14 @@
 {
-  "presets": [ "env",  "react", "stage-2" ]
+  "presets": [
+    ["env", {
+      "targets": {
+        //"node": "current"
+        //"browsers": ["last 2 versions"]
+      },
+      "modules": false
+    }],
+    "react",
+    "stage-2"
+    ],
+  "plugins": ["external-helpers"]
 }

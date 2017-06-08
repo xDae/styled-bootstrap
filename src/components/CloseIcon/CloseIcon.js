@@ -2,12 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { stripUnit } from 'polished';
 
-import {
-  fontSizeBase,
-  fontWeightBold,
-  black,
-  white
-} from '../../defaultTheme';
+import { fontSizeBase, fontWeightBold, black, white } from '../../defaultTheme';
 
 import { hoverFocus } from '../../utils/hover';
 
@@ -31,21 +26,18 @@ export const StyledCloseIcon = styled.button`
   -webkit-appearance: none;
 `;
 
-const CloseIcon = props => {
-  return (
-    <StyledCloseIcon {...props}>
-      <span aria-hidden="true">&times;</span>
-    </StyledCloseIcon>
-  );
-};
+const CloseIcon = props =>
+  <StyledCloseIcon {...props}>
+    <span aria-hidden="true">&times;</span>
+  </StyledCloseIcon>;
 
 CloseIcon.defaultProps = {
   theme: {
-    closeFontSize: `${stripUnit(fontSizeBase)*1.5}rem`,
+    closeFontSize: `${stripUnit(fontSizeBase) * 1.5}rem`,
     closeFontWeight: fontWeightBold,
     closeColor: black,
-    closeTextWhadow: `0 1px 0 ${white}`,
+    closeTextWhadow: `0 1px 0 ${white}`
   }
-}
+};
 
 export default CloseIcon;
