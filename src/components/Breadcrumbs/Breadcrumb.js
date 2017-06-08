@@ -14,7 +14,8 @@ import {
 } from '../../defaultTheme';
 
 const Breadcrumb = styled.div`
-  ${({ theme }) => `padding: ${theme.breadcrumbPaddingY} ${theme.breadcrumbPaddingX};`};
+  ${({ theme }) =>
+    `padding: ${theme.breadcrumbPaddingY} ${theme.breadcrumbPaddingX};`};
   margin-bottom: 1rem;
   list-style: none;
   background-color: ${props => props.theme.breadcrumbBg};
@@ -42,7 +43,8 @@ Breadcrumb.Item = styled.a`
     text-decoration: none;
   }
 
-  ${({ active, theme }) => active && `color: ${theme.breadcrumbActiveColor} !important;`}
+  ${({ active, theme }) =>
+    active && `color: ${theme.breadcrumbActiveColor} !important;`}
 `;
 
 const theme = {

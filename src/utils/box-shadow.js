@@ -8,4 +8,4 @@ export const boxShadow = shadow => {
       box-shadow: ${shadow};
     `;
   }
-}
+};

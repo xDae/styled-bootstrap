@@ -12,7 +12,7 @@ const Heading = styled.span`
   color: ${defaults.headingsColor};
 
   ${props => {
-    switch(props.size) {
+    switch (props.size) {
       case 'h1':
         return `font-size: ${defaults.fontSizeH1};`;
       case 'h2':

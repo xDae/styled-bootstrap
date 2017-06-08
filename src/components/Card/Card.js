@@ -27,7 +27,7 @@ CardBlock.defaultProps = {
   theme: {
     cardSpacerX: '1.25rem'
   }
-}
+};
 
 Card.Block = CardBlock;
 
@@ -38,8 +38,12 @@ Card.defaultProps = {
     cardBorderWidth: '1px',
     cardBorderRadius: defaults.borderRadius,
     // cardBorderColor: `${rgba(defaults.black, 0.125)}`,
-    cardBorderColor: `${rgba(Object.assign(parseToRgb(defaults.black), { alpha: .125 }))}`,
-    cardBorderRadiusInner: `calc(${stripUnit(() => this.cardBorderRadius)}px - ${stripUnit(() => this.cardBorderWidth)})}px)`,
+    cardBorderColor: `${rgba(
+      Object.assign(parseToRgb(defaults.black), { alpha: 0.125 })
+    )}`,
+    cardBorderRadiusInner: `calc(${stripUnit(
+      () => this.cardBorderRadius
+    )}px - ${stripUnit(() => this.cardBorderWidth)})}px)`,
     cardCapGg: defaults.grayLightest,
     cardBg: defaults.white,
     cardLinkHoverColor: defaults.white,
@@ -49,6 +53,6 @@ Card.defaultProps = {
     cardColumnsGap: '1.25rem',
     cardColumnsMargin: defaults.cardSpacerY
   }
-}
+};
 
 export default Card;

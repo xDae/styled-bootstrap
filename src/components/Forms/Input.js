@@ -24,7 +24,8 @@ import {
 const Input = styled.input`
   display: block;
   width: 100%;
-  ${props => `padding: ${props.theme.inputBtnPaddingY} ${props.theme.inputBtnPaddingX};`}
+  ${props =>
+    `padding: ${props.theme.inputBtnPaddingY} ${props.theme.inputBtnPaddingX};`}
   font-size: ${props => props.theme.fontSizeBase};
   line-height: ${props => props.theme.inputBtnLineHeight};
   color: ${props => props.theme.inputColor};
@@ -32,12 +33,14 @@ const Input = styled.input`
 
   background-image: none;
   background-clip: padding-box;
-  ${props => `border: ${props.theme.inputBtnBorderWidth} solid ${props.theme.inputBorderColor};`}
+  ${props =>
+    `border: ${props.theme.inputBtnBorderWidth} solid ${props.theme
+      .inputBorderColor};`}
 
-  ${props => props.theme.enableRounded
-    ? `border-radius: ${props.theme.inputBorderRadius};`
-    : 'border-radius: 0;'
-  }
+  ${props =>
+    props.theme.enableRounded
+      ? `border-radius: ${props.theme.inputBorderRadius};`
+      : 'border-radius: 0;'}
 
   ${props => boxShadow(props.theme.inputBoxShadow)}
   ${props => transition(props.theme.inputTransition)}
@@ -78,6 +81,6 @@ Input.defaultProps = {
     inputColorPlaceholder,
     inputBgDisabled
   }
-}
+};
 
 export default Input;

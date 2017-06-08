@@ -22,6 +22,7 @@
     "build": "rollup -c",
     "test": "jest",
     "test:watch": "jest --watch",
+    "prettier": "prettier --single-quote --write 'src/**/*.js'",
     "storybook": "start-storybook -p 9009",
     "build-storybook": "rimraf docs && build-storybook -o docs",
     "lint:css": "stylelint './src/components/**/*.js'",

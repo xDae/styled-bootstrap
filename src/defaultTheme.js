@@ -2,7 +2,6 @@ import { darken, lighten } from 'polished';
 
 import { sassRgba } from './utils/sassRgba';
 
-
 // General variable structure
 
 // Colors
@@ -36,7 +35,6 @@ export const brandWarning = orange;
 export const brandDanger = red;
 export const brandInverse = grayDark;
 
-
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -48,7 +46,6 @@ export const enableTransitions = true;
 export const enableHoverMediaQuery = false;
 export const enableGridClasses = true;
 export const enablePrintStyles = true;
-
 
 // Spacing
 //
@@ -106,7 +103,6 @@ export const bodyColor = grayDark;
 export const inverseBg = grayDark;
 export const inverseColor = grayLighter;
 
-
 // Links
 //
 // Style anchor elements.
@@ -115,7 +111,6 @@ export const linkColor = brandPrimary;
 export const linkDecoration = 'none';
 export const linkHoverColor = darken(0.15, linkColor);
 export const linkHoverDecoration = 'underline';
-
 
 // Components
 //
@@ -136,7 +131,6 @@ export const caretWidth = '0.3em';
 export const transitionBase = 'all .2s ease-in-out';
 export const transitionFade = 'opacity 0.15s linear';
 export const transitionCollapse = 'height 0.35s ease';
-
 
 // Fonts
 //
@@ -165,12 +159,11 @@ export const fontSizeH4 = '1.5rem';
 export const fontSizeH5 = '1.25rem';
 export const fontSizeH6 = '1rem';
 
-export const headingsMarginBottom = `${spacer/2}rem`;
+export const headingsMarginBottom = `${spacer / 2}rem`;
 export const headingsFontFamily = 'inherit';
 export const headingsFontWeight = 500;
 export const headingsLineHeight = 1.1;
 export const headingsColor = 'inherit';
-
 
 // Form states and alerts
 //
@@ -193,7 +186,6 @@ export const stateDangerText = '#a94442';
 export const stateDangerBg = '#f2dede';
 export const stateDangerBorderColor = darken(0.05, stateDangerBg);
 
-
 // Badges
 
 export const badgeDefaultBg = grayLight;
@@ -201,7 +193,7 @@ export const badgePrimaryBg = brandPrimary;
 export const badgeSuccessBg = brandSuccess;
 export const badgeInfoBg = brandInfo;
 export const badgeWarningBg = brandWarning;
-export const badgeDangerBg =  brandDanger;
+export const badgeDangerBg = brandDanger;
 
 export const badgeColor = white;
 export const badgeLinkHoverColor = white;
@@ -215,7 +207,6 @@ export const badgePillPaddingX = '.6em';
 // customizing padding or fontSize on labels.
 export const badgePillBorderRadius = '10rem';
 
-
 // Buttons
 //
 // For each of Bootstrap's buttons, define text, background and border color.
@@ -226,15 +217,18 @@ export const inputBtnLineHeight = 1.25;
 
 export const inputBtnPaddingYsm = '.25rem';
 export const inputBtnPaddingXsm = '.5rem';
-export const inputBtnLineHeightSm =  1.5;
+export const inputBtnLineHeightSm = 1.5;
 
 export const inputBtnPaddingYlg = '.5rem';
 export const inputBtnPaddingXlg = '1rem';
 export const inputBtnLineHeightLg = 1.5;
 
 export const btnFontWeight = fontWeightNormal;
-export const btnBoxShadow = `inset 0 1px 0 ${sassRgba(white, .15)}, 0 1px 1px ${sassRgba(black, .075)}`;
-export const btnFocusBoxShadow = `0 0 0 2px ${sassRgba(brandPrimary, .25)}`;
+export const btnBoxShadow = `inset 0 1px 0 ${sassRgba(
+  white,
+  0.15
+)}, 0 1px 1px ${sassRgba(black, 0.075)}`;
+export const btnFocusBoxShadow = `0 0 0 2px ${sassRgba(brandPrimary, 0.25)}`;
 export const btnActiveBoxShadow = `inset 0 3px 5px rgba($black,.125)`;
 
 export const btnPrimaryColor = white;
@@ -249,9 +243,9 @@ export const btnInfoColor = white;
 export const btnInfoBg = brandInfo;
 export const btnInfoBorderColor = btnInfoBg;
 
-export const  btnSuccessColor = white;
-export const  btnSuccessBg = brandSuccess;
-export const  btnSuccessBorderColor = btnSuccessBg;
+export const btnSuccessColor = white;
+export const btnSuccessBg = brandSuccess;
+export const btnSuccessBorderColor = btnSuccessBg;
 
 export const btnWarningColor = white;
 export const btnWarningBg = brandWarning;
@@ -272,32 +266,36 @@ export const btnBorderRadiusSm = borderRadiusSm;
 
 export const btnTransition = 'all .2s ease-in-out';
 
-
 // Forms
 
 export const inputBg = white;
 export const inputBgDisabled = grayLighter;
 
 export const inputColor = gray;
-export const inputBorderColor = sassRgba(black, .15);
+export const inputBorderColor = sassRgba(black, 0.15);
 export const inputBtnBorderWidth = borderWidth; // For form controls ans
-export const inputBoxShadow = `inset 0 1px 1px ${sassRgba(black, .075)}`;
+export const inputBoxShadow = `inset 0 1px 1px ${sassRgba(black, 0.075)}`;
 
 export const inputBorderRadius = borderRadius;
 export const inputBorderRadiusLg = borderRadiusLg;
 export const inputBorderRadiusSm = borderRadiusSm;
 export const inputBgFocus = inputBg;
-export const inputBorderColorFocus = lighten(.25, brandPrimary);
-export const inputBoxShadowFocus = `${inputBoxShadow}, ${sassRgba(inputBorderColorFocus, .6)}`;
+export const inputBorderColorFocus = lighten(0.25, brandPrimary);
+export const inputBoxShadowFocus = `${inputBoxShadow}, ${sassRgba(
+  inputBorderColorFocus,
+  0.6
+)}`;
 export const inputColorFocus = inputColor;
 export const inputColorPlaceholder = grayLight;
 
-export const inputHeight = ((fontSizeBase * inputBtnLineHeight) + (inputBtnPaddingY * 2));
-export const inputHeightLg = ((fontSizeLg * inputBtnLineHeightLg) + (inputBtnPaddingYlg * 2));
-export const inputHeightSm = ((fontSizeSm * inputBtnLineHeightSm) + (inputBtnPaddingYsm * 2));
+export const inputHeight =
+  fontSizeBase * inputBtnLineHeight + inputBtnPaddingY * 2;
+export const inputHeightLg =
+  fontSizeLg * inputBtnLineHeightLg + inputBtnPaddingYlg * 2;
+export const inputHeightSm =
+  fontSizeSm * inputBtnLineHeightSm + inputBtnPaddingYsm * 2;
 
 export const inputTransition = `borderColor ease-in-out .15s, box-shadow ease-in-out .15s`;
-
 
 // Dropdowns
 //
@@ -307,10 +305,10 @@ export const dropdownMinWidth = '10rem';
 export const dropdownPaddingY = '.5rem';
 export const dropdownMarginTop = '.125rem';
 export const dropdownBg = white;
-export const dropdownBorderColor = sassRgba(black, .15);
+export const dropdownBorderColor = sassRgba(black, 0.15);
 export const dropdownBorderWidth = borderWidth;
 export const dropdownDividerBg = grayLighter;
-export const dropdownBoxShadow = `0 .5rem 1rem ${sassRgba(black, .175)}`;
+export const dropdownBoxShadow = `0 .5rem 1rem ${sassRgba(black, 0.175)}`;
 
 export const dropdownLinkColor = grayDark;
 export const dropdownLinkHoverColor = darken(0.05, grayDark);
@@ -325,7 +323,6 @@ export const $dropdownItemPaddingY = '.25rem';
 export const dropdownItemPaddingX = '1.5rem';
 
 export const dropdownHeaderColor = grayLight;
-
 
 // Alerts
 //
@@ -354,7 +351,6 @@ export const alertDangerBg = stateDangerBg;
 export const alertDangerText = stateDangerText;
 export const alertDangerBorderColor = stateDangerBorderColor;
 
-
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
@@ -368,7 +364,6 @@ export const gridGutterWidths = {
   lg: gridGutterWidthBase,
   xl: gridGutterWidthBase
 };
-
 
 // Breadcrumbs
 

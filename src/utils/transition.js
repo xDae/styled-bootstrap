@@ -1,9 +1,6 @@
 import { css } from 'styled-components';
 
-import {
-  enableTransitions,
-  transitionBase
-} from '../defaultTheme';
+import { enableTransitions, transitionBase } from '../defaultTheme';
 
 export const transition = transition => {
   if (enableTransitions) {
@@ -15,4 +12,4 @@ export const transition = transition => {
   return css`
       transition: ${transition};
   `;
-}
+};

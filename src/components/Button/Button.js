@@ -65,13 +65,15 @@ const Button = styled.button`
   user-select: none;
   border: ${props => props.theme.inputBtnBorderWidth} solid transparent;
 
-  ${props => !props.size && buttonSize(
-    props.theme.inputBtnPaddingY,
-    props.theme.inputBtnPaddingX,
-    props.theme.fontSizeBase,
-    props.theme.inputBtnLineHeight,
-    props.theme.btnBorderRadius
-  )}
+  ${props =>
+    !props.size &&
+    buttonSize(
+      props.theme.inputBtnPaddingY,
+      props.theme.inputBtnPaddingX,
+      props.theme.fontSizeBase,
+      props.theme.inputBtnLineHeight,
+      props.theme.btnBorderRadius
+    )}
 
   ${props => transition(props.theme.btnTransition)}
 
@@ -94,25 +96,51 @@ const Button = styled.button`
   }
 
   ${({ theme, color }) => {
-    switch(color) {
+    switch (color) {
       case 'primary':
-        return buttonVariant(theme.btnPrimaryColor, theme.btnPrimaryBg, theme.btnPrimaryBorderColor);
+        return buttonVariant(
+          theme.btnPrimaryColor,
+          theme.btnPrimaryBg,
+          theme.btnPrimaryBorderColor
+        );
       case 'secondary':
-        return buttonVariant(theme.btnSecondaryColor, theme.btnSecondaryBg, theme.btnSecondaryBorderColor);
+        return buttonVariant(
+          theme.btnSecondaryColor,
+          theme.btnSecondaryBg,
+          theme.btnSecondaryBorderColor
+        );
       case 'info':
-        return buttonVariant(theme.btnInfoColor, theme.btnInfoBg, theme.btnInfoBorderColor);
+        return buttonVariant(
+          theme.btnInfoColor,
+          theme.btnInfoBg,
+          theme.btnInfoBorderColor
+        );
       case 'success':
-        return buttonVariant(theme.btnSuccessColor, theme.btnSuccessBg, theme.btnSuccessBorderColor);
+        return buttonVariant(
+          theme.btnSuccessColor,
+          theme.btnSuccessBg,
+          theme.btnSuccessBorderColor
+        );
       case 'warning':
-        return buttonVariant(theme.btnWarningColor, theme.btnWarningBg, theme.btnWarningBorderColor);
+        return buttonVariant(
+          theme.btnWarningColor,
+          theme.btnWarningBg,
+          theme.btnWarningBorderColor
+        );
       case 'danger':
-        return buttonVariant(theme.btnDangerColor, theme.btnDangerBg, theme.btnDangerBorderColor);
+        return buttonVariant(
+          theme.btnDangerColor,
+          theme.btnDangerBg,
+          theme.btnDangerBorderColor
+        );
       default:
         return null;
     }
   }}
 
-  ${props => props.color === 'link' && css`
+  ${props =>
+    props.color === 'link' &&
+    css`
     font-weight: ${props => props.theme.fontWeightNormal};
     color: ${props => props.theme.linkColor};
     border-radius: 0;
@@ -152,7 +180,7 @@ const Button = styled.button`
 
   ${({ theme, outline, color }) => {
     if (outline) {
-      switch(color) {
+      switch (color) {
         case 'primary':
           return buttonOutlineVariant(theme.btnPrimaryBg);
         case 'secondary':
@@ -171,28 +199,36 @@ const Button = styled.button`
     }
   }}
 
-  ${props => props.size === 'large' && buttonSize(
-    props.theme.inputBtnPaddingYlg,
-    props.theme.inputBtnPaddingXlg,
-    props.theme.fontSizeLg,
-    props.theme.inputBtnLineHeightLg,
-    props.theme.btnBorderRadiusLg
-  )}
+  ${props =>
+    props.size === 'large' &&
+    buttonSize(
+      props.theme.inputBtnPaddingYlg,
+      props.theme.inputBtnPaddingXlg,
+      props.theme.fontSizeLg,
+      props.theme.inputBtnLineHeightLg,
+      props.theme.btnBorderRadiusLg
+    )}
 
-  ${props => props.size === 'small' && buttonSize(
-    props.theme.inputBtnPaddingYsm,
-    props.theme.inputBtnPaddingXsm,
-    props.theme.fontSizeSm,
-    props.theme.inputBtnLineHeightSm,
-    props.theme.btnBorderRadiusSm
-  )}
+  ${props =>
+    props.size === 'small' &&
+    buttonSize(
+      props.theme.inputBtnPaddingYsm,
+      props.theme.inputBtnPaddingXsm,
+      props.theme.fontSizeSm,
+      props.theme.inputBtnLineHeightSm,
+      props.theme.btnBorderRadiusSm
+    )}
 
-  ${props => props.active && css`
+  ${props =>
+    props.active &&
+    css`
     background-image: none;
     // ${boxShadow(props.theme.btnFocusBoxShadow)}
   `}
 
-  ${props => props.block && css`
+  ${props =>
+    props.block &&
+    css`
     display: block;
     width: 100%;
   `}

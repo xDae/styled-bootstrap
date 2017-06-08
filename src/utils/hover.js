@@ -10,7 +10,7 @@ export const hoverFocus = content => {
   if (enableHoverMediaQuery) {
     return css`
       &:focus { ${content}} }
-      ${hover(content) }
+      ${hover(content)}
     `;
   }
 
@@ -20,7 +20,7 @@ export const hoverFocus = content => {
       ${content}
     }
   `;
-}
+};
 
 export const plainHoverFocus = content => {
   if (enableHoverMediaQuery) {
@@ -40,7 +40,7 @@ export const plainHoverFocus = content => {
       ${content}
     }
   `;
-}
+};
 
 export const hoverFocusActive = content => {
   if (enableHoverMediaQuery) {
@@ -49,7 +49,7 @@ export const hoverFocusActive = content => {
       &:active {
         ${content}
       }
-      ${hover(content) }
+      ${hover(content)}
     `;
   }
 
@@ -60,4 +60,4 @@ export const hoverFocusActive = content => {
       ${content}
     }
   `;
-}
+};
