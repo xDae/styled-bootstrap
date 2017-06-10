@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Jumbotron from '../../src/components/Jumbotron/Jumbotron';
-import Button from '../../src/components/Button/Button';
-import Headings from '../../src/components/Headings/Headings';
+import Jumbotron from '../../src/components/Jumbotron';
+import Button from '../../src/components/Button';
+import Headings from '../../src/components/Headings';
 
 export default storiesOf('Jumbotron', module)
   .add('Jumbotron', () => (

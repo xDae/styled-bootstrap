@@ -4,7 +4,7 @@ import styled, { injectGlobal } from 'styled-components';
 
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
-import Alert from '../../src/components/Alert/Alert';
+import Alert from '../../src/components/Alert';
 import CloseIcon from '../../src/components/CloseIcon/CloseIcon';
 
 injectGlobal`

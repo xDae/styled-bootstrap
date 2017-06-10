@@ -1,4 +1,4 @@
-import { darken, lighten } from 'polished';
+import { darken, lighten, stripUnit } from 'polished';
 
 import { sassRgba } from './utils/sassRgba';
 
@@ -374,3 +374,26 @@ export const breadcrumbBg = grayLighter;
 export const breadcrumbDividerColor = grayLight;
 export const breadcrumbActiveColor = grayLight;
 export const breadcrumbDivider = '"/"';
+
+// Cards
+
+export const cardSpacerY = '.75rem';
+export const cardSpacerX = '1.25rem';
+export const cardBorderWidth = '1px';
+export const cardBorderRadius = borderRadius;
+export const cardBorderColor = sassRgba(black, 0.125);
+export const cardInnerBorderRadius = `calc(${stripUnit(
+  () => cardBorderRadius
+)}px - ${stripUnit(() => cardBorderWidth)})}px)`;
+export const cardCapBg = grayLightest;
+export const cardBg = white;
+
+export const cardInverseLinkHoverColor = white;
+
+export const cardImgOverlayPadding = '1.25rem';
+
+export const cardDeckMargin = gridGutterWidthBase / 2;
+
+export const cardColumnsCount = 3;
+export const cardColumnsGap = '1.25rem';
+export const cardColumnsMargin = cardSpacerY;

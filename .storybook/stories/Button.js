@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Button from '../../src/components/Button/Button';
+import Button from '../../src/components/Button';
 
 const margin = { marginRight: 6, marginBottom: 6 };
 

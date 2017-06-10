@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Badge from '../../src/components/Badge/Badge';
+import Badge from '../../src/components/Badge';
 
 const margin = { marginRight: 6, marginBottom: 6 };
 

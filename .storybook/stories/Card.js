@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Card from '../../src/components/Card/Card';
-import Button from '../../src/components/Button/Button';
-import Headings from '../../src/components/Headings/Headings';
+import Card from '../../src/components/Card';
+import Button from '../../src/components/Button';
+import Headings from '../../src/components/Headings';
 
 export default storiesOf('Card', module)
   .add('Card', () => (

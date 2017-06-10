@@ -32,7 +32,7 @@ const Badge = styled.span`
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  -styled-mixin: ${borderRadius()};
+  ${borderRadius()};
 
   /* Empty badges collapse automatically */
   &:empty {

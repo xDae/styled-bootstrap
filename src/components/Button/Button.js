@@ -141,8 +141,8 @@ const Button = styled.button`
   ${props =>
     props.color === 'link' &&
     css`
-    font-weight: ${props => props.theme.fontWeightNormal};
-    color: ${props => props.theme.linkColor};
+    font-weight: ${props.theme.fontWeightNormal};
+    color: ${props.theme.linkColor};
     border-radius: 0;
 
     &,
@@ -164,8 +164,8 @@ const Button = styled.button`
     `)}
 
     ${hoverFocus(css`
-      color: ${props => props.theme.linkHoverColor};
-      text-decoration: ${props => props.theme.linkHoverDecoration};
+      color: ${props.theme.linkHoverColor};
+      text-decoration: ${props.theme.linkHoverDecoration};
       background-color: transparent;
     `)}
 

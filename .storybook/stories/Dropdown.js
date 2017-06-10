@@ -6,8 +6,8 @@ import { storiesOf } from '@storybook/react';
 
 import { caretWidth } from '../../src/defaultTheme'
 
-import Dropdown from '../../src/components/Dropdown/Dropdown';
-import Button from '../../src/components/Button/Button';
+import Dropdown from '../../src/components/Dropdown';
+import Button from '../../src/components/Button';
 
 const ButtonWithCaret = Button.extend`
   &:after {

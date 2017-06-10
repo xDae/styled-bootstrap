@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Heading from '../../src/components/Headings/Headings';
+import Heading from '../../src/components/Headings';
 
 export default storiesOf('Headings', module)
   .add('Semantic Headers', () => (

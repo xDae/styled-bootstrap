@@ -1,7 +1,22 @@
 import styled from 'styled-components';
-import { parseToRgb, rgba, stripUnit } from 'polished';
+// import { parseToRgb, rgba, stripUnit } from 'polished';
 
-import * as defaults from '../../defaultTheme';
+import {
+  cardSpacerY,
+  cardSpacerX,
+  cardBorderWidth,
+  cardBorderRadius,
+  cardBorderColor,
+  cardInnerBorderRadius,
+  cardCapBg,
+  cardBg,
+  cardInverseLinkHoverColor,
+  cardImgOverlayPadding,
+  cardDeckMargin,
+  cardColumnsCount,
+  cardColumnsGap,
+  cardColumnsMargin
+} from '../../defaultTheme';
 
 import { borderRadius } from '../../utils/border-radius';
 
@@ -33,25 +48,20 @@ Card.Block = CardBlock;
 
 Card.defaultProps = {
   theme: {
-    cardSpacerY: '.75rem',
-    cardSpacerX: '1.25rem',
-    cardBorderWidth: '1px',
-    cardBorderRadius: defaults.borderRadius,
-    // cardBorderColor: `${rgba(defaults.black, 0.125)}`,
-    cardBorderColor: `${rgba(
-      Object.assign(parseToRgb(defaults.black), { alpha: 0.125 })
-    )}`,
-    cardBorderRadiusInner: `calc(${stripUnit(
-      () => this.cardBorderRadius
-    )}px - ${stripUnit(() => this.cardBorderWidth)})}px)`,
-    cardCapGg: defaults.grayLightest,
-    cardBg: defaults.white,
-    cardLinkHoverColor: defaults.white,
-    cardImgOverlayPadding: '1.25rem',
-    cardDeckMargin: `${defaults.gridGutterWidthBase} / 2`,
-    cardColumnsCount: 3,
-    cardColumnsGap: '1.25rem',
-    cardColumnsMargin: defaults.cardSpacerY
+    cardSpacerY,
+    cardSpacerX,
+    cardBorderWidth,
+    cardBorderRadius,
+    cardBorderColor,
+    cardInnerBorderRadius,
+    cardCapBg,
+    cardBg,
+    cardInverseLinkHoverColor,
+    cardImgOverlayPadding,
+    cardDeckMargin,
+    cardColumnsCount,
+    cardColumnsGap,
+    cardColumnsMargin
   }
 };
 
