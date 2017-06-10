@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import { borderRadius } from '../../utils/border-radius';
 import { alertVariant } from '../../utils/alerts';
@@ -105,6 +106,10 @@ Alert.defaultProps = {
     alertDangerText,
     alertDangerBorderColor
   }
+};
+
+Alert.propTypes = {
+  theme: PropTypes.object
 };
 
 export default Alert;
