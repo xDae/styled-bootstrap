@@ -16,3 +16,5 @@ export function alertVariant(background, border, bodyColor) {
     }
   `;
 }
+
+export default alertVariant;

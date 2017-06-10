@@ -165,6 +165,33 @@ export const headingsFontWeight = 500;
 export const headingsLineHeight = 1.1;
 export const headingsColor = 'inherit';
 
+// Pagination
+
+export const paginationPaddingY = '.5rem';
+export const paginationPaddingX = '.75rem';
+export const paginationPaddingYsm = '.25rem';
+export const paginationPaddingXsm = '.5rem';
+export const paginationPaddingYlg = '.75rem';
+export const paginationPaddingXlg = '1.5rem';
+export const paginationLineHeight = '1.25';
+
+export const paginationColor = linkColor;
+export const paginationBg = white;
+export const paginationBorderWidth = borderWidth;
+export const paginationBorderColor = '#ddd';
+
+export const paginationHoverColor = linkHoverColor;
+export const paginationHoverBg = grayLighter;
+export const paginationHoverBorderColor = '#ddd';
+
+export const paginationActiveColor = white;
+export const paginationActiveBg = brandPrimary;
+export const paginationActiveBorderColor = brandPrimary;
+
+export const paginationDisabledColor = grayLight;
+export const paginationDisabledBg = white;
+export const paginationDisabledBorderColor = '#ddd';
+
 // Form states and alerts
 //
 // Define colors for form feedback states and, by default, alerts.

@@ -9,6 +9,9 @@
 # production
 /lib
 
+# flow definitions
+/flow-typed
+
 # misc
 .DS_Store
 .env.local
