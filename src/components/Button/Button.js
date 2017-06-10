@@ -1,3 +1,5 @@
+// @flow
+
 import styled, { css } from 'styled-components';
 
 import {
@@ -179,24 +181,16 @@ const Button = styled.button`
   `}
 
   ${({ theme, outline, color }) => {
-    if (outline) {
-      switch (color) {
-        case 'primary':
-          return buttonOutlineVariant(theme.btnPrimaryBg);
-        case 'secondary':
-          return buttonOutlineVariant(theme.btnSecondaryBorder);
-        case 'info':
-          return buttonOutlineVariant(theme.btnInfoBg);
-        case 'success':
-          return buttonOutlineVariant(theme.btnSuccessBg);
-        case 'warning':
-          return buttonOutlineVariant(theme.btnWarningBg);
-        case 'danger':
-          return buttonOutlineVariant(theme.btnDangerBg);
-        default:
-          return null;
-      }
-    }
+    const colors = {
+      primary: theme.btnPrimaryBg,
+      secondary: theme.btnSecondaryBorder,
+      info: theme.btnInfoBg,
+      success: theme.btnSuccessBg,
+      warning: theme.btnWarningBg,
+      danger: theme.btnDangerBg
+    };
+
+    if (outline) return buttonOutlineVariant(colors[color]);
   }}
 
   ${props =>

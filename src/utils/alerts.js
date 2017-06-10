@@ -1,7 +1,13 @@
+// @flow
+
 import { css } from 'styled-components';
 import { darken } from 'polished';
 
-export function alertVariant(background, border, bodyColor) {
+export function alertVariant(
+  background: string,
+  border: string,
+  bodyColor: string
+) {
   return css`
     color: ${bodyColor};
     background-color: ${background};

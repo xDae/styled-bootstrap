@@ -1,7 +1,9 @@
+// @flow
+
 import { css } from 'styled-components';
 import { darken } from 'polished';
 
-export function badgeVariant(color) {
+export function badgeVariant(color: string) {
   return css`
     background-color: ${color};
 
@@ -12,3 +14,5 @@ export function badgeVariant(color) {
     }
   `;
 }
+
+export default badgeVariant;

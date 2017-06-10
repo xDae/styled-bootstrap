@@ -1,12 +1,14 @@
+//  @flow
+
 import { css } from 'styled-components';
 
 import { enableHoverMediaQuery } from '../defaultTheme';
 
-export const hover = content => css`
+export const hover = (content: string) => css`
   &:hover { ${content} }
 `;
 
-export const hoverFocus = content => {
+export const hoverFocus = (content: string) => {
   if (enableHoverMediaQuery) {
     return css`
       &:focus { ${content}} }
@@ -22,7 +24,7 @@ export const hoverFocus = content => {
   `;
 };
 
-export const plainHoverFocus = content => {
+export const plainHoverFocus = (content: string) => {
   if (enableHoverMediaQuery) {
     return css`
       &,
