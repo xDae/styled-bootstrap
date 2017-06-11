@@ -1,3 +1,5 @@
+// @flow
+
 import { darken, lighten, stripUnit } from 'polished';
 
 import { sassRgba } from './utils/sassRgba';
