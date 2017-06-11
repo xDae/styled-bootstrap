@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { transition } from '../../utils/transition';
 import { boxShadow } from '../../utils/box-shadow';
@@ -57,11 +57,15 @@ const Input = styled.input`
     opacity: 1;
   }
 
-  &:disabled,
-  &[readonly] {
-    background-color: ${props => props.theme.inputBgDisabled};
-    opacity: 1;
-  }
+  ${props =>
+    props.disabled &&
+    css`
+    &,
+    &[readonly] {
+      background-color: ${props.theme.inputBgDisabled};
+      opacity: 1;
+    }
+  `}
 `;
 
 Input.defaultProps = {

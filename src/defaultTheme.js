@@ -315,8 +315,8 @@ export const inputBoxShadowFocus = `${inputBoxShadow}, ${sassRgba(
 export const inputColorFocus = inputColor;
 export const inputColorPlaceholder = grayLight;
 
-export const inputHeight =
-  fontSizeBase * inputBtnLineHeight + inputBtnPaddingY * 2;
+export const inputHeight = `${stripUnit(fontSizeBase) * inputBtnLineHeight +
+  stripUnit(inputBtnPaddingY) * 2}rem`;
 export const inputHeightLg =
   fontSizeLg * inputBtnLineHeightLg + inputBtnPaddingYlg * 2;
 export const inputHeightSm =
