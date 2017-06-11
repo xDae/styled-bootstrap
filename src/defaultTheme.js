@@ -378,6 +378,18 @@ export const alertDangerBg = stateDangerBg;
 export const alertDangerText = stateDangerText;
 export const alertDangerBorderColor = stateDangerBorderColor;
 
+// Progress bars
+
+export const progressHeight = '1rem';
+export const progressFontSize = '.75rem';
+export const progressBg = grayLighter;
+export const progressBorderRadius = borderRadius;
+export const progressBoxShadow = `inset 0 .1rem .1rem ${sassRgba(black, 0.1)}`;
+export const progressBarColor = white;
+export const progressBarBg = brandPrimary;
+export const progressBarAnimationTiming = '1s linear infinite';
+export const progressBarTransition = 'width .6s ease';
+
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
