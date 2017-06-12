@@ -1,6 +1,7 @@
 {
+  "parser": "babel-eslint",
   "extends": [
-    "eslint-config-airbnb",
+    "airbnb",
     "prettier",
     "prettier/flowtype",
     "prettier/react"

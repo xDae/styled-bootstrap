@@ -2,6 +2,7 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import replace from 'rollup-plugin-replace';
 import commonjs from 'rollup-plugin-commonjs';
+import flow from 'rollup-plugin-flow'
 
 const pkg = require('./package.json');
 
@@ -10,6 +11,7 @@ const pkg = require('./package.json');
 export default {
   entry: 'src/index.js',
   plugins: [
+    flow(),
     nodeResolve({
       jsnext: true
     }),

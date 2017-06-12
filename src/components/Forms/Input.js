@@ -1,3 +1,5 @@
+// flow
+
 import styled, { css } from 'styled-components';
 
 import { transition } from '../../utils/transition';
