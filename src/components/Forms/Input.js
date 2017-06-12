@@ -2,6 +2,8 @@
 
 import styled, { css } from 'styled-components';
 
+import { borderRadius } from '../../utils/border-radius';
+
 import { transition } from '../../utils/transition';
 import { boxShadow } from '../../utils/box-shadow';
 import { formControlFocus } from '../../utils/forms';
@@ -20,7 +22,17 @@ import {
   inputTransition,
   inputBoxShadow,
   inputColorPlaceholder,
-  inputBgDisabled
+  inputBgDisabled,
+  inputBtnPaddingYsm,
+  inputBtnPaddingXsm,
+  fontSizeSm,
+  inputBtnLineHeightSm,
+  inputBorderRadiusSm,
+  inputBtnPaddingYlg,
+  inputBtnPaddingXlg,
+  fontSizeLg,
+  inputBtnLineHeightLg,
+  inputBorderRadiusLg
 } from '../../defaultTheme';
 
 const Input = styled.input`
@@ -62,12 +74,29 @@ const Input = styled.input`
   ${props =>
     props.disabled &&
     css`
-    &,
-    &[readonly] {
       background-color: ${props.theme.inputBgDisabled};
       opacity: 1;
-    }
-  `}
+    `}
+
+  ${props =>
+    props.size === 'small' &&
+    css`
+      padding: ${props.theme.inputBtnPaddingYsm} ${props.theme
+      .inputBtnPaddingXsm};
+      font-size: ${props.theme.fontSizeSm};
+      line-height: ${props.theme.inputBtnLineHeightSm};
+      ${borderRadius(props.theme.inputBorderRadiusSm)}
+    `}
+
+  ${props =>
+    props.size === 'large' &&
+    css`
+      padding: ${props.theme.inputBtnPaddingYlg} ${props.theme
+      .inputBtnPaddingXlg};
+      font-size: ${props.theme.fontSizeLg};
+      line-height: ${props.theme.inputBtnLineHeightLg};
+      ${borderRadius(props.theme.inputBorderRadiusLg)}
+    `}}
 `;
 
 Input.defaultProps = {
@@ -85,7 +114,17 @@ Input.defaultProps = {
     inputTransition,
     inputBoxShadow,
     inputColorPlaceholder,
-    inputBgDisabled
+    inputBgDisabled,
+    inputBtnPaddingYsm,
+    inputBtnPaddingXsm,
+    fontSizeSm,
+    inputBtnLineHeightSm,
+    inputBorderRadiusSm,
+    inputBtnPaddingYlg,
+    inputBtnPaddingXlg,
+    fontSizeLg,
+    inputBtnLineHeightLg,
+    inputBorderRadiusLg
   }
 };
 

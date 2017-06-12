@@ -1,3 +1,5 @@
+// @flow
+
 import { stripUnit } from 'polished';
 
 import Input from './Input';

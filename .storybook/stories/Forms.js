@@ -13,6 +13,18 @@ export default storiesOf('Forms', module)
       <Input type="text" placeholder="Example text" id="exampleInputText"/>
     </div>
   ))
+  .add('Input Small', () => (
+    <div style={{ width: 400 }}>
+      <label htmlFor="exampleInputText">Example text</label>
+      <Input size="small" type="text" placeholder="Example text" id="exampleInputText"/>
+    </div>
+  ))
+  .add('Input Large', () => (
+    <div style={{ width: 400 }}>
+      <label htmlFor="exampleInputText">Example text</label>
+      <Input size="large" type="text" placeholder="Example text" id="exampleInputText"/>
+    </div>
+  ))
   .add('Disabled Input', () => (
     <div style={{ width: 400 }}>
       <label htmlFor="exampleInputText2">Email address</label>

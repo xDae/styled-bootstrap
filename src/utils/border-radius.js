@@ -4,15 +4,17 @@ import { css } from 'styled-components';
 
 import { enableRounded } from '../defaultTheme';
 
-export function borderRadius(radius?: string = '0.25rem'): string {
+export function borderRadius(radius?: string = '0.25rem') {
   if (enableRounded) {
     return css`
       border-radius: ${radius};
     `;
   }
+
+  return '';
 }
 
-export function borderTopRadius(radius): string {
+export function borderTopRadius(radius: string) {
   if (enableRounded) {
     return css`
       border-top-right-radius: ${radius};

@@ -5,6 +5,14 @@
     }],
     "react",
     "stage-2"
-    ],
-  "plugins": ["external-helpers", "syntax-flow"]
+  ],
+  "env": {
+    "production": {
+      "plugins": ["external-helpers", "syntax-flow"]
+    },
+    "test": {
+      "presets": ["env"],
+      "plugins": ["syntax-flow"]
+    }
+  }
 }
