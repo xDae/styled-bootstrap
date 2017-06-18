@@ -4,7 +4,7 @@ import { css } from 'styled-components';
 
 import { enableRounded } from '../defaultTheme';
 
-export function borderRadius(radius?: string = '0.25rem') {
+export function borderRadius(radius: string = '0.25rem') {
   if (enableRounded) {
     return css`
       border-radius: ${radius};
@@ -23,7 +23,7 @@ export function borderTopRadius(radius: string) {
   }
 }
 
-export function borderRightRadius(radius): string {
+export function borderRightRadius(radius: string) {
   if (enableRounded) {
     return css`
       border-bottom-right-radius: ${radius};
@@ -32,7 +32,7 @@ export function borderRightRadius(radius): string {
   }
 }
 
-export function borderBottomRadius(radius): string {
+export function borderBottomRadius(radius: string) {
   if (enableRounded) {
     return css`
       border-bottom-right-radius: ${radius};
@@ -41,7 +41,7 @@ export function borderBottomRadius(radius): string {
   }
 }
 
-export function borderLeftRadius(radius): Array {
+export function borderLeftRadius(radius: string) {
   if (enableRounded) {
     return css`
       border-bottom-left-radius: ${radius};
