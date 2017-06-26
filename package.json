@@ -68,7 +68,7 @@
     "lint-staged": "^4.0.0",
     "prettier": "^1.4.4",
     "react": "^15.6.1",
-    "react-addons-test-utils": "^15.6.0",
+    "react-addons-test-utils": "15.6.0",
     "react-dev-utils": "^3.0.0",
     "react-dom": "^15.6.1",
     "react-transition-group": "^1.2.0",
