@@ -81,7 +81,7 @@
     "rollup-plugin-replace": "^1.1.1",
     "stylelint": "^7.11.1",
     "stylelint-config-standard": "^16.0.0",
-    "stylelint-processor-styled-components": "^0.1.2"
+    "stylelint-processor-styled-components": "0.1.2"
   },
   "peerDependencies": {
     "react": "15.x",
