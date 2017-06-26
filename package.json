@@ -41,7 +41,7 @@
     "@storybook/react": "^3.1.6",
     "aria-query": "^0.7.0",
     "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
+    "babel-core": "6.25.0",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",
     "babel-plugin-external-helpers": "^6.22.0",
