@@ -39,7 +39,7 @@
     "@storybook/addon-options": "^3.1.6",
     "@storybook/addons": "^3.1.6",
     "@storybook/react": "^3.1.6",
-    "aria-query": "^0.7.0",
+    "aria-query": "0.7.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
