@@ -49,7 +49,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-2": "6.24.1",
     "cross-env": "^5.0.1",
     "enzyme": "^2.9.1",
     "eslint": "^4.1.1",
