@@ -55,8 +55,7 @@ export const enablePrintStyles = true;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-// export const spacer = '1rem';
-export const spacer = 1;
+export const spacer = '1rem';
 export const spacerX = spacer;
 export const spacerY = spacer;
 export const spacers = {
@@ -166,6 +165,55 @@ export const headingsFontFamily = 'inherit';
 export const headingsFontWeight = 500;
 export const headingsLineHeight = 1.1;
 export const headingsColor = 'inherit';
+
+// Navs
+
+export const navLinkPaddingY = '.5rem';
+export const navLinkPaddingX = '1rem';
+export const navLinkDisabledColor = grayLight;
+
+export const navTabsBorderColor = '#ddd';
+export const navTabsBorderWidth = borderWidth;
+export const navTabsBorderRadius = borderRadius;
+export const navTabsLinkHoverBorderColor = grayLighter;
+export const navTabsLinkActiveColor = gray;
+export const navTabsLinkActiveBg = bodyBg;
+export const navTabsLinkActiveBorderColor = '#ddd';
+
+export const navPillsBorderRadius = borderRadius;
+export const navPillsLinkActiveColor = componentActiveColor;
+export const navPillsLinkActiveBg = componentActiveBg;
+
+// Navbar
+
+export const navbarPaddingY = `${stripUnit(spacer) / 2}rem`;
+export const navbarPaddingX = spacer;
+
+export const navbarBrandFontSize = fontSizeLg;
+// Compute the navbarBrand paddingY so the navbarBrand will have the same height as navbar-text and navLink
+export const navLinkHeight = navbarBrandFontSize * lineHeightBase;
+export const navbarBrandHeight = `${stripUnit(fontSizeBase) * lineHeightBase +
+  stripUnit(navLinkPaddingY) * 2} rem`;
+export const navbarBrandPaddingY = (navbarBrandHeight - navLinkHeight) / 2;
+
+export const navbarTogglerPaddingY = '.25rem';
+export const navbarTogglerPaddingX = '.75rem';
+export const navbarTogglerFontSize = fontSizeLg;
+export const navbarTogglerBorderRadius = borderRadius;
+
+export const navbarInverseColor = sassRgba(white, 0.5);
+export const navbarInverseHoverColor = sassRgba(white, 0.75);
+export const navbarInverseActiveColor = sassRgba(white, 1);
+export const navbarInverseDisabledColor = sassRgba(white, 0.25);
+// export const navbarInverseTogglerIconBg = str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{navbar-inverseColor}' strokeWidth='2' strokeLinecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
+export const navbarInverseTogglerBorderColor = sassRgba(white, 0.1);
+
+export const navbarLightColor = sassRgba(black, 0.5);
+export const navbarLightHoverColor = sassRgba(black, 0.7);
+export const navbarLightActiveColor = sassRgba(black, 0.9);
+export const navbarLightDisabledColor = sassRgba(black, 0.3);
+// export const navbarLightTogglerIconBg = str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{navbarLightColor}' strokeWidth='2' strokeLinecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
+export const navbarLightTogglerBorderColor = sassRgba(black, 0.1);
 
 // Pagination
 

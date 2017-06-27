@@ -48,7 +48,7 @@ export default storiesOf('Buttons', module)
     </div>
   ))
   .add('Block Buttons', () => (
-    <div>
+    <div style={{ width: '90%' }}>
       <Button style={margin} color="primary" block>Primary Button</Button>
       <Button style={margin} color="secondary" block>Secondary Button</Button>
       <Button style={margin} color="info" block>Info Button</Button>

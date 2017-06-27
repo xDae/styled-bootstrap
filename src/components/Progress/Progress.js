@@ -31,7 +31,7 @@ const Progress = styled.div`
 
 Progress.Bar = styled.div`
   height: ${props => props.theme.progressHeight};
-  width:  ${props => props.width};
+  width: ${props => props.width};
   line-height: ${props => props.theme.progressHeight};
   color: ${props => props.theme.progressBarColor};
   background-color: ${props => props.theme.progressBarBg};
@@ -43,7 +43,7 @@ Progress.Bar = styled.div`
       ${gradientStriped()}
       background-size: ${props.theme.progressHeight} ${props.theme
       .progressHeight};
-  `}
+  `};
 `;
 
 const theme = {

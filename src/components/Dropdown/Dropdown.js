@@ -20,7 +20,7 @@ const Dropdown = styled.div`
     ${Dropdown.Menu} {
       display: block;
     }
-  `}
+  `};
 `;
 
 Dropdown.Menu = styled.div`
@@ -40,8 +40,8 @@ Dropdown.Menu = styled.div`
   background-color: ${props => props.theme.dropdownBg};
   background-clip: padding-box;
   ${({ theme }) =>
-    `border: ${theme.dropdownBorderWidth} solid ${theme.dropdownBorderColor};`}
-  ${borderRadius(defaults.borderRadius)}
+    `border: ${theme.dropdownBorderWidth} solid ${theme.dropdownBorderColor};`};
+  ${borderRadius(defaults.borderRadius)};
   ${boxShadow(defaults.dropdownBoxShadow)};
 `;
 
@@ -70,7 +70,7 @@ Dropdown.Item = styled.a`
     color: ${props.theme.dropdownLinkActiveColor};
     text-decoration: none;
     background-color: ${props.theme.dropdownLinkActiveBg};
-  `}
+  `};
 
   ${props =>
     props.disabled &&
@@ -82,7 +82,7 @@ Dropdown.Item = styled.a`
       `
       background-image: none;
     `}
-  `}
+  `};
 `;
 
 Dropdown.Divider = styled.div`

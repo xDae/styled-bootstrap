@@ -10,10 +10,11 @@ const Jumbotron = styled.div`
     props &&
     `padding: ${props.theme.jumbotronPadding} ${stripUnit(
       props.theme.jumbotronPadding
-    ) / 2}rem;`}
+    ) / 2}rem;`};
+
   margin-bottom: ${props => props.theme.jumbotronPadding};
   background-color: ${props => props.theme.jumbotronBg};
-  ${borderRadius(defaults.borderRadiusLg)}
+  ${borderRadius(defaults.borderRadiusLg)};
 
   // @include media-breakpoint-up(sm) {
   //   padding: ($jumbotron-padding * 2) $jumbotron-padding;
@@ -25,7 +26,7 @@ const Jumbotron = styled.div`
     padding-right: 0;
     padding-left: 0;
     ${borderRadius(0)}
-  `}
+  `};
 `;
 
 Jumbotron.defaultProps = {

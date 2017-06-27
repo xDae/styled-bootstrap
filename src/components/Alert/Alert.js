@@ -31,7 +31,7 @@ import {
 
 const Alert = styled.div`
   ${props =>
-    `padding: ${props.theme.alertPaddingY} ${props.theme.alertPaddingX};`}
+    `padding: ${props.theme.alertPaddingY} ${props.theme.alertPaddingX};`};
   margin-bottom: ${props => props.theme.alertMarginBottom};
   border: ${props => props.theme.alertBorderWidth} solid transparent;
 
@@ -39,7 +39,7 @@ const Alert = styled.div`
     font-weight: ${props => props.theme.alertLinkFontWeight};
   }
 
-  ${props => borderRadius(props.theme.alertBorderRadius)}
+  ${props => borderRadius(props.theme.alertBorderRadius)};
 
   ${({ theme, type }) => {
     switch (type) {
@@ -70,7 +70,7 @@ const Alert = styled.div`
       default:
         return null;
     }
-  }}
+  }};
 
   ${StyledCloseIcon} {
     position: relative;
@@ -78,7 +78,7 @@ const Alert = styled.div`
     top: -${props => props.theme.alertPaddingY};
     right: -${props => props.theme.alertPaddingX};
     ${props =>
-      `padding: ${props.theme.alertPaddingY} ${props.theme.alertPaddingX};`}
+      `padding: ${props.theme.alertPaddingY} ${props.theme.alertPaddingX};`};
     color: inherit;
   }
 `;

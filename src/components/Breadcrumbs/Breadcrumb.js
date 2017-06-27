@@ -21,7 +21,7 @@ const Breadcrumb = styled.div`
   background-color: ${props => props.theme.breadcrumbBg};
 
   ${props => borderRadius(props.theme.bordeRadius)};
-  ${clearFix()}
+  ${clearFix()};
 `;
 
 Breadcrumb.Item = styled.a`
@@ -44,7 +44,7 @@ Breadcrumb.Item = styled.a`
   }
 
   ${({ active, theme }) =>
-    active && `color: ${theme.breadcrumbActiveColor} !important;`}
+    active && `color: ${theme.breadcrumbActiveColor} !important;`};
 `;
 
 const theme = {

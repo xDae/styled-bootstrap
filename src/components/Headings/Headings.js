@@ -27,7 +27,7 @@ const Heading = styled.span`
       default:
         return `font-size: ${defaults.fontSizeH1};`;
     }
-  }}
+  }};
 `;
 
 Heading.h1 = Heading.withComponent('h1').extend`

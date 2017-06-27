@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import { parseToRgb, rgba, stripUnit } from 'polished';
 
 import {
   cardSpacerY,
@@ -28,9 +27,9 @@ const Card = styled.div`
 
   ${props => `
     border: ${props.theme.cardBorderWidth} solid ${props.theme.cardBorderColor};
-  `}
+  `};
 
-  ${borderRadius(props => props.theme.cardBorderRadius)}
+  ${borderRadius(props => props.theme.cardBorderRadius)};
 `;
 
 const CardBlock = styled.div`

@@ -26,7 +26,7 @@ import {
 const Badge = styled.span`
   display: inline-block;
   ${props =>
-    `padding: ${props.theme.badgePaddingY} ${props.theme.badgePaddingX};`}
+    `padding: ${props.theme.badgePaddingY} ${props.theme.badgePaddingX};`};
   font-size: ${props => props.theme.badgeFontSize};
   font-weight: ${props => props.badgeFontWeight};
   line-height: 1;
@@ -58,15 +58,13 @@ const Badge = styled.span`
       default:
         return badgeVariant(theme.badgeDefaultBg);
     }
-  }}
-
-  ${({ theme, pill }) =>
-    pill &&
-    css`
+  }} ${({ theme, pill }) =>
+      pill &&
+      css`
     padding-right: ${theme.badgePillPaddingX};
     padding-left: ${theme.badgePillPaddingX};
     ${borderRadius(theme.badgePillBorderRadius)};
-  `}
+  `};
 `;
 
 Badge.propTypes = {

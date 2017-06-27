@@ -75,14 +75,14 @@ const Button = styled.button`
       props.theme.fontSizeBase,
       props.theme.inputBtnLineHeight,
       props.theme.btnBorderRadius
-    )}
+    )};
 
-  ${props => transition(props.theme.btnTransition)}
+  ${props => transition(props.theme.btnTransition)};
 
   // Share hover and focus styles
   ${hoverFocus(css`
     text-decoration: none;
-  `)}
+  `)};
 
   &:focus,
   &.focus {
@@ -138,7 +138,7 @@ const Button = styled.button`
       default:
         return null;
     }
-  }}
+  }};
 
   ${props =>
     props.color === 'link' &&
@@ -178,7 +178,7 @@ const Button = styled.button`
         text-decoration: none;
       `)}
     }
-  `}
+  `};
 
   ${({ theme, outline, color }) => {
     const colors = {
@@ -191,7 +191,7 @@ const Button = styled.button`
     };
 
     if (outline) return buttonOutlineVariant(colors[color]);
-  }}
+  }};
 
   ${props =>
     props.size === 'large' &&
@@ -201,7 +201,7 @@ const Button = styled.button`
       props.theme.fontSizeLg,
       props.theme.inputBtnLineHeightLg,
       props.theme.btnBorderRadiusLg
-    )}
+    )};
 
   ${props =>
     props.size === 'small' &&
@@ -211,21 +211,21 @@ const Button = styled.button`
       props.theme.fontSizeSm,
       props.theme.inputBtnLineHeightSm,
       props.theme.btnBorderRadiusSm
-    )}
+    )};
 
   ${props =>
     props.active &&
     css`
     background-image: none;
     // ${boxShadow(props.theme.btnFocusBoxShadow)}
-  `}
+  `};
 
   ${props =>
     props.block &&
     css`
     display: block;
     width: 100%;
-  `}
+  `};
 `;
 
 Button.Link = Button.withComponent('a');

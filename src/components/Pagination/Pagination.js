@@ -47,8 +47,7 @@ const Pagination = styled.ul`
   // 1-2: Disable browser default list styles
   padding-left: 0; // 1
   list-style: none; // 2
-  ${borderRadius()}
-
+  ${borderRadius()};
 
   ${props =>
     props.size === 'large' &&
@@ -58,7 +57,7 @@ const Pagination = styled.ul`
       fontSizeLg,
       lineHeightLg,
       borderRadiusLg
-    )}
+    )};
 
   ${props =>
     props.size === 'small' &&
@@ -68,7 +67,7 @@ const Pagination = styled.ul`
       fontSizeSm,
       lineHeightSm,
       borderRadiusSm
-    )}
+    )};
 `;
 
 Pagination.Link = styled.a`
@@ -76,33 +75,33 @@ Pagination.Link = styled.a`
   display: block;
   ${props =>
     `padding: ${props.theme.paginationPaddingY} ${props.theme
-      .paginationPaddingX};`}
+      .paginationPaddingX};`};
   margin-left: -1px;
   line-height: ${props => props.theme.paginationLineHeight};
   color: ${props => props.theme.paginationColor};
   background-color: ${props => props.theme.paginationBg};
   ${props =>
     `border: ${props.theme.paginationBorderWidth} solid ${props.theme
-      .paginationBorderColor};`}
+      .paginationBorderColor};`};
 
   ${hoverFocus(css`
     color: ${props => props.theme.paginationHoverColor};
     text-decoration: none;
     background-color: ${props => props.theme.paginationHoverBg};
     border-color: ${props => props.theme.paginationHoverBorderColor};
-  `)}
+  `)};
 `;
 
 Pagination.Item = styled.li`
   &:first-child {
     ${Pagination.Link} {
       margin-left: 0;
-      ${borderLeftRadius('0.25rem')}
+      ${borderLeftRadius('0.25rem')};
     }
   }
   &:last-child {
     ${Pagination.Link} {
-      ${borderRightRadius('0.25rem')}
+      ${borderRightRadius('0.25rem')};
     }
   }
 
@@ -115,7 +114,7 @@ Pagination.Item = styled.li`
       background-color: ${props.theme.paginationActiveBg};
       border-color: ${props.theme.paginationActiveBorderColor};
     }
-  `}
+  `};
 
   ${props =>
     props.disabled &&
@@ -126,7 +125,7 @@ Pagination.Item = styled.li`
       background-color: ${props.theme.paginationDisabledBg};
       border-color: ${props.theme.paginationDisabledBorderColor};
     }
-  `}
+  `};
 `;
 
 const theme = {
