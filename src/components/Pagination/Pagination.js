@@ -84,6 +84,8 @@ Pagination.Link = styled.a`
     `border: ${props.theme.paginationBorderWidth} solid ${props.theme
       .paginationBorderColor};`};
 
+  // TODO: i dont know why its working
+  // ${hoverFocus};
   ${hoverFocus(css`
     color: ${props => props.theme.paginationHoverColor};
     text-decoration: none;

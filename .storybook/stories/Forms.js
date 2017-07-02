@@ -48,4 +48,36 @@ export default storiesOf('Forms', module)
       <label htmlFor="exampleTextarea">Example textarea</label>
       <Textarea id="exampleTextarea" rows="3"></Textarea>
     </div>
+  ))
+  .add('Full form', () => (
+    <form style={{ width: 625 }}>
+      <div className="form-group">
+        <label htmlFor="exampleFormControlInput1">Email address</label>
+        <Input type="email" placeholder="name@example.com" id="exampleFormControlInput1"/>
+      </div>
+      <div className="form-group">
+        <label htmlFor="exampleFormControlSelect1">Example select</label>
+        <Select id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </Select>
+      </div>
+      <div className="form-group">
+        <label htmlFor="exampleFormControlSelect2">Example multiple select</label>
+        <Select multiple id="exampleFormControlSelect2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </Select>
+      </div>
+      <div className="form-group">
+        <label htmlFor="exampleFormControlTextarea1">Example textarea</label>
+        <Textarea id="exampleFormControlTextarea1" rows="3"></Textarea>
+      </div>
+    </form>
   ));
