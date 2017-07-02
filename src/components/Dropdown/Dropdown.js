@@ -1,15 +1,37 @@
 import styled, { css } from 'styled-components';
-import { darken } from 'polished';
+// import { darken } from 'polished';
 
 import Heading from '../Headings/Headings';
 
 import { borderRadius } from '../../utils/border-radius';
 import { hoverFocus } from '../../utils/hover';
 import { boxShadow } from '../../utils/box-shadow';
-import { sassRgba } from '../../utils/sassRgba';
+// import { sassRgba } from '../../utils/sassRgba';
 import { navDivider } from '../../utils/nav-divider';
 
-import * as defaults from '../../defaultTheme';
+// import * as defaults from '../../defaultTheme';
+
+import {
+  dropdownMinWidth,
+  dropdownPaddingY,
+  dropdownMarginTop,
+  dropdownBg,
+  dropdownBorderColor,
+  dropdownBorderWidth,
+  dropdownDividerBg,
+  dropdownBoxShadow,
+  dropdownLinkColor,
+  dropdownLinkHoverColor,
+  dropdownLinkHoverBg,
+  dropdownLinkActiveColor,
+  dropdownLinkActiveBg,
+  dropdownLinkDisabledColor,
+  dropdownItemPaddingY,
+  dropdownItemPaddingX,
+  dropdownHeaderColor,
+  zindexDropdown,
+  fontSizeSm
+} from '../../defaultTheme';
 
 const Dropdown = styled.div`
   position: relative;
@@ -33,7 +55,7 @@ Dropdown.Menu = styled.div`
   min-width: ${props => props.theme.dropdownMinWidth};
   padding: ${props => props.theme.dropdownPaddingY} 0;
   margin: ${props => props.theme.dropdownMarginTop} 0 0;
-  font-size: ${defaults.fontSizeBase};
+  font-size: ${props => props.theme.fontSizeBase};
   color: ${props => props.theme.bodyColor};
   text-align: left;
   list-style: none;
@@ -41,17 +63,17 @@ Dropdown.Menu = styled.div`
   background-clip: padding-box;
   ${({ theme }) =>
     `border: ${theme.dropdownBorderWidth} solid ${theme.dropdownBorderColor};`};
-  ${borderRadius(defaults.borderRadius)};
-  ${boxShadow(defaults.dropdownBoxShadow)};
+  ${borderRadius(props => props.theme.borderRadius)};
+  ${boxShadow(props => props.theme.dropdownBoxShadow)};
 `;
 
 Dropdown.Item = styled.a`
   display: block;
   width: 100%;
   ${({ theme }) =>
-    `padding: ${theme.dropdownItemPaddingY} ${theme.dropdownItemPaddingX};`}
+    `padding: ${theme.dropdownItemPaddingY} ${theme.dropdownItemPaddingX};`};
   clear: both;
-  font-weight: ${defaults.fontWeightNormal};
+  font-weight: ${props => props.theme.fontWeightNormal};
   color: ${props => props.theme.dropdownLinkColor};
   text-align: inherit;
   white-space: nowrap;
@@ -78,7 +100,7 @@ Dropdown.Item = styled.a`
       color: ${props.theme.dropdownLinkDisabledColor}!important;
       background-color: transparent!important;
 
-    ${defaults.enableGradients &&
+    ${props.theme.enableGradients &&
       `
       background-image: none;
     `}
@@ -86,7 +108,7 @@ Dropdown.Item = styled.a`
 `;
 
 Dropdown.Divider = styled.div`
-  ${props => navDivider(props.theme.dropdownDividerBg)}
+  ${props => navDivider(props.theme.dropdownDividerBg)};
 `;
 
 Dropdown.Header = styled(Heading)`
@@ -94,34 +116,31 @@ Dropdown.Header = styled(Heading)`
   ${({ theme }) =>
     `padding: ${theme.dropdownPaddingY} ${theme.dropdownItemPaddingX};`}
   margin-bottom: 0;
-  font-size: ${defaults.fontSizeSm};
+  font-size: ${props => props.theme.fontSizeSm};
   color: ${({ theme }) => theme.dropdownHeaderColor};
   white-space: nowrap;
 `;
 
 const theme = {
-  dropdownMinWidth: '10rem',
-  dropdownPaddingY: '.5rem',
-  dropdownMarginTop: '.125rem',
-  dropdownBg: defaults.white,
-  dropdownBorderColor: `${sassRgba(defaults.black, 0.15)}`,
-  dropdownBorderWidth: defaults.borderWidth,
-  dropdownDividerBg: defaults.grayLighter,
-  dropdownBoxShadow: `0 .5rem 1rem ${sassRgba(defaults.black, 0.175)}`,
-
-  dropdownLinkColor: defaults.grayDark,
-  dropdownLinkHoverColor: darken(0.05, defaults.grayDark),
-  dropdownLinkHoverBg: defaults.grayLightest,
-
-  dropdownLinkActiveColor: defaults.componentActiveColor,
-  dropdownLinkActiveBg: defaults.componentActiveBg,
-
-  dropdownLinkDisabledColor: defaults.grayLight,
-
-  dropdownItemPaddingY: '.25rem',
-  dropdownItemPaddingX: '1.5rem',
-
-  dropdownHeaderColor: defaults.grayLight
+  dropdownMinWidth,
+  dropdownPaddingY,
+  dropdownMarginTop,
+  dropdownBg,
+  dropdownBorderColor,
+  dropdownBorderWidth,
+  dropdownDividerBg,
+  dropdownBoxShadow,
+  dropdownLinkColor,
+  dropdownLinkHoverColor,
+  dropdownLinkHoverBg,
+  dropdownLinkActiveColor,
+  dropdownLinkActiveBg,
+  dropdownLinkDisabledColor,
+  dropdownItemPaddingY,
+  dropdownItemPaddingX,
+  dropdownHeaderColor,
+  zindexDropdown,
+  fontSizeSm
 };
 
 Dropdown.defaultProps = { theme };

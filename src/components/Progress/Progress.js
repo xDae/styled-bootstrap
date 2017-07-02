@@ -1,6 +1,6 @@
 // @flow
 
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import PropTypes from 'prop-types';
 
 import { borderRadius } from '../../utils/border-radius';
@@ -29,6 +29,11 @@ const Progress = styled.div`
   // @include box-shadow($progress-box-shadow);
 `;
 
+const progressBarStripes = keyframes`
+  from { background-position: ${progressHeight} 0; }
+  to { background-position: 0 0; }
+`;
+
 Progress.Bar = styled.div`
   height: ${props => props.theme.progressHeight};
   width: ${props => props.width};
@@ -43,6 +48,13 @@ Progress.Bar = styled.div`
       ${gradientStriped()}
       background-size: ${props.theme.progressHeight} ${props.theme
       .progressHeight};
+  `};
+
+  ${props =>
+    props.animated &&
+    css`
+      animation: ${progressBarStripes} ${props.theme
+      .progressBarAnimationTiming}};
   `};
 `;
 

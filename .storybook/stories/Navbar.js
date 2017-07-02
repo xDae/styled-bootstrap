@@ -2,32 +2,57 @@ import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react';
 import styled, { injectGlobal } from 'styled-components';
 
-import Navbar from '../../src/components/Navbar';
+import Navbar, { NavbarToggler } from '../../src/components/Navbar';
 
 export default storiesOf('Navbar', module)
   .add('Navbar', () =>
-    <Navbar>
-      <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <a className="navbar-brand" href="#">Navbar</a>
+    <Navbar style={{ backgroundColor: '#f8f9fa', width: '100%' }}>
+      <Navbar.Brand href="#">Navbar</Navbar.Brand>
+
+      {/*<NavbarToggler />*/}
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Link</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form className="form-inline my-2 my-lg-0">
-          <input className="form-control mr-sm-2" type="text" placeholder="Search" />
-          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <Navbar.Nav>
+          <Navbar.NavItem active>
+            <Navbar.NavLink active href="#">Home</Navbar.NavLink>
+          </Navbar.NavItem>
+          <Navbar.NavItem>
+            <Navbar.NavLink href="#">Link</Navbar.NavLink>
+          </Navbar.NavItem>
+          <Navbar.NavItem>
+            <Navbar.NavLink disabled href="#">Disabled</Navbar.NavLink>
+          </Navbar.NavItem>
+        </Navbar.Nav>
       </div>
     </Navbar>
-  );
+  )
+  .add('Navbar Dark', () =>
+    <Navbar color="dark" style={{ backgroundColor: '#343a40', width: '100%' }}>
+      {/*<NavbarToggler color="dark" />*/}
+
+      <Navbar.Brand color="dark" href="#">Navbar</Navbar.Brand>
+
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <Navbar.Nav color="dark">
+          <Navbar.NavItem>
+            <Navbar.NavLink active color="dark" href="#">Home</Navbar.NavLink>
+          </Navbar.NavItem>
+          <Navbar.NavItem>
+            <Navbar.NavLink color="dark" href="#">Link</Navbar.NavLink>
+          </Navbar.NavItem>
+          <Navbar.NavItem>
+            <Navbar.NavLink color="dark" disabled href="#">Disabled</Navbar.NavLink>
+          </Navbar.NavItem>
+        </Navbar.Nav>
+      </div>
+    </Navbar>
+  )
+  .add('NavbarToggler', () => (
+    <div>
+      <NavbarToggler />
+
+      <div style={{ display: 'inline-block', backgroundColor: '#292b2c', padding: 5, marginLeft: 10 }}>
+        <NavbarToggler color="dark" />
+      </div>
+    </div>
+  ));

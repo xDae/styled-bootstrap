@@ -32,6 +32,13 @@ export default storiesOf('Progress', module)
       </Progress>
     </div>
   ))
+  .add('Animated', () => (
+    <div style={{ width: '80%' }}>
+      <Progress>
+        <Progress.Bar width="65%" striped animated />
+      </Progress>
+    </div>
+  ))
   .add('Multiple bars ', () => (
     <div style={{ width: '80%' }}>
       <Progress>
