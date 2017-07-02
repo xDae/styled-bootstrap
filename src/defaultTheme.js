@@ -410,7 +410,7 @@ export const dropdownBoxShadow = `0 .5rem 1rem ${sassRgba(black, 0.175)}`;
 
 export const dropdownLinkColor = gray900;
 export const dropdownLinkHoverColor = darken(0.05, gray900);
-export const dropdownLinkHoverBg = gray600;
+export const dropdownLinkHoverBg = gray100;
 
 export const dropdownLinkActiveColor = componentActiveColor;
 export const dropdownLinkActiveBg = componentActiveBg;

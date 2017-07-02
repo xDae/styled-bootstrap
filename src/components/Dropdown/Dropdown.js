@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 import Heading from '../Headings/Headings';
 
-import { borderRadius } from '../../utils/border-radius';
+import * as utils from '../../utils/border-radius';
 import { hoverFocus } from '../../utils/hover';
 import { boxShadow } from '../../utils/box-shadow';
 // import { sassRgba } from '../../utils/sassRgba';
@@ -30,7 +30,9 @@ import {
   dropdownItemPaddingX,
   dropdownHeaderColor,
   zindexDropdown,
-  fontSizeSm
+  fontSizeSm,
+  fontSizeBase,
+  borderRadius
 } from '../../defaultTheme';
 
 const Dropdown = styled.div`
@@ -63,7 +65,7 @@ Dropdown.Menu = styled.div`
   background-clip: padding-box;
   ${({ theme }) =>
     `border: ${theme.dropdownBorderWidth} solid ${theme.dropdownBorderColor};`};
-  ${borderRadius(props => props.theme.borderRadius)};
+  ${utils.borderRadius(props => props.theme.borderRadius)};
   ${boxShadow(props => props.theme.dropdownBoxShadow)};
 `;
 
@@ -89,9 +91,9 @@ Dropdown.Item = styled.a`
   ${props =>
     props.active &&
     css`
-    color: ${props.theme.dropdownLinkActiveColor};
+    color: ${props.theme.dropdownLinkActiveColor}!important;
     text-decoration: none;
-    background-color: ${props.theme.dropdownLinkActiveBg};
+    background-color: ${props.theme.dropdownLinkActiveBg}!important;
   `};
 
   ${props =>
@@ -140,7 +142,9 @@ const theme = {
   dropdownItemPaddingX,
   dropdownHeaderColor,
   zindexDropdown,
-  fontSizeSm
+  fontSizeSm,
+  fontSizeBase,
+  borderRadius
 };
 
 Dropdown.defaultProps = { theme };
