@@ -500,7 +500,7 @@ export const cardBorderColor = sassRgba(black, 0.125);
 export const cardInnerBorderRadius = `calc(${stripUnit(
   () => cardBorderRadius
 )}px - ${stripUnit(() => cardBorderWidth)})}px)`;
-export const cardCapBg = gray600;
+export const cardCapBg = sassRgba(black, 0.03);
 export const cardBg = white;
 
 export const cardInverseLinkHoverColor = white;

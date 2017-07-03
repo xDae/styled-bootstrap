@@ -32,36 +32,77 @@ const Card = styled.div`
   ${borderRadius(props => props.theme.cardBorderRadius)};
 `;
 
-const CardBlock = styled.div`
+const CardBody = styled.div`
   flex: 1 1 auto;
   padding: ${props => props.theme.cardSpacerX};
 `;
 
-CardBlock.defaultProps = {
+CardBody.defaultProps = {
   theme: {
     cardSpacerX: '1.25rem'
   }
 };
 
-Card.Block = CardBlock;
+Card.Body = CardBody;
 
-Card.defaultProps = {
-  theme: {
-    cardSpacerY,
-    cardSpacerX,
-    cardBorderWidth,
-    cardBorderRadius,
-    cardBorderColor,
-    cardInnerBorderRadius,
-    cardCapBg,
-    cardBg,
-    cardInverseLinkHoverColor,
-    cardImgOverlayPadding,
-    cardDeckMargin,
-    cardColumnsCount,
-    cardColumnsGap,
-    cardColumnsMargin
+const CardHeader = styled.div`
+  ${props => `padding: ${props.theme.cardSpacerY} ${props.theme.cardSpacerX}`};
+  margin-bottom: 0; // Removes the default margin-bottom of <hN>
+  background-color: ${props => props.theme.cardCapBg};
+  ${props =>
+    `border-bottom: ${props.theme.cardBorderWidth} solid ${props.theme
+      .cardBorderColor}}`};
+
+  &:first-child {
+    ${borderRadius(
+      props => props.theme.cardInnerBorderRadius,
+      props => props.theme.cardInnerBorderRadius,
+      0,
+      0
+    )};
   }
+`;
+
+const CardFooter = styled.div`
+  ${props => `padding: ${props.theme.cardSpacerY} ${props.theme.cardSpacerX}`};
+  background-color: ${props => props.theme.cardCapBg};
+  ${props =>
+    `border-top: ${props.theme.cardBorderWidth} solid ${props.theme
+      .cardBorderColor}}`};
+
+  &:last-child {
+    @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
+    ${borderRadius(
+      0,
+      0,
+      props => props.theme.cardInnerBorderRadius,
+      props => props.theme.cardInnerBorderRadius
+    )};
+  }
+`;
+
+const theme = {
+  cardSpacerY,
+  cardSpacerX,
+  cardBorderWidth,
+  cardBorderRadius,
+  cardBorderColor,
+  cardInnerBorderRadius,
+  cardCapBg,
+  cardBg,
+  cardInverseLinkHoverColor,
+  cardImgOverlayPadding,
+  cardDeckMargin,
+  cardColumnsCount,
+  cardColumnsGap,
+  cardColumnsMargin
 };
+
+Card.Header = CardHeader;
+Card.Footer = CardFooter;
+
+Card.Footer.defaultProps = { theme };
+Card.Header.defaultProps = { theme };
+Card.defaultProps = { theme };
 
 export default Card;
