@@ -66,7 +66,7 @@
     "jest": "20.0.4",
     "jest-styled-components": "3.1.5",
     "lint-staged": "4.0.0",
-    "polished": "1.2.1",
+    "polished": "1.3.0",
     "prettier": "1.5.2",
     "react": "15.6.1",
     "react-addons-test-utils": "15.6.0",
