@@ -38,7 +38,7 @@
     "@storybook/addon-links": "3.1.6",
     "@storybook/addon-options": "3.1.6",
     "@storybook/addons": "3.1.6",
-    "@storybook/react": "3.1.8",
+    "@storybook/react": "3.1.9",
     "aria-query": "0.7.0",
     "babel-cli": "6.24.1",
     "babel-core": "6.25.0",
