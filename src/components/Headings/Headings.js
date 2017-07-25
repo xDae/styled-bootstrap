@@ -35,7 +35,7 @@ Heading.h1 = Heading.withComponent('h1').extend`
 `;
 
 Heading.h2 = Heading.withComponent('h2').extend`
-  ${props => !props.size && `${`font-size: ${defaults.fontSizeH3};`}`}
+  ${props => !props.size && `${`font-size: ${defaults.fontSizeH2};`}`}
 `;
 
 Heading.h3 = Heading.withComponent('h3').extend`
