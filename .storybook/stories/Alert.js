@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react';
 import styled, { injectGlobal } from 'styled-components';
 
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+import { Transition, TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import Alert from '../../src/components/Alert';
 import CloseIcon from '../../src/components/CloseIcon/CloseIcon';
@@ -17,11 +17,11 @@ injectGlobal`
     transition: opacity .15s linear;
   }
 
-  .example-leave {
+  .example-exit {
     opacity: 1;
   }
 
-  .example-leave.example-leave-active {
+  .example-exit.example-exit-active {
     opacity: 0.01;
     transition: opacity .15s linear;
   }
@@ -45,40 +45,63 @@ class DismissableAlert extends Component {
 
   render() {
     return (
-      <CSSTransitionGroup
-        transitionName="example"
-        transitionEnterTimeout={300}
-        transitionLeaveTimeout={500}
-      >
+      <Transition>
+        <TransitionGroup>
         {!this.state.success &&
-          <Alert type="success">
-            <CloseIcon onClick={() => this.closeAlert('success')} />
-            <strong>Well done!</strong> You successfully read{' '}
-            <a href="#">this important alert message</a>.
-          </Alert>}
+          <CSSTransition
+            key={1}
+            classNames="example"
+            timeout={{ enter: 500, exit: 300 }}
+          >
+            <Alert type="success">
+              <CloseIcon onClick={() => this.closeAlert('success')} />
+              <strong>Well done!</strong> You successfully read{' '}
+              <a href="#">this important alert message</a>.
+            </Alert>
+          </CSSTransition>}
 
         {!this.state.info &&
-          <Alert type="info">
-            <CloseIcon onClick={() => this.closeAlert('info')} />
-            <strong>Heads up!</strong> This{' '}
-            <a href="#">alert needs your attention</a>, but it's not super
-            important.
-          </Alert>}
+          <CSSTransition
+            key={2}
+            classNames="example"
+            timeout={{ enter: 500, exit: 300 }}
+          >
+            <Alert type="info">
+              <CloseIcon onClick={() => this.closeAlert('info')} />
+              <strong>Heads up!</strong> This{' '}
+              <a href="#">alert needs your attention</a>, but it's not super
+              important.
+            </Alert>
+          </CSSTransition>}
 
         {!this.state.warning &&
-          <Alert type="warning">
-            <CloseIcon onClick={() => this.closeAlert('warning')} />
-            <strong>Warning!</strong> Better check yourself, you're{' '}
-            <a href="#">not looking too good</a>.
-          </Alert>}
+          <CSSTransition
+            key={3}
+            classNames="example"
+            timeout={{ enter: 500, exit: 300 }}
+          >
+            <Alert type="warning">
+              <CloseIcon onClick={() => this.closeAlert('warning')} />
+              <strong>Warning!</strong> Better check yourself, you're{' '}
+              <a href="#">not looking too good</a>.
+            </Alert>
+          </CSSTransition>}
 
         {!this.state.danger &&
-          <Alert type="danger">
-            <CloseIcon onClick={() => this.closeAlert('danger')} />
-            <strong>Oh snap!</strong> <a href="#">Change a few things up</a> and
-            try submitting again.
-          </Alert>}
-      </CSSTransitionGroup>
+          <CSSTransition
+            key={4}
+            classNames="example"
+            timeout={{ enter: 500, exit: 300 }}
+          >
+            <Alert type="danger">
+              <CloseIcon onClick={() => this.closeAlert('danger')} />
+              <strong>Oh snap!</strong> <a href="#">Change a few things up</a> and
+              try submitting again.
+            </Alert>
+          </CSSTransition>}
+
+        </TransitionGroup>
+      </Transition>
     );
   }
 }
