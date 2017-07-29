@@ -12,35 +12,35 @@ const GreenProgressBar = styled(Progress.Bar)`
 
 export default storiesOf('Progress', module)
   .add('Progress', () => (
-    <div style={{ width: '80%' }}>
+    <div style={{ width: 500 }}>
       <Progress>
         <Progress.Bar width="30%" />
       </Progress>
     </div>
   ))
   .add('Progress with label', () => (
-    <div style={{ width: '80%' }}>
+    <div style={{ width: 500 }}>
       <Progress>
         <Progress.Bar width="60%">60%</Progress.Bar>
       </Progress>
     </div>
   ))
   .add('Striped', () => (
-    <div style={{ width: '80%' }}>
+    <div style={{ width: 500 }}>
       <Progress>
         <Progress.Bar width="45%" striped />
       </Progress>
     </div>
   ))
   .add('Animated', () => (
-    <div style={{ width: '80%' }}>
+    <div style={{ width: 500 }}>
       <Progress>
         <Progress.Bar width="65%" striped animated />
       </Progress>
     </div>
   ))
   .add('Multiple bars ', () => (
-    <div style={{ width: '80%' }}>
+    <div style={{ width: 500 }}>
       <Progress>
         <Progress.Bar width="25%"/>
         <GreenProgressBar width="20%" />

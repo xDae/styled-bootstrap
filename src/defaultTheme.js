@@ -48,7 +48,7 @@ export const colors = {
   cyan,
   white,
   gray: gray600,
-  gray900: gray800
+  grayDark: gray800
 };
 
 export const themeColors = {

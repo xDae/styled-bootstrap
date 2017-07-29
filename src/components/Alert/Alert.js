@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 import { borderRadius } from '../../utils/border-radius';
 import { alertVariant } from '../../utils/alerts';
+import { themeColorLevel } from '../../utils/color-functions';
 
 import { StyledCloseIcon } from '../CloseIcon/CloseIcon';
 
@@ -26,7 +27,8 @@ import {
   alertWarningBorderColor,
   alertDangerBg,
   alertDangerText,
-  alertDangerBorderColor
+  alertDangerBorderColor,
+  themeColors
 } from '../../defaultTheme';
 
 const Alert = styled.div`
@@ -41,36 +43,12 @@ const Alert = styled.div`
 
   ${props => borderRadius(props.theme.alertBorderRadius)};
 
-  ${({ theme, type }) => {
-    switch (type) {
-      case 'success':
-        return alertVariant(
-          theme.alertSuccessBg,
-          theme.alertSuccessBorderColor,
-          theme.alertSuccessText
-        );
-      case 'info':
-        return alertVariant(
-          theme.alertInfoBg,
-          theme.alertInfoBorderColor,
-          theme.alertInfoText
-        );
-      case 'warning':
-        return alertVariant(
-          theme.alertWarningBg,
-          theme.alertWarningBorderColor,
-          theme.alertWarningText
-        );
-      case 'danger':
-        return alertVariant(
-          theme.alertDangerBg,
-          theme.alertDangerBorderColor,
-          theme.alertDangerText
-        );
-      default:
-        return null;
-    }
-  }};
+  ${({ type }) =>
+    alertVariant(
+      themeColorLevel(type, -10),
+      themeColorLevel(type, -9),
+      themeColorLevel(type, 6)
+    )}};
 
   ${StyledCloseIcon} {
     position: relative;
