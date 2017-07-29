@@ -20,7 +20,8 @@ import {
   badgePaddingY,
   badgePaddingX,
   badgePillPaddingX,
-  badgePillBorderRadius
+  badgePillBorderRadius,
+  themeColors
 } from '../../defaultTheme';
 
 const Badge = styled.span`
@@ -28,7 +29,7 @@ const Badge = styled.span`
   ${props =>
     `padding: ${props.theme.badgePaddingY} ${props.theme.badgePaddingX};`};
   font-size: ${props => props.theme.badgeFontSize};
-  font-weight: ${props => props.badgeFontWeight};
+  font-weight: ${props => props.theme.badgeFontWeight};
   line-height: 1;
   color: ${props => props.theme.badgeColor};
   text-align: center;
@@ -41,46 +42,35 @@ const Badge = styled.span`
     display: none;
   }
 
-  ${({ theme, color }) => {
-    switch (color) {
-      case 'default':
-        return badgeVariant(theme.badgeDefaultBg);
-      case 'primary':
-        return badgeVariant(theme.badgePrimaryBg);
-      case 'success':
-        return badgeVariant(theme.badgeSuccessBg);
-      case 'info':
-        return badgeVariant(theme.badgeInfoBg);
-      case 'warning':
-        return badgeVariant(theme.badgeWarningBg);
-      case 'danger':
-        return badgeVariant(theme.badgeDangerBg);
-      default:
-        return badgeVariant(theme.badgeDefaultBg);
-    }
-  }} ${({ theme, pill }) =>
-      pill &&
-      css`
-    padding-right: ${theme.badgePillPaddingX};
-    padding-left: ${theme.badgePillPaddingX};
-    ${borderRadius(theme.badgePillBorderRadius)};
-  `};
+  ${({ color }) => badgeVariant(themeColors[color])};
+
+  ${({ theme, pill }) =>
+    pill &&
+    css`
+      padding-right: ${theme.badgePillPaddingX};
+      padding-left: ${theme.badgePillPaddingX};
+      ${borderRadius(theme.badgePillBorderRadius)};
+    `};
 `;
+
+Badge.Link = Badge.withComponent('a');
 
 Badge.propTypes = {
   color: PropTypes.oneOf([
-    'default',
     'primary',
+    'secondary',
     'success',
-    'info',
+    'danger',
     'warning',
-    'danger'
+    'info',
+    'light',
+    'dark'
   ]),
   pill: PropTypes.bool
 };
 
 Badge.defaultProps = {
-  color: 'default',
+  color: 'primary',
   pill: false,
   theme: {
     badgeDefaultBg,

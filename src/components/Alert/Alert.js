@@ -27,8 +27,7 @@ import {
   alertWarningBorderColor,
   alertDangerBg,
   alertDangerText,
-  alertDangerBorderColor,
-  themeColors
+  alertDangerBorderColor
 } from '../../defaultTheme';
 
 const Alert = styled.div`

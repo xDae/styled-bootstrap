@@ -1,11 +1,26 @@
 // @flow
 
-import { mix } from 'polished';
+import { mix, parseToRgb } from 'polished';
 import { colors, themeColors } from '../defaultTheme';
 
 const themeColorInterval = 0.08;
 
-// Retreive color Sass maps
+// Color contrast
+export function colorYiq(color: string) {
+  const r = parseToRgb(color).red;
+  const g = parseToRgb(color).green;
+  const b = parseToRgb(color).blue;
+
+  const yiq = (r * 299 + g * 587 + b * 114) / 1000;
+
+  if (yiq >= 150) {
+    return '#111';
+  }
+
+  return '#fff';
+}
+
+// Retreive color
 export function getColor(key: string = 'blue') {
   return colors[key];
 }
@@ -13,10 +28,6 @@ export function getColor(key: string = 'blue') {
 export function themeColor(key: string = 'primary') {
   return themeColors[key];
 }
-
-// export function grayscale(key: string = '100') {
-//   return grays[key];
-// }
 
 // Request a theme color level
 export function themeColorLevel(
