@@ -166,6 +166,10 @@ export const fontSizeH6 = '1rem';
 export const headingsMarginBottom = `${stripUnit(spacer) / 2}rem`;
 export const headingsFontFamily = 'inherit';
 export const headingsFontWeight = 500;
+export const btnBoxShadow = `inset 0 1px 0 rgba(${white},.15), 0 1px 1px ${sassRgba(
+  black,
+  0.075
+)}`;
 export const headingsLineHeight = 1.1;
 export const headingsColor = 'inherit';
 
@@ -317,10 +321,10 @@ export const inputBtnPaddingXlg = '1rem';
 export const inputBtnLineHeightLg = 1.5;
 
 export const btnFontWeight = fontWeightNormal;
-export const btnBoxShadow = `inset 0 1px 0 ${sassRgba(
-  white,
-  0.15
-)}, 0 1px 1px ${sassRgba(black, 0.075)}`;
+// export const btnBoxShadow = `inset 0 1px 0 ${sassRgba(
+//   white,
+//   0.15
+// )}, 0 1px 1px ${sassRgba(black, 0.075)}`;
 export const btnFocusBoxShadow = `0 0 0 2px ${sassRgba(
   themeColors.primary,
   0.25

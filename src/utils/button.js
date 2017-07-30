@@ -1,40 +1,46 @@
+// @flow
+
 import { css } from 'styled-components';
 import { darken } from 'polished';
 
-import { white, black } from '../defaultTheme';
+// import { white, black } from '../defaultTheme';
 
+import { colorYiq } from '../utils/color-functions';
 import { borderRadius } from './border-radius';
 import { boxShadow } from './box-shadow';
 import { hover } from './hover';
+import { sassRgba } from '../utils/sassRgba';
 
-export function buttonVariant(color, background, border) {
-  const activeBackground = darken(0.1, background);
-  const activeBorder = darken(0.12, border);
+import {
+  btnBoxShadow,
+  btnActiveBoxShadow,
+  enableShadows
+} from '../defaultTheme';
 
+export function buttonVariant(
+  background: string,
+  border: string,
+  activeBackground: string = darken(0.075, background),
+  activeBorder: string = darken(0.1, border)
+) {
   return css`
-    color: ${color};
+    color: ${colorYiq(background)};
     background-color: ${background};
     border-color: ${border};
+    ${boxShadow(btnBoxShadow)}
 
-    ${boxShadow(css`
-      inset 0 1px 0 rgba(${white}, 0.15), 0 1px 1px rgba(${black}, 0.075)
-    `)}
-
-    // Hover and focus styles are shared
-    ${hover(css`
-      color: ${color};
+    &:hover {
+      color: ${colorYiq(background)};
       background-color: ${activeBackground};
       border-color: ${activeBorder};
-    `)}
+    }
 
     &:focus,
     &.focus {
       // Avoid using mixin so we can pass custom focus shadow properly
-      // @if $enable-shadows {
-      //   box-shadow: $btn-box-shadow, 0 0 0 2px rgba(${border}, .5);
-      // } @else {
-      //   box-shadow: 0 0 0 2px rgba(${border}, .5);
-      // }
+      ${enableShadows
+        ? `box-shadow: ${btnBoxShadow}, 0 0 0 3px ${sassRgba(border, 0.5)};`
+        : `box-shadow: 0 0 0 3px ${sassRgba(border, 0.5)};`}
     }
 
     // Disabled comes first so active can properly restyle
@@ -47,20 +53,22 @@ export function buttonVariant(color, background, border) {
     &:active,
     &.active,
     .show > &.dropdown-toggle {
-      color: ${color};
       background-color: ${activeBackground};
-      background-image: none; // Remove the gradient for the pressed/active state
+      background-image: none;
       border-color: ${activeBorder};
-      // @include box-shadow($btn-active-box-shadow);
+      ${boxShadow(btnActiveBoxShadow)}
     }
   `;
 }
 
-export function buttonOutlineVariant(color, colorHover = '#fff') {
+export function buttonOutlineVariant(
+  color: string,
+  colorHover: string = '#fff'
+) {
   return css`
     color: ${color};
-    background-image: none;
     background-color: transparent;
+    background-image: none;
     border-color: ${color};
 
     ${hover(css`
@@ -71,7 +79,7 @@ export function buttonOutlineVariant(color, colorHover = '#fff') {
 
     &:focus,
     &.focus {
-      box-shadow: 0 0 0 2px rgba(${color}, .5);
+      box-shadow: 0 0 0 3px ${sassRgba(color, 0.5)};
     }
 
     &.disabled,

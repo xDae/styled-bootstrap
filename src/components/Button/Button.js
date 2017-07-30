@@ -55,7 +55,8 @@ import {
   fontSizeLg,
   fontSizeSm,
   fontWeightNormal,
-  linkColor
+  linkColor,
+  themeColors
 } from '../../defaultTheme';
 
 const Button = styled.button`
@@ -80,9 +81,7 @@ const Button = styled.button`
   ${props => transition(props.theme.btnTransition)};
 
   // Share hover and focus styles
-  ${hoverFocus(css`
-    text-decoration: none;
-  `)};
+  ${hoverFocus('text-decoration: none;')};
 
   &:focus,
   &.focus {
@@ -92,53 +91,13 @@ const Button = styled.button`
 
   &.disabled,
   &:disabled {
-    cursor: ${props => props.theme.cursorDisabled};
     opacity: .65;
-    // @include box-shadow(none);
+    ${boxShadow('none')};
   }
 
-  ${({ theme, color }) => {
-    switch (color) {
-      case 'primary':
-        return buttonVariant(
-          theme.btnPrimaryColor,
-          theme.btnPrimaryBg,
-          theme.btnPrimaryBorderColor
-        );
-      case 'secondary':
-        return buttonVariant(
-          theme.btnSecondaryColor,
-          theme.btnSecondaryBg,
-          theme.btnSecondaryBorderColor
-        );
-      case 'info':
-        return buttonVariant(
-          theme.btnInfoColor,
-          theme.btnInfoBg,
-          theme.btnInfoBorderColor
-        );
-      case 'success':
-        return buttonVariant(
-          theme.btnSuccessColor,
-          theme.btnSuccessBg,
-          theme.btnSuccessBorderColor
-        );
-      case 'warning':
-        return buttonVariant(
-          theme.btnWarningColor,
-          theme.btnWarningBg,
-          theme.btnWarningBorderColor
-        );
-      case 'danger':
-        return buttonVariant(
-          theme.btnDangerColor,
-          theme.btnDangerBg,
-          theme.btnDangerBorderColor
-        );
-      default:
-        return null;
-    }
-  }};
+  ${({ color }) =>
+    themeColors[color] &&
+    buttonVariant(themeColors[color], themeColors[color])};
 
   ${props =>
     props.color === 'link' &&
@@ -152,7 +111,7 @@ const Button = styled.button`
     &.active,
     &:disabled {
       background-color: transparent;
-      /** @include box-shadow(none); */
+      ${boxShadow('none')}
     }
 
     &,
@@ -161,9 +120,7 @@ const Button = styled.button`
       border-color: transparent;
     }
 
-    ${hover(css`
-      border-color: transparent;
-    `)}
+    ${hover('border-color: transparent;')}
 
     ${hoverFocus(css`
       color: ${props.theme.linkHoverColor};
@@ -174,24 +131,12 @@ const Button = styled.button`
     &:disabled {
       color: ${btnLinkDisabledColor};
 
-      ${hoverFocus(css`
-        text-decoration: none;
-      `)}
+      ${hoverFocus('text-decoration: none;')}
     }
   `};
 
-  ${({ theme, outline, color }) => {
-    const colors = {
-      primary: theme.btnPrimaryBg,
-      secondary: theme.btnSecondaryBorder,
-      info: theme.btnInfoBg,
-      success: theme.btnSuccessBg,
-      warning: theme.btnWarningBg,
-      danger: theme.btnDangerBg
-    };
-
-    if (outline) return buttonOutlineVariant(colors[color]);
-  }};
+  ${({ outline, color }) =>
+    outline && buttonOutlineVariant(themeColors[color])};
 
   ${props =>
     props.size === 'large' &&
@@ -217,7 +162,7 @@ const Button = styled.button`
     props.active &&
     css`
     background-image: none;
-    // ${boxShadow(props.theme.btnFocusBoxShadow)}
+    ${boxShadow(props.theme.btnFocusBoxShadow)}
   `};
 
   ${props =>
