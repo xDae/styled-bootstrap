@@ -27,8 +27,20 @@ export default storiesOf('Buttons', module)
       <Button style={margin} color="warning" outline>Warning</Button>
       <Button style={margin} color="danger" outline>Danger</Button>
       <Button style={margin} color="info" outline>Info</Button>
-      <Button style={margin} color="light">Light</Button>
-      <Button style={margin} color="dark">Dark</Button>
+      <Button style={margin} color="light" outline>Light</Button>
+      <Button style={margin} color="dark" outline>Dark</Button>
+    </div>
+  ))
+  .add('Disabled Buttons', () => (
+    <div style={{ padding: 20}}>
+      <Button style={margin} color="primary" disabled>Primary</Button>
+      <Button style={margin} color="secondary" disabled>Secondary</Button>
+      <Button style={margin} color="success" disabled>Success</Button>
+      <Button style={margin} color="warning" disabled>Warning</Button>
+      <Button style={margin} color="danger" disabled>Danger</Button>
+      <Button style={margin} color="info" disabled>Info</Button>
+      <Button style={margin} color="light" disabled>Light</Button>
+      <Button style={margin} color="dark" disabled>Dark</Button>
     </div>
   ))
   .add('Large Buttons', () => (
