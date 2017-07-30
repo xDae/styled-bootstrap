@@ -465,6 +465,30 @@ export const progressBarBg = themeColors.primary;
 export const progressBarAnimationTiming = '1s linear infinite';
 export const progressBarTransition = 'width .6s ease';
 
+// List group
+
+export const listGroupBg = white;
+export const listGroupBorderColor = sassRgba(black, 0.125);
+export const listGroupBorderWidth = borderWidth;
+export const listGroupBorderRadius = borderRadius;
+
+export const listGroupItemPaddingY = '.75rem';
+export const listGroupItemPaddingX = '1.25rem';
+
+export const listGroupHoverBg = gray100;
+export const listGroupActiveColor = componentActiveColor;
+export const listGroupActiveBg = componentActiveBg;
+export const listGroupActiveBordeColor = listGroupActiveBg;
+
+export const listGroupDisabledColor = gray600;
+export const listGroupDisableddBg = listGroupBg;
+
+export const listGroupActionColor = gray700;
+export const listGroupActionHoveColor = listGroupActionColor;
+
+export const listGroupActionActiveColor = bodyColor;
+export const listGroupActionActiveBg = gray200;
+
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
