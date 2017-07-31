@@ -12,28 +12,28 @@ import { sassRgba } from './utils/sassRgba';
 
 // Start with assigning color names to specific hex values.
 
-export const white = '#fff';
-export const gray100 = '#f8f9fa';
-export const gray200 = '#e9ecef';
-export const gray300 = '#dee2e6';
-export const gray400 = '#ced4da';
-export const gray500 = '#adb5bd';
-export const gray600 = '#868e96';
-export const gray700 = '#495057';
-export const gray800 = '#343a40';
-export const gray900 = '#212529';
-export const black = '#000';
+export const white: string = '#fff';
+export const gray100: string = '#f8f9fa';
+export const gray200: string = '#e9ecef';
+export const gray300: string = '#dee2e6';
+export const gray400: string = '#ced4da';
+export const gray500: string = '#adb5bd';
+export const gray600: string = '#868e96';
+export const gray700: string = '#495057';
+export const gray800: string = '#343a40';
+export const gray900: string = '#212529';
+export const black: string = '#000';
 
-export const blue = '#007bff';
-export const indigo = '#6610f2';
-export const purple = '#6f42c1';
-export const pink = '#e83e8c';
-export const red = '#dc3545';
-export const orange = '#fd7e14';
-export const yellow = '#ffc107';
-export const green = '#28a745';
-export const teal = '#20c997';
-export const cyan = '#17a2b8';
+export const blue: string = '#007bff';
+export const indigo: string = '#6610f2';
+export const purple: string = '#6f42c1';
+export const pink: string = '#e83e8c';
+export const red: string = '#dc3545';
+export const orange: string = '#fd7e14';
+export const yellow: string = '#ffc107';
+export const green: string = '#28a745';
+export const teal: string = '#20c997';
+export const cyan: string = '#17a2b8';
 
 export const colors = {
   blue,
@@ -66,13 +66,13 @@ export const themeColors = {
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-export const enableRounded = true;
-export const enableShadows = false;
-export const enableGradients = false;
-export const enableTransitions = true;
-export const enableHoverMediaQuery = false;
-export const enableGridClasses = true;
-export const enablePrintStyles = true;
+export const enableRounded: boolean = true;
+export const enableShadows: boolean = false;
+export const enableGradients: boolean = false;
+export const enableTransitions: boolean = true;
+export const enableHoverMediaQuery: boolean = false;
+export const enableGridClasses: boolean = true;
+export const enablePrintStyles: boolean = true;
 
 // Spacing
 //
@@ -80,14 +80,14 @@ export const enablePrintStyles = true;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-export const spacer = '1rem';
+export const spacer: number = 1;
 export const spacers = {
   s0: 0,
-  s1: `${stripUnit(spacer) * 0.25}rem`,
-  s2: `${stripUnit(spacer) * 0.5}rem`,
+  s1: `${spacer * 0.25}rem`,
+  s2: `${spacer * 0.5}rem`,
   s3: spacer,
-  s4: `${stripUnit(spacer) * 1.5}rem`,
-  s5: `${stripUnit(spacer) * 3}rem`
+  s4: `${spacer * 1.5}rem`,
+  s5: `${spacer * 3}rem`
 };
 
 export const borderWidth = '1px';
@@ -163,7 +163,7 @@ export const fontSizeH4 = '1.5rem';
 export const fontSizeH5 = '1.25rem';
 export const fontSizeH6 = '1rem';
 
-export const headingsMarginBottom = `${stripUnit(spacer) / 2}rem`;
+export const headingsMarginBottom = `${spacer / 2}rem`;
 export const headingsFontFamily = 'inherit';
 export const headingsFontWeight = 500;
 export const btnBoxShadow = `inset 0 1px 0 rgba(${white},.15), 0 1px 1px ${sassRgba(
@@ -201,7 +201,7 @@ export const navPillsLinkActiveBg = componentActiveBg;
 
 // Navbar
 
-export const navbarPaddingY = `${stripUnit(spacer) / 2}rem`;
+export const navbarPaddingY = `${spacer / 2}rem`;
 export const navbarPaddingX = spacer;
 
 export const navbarBrandFontSize = fontSizeLg;
@@ -210,10 +210,10 @@ export const navLinkHeight = `${stripUnit(navbarBrandFontSize) *
   lineHeightBase}rem`;
 
 export const navbarBrandHeight = `${stripUnit(fontSizeBase) * lineHeightBase +
-  stripUnit(navLinkPaddingY) * 2} rem`;
+  navLinkPaddingY * 2}rem`;
 
 export const navbarBrandPaddingY = `${(stripUnit(navbarBrandHeight) -
-  stripUnit(navLinkHeight)) /
+  navLinkHeight) /
   2}rem`;
 
 export const navbarTogglerPaddingY = '.25rem';
@@ -484,7 +484,7 @@ export const listGroupDisabledColor = gray600;
 export const listGroupDisableddBg = listGroupBg;
 
 export const listGroupActionColor = gray700;
-export const listGroupActionHoveColor = listGroupActionColor;
+export const listGroupActionHoverColor = listGroupActionColor;
 
 export const listGroupActionActiveColor = bodyColor;
 export const listGroupActionActiveBg = gray200;
@@ -526,8 +526,8 @@ export const cardBorderWidth = '1px';
 export const cardBorderRadius = borderRadius;
 export const cardBorderColor = sassRgba(black, 0.125);
 export const cardInnerBorderRadius = `calc(${stripUnit(
-  () => cardBorderRadius
-)}px - ${stripUnit(() => cardBorderWidth)})}px)`;
+  cardBorderRadius
+)}px - ${stripUnit(cardBorderWidth)})}px)`;
 export const cardCapBg = sassRgba(black, 0.03);
 export const cardBg = white;
 

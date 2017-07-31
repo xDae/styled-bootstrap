@@ -1,6 +1,6 @@
 // @flow
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { borderRadius } from 'polished';
 
 import { hoverFocus } from '../../utils/hover';
@@ -19,7 +19,7 @@ import {
   listGroupDisabledColor,
   listGroupDisableddBg,
   listGroupActionColor,
-  listGroupActionHoveColor,
+  listGroupActionHoverColor,
   listGroupActionActiveColor,
   listGroupActionActiveBg
 } from '../../defaultTheme';
@@ -48,18 +48,19 @@ const ListGroupItem = styled.li`
 
   ${hoverFocus('text-decoration: none;')}
 
-  &.disabled,
-  &:disabled {
-    color: ${props => props.theme.listGroupDisabledColor};
-    background-color: ${props => props.theme.listGroupDisabledBg};
-  }
+  ${props =>
+    props.disabled &&
+    css`
+    color: ${props.theme.listGroupDisabledColor};
+    background-color: ${props.theme.listGroupDisabledBg};
+  `}
 
-  &.active {
+  ${props => props.active && css`
     z-index: 2;
-    color: ${props => props.theme.listGroupActiveColor};
-    background-color: ${props => props.theme.listGroupActiveBg};
-    border-color: ${props => props.theme.listGroupActiveBorderColor};
-  }
+    color: ${props.theme.listGroupActiveColor};
+    background-color: ${props.theme.listGroupActiveBg};
+    border-color: ${props.theme.listGroupActiveBorderColor};
+  `}
 `;
 
 ListGroupItem.defaultProps = {
@@ -77,7 +78,7 @@ ListGroupItem.defaultProps = {
     listGroupDisabledColor,
     listGroupDisableddBg,
     listGroupActionColor,
-    listGroupActionHoveColor,
+    listGroupActionHoverColor,
     listGroupActionActiveColor,
     listGroupActionActiveBg
   }
