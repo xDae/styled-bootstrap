@@ -1,0 +1,28 @@
+{
+  "name": "@styled-bootstrap/button",
+  "version": "0.1.0",
+  "description": "styled Button Component",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "node ../../scripts/prepublish.js"
+  },
+  "keywords": [
+    "button",
+    "component",
+    "bootstrap",
+    "styled-components",
+    "react"
+  ],
+  "author": "xDae",
+  "license": "MIT",
+  "dependencies": {
+    "polished": "^1.2.1",
+    "prop-types": "^15.5.8"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0-0 || ^16.0.0-0"
+  }
+}

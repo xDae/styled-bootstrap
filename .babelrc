@@ -6,6 +6,9 @@
     "react",
     "stage-2"
   ],
+  "plugins": [
+    "external-helpers"
+  ],
   "env": {
     "production": {
       "plugins": ["external-helpers", "syntax-flow"]
