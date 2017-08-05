@@ -4,11 +4,11 @@ import { css } from 'styled-components';
 
 import { enableHoverMediaQuery } from '../defaultTheme';
 
-export const hover = (content: string) => css`
+export const hover = (content: string | Array) => css`
   &:hover { ${content} }
 `;
 
-export const hoverFocus = (content: string) => {
+export const hoverFocus = (content: string | Array) => {
   if (enableHoverMediaQuery) {
     return css`
       &:focus { ${content}} }
@@ -24,7 +24,7 @@ export const hoverFocus = (content: string) => {
   `;
 };
 
-export const plainHoverFocus = (content: string) => {
+export const plainHoverFocus = (content: string | Array) => {
   if (enableHoverMediaQuery) {
     return css`
       &,
@@ -44,7 +44,7 @@ export const plainHoverFocus = (content: string) => {
   `;
 };
 
-export const hoverFocusActive = content => {
+export const hoverFocusActive = (content: string | Array) => {
   if (enableHoverMediaQuery) {
     return css`
       &:focus,

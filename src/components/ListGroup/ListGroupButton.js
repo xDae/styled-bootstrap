@@ -1,9 +1,10 @@
 // @flow
 
-import styled, { css } from 'styled-components';
-import { borderRadius } from 'polished';
+import { css } from 'styled-components';
 
 import { hoverFocus } from '../../utils/hover';
+
+import InputGroupItem from './ListGroupItem';
 
 import {
   listGroupBg,
@@ -24,29 +25,24 @@ import {
   listGroupActionActiveBg
 } from '../../defaultTheme';
 
-const ListGroupItem = styled.li`
-  position: relative;
-  display: block;
+const ListGroupButton = InputGroupItem.withComponent('button').extend`
+  width: 100%;
+  color: ${props => props.theme.listGroupActionColor};
+  text-align: inherit;
+
+  // Hover state
+  ${hoverFocus(css`
+    color: ${props => props.theme.listGroupActionHoverColor};
+    text-decoration: none;
+    background-color: ${props => props.theme.listGroupHoverBg};
+  `)}
+
   ${props =>
-    `padding: ${props.theme.listGroupItemPaddingY} ${props.theme
-      .listGroupItemPaddingX};`}
-  margin-bottom: -${props => props.theme.listGroupBorderWidth};
-  background-color: ${props => props.theme.listGroupBg};
-  ${props => `
-    border: ${props.theme.listGroupBorderWidth} solid ${props.theme
-    .listGroupBorderColor};
+    props.active &&
+    css`
+    color: ${props.theme.listGroupActionActiveColor};
+    background-color: ${props.theme.listGroupActionActiveBg};
   `}
-
-  &:first-child {
-    ${borderRadius('top', listGroupBorderRadius)}
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-    ${borderRadius('bottom', listGroupBorderRadius)}
-  }
-
-  ${hoverFocus('text-decoration: none;')}
 
   ${props =>
     props.disabled &&
@@ -54,18 +50,9 @@ const ListGroupItem = styled.li`
     color: ${props.theme.listGroupDisabledColor};
     background-color: ${props.theme.listGroupDisabledBg};
   `}
-
-  ${props =>
-    props.active &&
-    css`
-    z-index: 2;
-    color: ${props.theme.listGroupActiveColor};
-    background-color: ${props.theme.listGroupActiveBg};
-    border-color: ${props.theme.listGroupActiveBorderColor};
-  `}
 `;
 
-ListGroupItem.defaultProps = {
+ListGroupButton.defaultProps = {
   theme: {
     listGroupBg,
     listGroupBorderColor,
@@ -86,4 +73,4 @@ ListGroupItem.defaultProps = {
   }
 };
 
-export default ListGroupItem;
+export default ListGroupButton;

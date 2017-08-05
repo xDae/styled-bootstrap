@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/react';
 import ListGroup from '../../src/components/ListGroup';
 import ListGroupItem from '../../src/components/ListGroup/ListGroupItem';
 import ListGroupLink from '../../src/components/ListGroup/ListGroupLink';
+import ListGroupButton from '../../src/components/ListGroup/ListGroupButton';
 
 const margin = { marginRight: 6, marginBottom: 6 };
 
@@ -38,6 +39,17 @@ export default storiesOf('ListGroup', module)
         <ListGroupLink href="#">Morbi leo risus</ListGroupLink>
         <ListGroupLink href="#">Porta ac consectetur ac</ListGroupLink>
         <ListGroupLink href="#" disabled>Vestibulum at eros</ListGroupLink>
+      </ListGroup>
+    </div>
+  ))
+  .add('Buttons', () => (
+    <div style={{ width: 400, padding: 20 }}>
+      <ListGroup>
+        <ListGroupButton href="#" active>Cras justo odio</ListGroupButton>
+        <ListGroupButton href="#">Dapibus ac facilisis in</ListGroupButton>
+        <ListGroupButton href="#">Morbi leo risus</ListGroupButton>
+        <ListGroupButton href="#">Porta ac consectetur ac</ListGroupButton>
+        <ListGroupButton href="#" disabled>Vestibulum at eros</ListGroupButton>
       </ListGroup>
     </div>
   ));
