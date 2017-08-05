@@ -1,5 +1,5 @@
 {
-  "name": "@styled-bootstrap/button",
+  "name": "styled-bootstrap-button",
   "version": "0.1.0",
   "description": "styled Button Component",
   "main": "lib/index.js",
