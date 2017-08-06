@@ -4,7 +4,7 @@
     "components/*",
     "utils"
   ],
-  "version": "0.1.3",
+  "version": "0.1.4",
   "devDependencies": {
     "prop-types": "^15.5.8"
   }
