@@ -6,59 +6,61 @@
 5 silly isInitialized true
 6 silly existsSync /Users/esoj/Proyectos/styled-bootstrap/VERSION
 7 silly initialize attempt
-8 info current version undefined
+8 info current version 0.1.2
 9 silly getUpdates
 10 info Checking for updated packages...
 11 silly hasTags
 12 verbose hasTags true
 13 silly getLastTag
-14 verbose getLastTag vundefined
-15 info Comparing with vundefined.
-16 silly diffSinceIn vundefined /Users/esoj/Proyectos/styled-bootstrap/components/Button
-17 silly diff
-18 silly collectDependents
-19 silly collectUpdates
-20 info No updated packages to publish.
-21 silly initialize success
-22 silly execute attempt
-23 silly isDetachedHead
-24 silly getCurrentBranch
-25 verbose getCurrentBranch master
-26 verbose isDetachedHead false
-27 silly addFile /Users/esoj/Proyectos/styled-bootstrap/lerna.json
-28 silly commit vundefined
-29 verbose commit [ 'commit', '-m', 'vundefined' ]
-30 error execute Error: husky > npm run -s precommit (node v6.11.0)
-30 error execute
-30 error execute [?25l[19:08:22] Running tasks for src/*.js [started]
-30 error execute [19:08:22] Running tasks for src/*.js [skipped]
-30 error execute [19:08:22] → No staged files match src/*.js
-30 error execute [?25h[?25h
-30 error execute     at Function.module.exports.sync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:277:26)
-30 error execute     at Function.execSync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-30 error execute     at Function.commit (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/GitUtilities.js:84:39)
-30 error execute     at PublishCommand.gitCommitAndTagVersion (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:612:30)
-30 error execute     at PublishCommand.commitAndTagUpdates (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:582:27)
-30 error execute     at PublishCommand.execute (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:261:16)
-30 error execute     at PublishCommand._attempt (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:289:21)
-30 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:276:15
-30 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:298:13
-30 error execute     at PublishCommand.initialize (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:220:9)
-30 error execute  callback with error
-30 error execute  { Error: husky > npm run -s precommit (node v6.11.0)
-30 error execute
-30 error execute [?25l[19:08:22] Running tasks for src/*.js [started]
-30 error execute [19:08:22] Running tasks for src/*.js [skipped]
-30 error execute [19:08:22] → No staged files match src/*.js
-30 error execute [?25h[?25h
-30 error execute     at Function.module.exports.sync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:277:26)
-30 error execute     at Function.execSync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-30 error execute     at Function.commit (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/GitUtilities.js:84:39)
-30 error execute     at PublishCommand.gitCommitAndTagVersion (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:612:30)
-30 error execute     at PublishCommand.commitAndTagUpdates (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:582:27)
-30 error execute     at PublishCommand.execute (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:261:16)
-30 error execute     at PublishCommand._attempt (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:289:21)
-30 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:276:15
-30 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:298:13
-30 error execute     at PublishCommand.initialize (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:220:9)
-30 error execute   stack: 'Error: husky > npm run -s precommit (node v6.11.0)\n\n\u001b[?25l[19:08:22] Running tasks for src/*.js [started]\n[19:08:22] Running tasks for src/*.js [skipped]\n[19:08:22] → No staged files match src/*.js\n\u001b[?25h\u001b[?25h\n    at Function.module.exports.sync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:277:26)\n    at Function.execSync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)\n    at Function.commit (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/GitUtilities.js:84:39)\n    at PublishCommand.gitCommitAndTagVersion (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:612:30)\n    at PublishCommand.commitAndTagUpdates (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:582:27)\n    at PublishCommand.execute (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:261:16)\n    at PublishCommand._attempt (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:289:21)\n    at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:276:15\n    at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:298:13\n    at PublishCommand.initialize (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:220:9)' }
+14 verbose getLastTag vnull
+15 info Comparing with vnull.
+16 silly diffSinceIn vnull /Users/esoj/Proyectos/styled-bootstrap/components/Button
+17 silly diff components/Button/es/index.js
+17 silly diff components/Button/lib/index.js
+17 silly diff components/Button/node_modules/polished/package.json
+17 silly diff components/Button/package.json
+18 silly diffSinceIn vnull /Users/esoj/Proyectos/styled-bootstrap/utils
+19 silly diff
+20 verbose updated styled-bootstrap-button
+21 silly collectDependents
+22 silly isPackageDependentOf styled-bootstrap-button styled-bootstrap-button
+23 silly isPackageDependentOf styled-bootstrap-utils styled-bootstrap-button
+24 silly collectUpdates
+25 verbose has filtered update styled-bootstrap-button
+26 silly initialize success
+27 silly execute attempt
+28 silly isDetachedHead
+29 silly getCurrentBranch
+30 verbose getCurrentBranch master
+31 verbose isDetachedHead false
+32 silly addFile /Users/esoj/Proyectos/styled-bootstrap/lerna.json
+33 silly addFile /Users/esoj/Proyectos/styled-bootstrap/components/Button/package.json
+34 silly commit v0.1.3
+35 verbose commit [ 'commit', '-m', 'v0.1.3' ]
+36 silly addTag v0.1.3
+37 error execute Error: fatal: tag 'v0.1.3' already exists
+37 error execute
+37 error execute     at Function.module.exports.sync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:277:26)
+37 error execute     at Function.execSync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+37 error execute     at Function.addTag (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/GitUtilities.js:90:39)
+37 error execute     at PublishCommand.gitCommitAndTagVersion (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:613:30)
+37 error execute     at PublishCommand.commitAndTagUpdates (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:582:27)
+37 error execute     at PublishCommand.execute (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:261:16)
+37 error execute     at PublishCommand._attempt (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:289:21)
+37 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:276:15
+37 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:298:13
+37 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:495:11
+37 error execute  callback with error
+37 error execute  { Error: fatal: tag 'v0.1.3' already exists
+37 error execute
+37 error execute     at Function.module.exports.sync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:277:26)
+37 error execute     at Function.execSync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+37 error execute     at Function.addTag (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/GitUtilities.js:90:39)
+37 error execute     at PublishCommand.gitCommitAndTagVersion (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:613:30)
+37 error execute     at PublishCommand.commitAndTagUpdates (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:582:27)
+37 error execute     at PublishCommand.execute (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:261:16)
+37 error execute     at PublishCommand._attempt (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:289:21)
+37 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:276:15
+37 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:298:13
+37 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:495:11
+37 error execute   stack: 'Error: fatal: tag \'v0.1.3\' already exists\n\n    at Function.module.exports.sync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:277:26)\n    at Function.execSync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)\n    at Function.addTag (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/GitUtilities.js:90:39)\n    at PublishCommand.gitCommitAndTagVersion (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:613:30)\n    at PublishCommand.commitAndTagUpdates (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:582:27)\n    at PublishCommand.execute (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:261:16)\n    at PublishCommand._attempt (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:289:21)\n    at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:276:15\n    at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:298:13\n    at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:495:11' }
