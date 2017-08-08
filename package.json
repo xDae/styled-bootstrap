@@ -68,7 +68,7 @@
     "jest-styled-components": "4.3.0",
     "lerna": "2.0.0",
     "lint-staged": "4.0.3",
-    "polished": "1.3.0",
+    "polished": "1.4.0",
     "prettier": "1.5.3",
     "react": "15.6.1",
     "react-addons-test-utils": "15.6.0",
