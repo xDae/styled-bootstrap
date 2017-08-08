@@ -15,7 +15,7 @@ setOptions({
   // sortStoriesByKind: false,
 });
 
-const req = require.context('./stories', true, /.js$/);
+const req = require.context('./_stories', true, /.js$/);
 
 function loadStories() {
   req.keys().forEach((filename) => req(filename))

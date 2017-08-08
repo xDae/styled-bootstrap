@@ -3,6 +3,8 @@
 import { css } from 'styled-components';
 import { darken } from 'polished';
 
+import { colorYiq, boxShadow, sassRgba, theme } from 'styled-bootstrap-utils';
+
 export function buttonVariant(
   background: string,
   border: string,
@@ -13,7 +15,7 @@ export function buttonVariant(
     color: ${colorYiq(background)};
     background-color: ${background};
     border-color: ${border};
-    ${boxShadow(btnBoxShadow)}
+    ${boxShadow(theme.btnBoxShadow)}
 
     &:hover {
       color: ${colorYiq(background)};
@@ -24,8 +26,11 @@ export function buttonVariant(
     &:focus,
     &.focus {
       // Avoid using mixin so we can pass custom focus shadow properly
-      ${enableShadows
-        ? `box-shadow: ${btnBoxShadow}, 0 0 0 3px ${sassRgba(border, 0.5)};`
+      ${theme.enableShadows
+        ? `box-shadow: ${theme.btnBoxShadow}, 0 0 0 3px ${sassRgba(
+            border,
+            0.5
+          )};`
         : `box-shadow: 0 0 0 3px ${sassRgba(border, 0.5)};`}
     }
 
@@ -42,7 +47,7 @@ export function buttonVariant(
       background-color: ${activeBackground};
       background-image: none;
       border-color: ${activeBorder};
-      ${boxShadow(btnActiveBoxShadow)}
+      ${boxShadow(theme.btnActiveBoxShadow)}
     }
   `;
 }

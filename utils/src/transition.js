@@ -10,7 +10,7 @@ export const transition = transitionType => {
   }
 
   return css`
-      transition: ${transitionType};
+    transition: ${transitionType};
   `;
 };
 

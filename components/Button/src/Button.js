@@ -1,82 +1,30 @@
 // @flow
 
 import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
+import { prop, ifProp } from 'styled-tools';
 
 import {
-  buttonVariant,
-  buttonSize,
-  buttonOutlineVariant
-} from '../../../src/utils/button';
+  hoverFocus,
+  hover,
+  transition,
+  boxShadow
+} from 'styled-bootstrap-utils';
 
-import { hoverFocus, hover } from '../../../src/utils/hover';
-import { transition } from '../../../src/utils/transition';
-import { boxShadow } from '../../../src/utils/box-shadow';
+import { buttonVariant } from './utils/button-variant';
+import { buttonSize } from './utils/button-size';
+import { buttonOutlineVariant } from './utils/button-outline-variant';
 
-import {
-  inputBtnPaddingY,
-  inputBtnPaddingX,
-  inputBtnLineHeight,
-  inputBtnPaddingYsm,
-  inputBtnPaddingXsm,
-  inputBtnLineHeightSm,
-  inputBtnPaddingYlg,
-  inputBtnPaddingXlg,
-  inputBtnLineHeightLg,
-  btnFontWeight,
-  btnBoxShadow,
-  btnFocusBoxShadow,
-  btnActiveBoxShadow,
-  btnPrimaryColor,
-  btnPrimaryBg,
-  btnPrimaryBorderColor,
-  btnSecondaryColor,
-  btnSecondaryBg,
-  btnSecondaryBorderColor,
-  btnInfoColor,
-  btnInfoBg,
-  btnInfoBorderColor,
-  btnSuccessColor,
-  btnSuccessBg,
-  btnSuccessBorderColor,
-  btnWarningColor,
-  btnWarningBg,
-  btnWarningBorderColor,
-  btnDangerColor,
-  btnDangerBg,
-  btnDangerBorderColor,
-  btnLinkDisabledColor,
-  btnBlockSpacingY,
-  btnBorderRadius,
-  btnBorderRadiusLg,
-  btnBorderRadiusSm,
-  btnTransition,
-  fontSizeBase,
-  inputBtnBorderWidth,
-  fontSizeLg,
-  fontSizeSm,
-  fontWeightNormal,
-  linkColor,
-  themeColors
-} from '../../../src/defaultTheme';
+import defaultTheme from './defaultTheme';
 
 const Button = styled.button`
   display: inline-block;
-  font-weight: ${props => props.theme.btnFontWeight};
+  font-weight: ${prop('theme.btnFontWeight', 'normal')};
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: ${props => props.theme.inputBtnBorderWidth} solid transparent;
-
-  ${props =>
-    !props.size &&
-    buttonSize(
-      props.theme.inputBtnPaddingY,
-      props.theme.inputBtnPaddingX,
-      props.theme.fontSizeBase,
-      props.theme.inputBtnLineHeight,
-      props.theme.btnBorderRadius
-    )};
+  border: ${prop('theme.inputBtnBorderWidth')} solid transparent;
 
   ${props => transition(props.theme.btnTransition)};
 
@@ -86,7 +34,7 @@ const Button = styled.button`
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: ${props => props.theme.btnFocusBoxShadow};
+    box-shadow: ${prop('theme.btnFocusBoxShadow')};
   }
 
   &.disabled,
@@ -95,15 +43,15 @@ const Button = styled.button`
     ${boxShadow('none')};
   }
 
-  ${({ color }) =>
-    themeColors[color] &&
-    buttonVariant(themeColors[color], themeColors[color])};
+  ${({ theme, color }) =>
+    theme.themeColors[color] &&
+    buttonVariant(theme.themeColors[color], theme.themeColors[color])};
 
-  ${props =>
-    props.color === 'link' &&
+  ${ifProp(
+    { color: 'link' },
     css`
-    font-weight: ${props.theme.fontWeightNormal};
-    color: ${props.theme.linkColor};
+    font-weight: ${prop('theme.fontWeightNormal')};
+    color: ${prop('theme.linkColor')};
     border-radius: 0;
 
     &,
@@ -123,47 +71,62 @@ const Button = styled.button`
     ${hover('border-color: transparent;')}
 
     ${hoverFocus(css`
-      color: ${props.theme.linkHoverColor};
-      text-decoration: ${props.theme.linkHoverDecoration};
+      color: ${prop('theme.linkHoverColor')};
+      text-decoration: ${prop('theme.linkHoverDecoration')};
       background-color: transparent;
     `)}
 
     &:disabled {
-      color: ${btnLinkDisabledColor};
+      color: ${prop('theme.btnLinkDisabledColor')};
 
       ${hoverFocus('text-decoration: none;')}
     }
-  `};
+  `
+  )};
 
-  ${({ outline, color }) =>
-    outline && buttonOutlineVariant(themeColors[color])};
+  ${({ theme, outline, color }) =>
+    outline && buttonOutlineVariant(theme.themeColors[color])};
 
-  ${props =>
-    props.size === 'large' &&
+  ${ifProp(
+    { size: 'normal' },
     buttonSize(
-      props.theme.inputBtnPaddingYlg,
-      props.theme.inputBtnPaddingXlg,
-      props.theme.fontSizeLg,
-      props.theme.inputBtnLineHeightLg,
-      props.theme.btnBorderRadiusLg
-    )};
+      prop('theme.inputBtnPaddingY'),
+      prop('theme.inputBtnPaddingX'),
+      prop('theme.fontSizeBase'),
+      prop('theme.inputBtnLineHeight'),
+      prop('theme.btnBorderRadius')
+    )
+  )};
 
-  ${props =>
-    props.size === 'small' &&
+  ${ifProp(
+    { size: 'large' },
     buttonSize(
-      props.theme.inputBtnPaddingYsm,
-      props.theme.inputBtnPaddingXsm,
-      props.theme.fontSizeSm,
-      props.theme.inputBtnLineHeightSm,
-      props.theme.btnBorderRadiusSm
-    )};
+      prop('theme.inputBtnPaddingYlg'),
+      prop('theme.inputBtnPaddingXlg'),
+      prop('theme.fontSizeLg'),
+      prop('theme.inputBtnLineHeightLg'),
+      prop('theme.btnBorderRadiusLg')
+    )
+  )};
 
-  ${props =>
-    props.active &&
+  ${ifProp(
+    { size: 'small' },
+    buttonSize(
+      prop('theme.inputBtnPaddingYsm'),
+      prop('theme.inputBtnPaddingXsm'),
+      prop('theme.fontSizeSm'),
+      prop('theme.inputBtnLineHeightSm'),
+      prop('theme.btnBorderRadiusSm')
+    )
+  )};
+
+  ${ifProp(
+    'active',
     css`
     background-image: none;
-    ${boxShadow(props.theme.btnFocusBoxShadow)}
-  `};
+    ${boxShadow(prop('theme.btnFocusBoxShadow'))}
+  `
+  )};
 
   ${props =>
     props.block &&
@@ -176,51 +139,20 @@ const Button = styled.button`
 Button.Link = Button.withComponent('a');
 
 Button.defaultProps = {
-  theme: {
-    inputBtnPaddingY,
-    inputBtnPaddingX,
-    inputBtnLineHeight,
-    inputBtnPaddingYsm,
-    inputBtnPaddingXsm,
-    inputBtnLineHeightSm,
-    inputBtnPaddingYlg,
-    inputBtnPaddingXlg,
-    inputBtnLineHeightLg,
-    btnFontWeight,
-    btnBoxShadow,
-    btnFocusBoxShadow,
-    btnActiveBoxShadow,
-    btnPrimaryColor,
-    btnPrimaryBg,
-    btnPrimaryBorderColor,
-    btnSecondaryColor,
-    btnSecondaryBg,
-    btnSecondaryBorderColor,
-    btnInfoColor,
-    btnInfoBg,
-    btnInfoBorderColor,
-    btnSuccessColor,
-    btnSuccessBg,
-    btnSuccessBorderColor,
-    btnWarningColor,
-    btnWarningBg,
-    btnWarningBorderColor,
-    btnDangerColor,
-    btnDangerBg,
-    btnDangerBorderColor,
-    btnLinkDisabledColor,
-    btnBlockSpacingY,
-    btnBorderRadius,
-    btnBorderRadiusLg,
-    btnBorderRadiusSm,
-    btnTransition,
-    fontSizeBase,
-    inputBtnBorderWidth,
-    fontSizeLg,
-    fontSizeSm,
-    fontWeightNormal,
-    linkColor
-  }
+  active: false,
+  block: false,
+  color: 'primary',
+  size: 'normal',
+  outline: false,
+  theme: defaultTheme
+};
+
+Button.propTypes = {
+  active: PropTypes.bool,
+  block: PropTypes.bool,
+  color: PropTypes.string,
+  size: PropTypes.string,
+  outline: PropTypes.bool
 };
 
 export default Button;

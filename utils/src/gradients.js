@@ -1,3 +1,5 @@
+// @flow
+
 import { css } from 'styled-components';
 
 // @mixin gradient-x($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
@@ -31,8 +33,8 @@ import { css } from 'styled-components';
 // }
 
 export function gradientStriped(
-  color = 'rgba(255,255,255, .15)',
-  angle = '45deg'
+  color: string = 'rgba(255,255,255, .15)',
+  angle: string = '45deg'
 ) {
   return css`
     background-image: linear-gradient(${angle}, ${color} 25%, transparent 25%, transparent 50%, ${color} 50%, ${color} 75%, transparent 75%, transparent);

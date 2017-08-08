@@ -1,12 +1,12 @@
 0 silly input [ 'publish' ]
-1 silly flags { _: [ 'publish' ] }
+1 silly flags { _: [ 'publish' ], 'follow-tags': true, followTags: true }
 2 verbose rootPath /Users/esoj/Proyectos/styled-bootstrap
 3 info version 2.0.0
 4 silly isInitialized
 5 silly isInitialized true
 6 silly existsSync /Users/esoj/Proyectos/styled-bootstrap/VERSION
 7 silly initialize attempt
-8 info current version 0.1.2
+8 info current version 0.1.3
 9 silly getUpdates
 10 info Checking for updated packages...
 11 silly hasTags
@@ -17,50 +17,671 @@
 16 silly diffSinceIn vnull /Users/esoj/Proyectos/styled-bootstrap/components/Button
 17 silly diff components/Button/es/index.js
 17 silly diff components/Button/lib/index.js
+17 silly diff components/Button/node_modules/base64-js/LICENSE
+17 silly diff components/Button/node_modules/base64-js/README.md
+17 silly diff components/Button/node_modules/base64-js/base64js.min.js
+17 silly diff components/Button/node_modules/base64-js/index.js
+17 silly diff components/Button/node_modules/base64-js/package.json
+17 silly diff components/Button/node_modules/base64-js/test/big-data.js
+17 silly diff components/Button/node_modules/base64-js/test/convert.js
+17 silly diff components/Button/node_modules/base64-js/test/url-safe.js
+17 silly diff components/Button/node_modules/buffer/.npmignore
+17 silly diff components/Button/node_modules/buffer/.travis.yml
+17 silly diff components/Button/node_modules/buffer/AUTHORS.md
+17 silly diff components/Button/node_modules/buffer/LICENSE
+17 silly diff components/Button/node_modules/buffer/README.md
+17 silly diff components/Button/node_modules/buffer/index.js
+17 silly diff components/Button/node_modules/buffer/package.json
+17 silly diff components/Button/node_modules/buffer/test/base64.js
+17 silly diff components/Button/node_modules/buffer/test/basic.js
+17 silly diff components/Button/node_modules/buffer/test/compare.js
+17 silly diff components/Button/node_modules/buffer/test/constructor.js
+17 silly diff components/Button/node_modules/buffer/test/from-string.js
+17 silly diff components/Button/node_modules/buffer/test/is-buffer.js
+17 silly diff components/Button/node_modules/buffer/test/methods.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-alloc.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-arraybuffer.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-ascii.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-bad-overload.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-badhex.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-bytelength.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-compare-offset.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-concat.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-fill.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-includes.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-indexof.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-inheritance.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-inspect.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-iterator.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-safe-unsafe.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-slow.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-swap.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-zero-fill-cli.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer-zero-fill-reset.js
+17 silly diff components/Button/node_modules/buffer/test/node/test-buffer.js
+17 silly diff components/Button/node_modules/buffer/test/slice.js
+17 silly diff components/Button/node_modules/buffer/test/static.js
+17 silly diff components/Button/node_modules/buffer/test/to-string.js
+17 silly diff components/Button/node_modules/buffer/test/write.js
+17 silly diff components/Button/node_modules/buffer/test/write_infinity.js
+17 silly diff components/Button/node_modules/css-color-keywords/LICENSE
+17 silly diff components/Button/node_modules/css-color-keywords/README.md
+17 silly diff components/Button/node_modules/css-color-keywords/colors.json
+17 silly diff components/Button/node_modules/css-color-keywords/index.js
+17 silly diff components/Button/node_modules/css-color-keywords/package.json
+17 silly diff components/Button/node_modules/css-to-react-native/.eslintrc.js
+17 silly diff components/Button/node_modules/css-to-react-native/.npmignore
+17 silly diff components/Button/node_modules/css-to-react-native/LICENSE.md
+17 silly diff components/Button/node_modules/css-to-react-native/README.md
+17 silly diff components/Button/node_modules/css-to-react-native/dist/TokenStream.js
+17 silly diff components/Button/node_modules/css-to-react-native/dist/index.js
+17 silly diff components/Button/node_modules/css-to-react-native/dist/tokenTypes.js
+17 silly diff components/Button/node_modules/css-to-react-native/dist/transforms/flex.js
+17 silly diff components/Button/node_modules/css-to-react-native/dist/transforms/font.js
+17 silly diff components/Button/node_modules/css-to-react-native/dist/transforms/fontFamily.js
+17 silly diff components/Button/node_modules/css-to-react-native/dist/transforms/index.js
+17 silly diff components/Button/node_modules/css-to-react-native/dist/transforms/transform.js
+17 silly diff components/Button/node_modules/css-to-react-native/dist/transforms/util.js
+17 silly diff components/Button/node_modules/css-to-react-native/package.json
+17 silly diff components/Button/node_modules/css-to-react-native/src/TokenStream.js
+17 silly diff components/Button/node_modules/css-to-react-native/src/index.js
+17 silly diff components/Button/node_modules/css-to-react-native/src/index.test.js
+17 silly diff components/Button/node_modules/css-to-react-native/src/tokenTypes.js
+17 silly diff components/Button/node_modules/css-to-react-native/src/transforms/flex.js
+17 silly diff components/Button/node_modules/css-to-react-native/src/transforms/font.js
+17 silly diff components/Button/node_modules/css-to-react-native/src/transforms/fontFamily.js
+17 silly diff components/Button/node_modules/css-to-react-native/src/transforms/index.js
+17 silly diff components/Button/node_modules/css-to-react-native/src/transforms/transform.js
+17 silly diff components/Button/node_modules/css-to-react-native/src/transforms/util.js
+17 silly diff components/Button/node_modules/css-to-react-native/yarn.lock
+17 silly diff components/Button/node_modules/has-flag/index.js
+17 silly diff components/Button/node_modules/has-flag/license
+17 silly diff components/Button/node_modules/has-flag/package.json
+17 silly diff components/Button/node_modules/has-flag/readme.md
+17 silly diff components/Button/node_modules/hoist-non-react-statics/.coveralls.yml
+17 silly diff components/Button/node_modules/hoist-non-react-statics/.eslintrc
+17 silly diff components/Button/node_modules/hoist-non-react-statics/.idea/.name
+17 silly diff components/Button/node_modules/hoist-non-react-statics/.idea/hoist-non-react-statics.iml
+17 silly diff components/Button/node_modules/hoist-non-react-statics/.idea/misc.xml
+17 silly diff components/Button/node_modules/hoist-non-react-statics/.idea/modules.xml
+17 silly diff components/Button/node_modules/hoist-non-react-statics/.idea/vcs.xml
+17 silly diff components/Button/node_modules/hoist-non-react-statics/.idea/workspace.xml
+17 silly diff components/Button/node_modules/hoist-non-react-statics/.npmignore
+17 silly diff components/Button/node_modules/hoist-non-react-statics/.travis.yml
+17 silly diff components/Button/node_modules/hoist-non-react-statics/LICENSE.md
+17 silly diff components/Button/node_modules/hoist-non-react-statics/README.md
+17 silly diff components/Button/node_modules/hoist-non-react-statics/index.js
+17 silly diff components/Button/node_modules/hoist-non-react-statics/package.json
+17 silly diff components/Button/node_modules/ieee754/.travis.yml
+17 silly diff components/Button/node_modules/ieee754/.zuul.yml
+17 silly diff components/Button/node_modules/ieee754/LICENSE
+17 silly diff components/Button/node_modules/ieee754/README.md
+17 silly diff components/Button/node_modules/ieee754/index.js
+17 silly diff components/Button/node_modules/ieee754/package.json
+17 silly diff components/Button/node_modules/ieee754/test/basic.js
+17 silly diff components/Button/node_modules/is-function/LICENSE
+17 silly diff components/Button/node_modules/is-function/README.md
+17 silly diff components/Button/node_modules/is-function/browser-test.js
+17 silly diff components/Button/node_modules/is-function/index.js
+17 silly diff components/Button/node_modules/is-function/package.json
+17 silly diff components/Button/node_modules/is-function/test.html
+17 silly diff components/Button/node_modules/is-function/test.js
+17 silly diff components/Button/node_modules/is-plain-object/LICENSE
+17 silly diff components/Button/node_modules/is-plain-object/README.md
+17 silly diff components/Button/node_modules/is-plain-object/index.d.ts
+17 silly diff components/Button/node_modules/is-plain-object/index.js
+17 silly diff components/Button/node_modules/is-plain-object/package.json
+17 silly diff components/Button/node_modules/isobject/LICENSE
+17 silly diff components/Button/node_modules/isobject/README.md
+17 silly diff components/Button/node_modules/isobject/index.d.ts
+17 silly diff components/Button/node_modules/isobject/index.js
+17 silly diff components/Button/node_modules/isobject/package.json
 17 silly diff components/Button/node_modules/polished/package.json
+17 silly diff components/Button/node_modules/postcss-value-parser/LICENSE
+17 silly diff components/Button/node_modules/postcss-value-parser/README.md
+17 silly diff components/Button/node_modules/postcss-value-parser/lib/index.js
+17 silly diff components/Button/node_modules/postcss-value-parser/lib/parse.js
+17 silly diff components/Button/node_modules/postcss-value-parser/lib/stringify.js
+17 silly diff components/Button/node_modules/postcss-value-parser/lib/unit.js
+17 silly diff components/Button/node_modules/postcss-value-parser/lib/walk.js
+17 silly diff components/Button/node_modules/postcss-value-parser/package.json
+17 silly diff components/Button/node_modules/styled-components/CHANGELOG.md
+17 silly diff components/Button/node_modules/styled-components/CODE_OF_CONDUCT.md
+17 silly diff components/Button/node_modules/styled-components/CONTRIBUTING.md
+17 silly diff components/Button/node_modules/styled-components/LICENSE
+17 silly diff components/Button/node_modules/styled-components/README.md
+17 silly diff components/Button/node_modules/styled-components/dist/styled-components.es.js
+17 silly diff components/Button/node_modules/styled-components/dist/styled-components.js
+17 silly diff components/Button/node_modules/styled-components/dist/styled-components.min.js
+17 silly diff components/Button/node_modules/styled-components/docs/README.md
+17 silly diff components/Button/node_modules/styled-components/docs/api.md
+17 silly diff components/Button/node_modules/styled-components/docs/css-we-support.md
+17 silly diff components/Button/node_modules/styled-components/docs/existing-css.md
+17 silly diff components/Button/node_modules/styled-components/docs/faq.md
+17 silly diff components/Button/node_modules/styled-components/docs/flow-support.md
+17 silly diff components/Button/node_modules/styled-components/docs/react-native.md
+17 silly diff components/Button/node_modules/styled-components/docs/security.md
+17 silly diff components/Button/node_modules/styled-components/docs/tagged-template-literals.md
+17 silly diff components/Button/node_modules/styled-components/docs/theming.md
+17 silly diff components/Button/node_modules/styled-components/docs/tips-and-tricks.md
+17 silly diff components/Button/node_modules/styled-components/docs/typescript-support.md
+17 silly diff components/Button/node_modules/styled-components/flow-typed/danger_v0.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/fbjs_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/lodash_v4.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/babel-cli_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/babel-core_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/babel-eslint_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/babel-loader_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/babel-plugin-add-module-exports_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/babel-plugin-external-helpers_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/babel-plugin-flow-react-proptypes_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/babel-plugin-transform-class-properties_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/babel-plugin-transform-flow-strip-types_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/babel-plugin-transform-object-rest-spread_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/babel-preset-latest_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/babel-preset-react_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/buffer_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/chokidar_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/css-to-react-native_v1.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/css-to-react-native_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/enzyme_v2.3.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/eslint-config-airbnb_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/eslint-plugin-flowtype-errors_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/eslint-plugin-flowtype_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/eslint-plugin-import_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/eslint-plugin-jsx-a11y_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/eslint-plugin-react_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/eslint_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/expect_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/express_v4.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/flow-bin_v0.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/flow-copy-source_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/inline-style-prefixer_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/is-function_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/is-plain-object_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/jest_v19.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/jsdom_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/lint-staged_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/mocha-jsdom_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/mocha_v2.4.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/mocha_v3.1.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/node-watch_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/pre-commit_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/react-addons-test-utils_v15.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/rollup-plugin-babel_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/rollup-plugin-commonjs_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/rollup-plugin-flow_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/rollup-plugin-inject_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/rollup-plugin-json_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/rollup-plugin-node-resolve_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/rollup-plugin-replace_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/rollup-plugin-uglify_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/rollup-plugin-visualizer_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/rollup_vx.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/npm/supports-color_v3.x.x.js
+17 silly diff components/Button/node_modules/styled-components/flow-typed/react-native.js
+17 silly diff components/Button/node_modules/styled-components/lib/constructors/constructWithOptions.js
+17 silly diff components/Button/node_modules/styled-components/lib/constructors/css.js
+17 silly diff components/Button/node_modules/styled-components/lib/constructors/injectGlobal.js
+17 silly diff components/Button/node_modules/styled-components/lib/constructors/keyframes.js
+17 silly diff components/Button/node_modules/styled-components/lib/constructors/styled.js
+17 silly diff components/Button/node_modules/styled-components/lib/hoc/withTheme.js
+17 silly diff components/Button/node_modules/styled-components/lib/index.js
+17 silly diff components/Button/node_modules/styled-components/lib/models/AbstractStyledComponent.js
+17 silly diff components/Button/node_modules/styled-components/lib/models/BrowserStyleSheet.js
+17 silly diff components/Button/node_modules/styled-components/lib/models/ComponentStyle.js
+17 silly diff components/Button/node_modules/styled-components/lib/models/InlineStyle.js
+17 silly diff components/Button/node_modules/styled-components/lib/models/ServerStyleSheet.js
+17 silly diff components/Button/node_modules/styled-components/lib/models/StyleSheet.js
+17 silly diff components/Button/node_modules/styled-components/lib/models/StyleSheetManager.js
+17 silly diff components/Button/node_modules/styled-components/lib/models/StyledComponent.js
+17 silly diff components/Button/node_modules/styled-components/lib/models/StyledNativeComponent.js
+17 silly diff components/Button/node_modules/styled-components/lib/models/ThemeProvider.js
+17 silly diff components/Button/node_modules/styled-components/lib/native/index.js
+17 silly diff components/Button/node_modules/styled-components/lib/no-parser/css.js
+17 silly diff components/Button/node_modules/styled-components/lib/no-parser/flatten.js
+17 silly diff components/Button/node_modules/styled-components/lib/no-parser/index.js
+17 silly diff components/Button/node_modules/styled-components/lib/no-parser/stringifyRules.js
+17 silly diff components/Button/node_modules/styled-components/lib/primitives/index.js
+17 silly diff components/Button/node_modules/styled-components/lib/test/utils.js
+17 silly diff components/Button/node_modules/styled-components/lib/types.js
+17 silly diff components/Button/node_modules/styled-components/lib/utils/create-broadcast.js
+17 silly diff components/Button/node_modules/styled-components/lib/utils/createWarnTooManyClasses.js
+17 silly diff components/Button/node_modules/styled-components/lib/utils/domElements.js
+17 silly diff components/Button/node_modules/styled-components/lib/utils/extractCompsFromCSS.js
+17 silly diff components/Button/node_modules/styled-components/lib/utils/flatten.js
+17 silly diff components/Button/node_modules/styled-components/lib/utils/generateAlphabeticName.js
+17 silly diff components/Button/node_modules/styled-components/lib/utils/getComponentName.js
+17 silly diff components/Button/node_modules/styled-components/lib/utils/interleave.js
+17 silly diff components/Button/node_modules/styled-components/lib/utils/isStyledComponent.js
+17 silly diff components/Button/node_modules/styled-components/lib/utils/isTag.js
+17 silly diff components/Button/node_modules/styled-components/lib/utils/stringifyRules.js
+17 silly diff components/Button/node_modules/styled-components/lib/utils/validAttr.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/glamor/hash.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss-nested/index.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss-safe-parser/parse.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss-safe-parser/safe-parser.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/at-rule.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/comment.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/container.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/css-syntax-error.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/declaration.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/input.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/lazy-result.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/list.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/node.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/parse.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/parser.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/postcss.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/processor.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/result.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/root.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/rule.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/stringifier.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/stringify.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/terminal-highlight.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/tokenize.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/vendor.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/warn-once.js
+17 silly diff components/Button/node_modules/styled-components/lib/vendor/postcss/warning.js
+17 silly diff components/Button/node_modules/styled-components/native/index.d.ts
+17 silly diff components/Button/node_modules/styled-components/native/index.js
+17 silly diff components/Button/node_modules/styled-components/no-parser.js
+17 silly diff components/Button/node_modules/styled-components/package.json
+17 silly diff components/Button/node_modules/styled-components/primitives/index.d.ts
+17 silly diff components/Button/node_modules/styled-components/primitives/index.js
+17 silly diff components/Button/node_modules/styled-components/src/constructors/constructWithOptions.js
+17 silly diff components/Button/node_modules/styled-components/src/constructors/css.js
+17 silly diff components/Button/node_modules/styled-components/src/constructors/injectGlobal.js
+17 silly diff components/Button/node_modules/styled-components/src/constructors/keyframes.js
+17 silly diff components/Button/node_modules/styled-components/src/constructors/styled.js
+17 silly diff components/Button/node_modules/styled-components/src/constructors/test/injectGlobal.test.js
+17 silly diff components/Button/node_modules/styled-components/src/constructors/test/keyframes.test.js
+17 silly diff components/Button/node_modules/styled-components/src/constructors/test/styled.test.js
+17 silly diff components/Button/node_modules/styled-components/src/hoc/withTheme.js
+17 silly diff components/Button/node_modules/styled-components/src/index.js
+17 silly diff components/Button/node_modules/styled-components/src/models/AbstractStyledComponent.js
+17 silly diff components/Button/node_modules/styled-components/src/models/BrowserStyleSheet.js
+17 silly diff components/Button/node_modules/styled-components/src/models/ComponentStyle.js
+17 silly diff components/Button/node_modules/styled-components/src/models/InlineStyle.js
+17 silly diff components/Button/node_modules/styled-components/src/models/ServerStyleSheet.js
+17 silly diff components/Button/node_modules/styled-components/src/models/StyleSheet.js
+17 silly diff components/Button/node_modules/styled-components/src/models/StyleSheetManager.js
+17 silly diff components/Button/node_modules/styled-components/src/models/StyledComponent.js
+17 silly diff components/Button/node_modules/styled-components/src/models/StyledNativeComponent.js
+17 silly diff components/Button/node_modules/styled-components/src/models/ThemeProvider.js
+17 silly diff components/Button/node_modules/styled-components/src/models/test/ThemeProvider.test.js
+17 silly diff components/Button/node_modules/styled-components/src/native/index.js
+17 silly diff components/Button/node_modules/styled-components/src/native/test/native.test.js
+17 silly diff components/Button/node_modules/styled-components/src/no-parser/css.js
+17 silly diff components/Button/node_modules/styled-components/src/no-parser/flatten.js
+17 silly diff components/Button/node_modules/styled-components/src/no-parser/index.js
+17 silly diff components/Button/node_modules/styled-components/src/no-parser/stringifyRules.js
+17 silly diff components/Button/node_modules/styled-components/src/no-parser/test/basic.test.js
+17 silly diff components/Button/node_modules/styled-components/src/no-parser/test/flatten.test.js
+17 silly diff components/Button/node_modules/styled-components/src/no-parser/test/keyframes.test.js
+17 silly diff components/Button/node_modules/styled-components/src/primitives/index.js
+17 silly diff components/Button/node_modules/styled-components/src/primitives/test/primitives.test.js
+17 silly diff components/Button/node_modules/styled-components/src/test/__snapshots__/ssr.test.js.snap
+17 silly diff components/Button/node_modules/styled-components/src/test/attrs.test.js
+17 silly diff components/Button/node_modules/styled-components/src/test/basic.test.js
+17 silly diff components/Button/node_modules/styled-components/src/test/css.test.js
+17 silly diff components/Button/node_modules/styled-components/src/test/expanded-api.test.js
+17 silly diff components/Button/node_modules/styled-components/src/test/extending.test.js
+17 silly diff components/Button/node_modules/styled-components/src/test/overriding.test.js
+17 silly diff components/Button/node_modules/styled-components/src/test/props.test.js
+17 silly diff components/Button/node_modules/styled-components/src/test/rehydration.test.js
+17 silly diff components/Button/node_modules/styled-components/src/test/ssr.test.js
+17 silly diff components/Button/node_modules/styled-components/src/test/styles.test.js
+17 silly diff components/Button/node_modules/styled-components/src/test/theme.test.js
+17 silly diff components/Button/node_modules/styled-components/src/test/utils.js
+17 silly diff components/Button/node_modules/styled-components/src/test/warnTooManyClasses.test.js
+17 silly diff components/Button/node_modules/styled-components/src/types.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/create-broadcast.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/createWarnTooManyClasses.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/domElements.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/extractCompsFromCSS.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/flatten.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/generateAlphabeticName.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/getComponentName.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/interleave.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/isStyledComponent.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/isTag.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/stringifyRules.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/test/extractCompsFromCSS.test.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/test/flatten.test.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/test/generateAlphabeticName.test.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/test/interleave.test.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/test/validAttr.test.js
+17 silly diff components/Button/node_modules/styled-components/src/utils/validAttr.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/README.md
+17 silly diff components/Button/node_modules/styled-components/src/vendor/glamor/hash.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss-nested/index.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss-safe-parser/parse.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss-safe-parser/safe-parser.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/at-rule.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/comment.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/container.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/css-syntax-error.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/declaration.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/input.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/lazy-result.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/list.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/node.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/parse.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/parser.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/postcss.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/processor.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/result.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/root.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/rule.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/stringifier.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/stringify.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/terminal-highlight.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/tokenize.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/vendor.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/warn-once.js
+17 silly diff components/Button/node_modules/styled-components/src/vendor/postcss/warning.js
+17 silly diff components/Button/node_modules/styled-components/typings/styled-components.d.ts
+17 silly diff components/Button/node_modules/styled-components/typings/tags.d.ts
+17 silly diff components/Button/node_modules/styled-components/typings/tests/attrs-test.tsx
+17 silly diff components/Button/node_modules/styled-components/typings/tests/extend-test.tsx
+17 silly diff components/Button/node_modules/styled-components/typings/tests/function-themes-test.tsx
+17 silly diff components/Button/node_modules/styled-components/typings/tests/hoc-test.tsx
+17 silly diff components/Button/node_modules/styled-components/typings/tests/main-test.tsx
+17 silly diff components/Button/node_modules/styled-components/typings/tests/native-test.tsx
+17 silly diff components/Button/node_modules/styled-components/typings/tests/nested-test.tsx
+17 silly diff components/Button/node_modules/styled-components/typings/tests/server-test.tsx
+17 silly diff components/Button/node_modules/styled-components/typings/tests/themed-tests/mytheme-styled-components.tsx
+17 silly diff components/Button/node_modules/styled-components/typings/tests/themed-tests/mytheme-test.tsx
+17 silly diff components/Button/node_modules/styled-components/typings/tests/themed-tests/with-theme-test.tsx
+17 silly diff components/Button/node_modules/styled-components/typings/tests/tsconfig.json
+17 silly diff components/Button/node_modules/styled-components/typings/tests/with-component-test.tsx
+17 silly diff components/Button/node_modules/styled-components/typings/tests/with-theme-test.tsx
+17 silly diff components/Button/node_modules/stylis/CHANGELOG.md
+17 silly diff components/Button/node_modules/stylis/LICENSE.md
+17 silly diff components/Button/node_modules/stylis/README.md
+17 silly diff components/Button/node_modules/stylis/package.json
+17 silly diff components/Button/node_modules/stylis/stylis.d.ts
+17 silly diff components/Button/node_modules/stylis/stylis.js
+17 silly diff components/Button/node_modules/stylis/stylis.min.js
+17 silly diff components/Button/node_modules/supports-color/browser.js
+17 silly diff components/Button/node_modules/supports-color/index.js
+17 silly diff components/Button/node_modules/supports-color/license
+17 silly diff components/Button/node_modules/supports-color/package.json
+17 silly diff components/Button/node_modules/supports-color/readme.md
 17 silly diff components/Button/package.json
+17 silly diff components/Button/src/_button.js
+17 silly diff components/Button/src/utils/button-outline-variant.js
+17 silly diff components/Button/src/utils/button-variant.js
 18 silly diffSinceIn vnull /Users/esoj/Proyectos/styled-bootstrap/utils
-19 silly diff
+19 silly diff utils/package.json
+19 silly diff utils/src/alerts.js
+19 silly diff utils/src/badges.js
+19 silly diff utils/src/border-radius.js
+19 silly diff utils/src/box-shadow.js
+19 silly diff utils/src/color-functions.js
+19 silly diff utils/src/defaultTheme.js
+19 silly diff utils/src/forms.js
+19 silly diff utils/src/gradients.js
+19 silly diff utils/src/hover.js
+19 silly diff utils/src/index.js
+19 silly diff utils/src/nav-divider.js
+19 silly diff utils/src/pagination.js
+19 silly diff utils/src/reboot.js
+19 silly diff utils/src/sassRgba.js
+19 silly diff utils/src/transition.js
 20 verbose updated styled-bootstrap-button
-21 silly collectDependents
-22 silly isPackageDependentOf styled-bootstrap-button styled-bootstrap-button
-23 silly isPackageDependentOf styled-bootstrap-utils styled-bootstrap-button
-24 silly collectUpdates
-25 verbose has filtered update styled-bootstrap-button
-26 silly initialize success
-27 silly execute attempt
-28 silly isDetachedHead
-29 silly getCurrentBranch
-30 verbose getCurrentBranch master
-31 verbose isDetachedHead false
-32 silly addFile /Users/esoj/Proyectos/styled-bootstrap/lerna.json
-33 silly addFile /Users/esoj/Proyectos/styled-bootstrap/components/Button/package.json
-34 silly commit v0.1.3
-35 verbose commit [ 'commit', '-m', 'v0.1.3' ]
-36 silly addTag v0.1.3
-37 error execute Error: fatal: tag 'v0.1.3' already exists
-37 error execute
-37 error execute     at Function.module.exports.sync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:277:26)
-37 error execute     at Function.execSync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-37 error execute     at Function.addTag (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/GitUtilities.js:90:39)
-37 error execute     at PublishCommand.gitCommitAndTagVersion (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:613:30)
-37 error execute     at PublishCommand.commitAndTagUpdates (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:582:27)
-37 error execute     at PublishCommand.execute (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:261:16)
-37 error execute     at PublishCommand._attempt (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:289:21)
-37 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:276:15
-37 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:298:13
-37 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:495:11
-37 error execute  callback with error
-37 error execute  { Error: fatal: tag 'v0.1.3' already exists
-37 error execute
-37 error execute     at Function.module.exports.sync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:277:26)
-37 error execute     at Function.execSync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-37 error execute     at Function.addTag (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/GitUtilities.js:90:39)
-37 error execute     at PublishCommand.gitCommitAndTagVersion (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:613:30)
-37 error execute     at PublishCommand.commitAndTagUpdates (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:582:27)
-37 error execute     at PublishCommand.execute (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:261:16)
-37 error execute     at PublishCommand._attempt (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:289:21)
-37 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:276:15
-37 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:298:13
-37 error execute     at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:495:11
-37 error execute   stack: 'Error: fatal: tag \'v0.1.3\' already exists\n\n    at Function.module.exports.sync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:277:26)\n    at Function.execSync (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)\n    at Function.addTag (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/GitUtilities.js:90:39)\n    at PublishCommand.gitCommitAndTagVersion (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:613:30)\n    at PublishCommand.commitAndTagUpdates (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:582:27)\n    at PublishCommand.execute (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:261:16)\n    at PublishCommand._attempt (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:289:21)\n    at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:276:15\n    at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/Command.js:298:13\n    at /Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:495:11' }
+21 verbose updated styled-bootstrap-utils
+22 silly collectDependents
+23 silly isPackageDependentOf styled-bootstrap-button styled-bootstrap-button
+24 silly isPackageDependentOf styled-bootstrap-button styled-bootstrap-utils
+25 silly isPackageDependentOf styled-bootstrap-utils styled-bootstrap-button
+26 silly isPackageDependentOf styled-bootstrap-utils styled-bootstrap-utils
+27 silly collectUpdates
+28 verbose has filtered update styled-bootstrap-button
+29 verbose has filtered update styled-bootstrap-utils
+30 silly initialize success
+31 silly execute attempt
+32 silly isDetachedHead
+33 silly getCurrentBranch
+34 verbose getCurrentBranch master
+35 verbose isDetachedHead false
+36 silly addFile /Users/esoj/Proyectos/styled-bootstrap/lerna.json
+37 silly addFile /Users/esoj/Proyectos/styled-bootstrap/components/Button/package.json
+38 silly addFile /Users/esoj/Proyectos/styled-bootstrap/utils/package.json
+39 silly commit v0.1.4
+40 verbose commit [ 'commit', '-m', 'v0.1.4' ]
+41 silly addTag v0.1.4
+42 info publish Publishing packages to npm...
+43 silly existsSync /Users/esoj/Proyectos/styled-bootstrap/components/Button/scripts/prepublish.js
+44 verbose execScript No prepublish script found at /Users/esoj/Proyectos/styled-bootstrap/components/Button/scripts/prepublish.js
+45 silly existsSync /Users/esoj/Proyectos/styled-bootstrap/utils/scripts/prepublish.js
+46 verbose execScript No prepublish script found at /Users/esoj/Proyectos/styled-bootstrap/utils/scripts/prepublish.js
+47 verbose publishing styled-bootstrap-button
+48 silly publishTaggedInDir latest Button
+49 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/components/Button' }
+50 verbose publishing styled-bootstrap-utils
+51 silly publishTaggedInDir latest utils
+52 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/utils' }
+53 error publish Retrying failed publish: styled-bootstrap-utils
+54 verbose publish error Error: Command failed: npm publish --tag latest
+54 verbose publish error npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+54 verbose publish error npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+54 verbose publish error npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+54 verbose publish error module.js:471
+54 verbose publish error     throw err;
+54 verbose publish error     ^
+54 verbose publish error
+54 verbose publish error Error: Cannot find module '/Users/esoj/Proyectos/scripts/prepublish.js'
+54 verbose publish error     at Function.Module._resolveFilename (module.js:469:15)
+54 verbose publish error     at Function.Module._load (module.js:417:25)
+54 verbose publish error     at Module.runMain (module.js:604:10)
+54 verbose publish error     at run (bootstrap_node.js:389:7)
+54 verbose publish error     at startup (bootstrap_node.js:149:9)
+54 verbose publish error     at bootstrap_node.js:504:3
+54 verbose publish error npm ERR! addLocal Could not install /Users/esoj/Proyectos/styled-bootstrap/utils
+54 verbose publish error npm ERR! code ELIFECYCLE
+54 verbose publish error npm ERR! errno 1
+54 verbose publish error npm ERR! styled-bootstrap-utils@0.1.4 prepublish: `node ../../scripts/prepublish.js`
+54 verbose publish error npm ERR! Exit status 1
+54 verbose publish error npm ERR!
+54 verbose publish error npm ERR! Failed at the styled-bootstrap-utils@0.1.4 prepublish script.
+54 verbose publish error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+54 verbose publish error npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+54 verbose publish error
+54 verbose publish error npm ERR! A complete log of this run can be found in:
+54 verbose publish error npm ERR!     /Users/esoj/.npm/_logs/2017-08-06T19_00_43_713Z-debug.log
+54 verbose publish error
+54 verbose publish error > styled-bootstrap-utils@0.1.4 prepublish /Users/esoj/Proyectos/styled-bootstrap/utils
+54 verbose publish error > node ../../scripts/prepublish.js
+54 verbose publish error
+54 verbose publish error
+54 verbose publish error     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+54 verbose publish error     at process._tickCallback (internal/process/next_tick.js:109:7)
+55 verbose publishing styled-bootstrap-utils
+56 silly publishTaggedInDir latest utils
+57 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/utils' }
+58 error publish Retrying failed publish: styled-bootstrap-utils
+59 verbose publish error Error: Command failed: npm publish --tag latest
+59 verbose publish error npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+59 verbose publish error npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+59 verbose publish error npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+59 verbose publish error module.js:471
+59 verbose publish error     throw err;
+59 verbose publish error     ^
+59 verbose publish error
+59 verbose publish error Error: Cannot find module '/Users/esoj/Proyectos/scripts/prepublish.js'
+59 verbose publish error     at Function.Module._resolveFilename (module.js:469:15)
+59 verbose publish error     at Function.Module._load (module.js:417:25)
+59 verbose publish error     at Module.runMain (module.js:604:10)
+59 verbose publish error     at run (bootstrap_node.js:389:7)
+59 verbose publish error     at startup (bootstrap_node.js:149:9)
+59 verbose publish error     at bootstrap_node.js:504:3
+59 verbose publish error npm ERR! addLocal Could not install /Users/esoj/Proyectos/styled-bootstrap/utils
+59 verbose publish error npm ERR! code ELIFECYCLE
+59 verbose publish error npm ERR! errno 1
+59 verbose publish error npm ERR! styled-bootstrap-utils@0.1.4 prepublish: `node ../../scripts/prepublish.js`
+59 verbose publish error npm ERR! Exit status 1
+59 verbose publish error npm ERR!
+59 verbose publish error npm ERR! Failed at the styled-bootstrap-utils@0.1.4 prepublish script.
+59 verbose publish error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+59 verbose publish error npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+59 verbose publish error
+59 verbose publish error npm ERR! A complete log of this run can be found in:
+59 verbose publish error npm ERR!     /Users/esoj/.npm/_logs/2017-08-06T19_00_44_341Z-debug.log
+59 verbose publish error
+59 verbose publish error > styled-bootstrap-utils@0.1.4 prepublish /Users/esoj/Proyectos/styled-bootstrap/utils
+59 verbose publish error > node ../../scripts/prepublish.js
+59 verbose publish error
+59 verbose publish error
+59 verbose publish error     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+59 verbose publish error     at process._tickCallback (internal/process/next_tick.js:109:7)
+60 verbose publishing styled-bootstrap-utils
+61 silly publishTaggedInDir latest utils
+62 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/utils' }
+63 error publish Retrying failed publish: styled-bootstrap-utils
+64 verbose publish error Error: Command failed: npm publish --tag latest
+64 verbose publish error npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+64 verbose publish error npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+64 verbose publish error npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+64 verbose publish error module.js:471
+64 verbose publish error     throw err;
+64 verbose publish error     ^
+64 verbose publish error
+64 verbose publish error Error: Cannot find module '/Users/esoj/Proyectos/scripts/prepublish.js'
+64 verbose publish error     at Function.Module._resolveFilename (module.js:469:15)
+64 verbose publish error     at Function.Module._load (module.js:417:25)
+64 verbose publish error     at Module.runMain (module.js:604:10)
+64 verbose publish error     at run (bootstrap_node.js:389:7)
+64 verbose publish error     at startup (bootstrap_node.js:149:9)
+64 verbose publish error     at bootstrap_node.js:504:3
+64 verbose publish error npm ERR! addLocal Could not install /Users/esoj/Proyectos/styled-bootstrap/utils
+64 verbose publish error npm ERR! code ELIFECYCLE
+64 verbose publish error npm ERR! errno 1
+64 verbose publish error npm ERR! styled-bootstrap-utils@0.1.4 prepublish: `node ../../scripts/prepublish.js`
+64 verbose publish error npm ERR! Exit status 1
+64 verbose publish error npm ERR!
+64 verbose publish error npm ERR! Failed at the styled-bootstrap-utils@0.1.4 prepublish script.
+64 verbose publish error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+64 verbose publish error npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+64 verbose publish error
+64 verbose publish error npm ERR! A complete log of this run can be found in:
+64 verbose publish error npm ERR!     /Users/esoj/.npm/_logs/2017-08-06T19_00_45_000Z-debug.log
+64 verbose publish error
+64 verbose publish error > styled-bootstrap-utils@0.1.4 prepublish /Users/esoj/Proyectos/styled-bootstrap/utils
+64 verbose publish error > node ../../scripts/prepublish.js
+64 verbose publish error
+64 verbose publish error
+64 verbose publish error     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+64 verbose publish error     at process._tickCallback (internal/process/next_tick.js:109:7)
+65 verbose publishing styled-bootstrap-utils
+66 silly publishTaggedInDir latest utils
+67 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/utils' }
+68 error publish Retrying failed publish: styled-bootstrap-utils
+69 verbose publish error Error: Command failed: npm publish --tag latest
+69 verbose publish error npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+69 verbose publish error npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+69 verbose publish error npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+69 verbose publish error module.js:471
+69 verbose publish error     throw err;
+69 verbose publish error     ^
+69 verbose publish error
+69 verbose publish error Error: Cannot find module '/Users/esoj/Proyectos/scripts/prepublish.js'
+69 verbose publish error     at Function.Module._resolveFilename (module.js:469:15)
+69 verbose publish error     at Function.Module._load (module.js:417:25)
+69 verbose publish error     at Module.runMain (module.js:604:10)
+69 verbose publish error     at run (bootstrap_node.js:389:7)
+69 verbose publish error     at startup (bootstrap_node.js:149:9)
+69 verbose publish error     at bootstrap_node.js:504:3
+69 verbose publish error npm ERR! addLocal Could not install /Users/esoj/Proyectos/styled-bootstrap/utils
+69 verbose publish error npm ERR! code ELIFECYCLE
+69 verbose publish error npm ERR! errno 1
+69 verbose publish error npm ERR! styled-bootstrap-utils@0.1.4 prepublish: `node ../../scripts/prepublish.js`
+69 verbose publish error npm ERR! Exit status 1
+69 verbose publish error npm ERR!
+69 verbose publish error npm ERR! Failed at the styled-bootstrap-utils@0.1.4 prepublish script.
+69 verbose publish error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+69 verbose publish error npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+69 verbose publish error
+69 verbose publish error npm ERR! A complete log of this run can be found in:
+69 verbose publish error npm ERR!     /Users/esoj/.npm/_logs/2017-08-06T19_00_45_669Z-debug.log
+69 verbose publish error
+69 verbose publish error > styled-bootstrap-utils@0.1.4 prepublish /Users/esoj/Proyectos/styled-bootstrap/utils
+69 verbose publish error > node ../../scripts/prepublish.js
+69 verbose publish error
+69 verbose publish error
+69 verbose publish error     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+69 verbose publish error     at process._tickCallback (internal/process/next_tick.js:109:7)
+70 verbose publishing styled-bootstrap-utils
+71 silly publishTaggedInDir latest utils
+72 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/utils' }
+73 error publish Ran out of retries while publishing styled-bootstrap-utils Error: Command failed: npm publish --tag latest
+73 error publish npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+73 error publish npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+73 error publish npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+73 error publish module.js:471
+73 error publish     throw err;
+73 error publish     ^
+73 error publish
+73 error publish Error: Cannot find module '/Users/esoj/Proyectos/scripts/prepublish.js'
+73 error publish     at Function.Module._resolveFilename (module.js:469:15)
+73 error publish     at Function.Module._load (module.js:417:25)
+73 error publish     at Module.runMain (module.js:604:10)
+73 error publish     at run (bootstrap_node.js:389:7)
+73 error publish     at startup (bootstrap_node.js:149:9)
+73 error publish     at bootstrap_node.js:504:3
+73 error publish npm ERR! addLocal Could not install /Users/esoj/Proyectos/styled-bootstrap/utils
+73 error publish npm ERR! code ELIFECYCLE
+73 error publish npm ERR! errno 1
+73 error publish npm ERR! styled-bootstrap-utils@0.1.4 prepublish: `node ../../scripts/prepublish.js`
+73 error publish npm ERR! Exit status 1
+73 error publish npm ERR!
+73 error publish npm ERR! Failed at the styled-bootstrap-utils@0.1.4 prepublish script.
+73 error publish npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+73 error publish npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+73 error publish
+73 error publish npm ERR! A complete log of this run can be found in:
+73 error publish npm ERR!     /Users/esoj/.npm/_logs/2017-08-06T19_00_46_258Z-debug.log
+73 error publish
+73 error publish > styled-bootstrap-utils@0.1.4 prepublish /Users/esoj/Proyectos/styled-bootstrap/utils
+73 error publish > node ../../scripts/prepublish.js
+73 error publish
+73 error publish
+73 error publish     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+73 error publish     at process._tickCallback (internal/process/next_tick.js:109:7)
+74 error execute callback with error
+74 error execute  Error: Command failed: npm publish --tag latest
+74 error execute npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+74 error execute npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+74 error execute npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+74 error execute module.js:471
+74 error execute     throw err;
+74 error execute     ^
+74 error execute
+74 error execute Error: Cannot find module '/Users/esoj/Proyectos/scripts/prepublish.js'
+74 error execute     at Function.Module._resolveFilename (module.js:469:15)
+74 error execute     at Function.Module._load (module.js:417:25)
+74 error execute     at Module.runMain (module.js:604:10)
+74 error execute     at run (bootstrap_node.js:389:7)
+74 error execute     at startup (bootstrap_node.js:149:9)
+74 error execute     at bootstrap_node.js:504:3
+74 error execute npm ERR! addLocal Could not install /Users/esoj/Proyectos/styled-bootstrap/utils
+74 error execute npm ERR! code ELIFECYCLE
+74 error execute npm ERR! errno 1
+74 error execute npm ERR! styled-bootstrap-utils@0.1.4 prepublish: `node ../../scripts/prepublish.js`
+74 error execute npm ERR! Exit status 1
+74 error execute npm ERR!
+74 error execute npm ERR! Failed at the styled-bootstrap-utils@0.1.4 prepublish script.
+74 error execute npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+74 error execute npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+74 error execute
+74 error execute npm ERR! A complete log of this run can be found in:
+74 error execute npm ERR!     /Users/esoj/.npm/_logs/2017-08-06T19_00_46_258Z-debug.log
+74 error execute
+74 error execute > styled-bootstrap-utils@0.1.4 prepublish /Users/esoj/Proyectos/styled-bootstrap/utils
+74 error execute > node ../../scripts/prepublish.js
+74 error execute
+74 error execute
+74 error execute     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+74 error execute     at process._tickCallback (internal/process/next_tick.js:109:7)

@@ -2,7 +2,7 @@
 
 import { darken, lighten, stripUnit } from 'polished';
 
-import { sassRgba } from './utils/sassRgba';
+import { sassRgba } from './sassRgba';
 
 // General variable structure
 
