@@ -78,7 +78,7 @@
     "react-transition-group": "2.2.0",
     "rimraf": "2.6.1",
     "rollup": "0.45.2",
-    "rollup-plugin-babel": "2.7.1",
+    "rollup-plugin-babel": "3.0.1",
     "rollup-plugin-commonjs": "8.1.0",
     "rollup-plugin-flow": "1.1.1",
     "rollup-plugin-node-resolve": "3.0.0",
