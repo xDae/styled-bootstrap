@@ -24,7 +24,7 @@ const Button = styled.button`
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: ${prop('theme.inputBtnBorderWidth')} solid transparent;
+  border: ${prop('theme.inputBtnBorderWidth', '1px')} solid transparent;
 
   ${props => transition(props.theme.btnTransition)};
 
@@ -44,14 +44,14 @@ const Button = styled.button`
   }
 
   ${({ theme, color }) =>
-    theme.themeColors[color] &&
-    buttonVariant(theme.themeColors[color], theme.themeColors[color])};
+    theme.colorTheme[color] &&
+    buttonVariant(theme.colorTheme[color], theme.colorTheme[color])};
 
   ${ifProp(
     { color: 'link' },
     css`
     font-weight: ${prop('theme.fontWeightNormal')};
-    color: ${prop('theme.linkColor')};
+    color: ${prop('theme.linkColor', '#007bff')};
     border-radius: 0;
 
     &,
@@ -72,7 +72,7 @@ const Button = styled.button`
 
     ${hoverFocus(css`
       color: ${prop('theme.linkHoverColor')};
-      text-decoration: ${prop('theme.linkHoverDecoration')};
+      text-decoration: ${prop('theme.linkHoverDecoration', 'underline')};
       background-color: transparent;
     `)}
 
@@ -85,14 +85,14 @@ const Button = styled.button`
   )};
 
   ${({ theme, outline, color }) =>
-    outline && buttonOutlineVariant(theme.themeColors[color])};
+    outline && buttonOutlineVariant(theme.colorTheme[color])};
 
   ${ifProp(
     { size: 'normal' },
     buttonSize(
       prop('theme.inputBtnPaddingY'),
       prop('theme.inputBtnPaddingX'),
-      prop('theme.fontSizeBase'),
+      prop('theme.fontSizeBase', '1rem'),
       prop('theme.inputBtnLineHeight'),
       prop('theme.btnBorderRadius')
     )
@@ -103,7 +103,7 @@ const Button = styled.button`
     buttonSize(
       prop('theme.inputBtnPaddingYlg'),
       prop('theme.inputBtnPaddingXlg'),
-      prop('theme.fontSizeLg'),
+      prop('theme.fontSizeLg', '1.25rem'),
       prop('theme.inputBtnLineHeightLg'),
       prop('theme.btnBorderRadiusLg')
     )
@@ -114,7 +114,7 @@ const Button = styled.button`
     buttonSize(
       prop('theme.inputBtnPaddingYsm'),
       prop('theme.inputBtnPaddingXsm'),
-      prop('theme.fontSizeSm'),
+      prop('theme.fontSizeSm', '0.875rem'),
       prop('theme.inputBtnLineHeightSm'),
       prop('theme.btnBorderRadiusSm')
     )
