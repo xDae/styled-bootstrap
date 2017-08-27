@@ -1,6 +1,6 @@
 {
   "name": "styled-bootstrap-utils",
-  "version": "0.1.5",
+  "version": "0.1.6-0",
   "description": "utils functions for styled bootstrap",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -9,6 +9,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "node ../scripts/prepublish.js"
   },
+  "files": [
+    "lib",
+    "es"
+  ],
   "keywords": [
     "component",
     "bootstrap",
