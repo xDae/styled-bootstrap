@@ -8,6 +8,8 @@
 
 # production
 /lib
+/dist
+/es
 
 # flow definitions
 /flow-typed

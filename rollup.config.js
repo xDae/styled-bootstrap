@@ -3,6 +3,7 @@ import babel from 'rollup-plugin-babel';
 import replace from 'rollup-plugin-replace';
 import commonjs from 'rollup-plugin-commonjs';
 import flow from 'rollup-plugin-flow';
+import filesize from 'rollup-plugin-filesize';
 
 const pkg = require('./package.json');
 
@@ -19,9 +20,16 @@ export default {
     commonjs(),
     babel({
       exclude: 'node_modules/**'
-    })
+    }),
+    filesize()
   ],
-  external: ['react', 'styled-components', 'polished', 'prop-types'],
+  external: [
+    'react',
+    'styled-components',
+    'polished',
+    'prop-types',
+    'styled-tools'
+  ],
   targets: [
     {
       dest: pkg.main,

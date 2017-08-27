@@ -23,7 +23,7 @@ rollup
     // The bundle's starting point. This file will be
     // included, along with the minimum necessary code
     // from its dependencies
-    entry: 'src/index.js',
+    input: 'src/index.js',
     plugins: [
       flow(),
       nodeResolve({
@@ -35,7 +35,13 @@ rollup
         exclude: 'node_modules/**'
       })
     ],
-    external: ['react', 'styled-components', 'polished', 'prop-types'],
+    external: [
+      'react',
+      'styled-components',
+      'polished',
+      'prop-types',
+      'styled-tools'
+    ],
     // If you have a bundle you want to re-use (e.g., when using a watcher to rebuild as files change),
     // you can tell rollup use a previous bundle as its starting point.
     // This is entirely optional!

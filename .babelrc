@@ -7,15 +7,21 @@
     "stage-2"
   ],
   "plugins": [
-    "external-helpers"
+    "polished",
+    "external-helpers",
+    "syntax-flow"
   ],
   "env": {
     "production": {
-      "plugins": ["external-helpers", "syntax-flow"]
+      "presets": [
+        "env",
+        "react",
+        "stage-2"
+      ],
+      "plugins": ["external-helpers"]
     },
     "test": {
-      "presets": ["env"],
-      "plugins": ["syntax-flow"]
+      "presets": ["env"]
     }
   }
 }

@@ -985,7 +985,7 @@ function boxShadow(shadow) {
 }
 
 var _templateObject$3 = taggedTemplateLiteral(['\n      transition: ', ';\n    '], ['\n      transition: ', ';\n    ']);
-var _templateObject2$2 = taggedTemplateLiteral(['\n      transition: ', ';\n  '], ['\n      transition: ', ';\n  ']);
+var _templateObject2$2 = taggedTemplateLiteral(['\n    transition: ', ';\n  '], ['\n    transition: ', ';\n  ']);
 
 var transition = function transition(transitionType) {
   if (enableTransitions) {
@@ -996,6 +996,8 @@ var transition = function transition(transitionType) {
 };
 
 var _templateObject$4 = taggedTemplateLiteral(['\n    background-image: linear-gradient(', ', ', ' 25%, transparent 25%, transparent 50%, ', ' 50%, ', ' 75%, transparent 75%, transparent);\n  '], ['\n    background-image: linear-gradient(', ', ', ' 25%, transparent 25%, transparent 50%, ', ' 50%, ', ' 75%, transparent 75%, transparent);\n  ']);
+
+//      
 
 // @mixin gradient-x($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
 //   background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
