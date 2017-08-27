@@ -1,3 +1,5 @@
+// @flow
+
 import { sassRgba } from '../sassRgba';
 import { gray600, black } from './colors';
 import { spacer } from './spacing';

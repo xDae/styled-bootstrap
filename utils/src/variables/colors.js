@@ -1,3 +1,5 @@
+// @flow
+
 // General variable structure
 
 // Colors
@@ -45,7 +47,7 @@ export const colors = {
   grayDark: gray800
 };
 
-export const themeColors = {
+export const colorTheme = {
   primary: blue,
   secondary: gray600,
   success: green,

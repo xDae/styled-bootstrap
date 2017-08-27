@@ -6,926 +6,148 @@
 5 silly isInitialized true
 6 silly existsSync /Users/esoj/Proyectos/styled-bootstrap/VERSION
 7 silly initialize attempt
-8 info current version 0.1.6-0
+8 info current version 0.1.6-1
 9 silly getUpdates
 10 info Checking for updated packages...
 11 silly hasTags
 12 verbose hasTags true
 13 silly getLastTag
-14 verbose getLastTag v0.1.6-0
-15 info Comparing with v0.1.6-0.
-16 silly diffSinceIn v0.1.6-0 /Users/esoj/Proyectos/styled-bootstrap/components/Button
-17 silly diff components/Button/.gitignore
-17 silly diff components/Button/node_modules/.bin/which
-17 silly diff components/Button/node_modules/arr-union/LICENSE
-17 silly diff components/Button/node_modules/arr-union/README.md
-17 silly diff components/Button/node_modules/arr-union/index.js
-17 silly diff components/Button/node_modules/arr-union/package.json
-17 silly diff components/Button/node_modules/async-array-reduce/LICENSE
-17 silly diff components/Button/node_modules/async-array-reduce/README.md
-17 silly diff components/Button/node_modules/async-array-reduce/index.js
-17 silly diff components/Button/node_modules/async-array-reduce/package.json
-17 silly diff components/Button/node_modules/balanced-match/.npmignore
-17 silly diff components/Button/node_modules/balanced-match/LICENSE.md
-17 silly diff components/Button/node_modules/balanced-match/README.md
-17 silly diff components/Button/node_modules/balanced-match/index.js
-17 silly diff components/Button/node_modules/balanced-match/package.json
-17 silly diff components/Button/node_modules/brace-expansion/README.md
-17 silly diff components/Button/node_modules/brace-expansion/index.js
-17 silly diff components/Button/node_modules/brace-expansion/package.json
-17 silly diff components/Button/node_modules/cf-style-container/.npmignore
-17 silly diff components/Button/node_modules/cf-style-container/CHANGELOG.md
-17 silly diff components/Button/node_modules/cf-style-container/README.md
-17 silly diff components/Button/node_modules/cf-style-container/es/createComponent.js
-17 silly diff components/Button/node_modules/cf-style-container/es/index.js
-17 silly diff components/Button/node_modules/cf-style-container/lib/createComponent.js
-17 silly diff components/Button/node_modules/cf-style-container/lib/index.js
-17 silly diff components/Button/node_modules/cf-style-container/package.json
-17 silly diff components/Button/node_modules/concat-map/.travis.yml
-17 silly diff components/Button/node_modules/concat-map/LICENSE
-17 silly diff components/Button/node_modules/concat-map/README.markdown
-17 silly diff components/Button/node_modules/concat-map/example/map.js
-17 silly diff components/Button/node_modules/concat-map/index.js
-17 silly diff components/Button/node_modules/concat-map/package.json
-17 silly diff components/Button/node_modules/concat-map/test/map.js
-17 silly diff components/Button/node_modules/css-in-js-utils/Changelog.md
-17 silly diff components/Button/node_modules/css-in-js-utils/LICENSE
-17 silly diff components/Button/node_modules/css-in-js-utils/README.md
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/__tests__/assignStyle-test.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/__tests__/camelCaseProperty-test.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/__tests__/cssifyDeclaration-test.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/__tests__/cssifyObject-test.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/__tests__/isPrefixedProperty-test.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/__tests__/isPrefixedValue-test.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/__tests__/isUnitlessProperty-test.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/__tests__/normalizeProperty-test.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/__tests__/resolveArrayValue-test.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/__tests__/unprefixProperty-test.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/__tests__/unprefixValue-test.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/assignStyle.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/camelCaseProperty.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/cssifyDeclaration.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/cssifyObject.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/hyphenateProperty.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/index.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/isPrefixedProperty.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/isPrefixedValue.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/isUnitlessProperty.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/normalizeProperty.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/resolveArrayValue.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/unprefixProperty.js
-17 silly diff components/Button/node_modules/css-in-js-utils/lib/unprefixValue.js
-17 silly diff components/Button/node_modules/css-in-js-utils/package.json
-17 silly diff components/Button/node_modules/expand-tilde/LICENSE
-17 silly diff components/Button/node_modules/expand-tilde/index.js
-17 silly diff components/Button/node_modules/expand-tilde/package.json
-17 silly diff components/Button/node_modules/extend-shallow/LICENSE
-17 silly diff components/Button/node_modules/extend-shallow/README.md
-17 silly diff components/Button/node_modules/extend-shallow/index.js
-17 silly diff components/Button/node_modules/extend-shallow/package.json
-17 silly diff components/Button/node_modules/fbjs/package.json
-17 silly diff components/Button/node_modules/fela-dom/LICENSE
-17 silly diff components/Button/node_modules/fela-dom/README.md
-17 silly diff components/Button/node_modules/fela-dom/es/DOMInterface.js
-17 silly diff components/Button/node_modules/fela-dom/es/index.js
-17 silly diff components/Button/node_modules/fela-dom/es/initStyleNodes.js
-17 silly diff components/Button/node_modules/fela-dom/es/render.js
-17 silly diff components/Button/node_modules/fela-dom/es/server/renderToMarkup.js
-17 silly diff components/Button/node_modules/fela-dom/es/server/renderToSheetList.js
-17 silly diff components/Button/node_modules/fela-dom/lib/DOMInterface.js
-17 silly diff components/Button/node_modules/fela-dom/lib/index.js
-17 silly diff components/Button/node_modules/fela-dom/lib/initStyleNodes.js
-17 silly diff components/Button/node_modules/fela-dom/lib/render.js
-17 silly diff components/Button/node_modules/fela-dom/lib/server/renderToMarkup.js
-17 silly diff components/Button/node_modules/fela-dom/lib/server/renderToSheetList.js
-17 silly diff components/Button/node_modules/fela-dom/package.json
-17 silly diff components/Button/node_modules/fela-tools/LICENSE
-17 silly diff components/Button/node_modules/fela-tools/README.md
-17 silly diff components/Button/node_modules/fela-tools/es/StyleSheet.js
-17 silly diff components/Button/node_modules/fela-tools/es/index.js
-17 silly diff components/Button/node_modules/fela-tools/es/mapValueToMediaQuery.js
-17 silly diff components/Button/node_modules/fela-tools/es/renderToElement.js
-17 silly diff components/Button/node_modules/fela-tools/es/renderToString.js
-17 silly diff components/Button/node_modules/fela-tools/lib/StyleSheet.js
-17 silly diff components/Button/node_modules/fela-tools/lib/index.js
-17 silly diff components/Button/node_modules/fela-tools/lib/mapValueToMediaQuery.js
-17 silly diff components/Button/node_modules/fela-tools/lib/renderToElement.js
-17 silly diff components/Button/node_modules/fela-tools/lib/renderToString.js
-17 silly diff components/Button/node_modules/fela-tools/package.json
-17 silly diff components/Button/node_modules/fela-utils/LICENSE
-17 silly diff components/Button/node_modules/fela-utils/README.md
-17 silly diff components/Button/node_modules/fela-utils/es/applyMediaRulesInOrder.js
-17 silly diff components/Button/node_modules/fela-utils/es/arrayEach.js
-17 silly diff components/Button/node_modules/fela-utils/es/arrayReduce.js
-17 silly diff components/Button/node_modules/fela-utils/es/checkFontFormat.js
-17 silly diff components/Button/node_modules/fela-utils/es/checkFontUrl.js
-17 silly diff components/Button/node_modules/fela-utils/es/createStyleNode.js
-17 silly diff components/Button/node_modules/fela-utils/es/createStyleTagMarkup.js
-17 silly diff components/Button/node_modules/fela-utils/es/cssifyFontFace.js
-17 silly diff components/Button/node_modules/fela-utils/es/cssifyKeyframe.js
-17 silly diff components/Button/node_modules/fela-utils/es/cssifyMediaQueryRules.js
-17 silly diff components/Button/node_modules/fela-utils/es/cssifyStaticStyle.js
-17 silly diff components/Button/node_modules/fela-utils/es/extractPassThroughProps.js
-17 silly diff components/Button/node_modules/fela-utils/es/extractUsedProps.js
-17 silly diff components/Button/node_modules/fela-utils/es/generateAnimationName.js
-17 silly diff components/Button/node_modules/fela-utils/es/generateCSSRule.js
-17 silly diff components/Button/node_modules/fela-utils/es/generateCSSSelector.js
-17 silly diff components/Button/node_modules/fela-utils/es/generateClassName.js
-17 silly diff components/Button/node_modules/fela-utils/es/generateCombinedMediaQuery.js
-17 silly diff components/Button/node_modules/fela-utils/es/generateMonolithicClassName.js
-17 silly diff components/Button/node_modules/fela-utils/es/generateStaticReference.js
-17 silly diff components/Button/node_modules/fela-utils/es/getStyleNode.js
-17 silly diff components/Button/node_modules/fela-utils/es/index.js
-17 silly diff components/Button/node_modules/fela-utils/es/isBase64.js
-17 silly diff components/Button/node_modules/fela-utils/es/isMediaQuery.js
-17 silly diff components/Button/node_modules/fela-utils/es/isNestedSelector.js
-17 silly diff components/Button/node_modules/fela-utils/es/isObject.js
-17 silly diff components/Button/node_modules/fela-utils/es/isUndefinedValue.js
-17 silly diff components/Button/node_modules/fela-utils/es/isValidHTMLElement.js
-17 silly diff components/Button/node_modules/fela-utils/es/minifyCSSString.js
-17 silly diff components/Button/node_modules/fela-utils/es/normalizeNestedProperty.js
-17 silly diff components/Button/node_modules/fela-utils/es/objectReduce.js
-17 silly diff components/Button/node_modules/fela-utils/es/processStyleWithPlugins.js
-17 silly diff components/Button/node_modules/fela-utils/es/reflushStyleNodes.js
-17 silly diff components/Button/node_modules/fela-utils/es/resolvePassThrough.js
-17 silly diff components/Button/node_modules/fela-utils/es/resolveUsedProps.js
-17 silly diff components/Button/node_modules/fela-utils/es/styleTypes.js
-17 silly diff components/Button/node_modules/fela-utils/es/toCSSString.js
-17 silly diff components/Button/node_modules/fela-utils/es/warning.js
-17 silly diff components/Button/node_modules/fela-utils/lib/applyMediaRulesInOrder.js
-17 silly diff components/Button/node_modules/fela-utils/lib/arrayEach.js
-17 silly diff components/Button/node_modules/fela-utils/lib/arrayReduce.js
-17 silly diff components/Button/node_modules/fela-utils/lib/checkFontFormat.js
-17 silly diff components/Button/node_modules/fela-utils/lib/checkFontUrl.js
-17 silly diff components/Button/node_modules/fela-utils/lib/createStyleNode.js
-17 silly diff components/Button/node_modules/fela-utils/lib/createStyleTagMarkup.js
-17 silly diff components/Button/node_modules/fela-utils/lib/cssifyFontFace.js
-17 silly diff components/Button/node_modules/fela-utils/lib/cssifyKeyframe.js
-17 silly diff components/Button/node_modules/fela-utils/lib/cssifyMediaQueryRules.js
-17 silly diff components/Button/node_modules/fela-utils/lib/cssifyStaticStyle.js
-17 silly diff components/Button/node_modules/fela-utils/lib/extractPassThroughProps.js
-17 silly diff components/Button/node_modules/fela-utils/lib/extractUsedProps.js
-17 silly diff components/Button/node_modules/fela-utils/lib/generateAnimationName.js
-17 silly diff components/Button/node_modules/fela-utils/lib/generateCSSRule.js
-17 silly diff components/Button/node_modules/fela-utils/lib/generateCSSSelector.js
-17 silly diff components/Button/node_modules/fela-utils/lib/generateClassName.js
-17 silly diff components/Button/node_modules/fela-utils/lib/generateCombinedMediaQuery.js
-17 silly diff components/Button/node_modules/fela-utils/lib/generateMonolithicClassName.js
-17 silly diff components/Button/node_modules/fela-utils/lib/generateStaticReference.js
-17 silly diff components/Button/node_modules/fela-utils/lib/getStyleNode.js
-17 silly diff components/Button/node_modules/fela-utils/lib/index.js
-17 silly diff components/Button/node_modules/fela-utils/lib/isBase64.js
-17 silly diff components/Button/node_modules/fela-utils/lib/isMediaQuery.js
-17 silly diff components/Button/node_modules/fela-utils/lib/isNestedSelector.js
-17 silly diff components/Button/node_modules/fela-utils/lib/isObject.js
-17 silly diff components/Button/node_modules/fela-utils/lib/isUndefinedValue.js
-17 silly diff components/Button/node_modules/fela-utils/lib/isValidHTMLElement.js
-17 silly diff components/Button/node_modules/fela-utils/lib/minifyCSSString.js
-17 silly diff components/Button/node_modules/fela-utils/lib/normalizeNestedProperty.js
-17 silly diff components/Button/node_modules/fela-utils/lib/objectReduce.js
-17 silly diff components/Button/node_modules/fela-utils/lib/processStyleWithPlugins.js
-17 silly diff components/Button/node_modules/fela-utils/lib/reflushStyleNodes.js
-17 silly diff components/Button/node_modules/fela-utils/lib/resolvePassThrough.js
-17 silly diff components/Button/node_modules/fela-utils/lib/resolveUsedProps.js
-17 silly diff components/Button/node_modules/fela-utils/lib/styleTypes.js
-17 silly diff components/Button/node_modules/fela-utils/lib/toCSSString.js
-17 silly diff components/Button/node_modules/fela-utils/lib/warning.js
-17 silly diff components/Button/node_modules/fela-utils/package.json
-17 silly diff components/Button/node_modules/fela/LICENSE
-17 silly diff components/Button/node_modules/fela/README.md
-17 silly diff components/Button/node_modules/fela/es/bindings/connectFactory.js
-17 silly diff components/Button/node_modules/fela/es/bindings/createComponentFactory.js
-17 silly diff components/Button/node_modules/fela/es/bindings/generateDisplayName.js
-17 silly diff components/Button/node_modules/fela/es/combineRules.js
-17 silly diff components/Button/node_modules/fela/es/createRenderer.js
-17 silly diff components/Button/node_modules/fela/es/enhance.js
-17 silly diff components/Button/node_modules/fela/es/index.js
-17 silly diff components/Button/node_modules/fela/index.d.ts
-17 silly diff components/Button/node_modules/fela/lib/bindings/connectFactory.js
-17 silly diff components/Button/node_modules/fela/lib/bindings/createComponentFactory.js
-17 silly diff components/Button/node_modules/fela/lib/bindings/generateDisplayName.js
-17 silly diff components/Button/node_modules/fela/lib/combineRules.js
-17 silly diff components/Button/node_modules/fela/lib/createRenderer.js
-17 silly diff components/Button/node_modules/fela/lib/enhance.js
-17 silly diff components/Button/node_modules/fela/lib/index.js
-17 silly diff components/Button/node_modules/fela/package.json
-17 silly diff components/Button/node_modules/fs-exists-sync/LICENSE
-17 silly diff components/Button/node_modules/fs-exists-sync/README.md
-17 silly diff components/Button/node_modules/fs-exists-sync/index.js
-17 silly diff components/Button/node_modules/fs-exists-sync/package.json
-17 silly diff components/Button/node_modules/fs.realpath/LICENSE
-17 silly diff components/Button/node_modules/fs.realpath/README.md
-17 silly diff components/Button/node_modules/fs.realpath/index.js
-17 silly diff components/Button/node_modules/fs.realpath/old.js
-17 silly diff components/Button/node_modules/fs.realpath/package.json
-17 silly diff components/Button/node_modules/glob/LICENSE
-17 silly diff components/Button/node_modules/glob/README.md
-17 silly diff components/Button/node_modules/glob/changelog.md
-17 silly diff components/Button/node_modules/glob/common.js
-17 silly diff components/Button/node_modules/glob/glob.js
-17 silly diff components/Button/node_modules/glob/package.json
-17 silly diff components/Button/node_modules/glob/sync.js
-17 silly diff components/Button/node_modules/global-modules/LICENSE
-17 silly diff components/Button/node_modules/global-modules/README.md
-17 silly diff components/Button/node_modules/global-modules/index.js
-17 silly diff components/Button/node_modules/global-modules/package.json
-17 silly diff components/Button/node_modules/global-prefix/LICENSE
-17 silly diff components/Button/node_modules/global-prefix/README.md
-17 silly diff components/Button/node_modules/global-prefix/index.js
-17 silly diff components/Button/node_modules/global-prefix/package.json
-17 silly diff components/Button/node_modules/has-glob/LICENSE
-17 silly diff components/Button/node_modules/has-glob/README.md
-17 silly diff components/Button/node_modules/has-glob/index.js
-17 silly diff components/Button/node_modules/has-glob/package.json
-17 silly diff components/Button/node_modules/homedir-polyfill/LICENSE
-17 silly diff components/Button/node_modules/homedir-polyfill/README.md
-17 silly diff components/Button/node_modules/homedir-polyfill/index.js
-17 silly diff components/Button/node_modules/homedir-polyfill/package.json
-17 silly diff components/Button/node_modules/hyphenate-style-name/.npmignore
-17 silly diff components/Button/node_modules/hyphenate-style-name/.nyc_output/900e064d9219b09c1c1b62dc2f53b452.json
-17 silly diff components/Button/node_modules/hyphenate-style-name/LICENSE
-17 silly diff components/Button/node_modules/hyphenate-style-name/README.md
-17 silly diff components/Button/node_modules/hyphenate-style-name/index.js
-17 silly diff components/Button/node_modules/hyphenate-style-name/package.json
-17 silly diff components/Button/node_modules/hyphenate-style-name/yarn.lock
-17 silly diff components/Button/node_modules/inflight/LICENSE
-17 silly diff components/Button/node_modules/inflight/README.md
-17 silly diff components/Button/node_modules/inflight/inflight.js
-17 silly diff components/Button/node_modules/inflight/package.json
-17 silly diff components/Button/node_modules/inherits/LICENSE
-17 silly diff components/Button/node_modules/inherits/README.md
-17 silly diff components/Button/node_modules/inherits/inherits.js
-17 silly diff components/Button/node_modules/inherits/inherits_browser.js
-17 silly diff components/Button/node_modules/inherits/package.json
-17 silly diff components/Button/node_modules/ini/LICENSE
-17 silly diff components/Button/node_modules/ini/README.md
-17 silly diff components/Button/node_modules/ini/ini.js
-17 silly diff components/Button/node_modules/ini/package.json
-17 silly diff components/Button/node_modules/is-buffer/.npmignore
-17 silly diff components/Button/node_modules/is-buffer/LICENSE
-17 silly diff components/Button/node_modules/is-buffer/README.md
-17 silly diff components/Button/node_modules/is-buffer/index.js
-17 silly diff components/Button/node_modules/is-buffer/package.json
-17 silly diff components/Button/node_modules/is-buffer/test/basic.js
-17 silly diff components/Button/node_modules/is-extendable/LICENSE
-17 silly diff components/Button/node_modules/is-extendable/README.md
-17 silly diff components/Button/node_modules/is-extendable/index.js
-17 silly diff components/Button/node_modules/is-extendable/package.json
-17 silly diff components/Button/node_modules/is-extglob/LICENSE
-17 silly diff components/Button/node_modules/is-extglob/README.md
-17 silly diff components/Button/node_modules/is-extglob/index.js
-17 silly diff components/Button/node_modules/is-extglob/package.json
-17 silly diff components/Button/node_modules/is-glob/LICENSE
-17 silly diff components/Button/node_modules/is-glob/README.md
-17 silly diff components/Button/node_modules/is-glob/index.js
-17 silly diff components/Button/node_modules/is-glob/package.json
-17 silly diff components/Button/node_modules/is-valid-glob/LICENSE
-17 silly diff components/Button/node_modules/is-valid-glob/README.md
-17 silly diff components/Button/node_modules/is-valid-glob/index.js
-17 silly diff components/Button/node_modules/is-valid-glob/package.json
-17 silly diff components/Button/node_modules/is-windows/LICENSE
-17 silly diff components/Button/node_modules/is-windows/index.js
-17 silly diff components/Button/node_modules/is-windows/package.json
-17 silly diff components/Button/node_modules/isexe/.npmignore
-17 silly diff components/Button/node_modules/isexe/LICENSE
-17 silly diff components/Button/node_modules/isexe/README.md
-17 silly diff components/Button/node_modules/isexe/index.js
-17 silly diff components/Button/node_modules/isexe/mode.js
-17 silly diff components/Button/node_modules/isexe/package.json
-17 silly diff components/Button/node_modules/isexe/test/basic.js
-17 silly diff components/Button/node_modules/isexe/windows.js
-17 silly diff components/Button/node_modules/kind-of/LICENSE
-17 silly diff components/Button/node_modules/kind-of/README.md
-17 silly diff components/Button/node_modules/kind-of/index.js
-17 silly diff components/Button/node_modules/kind-of/package.json
-17 silly diff components/Button/node_modules/lazy-cache/LICENSE
-17 silly diff components/Button/node_modules/lazy-cache/README.md
-17 silly diff components/Button/node_modules/lazy-cache/index.js
-17 silly diff components/Button/node_modules/lazy-cache/package.json
-17 silly diff components/Button/node_modules/loose-envify/package.json
-17 silly diff components/Button/node_modules/matched/LICENSE
-17 silly diff components/Button/node_modules/matched/README.md
-17 silly diff components/Button/node_modules/matched/index.js
-17 silly diff components/Button/node_modules/matched/lib/async.js
-17 silly diff components/Button/node_modules/matched/lib/promise.js
-17 silly diff components/Button/node_modules/matched/lib/sync.js
-17 silly diff components/Button/node_modules/matched/lib/utils.js
-17 silly diff components/Button/node_modules/matched/package.json
-17 silly diff components/Button/node_modules/minimatch/LICENSE
-17 silly diff components/Button/node_modules/minimatch/README.md
-17 silly diff components/Button/node_modules/minimatch/minimatch.js
-17 silly diff components/Button/node_modules/minimatch/package.json
-17 silly diff components/Button/node_modules/node-fetch/CHANGELOG.md
-17 silly diff components/Button/node_modules/node-fetch/lib/headers.js
-17 silly diff components/Button/node_modules/node-fetch/lib/index.js
-17 silly diff components/Button/node_modules/node-fetch/package.json
-17 silly diff components/Button/node_modules/once/LICENSE
-17 silly diff components/Button/node_modules/once/README.md
-17 silly diff components/Button/node_modules/once/once.js
-17 silly diff components/Button/node_modules/once/package.json
-17 silly diff components/Button/node_modules/os-homedir/index.js
-17 silly diff components/Button/node_modules/os-homedir/license
-17 silly diff components/Button/node_modules/os-homedir/package.json
-17 silly diff components/Button/node_modules/os-homedir/readme.md
-17 silly diff components/Button/node_modules/parse-passwd/LICENSE
-17 silly diff components/Button/node_modules/parse-passwd/README.md
-17 silly diff components/Button/node_modules/parse-passwd/index.js
-17 silly diff components/Button/node_modules/parse-passwd/package.json
-17 silly diff components/Button/node_modules/path-is-absolute/index.js
-17 silly diff components/Button/node_modules/path-is-absolute/license
-17 silly diff components/Button/node_modules/path-is-absolute/package.json
-17 silly diff components/Button/node_modules/path-is-absolute/readme.md
-17 silly diff components/Button/node_modules/polished/.documentation.json
-17 silly diff components/Button/node_modules/polished/.editorconfig
-17 silly diff components/Button/node_modules/polished/.eslintignore
-17 silly diff components/Button/node_modules/polished/.eslintrc
-17 silly diff components/Button/node_modules/polished/.flowconfig
-17 silly diff components/Button/node_modules/polished/.github/ISSUE_TEMPLATE.md
-17 silly diff components/Button/node_modules/polished/.npmignore
-17 silly diff components/Button/node_modules/polished/CNAME
-17 silly diff components/Button/node_modules/polished/CONTRIBUTING.md
-17 silly diff components/Button/node_modules/polished/README.md
-17 silly diff components/Button/node_modules/polished/ROADMAP.md
-17 silly diff components/Button/node_modules/polished/dist/polished.es.js
-17 silly diff components/Button/node_modules/polished/dist/polished.js
-17 silly diff components/Button/node_modules/polished/dist/polished.min.js
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/GitHub-Mark-Light-64px.png
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/anchor.js
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/bass-addons.css
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/bass.css
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/docs.js
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/EOT/SourceCodePro-Bold.eot
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/EOT/SourceCodePro-Regular.eot
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/LICENSE.txt
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/OTF/SourceCodePro-Bold.otf
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/OTF/SourceCodePro-Regular.otf
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/TTF/SourceCodePro-Bold.ttf
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/TTF/SourceCodePro-Regular.ttf
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/WOFF/OTF/SourceCodePro-Bold.otf.woff
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/WOFF/OTF/SourceCodePro-Regular.otf.woff
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/WOFF/TTF/SourceCodePro-Bold.ttf.woff
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/WOFF/TTF/SourceCodePro-Regular.ttf.woff
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/WOFF2/OTF/SourceCodePro-Bold.otf.woff2
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/WOFF2/OTF/SourceCodePro-Regular.otf.woff2
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/WOFF2/TTF/SourceCodePro-Bold.ttf.woff2
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/WOFF2/TTF/SourceCodePro-Regular.ttf.woff2
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/fonts/source-code-pro.css
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/github.css
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/highlight.pack.js
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/logo.svg
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/meta.png
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/script.js
-17 silly diff components/Button/node_modules/polished/docs-theme/assets/style.css
-17 silly diff components/Button/node_modules/polished/docs-theme/docs/index._
-17 silly diff components/Button/node_modules/polished/docs-theme/favicon.png
-17 silly diff components/Button/node_modules/polished/docs-theme/index._
-17 silly diff components/Button/node_modules/polished/docs-theme/index.js
-17 silly diff components/Button/node_modules/polished/docs-theme/markdown.js
-17 silly diff components/Button/node_modules/polished/docs-theme/partials/base._
-17 silly diff components/Button/node_modules/polished/docs-theme/partials/note._
-17 silly diff components/Button/node_modules/polished/docs-theme/partials/section._
-17 silly diff components/Button/node_modules/polished/docs-theme/partials/section_list._
-17 silly diff components/Button/node_modules/polished/docs/CNAME
-17 silly diff components/Button/node_modules/polished/docs/assets/polished.js
-17 silly diff components/Button/node_modules/polished/docs/docs/index.html
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/babel-cli_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/babel-core_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/babel-eslint_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/babel-jest_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/babel-loader_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/babel-plugin-add-module-exports_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/babel-plugin-external-helpers_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/babel-plugin-transform-flow-strip-types_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/babel-plugin-transform-object-rest-spread_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/babel-polyfill_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/babel-preset-latest_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/concat-stream_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/cz-conventional-changelog_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/documentation_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/eslint-config-airbnb-base_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/eslint-plugin-import_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/eslint_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/flow-bin_v0.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/flow-copy-source_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/ghooks_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/github-slugger_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/highlight.js_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/jest_v16.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/lodash_v4.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/npm-watch_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/polished_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/pushstate-server_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/ramda_v0.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/rollup-plugin-babel_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/rollup-plugin-commonjs_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/rollup-plugin-flow_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/rollup-plugin-inject_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/rollup-plugin-json_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/rollup-plugin-node-resolve_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/rollup-plugin-replace_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/rollup-plugin-uglify_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/rollup_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/shx_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/validate-commit-msg_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/vinyl-fs_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/flow-typed/npm/vinyl_vx.x.x.js
-17 silly diff components/Button/node_modules/polished/lib/color/adjustHue.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/darken.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/desaturate.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/hsl.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/hsla.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/lighten.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/mix.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/opacify.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/parseToRgb.js
-17 silly diff components/Button/node_modules/polished/lib/color/parseToRgb.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/rgb.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/rgba.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/saturate.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/setHue.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/setLightness.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/setSaturation.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/shade.js
-17 silly diff components/Button/node_modules/polished/lib/color/shade.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/tint.js
-17 silly diff components/Button/node_modules/polished/lib/color/tint.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/toColorString.js.flow
-17 silly diff components/Button/node_modules/polished/lib/color/transparentize.js.flow
-17 silly diff components/Button/node_modules/polished/lib/helpers/directionalProperty.js
-17 silly diff components/Button/node_modules/polished/lib/helpers/directionalProperty.js.flow
-17 silly diff components/Button/node_modules/polished/lib/helpers/em.js.flow
-17 silly diff components/Button/node_modules/polished/lib/helpers/modularScale.js.flow
-17 silly diff components/Button/node_modules/polished/lib/helpers/rem.js.flow
-17 silly diff components/Button/node_modules/polished/lib/helpers/stripUnit.js.flow
-17 silly diff components/Button/node_modules/polished/lib/internalHelpers/_curry.js
-17 silly diff components/Button/node_modules/polished/lib/internalHelpers/_curry.js.flow
-17 silly diff components/Button/node_modules/polished/lib/internalHelpers/_guard.js.flow
-17 silly diff components/Button/node_modules/polished/lib/internalHelpers/_hslToHex.js.flow
-17 silly diff components/Button/node_modules/polished/lib/internalHelpers/_hslToRgb.js.flow
-17 silly diff components/Button/node_modules/polished/lib/internalHelpers/_nameToHex.js
-17 silly diff components/Button/node_modules/polished/lib/internalHelpers/_nameToHex.js.flow
-17 silly diff components/Button/node_modules/polished/lib/internalHelpers/_pxto.js.flow
-17 silly diff components/Button/node_modules/polished/lib/internalHelpers/_reduceHexValue.js.flow
-17 silly diff components/Button/node_modules/polished/lib/internalHelpers/_rgbToHsl.js.flow
-17 silly diff components/Button/node_modules/polished/lib/internalHelpers/_statefulSelectors.js
-17 silly diff components/Button/node_modules/polished/lib/internalHelpers/_statefulSelectors.js.flow
-17 silly diff components/Button/node_modules/polished/lib/mixins/clearFix.js
-17 silly diff components/Button/node_modules/polished/lib/mixins/clearFix.js.flow
-17 silly diff components/Button/node_modules/polished/lib/mixins/ellipsis.js
-17 silly diff components/Button/node_modules/polished/lib/mixins/ellipsis.js.flow
-17 silly diff components/Button/node_modules/polished/lib/mixins/fontFace.js
-17 silly diff components/Button/node_modules/polished/lib/mixins/fontFace.js.flow
-17 silly diff components/Button/node_modules/polished/lib/mixins/hiDPI.js.flow
-17 silly diff components/Button/node_modules/polished/lib/mixins/radialGradient.js
-17 silly diff components/Button/node_modules/polished/lib/mixins/radialGradient.js.flow
-17 silly diff components/Button/node_modules/polished/lib/mixins/retinaImage.js.flow
-17 silly diff components/Button/node_modules/polished/lib/mixins/timingFunctions.js
-17 silly diff components/Button/node_modules/polished/lib/mixins/timingFunctions.js.flow
-17 silly diff components/Button/node_modules/polished/lib/mixins/triangle.js
-17 silly diff components/Button/node_modules/polished/lib/mixins/triangle.js.flow
-17 silly diff components/Button/node_modules/polished/lib/shorthands/animation.js
-17 silly diff components/Button/node_modules/polished/lib/shorthands/animation.js.flow
-17 silly diff components/Button/node_modules/polished/lib/shorthands/backgrounds.js
-17 silly diff components/Button/node_modules/polished/lib/shorthands/backgrounds.js.flow
-17 silly diff components/Button/node_modules/polished/lib/shorthands/borderRadius.js
-17 silly diff components/Button/node_modules/polished/lib/shorthands/borderRadius.js.flow
-17 silly diff components/Button/node_modules/polished/lib/shorthands/buttons.js.flow
-17 silly diff components/Button/node_modules/polished/lib/shorthands/position.js.flow
-17 silly diff components/Button/node_modules/polished/lib/shorthands/textInputs.js.flow
-17 silly diff components/Button/node_modules/polished/lib/shorthands/transitions.js
-17 silly diff components/Button/node_modules/polished/lib/shorthands/transitions.js.flow
-17 silly diff components/Button/node_modules/polished/package.json
-17 silly diff components/Button/node_modules/polished/rollup.config.js
-17 silly diff components/Button/node_modules/polished/src/color/adjustHue.js
-17 silly diff components/Button/node_modules/polished/src/color/complement.js
-17 silly diff components/Button/node_modules/polished/src/color/darken.js
-17 silly diff components/Button/node_modules/polished/src/color/desaturate.js
-17 silly diff components/Button/node_modules/polished/src/color/grayscale.js
-17 silly diff components/Button/node_modules/polished/src/color/hsl.js
-17 silly diff components/Button/node_modules/polished/src/color/hsla.js
-17 silly diff components/Button/node_modules/polished/src/color/invert.js
-17 silly diff components/Button/node_modules/polished/src/color/lighten.js
-17 silly diff components/Button/node_modules/polished/src/color/mix.js
-17 silly diff components/Button/node_modules/polished/src/color/opacify.js
-17 silly diff components/Button/node_modules/polished/src/color/parseToHsl.js
-17 silly diff components/Button/node_modules/polished/src/color/parseToRgb.js
-17 silly diff components/Button/node_modules/polished/src/color/rgb.js
-17 silly diff components/Button/node_modules/polished/src/color/rgba.js
-17 silly diff components/Button/node_modules/polished/src/color/saturate.js
-17 silly diff components/Button/node_modules/polished/src/color/setHue.js
-17 silly diff components/Button/node_modules/polished/src/color/setLightness.js
-17 silly diff components/Button/node_modules/polished/src/color/setSaturation.js
-17 silly diff components/Button/node_modules/polished/src/color/shade.js
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/adjustHue.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/complement.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/darken.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/desaturate.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/grayscale.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/hsl.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/hsla.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/invert.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/lighten.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/mix.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/opacify.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/parseToHsl.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/parseToRgb.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/rgb.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/rgba.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/saturate.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/setHue.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/setLightness.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/setSaturation.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/shade.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/tint.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/toColorString.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/__snapshots__/transparentize.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/color/test/adjustHue.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/complement.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/darken.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/desaturate.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/grayscale.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/hsl.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/hsla.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/invert.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/lighten.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/mix.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/opacify.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/parseToHsl.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/parseToRgb.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/rgb.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/rgba.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/saturate.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/setHue.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/setLightness.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/setSaturation.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/shade.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/tint.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/toColorString.test.js
-17 silly diff components/Button/node_modules/polished/src/color/test/transparentize.test.js
-17 silly diff components/Button/node_modules/polished/src/color/tint.js
-17 silly diff components/Button/node_modules/polished/src/color/toColorString.js
-17 silly diff components/Button/node_modules/polished/src/color/transparentize.js
-17 silly diff components/Button/node_modules/polished/src/helpers/directionalProperty.js
-17 silly diff components/Button/node_modules/polished/src/helpers/em.js
-17 silly diff components/Button/node_modules/polished/src/helpers/modularScale.js
-17 silly diff components/Button/node_modules/polished/src/helpers/rem.js
-17 silly diff components/Button/node_modules/polished/src/helpers/stripUnit.js
-17 silly diff components/Button/node_modules/polished/src/helpers/test/__snapshots__/directionalProperty.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/helpers/test/__snapshots__/em.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/helpers/test/__snapshots__/modularScale.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/helpers/test/__snapshots__/rem.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/helpers/test/__snapshots__/stripUnit.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/helpers/test/directionalProperty.test.js
-17 silly diff components/Button/node_modules/polished/src/helpers/test/em.test.js
-17 silly diff components/Button/node_modules/polished/src/helpers/test/modularScale.test.js
-17 silly diff components/Button/node_modules/polished/src/helpers/test/rem.test.js
-17 silly diff components/Button/node_modules/polished/src/helpers/test/stripUnit.test.js
-17 silly diff components/Button/node_modules/polished/src/index.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_capitalizeString.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_curry.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_endsWith.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_guard.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_hslToHex.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_hslToRgb.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_isValidDimensionValue.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_nameToHex.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_numberToHex.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_polishedLogs.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_pxto.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_reduceHexValue.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_rgbToHsl.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/_statefulSelectors.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/__snapshots__/_hslToHex.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/__snapshots__/_hslToRgb.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/__snapshots__/_nameToHex.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/__snapshots__/_numberToHex.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/__snapshots__/_pxto.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/__snapshots__/_reduceHexValue.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/__snapshots__/_rgbToHsl.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/__snapshots__/_statefulSelectors.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/_capitalizeString.test.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/_curry.test.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/_guard.test.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/_hslToHex.test.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/_hslToRgb.test.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/_nameToHex.test.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/_numberToHex.test.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/_pxto.test.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/_reduceHexValue.test.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/_rgbToHsl.test.js
-17 silly diff components/Button/node_modules/polished/src/internalHelpers/test/_statefulSelectors.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/clearFix.js
-17 silly diff components/Button/node_modules/polished/src/mixins/ellipsis.js
-17 silly diff components/Button/node_modules/polished/src/mixins/fontFace.js
-17 silly diff components/Button/node_modules/polished/src/mixins/hiDPI.js
-17 silly diff components/Button/node_modules/polished/src/mixins/hideText.js
-17 silly diff components/Button/node_modules/polished/src/mixins/normalize.js
-17 silly diff components/Button/node_modules/polished/src/mixins/placeholder.js
-17 silly diff components/Button/node_modules/polished/src/mixins/radialGradient.js
-17 silly diff components/Button/node_modules/polished/src/mixins/retinaImage.js
-17 silly diff components/Button/node_modules/polished/src/mixins/selection.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/clearFix.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/ellipsis.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/fontFace.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/hiDPI.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/hideText.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/normalize.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/placeholder.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/radialGradient.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/retinaImage.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/selection.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/timingFunctions.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/triangle.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/__snapshots__/wordWrap.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/mixins/test/clearFix.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/ellipsis.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/fontFace.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/hiDPI.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/hideText.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/normalize.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/placeholder.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/radialGradient.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/retinaImage.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/selection.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/timingFunctions.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/triangle.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/test/wordWrap.test.js
-17 silly diff components/Button/node_modules/polished/src/mixins/timingFunctions.js
-17 silly diff components/Button/node_modules/polished/src/mixins/triangle.js
-17 silly diff components/Button/node_modules/polished/src/mixins/wordWrap.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/animation.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/backgroundImages.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/backgrounds.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/borderColor.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/borderRadius.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/borderStyle.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/borderWidth.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/buttons.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/margin.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/padding.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/position.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/size.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/animation.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/backgroundImages.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/backgrounds.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/borderColor.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/borderRadius.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/borderStyle.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/borderWidth.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/buttons.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/margin.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/padding.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/position.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/size.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/textInputs.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/__snapshots__/transitions.test.js.snap
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/animation.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/backgroundImages.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/backgrounds.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/borderColor.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/borderRadius.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/borderStyle.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/borderWidth.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/buttons.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/margin.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/padding.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/position.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/size.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/textInputs.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/test/transitions.test.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/textInputs.js
-17 silly diff components/Button/node_modules/polished/src/shorthands/transitions.js
-17 silly diff components/Button/node_modules/polished/src/types/color.js
-17 silly diff components/Button/node_modules/polished/travis_after_all.py
-17 silly diff components/Button/node_modules/polished/yarn.lock
-17 silly diff components/Button/node_modules/prop-types/package.json
-17 silly diff components/Button/node_modules/react-fela/LICENSE
-17 silly diff components/Button/node_modules/react-fela/README.md
-17 silly diff components/Button/node_modules/react-fela/es/Provider.js
-17 silly diff components/Button/node_modules/react-fela/es/ThemeProvider.js
-17 silly diff components/Button/node_modules/react-fela/es/connect.js
-17 silly diff components/Button/node_modules/react-fela/es/createComponent.js
-17 silly diff components/Button/node_modules/react-fela/es/createComponentWithProxy.js
-17 silly diff components/Button/node_modules/react-fela/es/index.js
-17 silly diff components/Button/node_modules/react-fela/lib/Provider.js
-17 silly diff components/Button/node_modules/react-fela/lib/ThemeProvider.js
-17 silly diff components/Button/node_modules/react-fela/lib/connect.js
-17 silly diff components/Button/node_modules/react-fela/lib/createComponent.js
-17 silly diff components/Button/node_modules/react-fela/lib/createComponentWithProxy.js
-17 silly diff components/Button/node_modules/react-fela/lib/index.js
-17 silly diff components/Button/node_modules/react-fela/package.json
-17 silly diff components/Button/node_modules/resolve-dir/LICENSE
-17 silly diff components/Button/node_modules/resolve-dir/README.md
-17 silly diff components/Button/node_modules/resolve-dir/index.js
-17 silly diff components/Button/node_modules/resolve-dir/package.json
-17 silly diff components/Button/node_modules/rollup-plugin-multi-entry/README.md
-17 silly diff components/Button/node_modules/rollup-plugin-multi-entry/dist/rollup-plugin-multi-entry.js
-17 silly diff components/Button/node_modules/rollup-plugin-multi-entry/dist/rollup-plugin-multi-entry.mjs
-17 silly diff components/Button/node_modules/rollup-plugin-multi-entry/package.json
-17 silly diff components/Button/node_modules/seamless-immutable/.npmignore
-17 silly diff components/Button/node_modules/seamless-immutable/LICENSE
-17 silly diff components/Button/node_modules/seamless-immutable/README.md
-17 silly diff components/Button/node_modules/seamless-immutable/package.json
-17 silly diff components/Button/node_modules/seamless-immutable/seamless-immutable.development.js
-17 silly diff components/Button/node_modules/seamless-immutable/seamless-immutable.development.min.js
-17 silly diff components/Button/node_modules/seamless-immutable/seamless-immutable.production.min.js
-17 silly diff components/Button/node_modules/seamless-immutable/src/seamless-immutable.js
-17 silly diff components/Button/node_modules/set-getter/LICENSE
-17 silly diff components/Button/node_modules/set-getter/README.md
-17 silly diff components/Button/node_modules/set-getter/index.js
-17 silly diff components/Button/node_modules/set-getter/package.json
-17 silly diff components/Button/node_modules/sprintf-js/.editorconfig
-17 silly diff components/Button/node_modules/sprintf-js/.eslintignore
-17 silly diff components/Button/node_modules/sprintf-js/.eslintrc.js
-17 silly diff components/Button/node_modules/sprintf-js/.npmignore
-17 silly diff components/Button/node_modules/sprintf-js/.travis.yml
-17 silly diff components/Button/node_modules/sprintf-js/CHANGELOG.md
-17 silly diff components/Button/node_modules/sprintf-js/CONTRIBUTORS
-17 silly diff components/Button/node_modules/sprintf-js/LICENSE
-17 silly diff components/Button/node_modules/sprintf-js/README.md
-17 silly diff components/Button/node_modules/sprintf-js/benchmark/benchmark.js
-17 silly diff components/Button/node_modules/sprintf-js/bower.json
-17 silly diff components/Button/node_modules/sprintf-js/demo/angular.html
-17 silly diff components/Button/node_modules/sprintf-js/dist/.gitattributes
-17 silly diff components/Button/node_modules/sprintf-js/dist/angular-sprintf.min.js
-17 silly diff components/Button/node_modules/sprintf-js/dist/angular-sprintf.min.js.map
-17 silly diff components/Button/node_modules/sprintf-js/dist/sprintf.min.js
-17 silly diff components/Button/node_modules/sprintf-js/dist/sprintf.min.js.map
-17 silly diff components/Button/node_modules/sprintf-js/gulpfile.js
-17 silly diff components/Button/node_modules/sprintf-js/package.json
-17 silly diff components/Button/node_modules/sprintf-js/src/angular-sprintf.js
-17 silly diff components/Button/node_modules/sprintf-js/src/sprintf.js
-17 silly diff components/Button/node_modules/sprintf-js/test/test.js
-17 silly diff components/Button/node_modules/sprintf-js/test/test_validation.js
-17 silly diff components/Button/node_modules/styled-components/package.json
-17 silly diff components/Button/node_modules/styled-tools/package.json
-17 silly diff components/Button/node_modules/to-object-path/LICENSE
-17 silly diff components/Button/node_modules/to-object-path/README.md
-17 silly diff components/Button/node_modules/to-object-path/index.js
-17 silly diff components/Button/node_modules/to-object-path/package.json
-17 silly diff components/Button/node_modules/underscore.string/.editorconfig
-17 silly diff components/Button/node_modules/underscore.string/.eslintignore
-17 silly diff components/Button/node_modules/underscore.string/.eslintrc
-17 silly diff components/Button/node_modules/underscore.string/.npmignore
-17 silly diff components/Button/node_modules/underscore.string/.travis.yml
-17 silly diff components/Button/node_modules/underscore.string/CHANGELOG.markdown
-17 silly diff components/Button/node_modules/underscore.string/CONTRIBUTING.markdown
-17 silly diff components/Button/node_modules/underscore.string/README.markdown
-17 silly diff components/Button/node_modules/underscore.string/bower.json
-17 silly diff components/Button/node_modules/underscore.string/camelize.js
-17 silly diff components/Button/node_modules/underscore.string/capitalize.js
-17 silly diff components/Button/node_modules/underscore.string/chars.js
-17 silly diff components/Button/node_modules/underscore.string/chop.js
-17 silly diff components/Button/node_modules/underscore.string/classify.js
-17 silly diff components/Button/node_modules/underscore.string/clean.js
-17 silly diff components/Button/node_modules/underscore.string/cleanDiacritics.js
-17 silly diff components/Button/node_modules/underscore.string/component.json
-17 silly diff components/Button/node_modules/underscore.string/count.js
-17 silly diff components/Button/node_modules/underscore.string/dasherize.js
-17 silly diff components/Button/node_modules/underscore.string/decapitalize.js
-17 silly diff components/Button/node_modules/underscore.string/dedent.js
-17 silly diff components/Button/node_modules/underscore.string/dist/underscore.string.js
-17 silly diff components/Button/node_modules/underscore.string/dist/underscore.string.min.js
-17 silly diff components/Button/node_modules/underscore.string/endsWith.js
-17 silly diff components/Button/node_modules/underscore.string/escapeHTML.js
-17 silly diff components/Button/node_modules/underscore.string/exports.js
-17 silly diff components/Button/node_modules/underscore.string/helper/adjacent.js
-17 silly diff components/Button/node_modules/underscore.string/helper/defaultToWhiteSpace.js
-17 silly diff components/Button/node_modules/underscore.string/helper/escapeChars.js
-17 silly diff components/Button/node_modules/underscore.string/helper/escapeRegExp.js
-17 silly diff components/Button/node_modules/underscore.string/helper/htmlEntities.js
-17 silly diff components/Button/node_modules/underscore.string/helper/makeString.js
-17 silly diff components/Button/node_modules/underscore.string/helper/strRepeat.js
-17 silly diff components/Button/node_modules/underscore.string/helper/toPositive.js
-17 silly diff components/Button/node_modules/underscore.string/humanize.js
-17 silly diff components/Button/node_modules/underscore.string/include.js
-17 silly diff components/Button/node_modules/underscore.string/index.js
-17 silly diff components/Button/node_modules/underscore.string/insert.js
-17 silly diff components/Button/node_modules/underscore.string/isBlank.js
-17 silly diff components/Button/node_modules/underscore.string/join.js
-17 silly diff components/Button/node_modules/underscore.string/levenshtein.js
-17 silly diff components/Button/node_modules/underscore.string/lines.js
-17 silly diff components/Button/node_modules/underscore.string/lpad.js
-17 silly diff components/Button/node_modules/underscore.string/lrpad.js
-17 silly diff components/Button/node_modules/underscore.string/ltrim.js
-17 silly diff components/Button/node_modules/underscore.string/map.js
-17 silly diff components/Button/node_modules/underscore.string/meteor-post.js
-17 silly diff components/Button/node_modules/underscore.string/meteor-pre.js
-17 silly diff components/Button/node_modules/underscore.string/naturalCmp.js
-17 silly diff components/Button/node_modules/underscore.string/numberFormat.js
-17 silly diff components/Button/node_modules/underscore.string/package.js
-17 silly diff components/Button/node_modules/underscore.string/package.json
-17 silly diff components/Button/node_modules/underscore.string/pad.js
-17 silly diff components/Button/node_modules/underscore.string/pred.js
-17 silly diff components/Button/node_modules/underscore.string/prune.js
-17 silly diff components/Button/node_modules/underscore.string/quote.js
-17 silly diff components/Button/node_modules/underscore.string/repeat.js
-17 silly diff components/Button/node_modules/underscore.string/replaceAll.js
-17 silly diff components/Button/node_modules/underscore.string/reverse.js
-17 silly diff components/Button/node_modules/underscore.string/rpad.js
-17 silly diff components/Button/node_modules/underscore.string/rtrim.js
-17 silly diff components/Button/node_modules/underscore.string/slugify.js
-17 silly diff components/Button/node_modules/underscore.string/splice.js
-17 silly diff components/Button/node_modules/underscore.string/sprintf.js
-17 silly diff components/Button/node_modules/underscore.string/startsWith.js
-17 silly diff components/Button/node_modules/underscore.string/strLeft.js
-17 silly diff components/Button/node_modules/underscore.string/strLeftBack.js
-17 silly diff components/Button/node_modules/underscore.string/strRight.js
-17 silly diff components/Button/node_modules/underscore.string/strRightBack.js
-17 silly diff components/Button/node_modules/underscore.string/stripTags.js
-17 silly diff components/Button/node_modules/underscore.string/succ.js
-17 silly diff components/Button/node_modules/underscore.string/surround.js
-17 silly diff components/Button/node_modules/underscore.string/swapCase.js
-17 silly diff components/Button/node_modules/underscore.string/titleize.js
-17 silly diff components/Button/node_modules/underscore.string/toBoolean.js
-17 silly diff components/Button/node_modules/underscore.string/toNumber.js
-17 silly diff components/Button/node_modules/underscore.string/toSentence.js
-17 silly diff components/Button/node_modules/underscore.string/toSentenceSerial.js
-17 silly diff components/Button/node_modules/underscore.string/trim.js
-17 silly diff components/Button/node_modules/underscore.string/truncate.js
-17 silly diff components/Button/node_modules/underscore.string/underscored.js
-17 silly diff components/Button/node_modules/underscore.string/unescapeHTML.js
-17 silly diff components/Button/node_modules/underscore.string/unquote.js
-17 silly diff components/Button/node_modules/underscore.string/vsprintf.js
-17 silly diff components/Button/node_modules/underscore.string/words.js
-17 silly diff components/Button/node_modules/underscore.string/wrap.js
-17 silly diff components/Button/node_modules/util-deprecate/History.md
-17 silly diff components/Button/node_modules/util-deprecate/LICENSE
-17 silly diff components/Button/node_modules/util-deprecate/README.md
-17 silly diff components/Button/node_modules/util-deprecate/browser.js
-17 silly diff components/Button/node_modules/util-deprecate/node.js
-17 silly diff components/Button/node_modules/util-deprecate/package.json
-17 silly diff components/Button/node_modules/which/CHANGELOG.md
-17 silly diff components/Button/node_modules/which/LICENSE
-17 silly diff components/Button/node_modules/which/README.md
-17 silly diff components/Button/node_modules/which/bin/which
-17 silly diff components/Button/node_modules/which/package.json
-17 silly diff components/Button/node_modules/which/which.js
-17 silly diff components/Button/node_modules/wrappy/LICENSE
-17 silly diff components/Button/node_modules/wrappy/README.md
-17 silly diff components/Button/node_modules/wrappy/package.json
-17 silly diff components/Button/node_modules/wrappy/wrappy.js
-17 silly diff components/Button/src/Button.js
-17 silly diff components/Button/src/defaultTheme.js
-18 silly diffSinceIn v0.1.6-0 /Users/esoj/Proyectos/styled-bootstrap/utils
+14 verbose getLastTag v0.1.6-1
+15 info Comparing with v0.1.6-1.
+16 silly diffSinceIn v0.1.6-1 /Users/esoj/Proyectos/styled-bootstrap/components/Button
+17 silly diff
+18 silly diffSinceIn v0.1.6-1 /Users/esoj/Proyectos/styled-bootstrap/utils
 19 silly diff utils/es/index.js
 19 silly diff utils/lib/index.js
-20 verbose updated @styled-bootstrap/button
-21 verbose updated styled-bootstrap-utils
-22 silly collectDependents
-23 silly isPackageDependentOf @styled-bootstrap/button @styled-bootstrap/button
-24 silly isPackageDependentOf styled-bootstrap-utils @styled-bootstrap/button
-25 silly isPackageDependentOf @styled-bootstrap/button styled-bootstrap-utils
-26 verbose dependent @styled-bootstrap/button depends on styled-bootstrap-utils
-27 silly isPackageDependentOf styled-bootstrap-utils @styled-bootstrap/button
-28 silly isPackageDependentOf styled-bootstrap-utils styled-bootstrap-utils
-29 silly collectUpdates
-30 verbose has filtered update @styled-bootstrap/button
-31 verbose has filtered update styled-bootstrap-utils
-32 silly initialize success
-33 silly execute attempt
-34 silly isDetachedHead
-35 silly getCurrentBranch
-36 verbose getCurrentBranch master
-37 verbose isDetachedHead false
-38 silly addFile /Users/esoj/Proyectos/styled-bootstrap/lerna.json
-39 silly addFile /Users/esoj/Proyectos/styled-bootstrap/components/Button/package.json
-40 silly addFile /Users/esoj/Proyectos/styled-bootstrap/utils/package.json
-41 silly commit v0.1.6-1
-42 verbose commit [ 'commit', '-m', 'v0.1.6-1' ]
-43 silly addTag v0.1.6-1
-44 info publish Publishing packages to npm...
-45 silly existsSync /Users/esoj/Proyectos/styled-bootstrap/components/Button/scripts/prepublish.js
-46 verbose execScript No prepublish script found at /Users/esoj/Proyectos/styled-bootstrap/components/Button/scripts/prepublish.js
-47 silly existsSync /Users/esoj/Proyectos/styled-bootstrap/utils/scripts/prepublish.js
-48 verbose execScript No prepublish script found at /Users/esoj/Proyectos/styled-bootstrap/utils/scripts/prepublish.js
-49 verbose publishing styled-bootstrap-utils
-50 silly publishTaggedInDir latest utils
-51 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/utils' }
-52 info published styled-bootstrap-utils
-53 silly existsSync /Users/esoj/Proyectos/styled-bootstrap/utils/scripts/postpublish.js
-54 verbose execScript No postpublish script found at /Users/esoj/Proyectos/styled-bootstrap/utils/scripts/postpublish.js
-55 verbose publishing @styled-bootstrap/button
-56 silly publishTaggedInDir latest Button
-57 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/components/Button' }
-58 error publish Retrying failed publish: @styled-bootstrap/button
+19 silly diff utils/package.json
+19 silly diff utils/src/variables/colors.js
+19 silly diff utils/src/variables/components.js
+19 silly diff utils/src/variables/fonts.js
+19 silly diff utils/src/variables/options.js
+19 silly diff utils/src/variables/spacing.js
+20 verbose updated @styled-bootstrap/utils
+21 silly collectDependents
+22 silly isPackageDependentOf @styled-bootstrap/button @styled-bootstrap/utils
+23 silly isPackageDependentOf @styled-bootstrap/utils @styled-bootstrap/utils
+24 silly collectUpdates
+25 verbose has filtered update @styled-bootstrap/utils
+26 silly initialize success
+27 silly execute attempt
+28 silly isDetachedHead
+29 silly getCurrentBranch
+30 verbose getCurrentBranch master
+31 verbose isDetachedHead false
+32 silly addFile /Users/esoj/Proyectos/styled-bootstrap/lerna.json
+33 silly addFile /Users/esoj/Proyectos/styled-bootstrap/utils/package.json
+34 silly commit v0.1.6-2
+35 verbose commit [ 'commit', '-m', 'v0.1.6-2' ]
+36 silly addTag v0.1.6-2
+37 info publish Publishing packages to npm...
+38 silly existsSync /Users/esoj/Proyectos/styled-bootstrap/utils/scripts/prepublish.js
+39 verbose execScript No prepublish script found at /Users/esoj/Proyectos/styled-bootstrap/utils/scripts/prepublish.js
+40 verbose publishing @styled-bootstrap/utils
+41 silly publishTaggedInDir latest utils
+42 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/utils' }
+43 error publish Retrying failed publish: @styled-bootstrap/utils
+44 verbose publish error Error: Command failed: npm publish --tag latest
+44 verbose publish error npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+44 verbose publish error npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+44 verbose publish error npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+44 verbose publish error The following options have been renamed — please update your config: dest -> file
+44 verbose publish error The following options have been renamed — please update your config: dest -> file
+44 verbose publish error npm ERR! publish Failed PUT 402
+44 verbose publish error npm ERR! code E402
+44 verbose publish error npm ERR! You must sign up for private packages : @styled-bootstrap/utils
+44 verbose publish error
+44 verbose publish error npm ERR! A complete log of this run can be found in:
+44 verbose publish error npm ERR!     /Users/esoj/.npm/_logs/2017-08-27T16_23_27_448Z-debug.log
+44 verbose publish error
+44 verbose publish error > @styled-bootstrap/utils@0.1.6-2 prepublish /Users/esoj/Proyectos/styled-bootstrap/utils
+44 verbose publish error > node ../scripts/prepublish.js
+44 verbose publish error
+44 verbose publish error styled-bootstrap@0.1.4
+44 verbose publish error
+44 verbose publish error => Clean dist.
+44 verbose publish error
+44 verbose publish error => Copy LICENSE.
+44 verbose publish error
+44 verbose publish error     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+44 verbose publish error     at process._tickCallback (internal/process/next_tick.js:109:7)
+45 verbose publishing @styled-bootstrap/utils
+46 silly publishTaggedInDir latest utils
+47 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/utils' }
+48 error publish Retrying failed publish: @styled-bootstrap/utils
+49 verbose publish error Error: Command failed: npm publish --tag latest
+49 verbose publish error npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+49 verbose publish error npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+49 verbose publish error npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+49 verbose publish error The following options have been renamed — please update your config: dest -> file
+49 verbose publish error The following options have been renamed — please update your config: dest -> file
+49 verbose publish error npm ERR! publish Failed PUT 402
+49 verbose publish error npm ERR! code E402
+49 verbose publish error npm ERR! You must sign up for private packages : @styled-bootstrap/utils
+49 verbose publish error
+49 verbose publish error npm ERR! A complete log of this run can be found in:
+49 verbose publish error npm ERR!     /Users/esoj/.npm/_logs/2017-08-27T16_23_32_170Z-debug.log
+49 verbose publish error
+49 verbose publish error > @styled-bootstrap/utils@0.1.6-2 prepublish /Users/esoj/Proyectos/styled-bootstrap/utils
+49 verbose publish error > node ../scripts/prepublish.js
+49 verbose publish error
+49 verbose publish error styled-bootstrap@0.1.4
+49 verbose publish error
+49 verbose publish error => Clean dist.
+49 verbose publish error
+49 verbose publish error => Copy LICENSE.
+49 verbose publish error
+49 verbose publish error     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+49 verbose publish error     at process._tickCallback (internal/process/next_tick.js:109:7)
+50 verbose publishing @styled-bootstrap/utils
+51 silly publishTaggedInDir latest utils
+52 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/utils' }
+53 error publish Retrying failed publish: @styled-bootstrap/utils
+54 verbose publish error Error: Command failed: npm publish --tag latest
+54 verbose publish error npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+54 verbose publish error npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+54 verbose publish error npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+54 verbose publish error The following options have been renamed — please update your config: dest -> file
+54 verbose publish error The following options have been renamed — please update your config: dest -> file
+54 verbose publish error npm ERR! publish Failed PUT 402
+54 verbose publish error npm ERR! code E402
+54 verbose publish error npm ERR! You must sign up for private packages : @styled-bootstrap/utils
+54 verbose publish error
+54 verbose publish error npm ERR! A complete log of this run can be found in:
+54 verbose publish error npm ERR!     /Users/esoj/.npm/_logs/2017-08-27T16_23_36_774Z-debug.log
+54 verbose publish error
+54 verbose publish error > @styled-bootstrap/utils@0.1.6-2 prepublish /Users/esoj/Proyectos/styled-bootstrap/utils
+54 verbose publish error > node ../scripts/prepublish.js
+54 verbose publish error
+54 verbose publish error styled-bootstrap@0.1.4
+54 verbose publish error
+54 verbose publish error => Clean dist.
+54 verbose publish error
+54 verbose publish error => Copy LICENSE.
+54 verbose publish error
+54 verbose publish error     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+54 verbose publish error     at process._tickCallback (internal/process/next_tick.js:109:7)
+55 verbose publishing @styled-bootstrap/utils
+56 silly publishTaggedInDir latest utils
+57 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/utils' }
+58 error publish Retrying failed publish: @styled-bootstrap/utils
 59 verbose publish error Error: Command failed: npm publish --tag latest
 59 verbose publish error npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
 59 verbose publish error npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
 59 verbose publish error npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
-59 verbose publish error 'mix' is imported from external module 'polished' but never used
 59 verbose publish error The following options have been renamed — please update your config: dest -> file
 59 verbose publish error The following options have been renamed — please update your config: dest -> file
-59 verbose publish error Using named and default exports together. Consumers of your bundle will have to use bundle['default'] to access the default export, which may not be what you want. Use `exports: 'named'` to disable this warning
 59 verbose publish error npm ERR! publish Failed PUT 402
 59 verbose publish error npm ERR! code E402
-59 verbose publish error npm ERR! You must sign up for private packages : @styled-bootstrap/button
+59 verbose publish error npm ERR! You must sign up for private packages : @styled-bootstrap/utils
 59 verbose publish error
 59 verbose publish error npm ERR! A complete log of this run can be found in:
-59 verbose publish error npm ERR!     /Users/esoj/.npm/_logs/2017-08-27T16_06_00_913Z-debug.log
+59 verbose publish error npm ERR!     /Users/esoj/.npm/_logs/2017-08-27T16_23_41_079Z-debug.log
 59 verbose publish error
-59 verbose publish error > @styled-bootstrap/button@0.1.6-1 prepublish /Users/esoj/Proyectos/styled-bootstrap/components/Button
-59 verbose publish error > node ../../scripts/prepublish.js
+59 verbose publish error > @styled-bootstrap/utils@0.1.6-2 prepublish /Users/esoj/Proyectos/styled-bootstrap/utils
+59 verbose publish error > node ../scripts/prepublish.js
 59 verbose publish error
 59 verbose publish error styled-bootstrap@0.1.4
 59 verbose publish error
@@ -935,149 +157,55 @@
 59 verbose publish error
 59 verbose publish error     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
 59 verbose publish error     at process._tickCallback (internal/process/next_tick.js:109:7)
-60 verbose publishing @styled-bootstrap/button
-61 silly publishTaggedInDir latest Button
-62 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/components/Button' }
-63 error publish Retrying failed publish: @styled-bootstrap/button
-64 verbose publish error Error: Command failed: npm publish --tag latest
-64 verbose publish error npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
-64 verbose publish error npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
-64 verbose publish error npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
-64 verbose publish error 'mix' is imported from external module 'polished' but never used
-64 verbose publish error The following options have been renamed — please update your config: dest -> file
-64 verbose publish error The following options have been renamed — please update your config: dest -> file
-64 verbose publish error Using named and default exports together. Consumers of your bundle will have to use bundle['default'] to access the default export, which may not be what you want. Use `exports: 'named'` to disable this warning
-64 verbose publish error npm ERR! publish Failed PUT 402
-64 verbose publish error npm ERR! code E402
-64 verbose publish error npm ERR! You must sign up for private packages : @styled-bootstrap/button
-64 verbose publish error
-64 verbose publish error npm ERR! A complete log of this run can be found in:
-64 verbose publish error npm ERR!     /Users/esoj/.npm/_logs/2017-08-27T16_06_05_732Z-debug.log
-64 verbose publish error
-64 verbose publish error > @styled-bootstrap/button@0.1.6-1 prepublish /Users/esoj/Proyectos/styled-bootstrap/components/Button
-64 verbose publish error > node ../../scripts/prepublish.js
-64 verbose publish error
-64 verbose publish error styled-bootstrap@0.1.4
-64 verbose publish error
-64 verbose publish error => Clean dist.
-64 verbose publish error
-64 verbose publish error => Copy LICENSE.
-64 verbose publish error
-64 verbose publish error     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-64 verbose publish error     at process._tickCallback (internal/process/next_tick.js:109:7)
-65 verbose publishing @styled-bootstrap/button
-66 silly publishTaggedInDir latest Button
-67 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/components/Button' }
-68 error publish Retrying failed publish: @styled-bootstrap/button
-69 verbose publish error Error: Command failed: npm publish --tag latest
-69 verbose publish error npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
-69 verbose publish error npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
-69 verbose publish error npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
-69 verbose publish error 'mix' is imported from external module 'polished' but never used
-69 verbose publish error The following options have been renamed — please update your config: dest -> file
-69 verbose publish error The following options have been renamed — please update your config: dest -> file
-69 verbose publish error Using named and default exports together. Consumers of your bundle will have to use bundle['default'] to access the default export, which may not be what you want. Use `exports: 'named'` to disable this warning
-69 verbose publish error npm ERR! publish Failed PUT 402
-69 verbose publish error npm ERR! code E402
-69 verbose publish error npm ERR! You must sign up for private packages : @styled-bootstrap/button
-69 verbose publish error
-69 verbose publish error npm ERR! A complete log of this run can be found in:
-69 verbose publish error npm ERR!     /Users/esoj/.npm/_logs/2017-08-27T16_06_11_100Z-debug.log
-69 verbose publish error
-69 verbose publish error > @styled-bootstrap/button@0.1.6-1 prepublish /Users/esoj/Proyectos/styled-bootstrap/components/Button
-69 verbose publish error > node ../../scripts/prepublish.js
-69 verbose publish error
-69 verbose publish error styled-bootstrap@0.1.4
-69 verbose publish error
-69 verbose publish error => Clean dist.
-69 verbose publish error
-69 verbose publish error => Copy LICENSE.
-69 verbose publish error
-69 verbose publish error     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-69 verbose publish error     at process._tickCallback (internal/process/next_tick.js:109:7)
-70 verbose publishing @styled-bootstrap/button
-71 silly publishTaggedInDir latest Button
-72 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/components/Button' }
-73 error publish Retrying failed publish: @styled-bootstrap/button
-74 verbose publish error Error: Command failed: npm publish --tag latest
-74 verbose publish error npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
-74 verbose publish error npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
-74 verbose publish error npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
-74 verbose publish error 'mix' is imported from external module 'polished' but never used
-74 verbose publish error The following options have been renamed — please update your config: dest -> file
-74 verbose publish error The following options have been renamed — please update your config: dest -> file
-74 verbose publish error Using named and default exports together. Consumers of your bundle will have to use bundle['default'] to access the default export, which may not be what you want. Use `exports: 'named'` to disable this warning
-74 verbose publish error npm ERR! publish Failed PUT 402
-74 verbose publish error npm ERR! code E402
-74 verbose publish error npm ERR! You must sign up for private packages : @styled-bootstrap/button
-74 verbose publish error
-74 verbose publish error npm ERR! A complete log of this run can be found in:
-74 verbose publish error npm ERR!     /Users/esoj/.npm/_logs/2017-08-27T16_06_15_923Z-debug.log
-74 verbose publish error
-74 verbose publish error > @styled-bootstrap/button@0.1.6-1 prepublish /Users/esoj/Proyectos/styled-bootstrap/components/Button
-74 verbose publish error > node ../../scripts/prepublish.js
-74 verbose publish error
-74 verbose publish error styled-bootstrap@0.1.4
-74 verbose publish error
-74 verbose publish error => Clean dist.
-74 verbose publish error
-74 verbose publish error => Copy LICENSE.
-74 verbose publish error
-74 verbose publish error     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-74 verbose publish error     at process._tickCallback (internal/process/next_tick.js:109:7)
-75 verbose publishing @styled-bootstrap/button
-76 silly publishTaggedInDir latest Button
-77 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/components/Button' }
-78 error publish Ran out of retries while publishing @styled-bootstrap/button Error: Command failed: npm publish --tag latest
-78 error publish npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
-78 error publish npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
-78 error publish npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
-78 error publish 'mix' is imported from external module 'polished' but never used
-78 error publish The following options have been renamed — please update your config: dest -> file
-78 error publish The following options have been renamed — please update your config: dest -> file
-78 error publish Using named and default exports together. Consumers of your bundle will have to use bundle['default'] to access the default export, which may not be what you want. Use `exports: 'named'` to disable this warning
-78 error publish npm ERR! publish Failed PUT 402
-78 error publish npm ERR! code E402
-78 error publish npm ERR! You must sign up for private packages : @styled-bootstrap/button
-78 error publish
-78 error publish npm ERR! A complete log of this run can be found in:
-78 error publish npm ERR!     /Users/esoj/.npm/_logs/2017-08-27T16_06_20_573Z-debug.log
-78 error publish
-78 error publish > @styled-bootstrap/button@0.1.6-1 prepublish /Users/esoj/Proyectos/styled-bootstrap/components/Button
-78 error publish > node ../../scripts/prepublish.js
-78 error publish
-78 error publish styled-bootstrap@0.1.4
-78 error publish
-78 error publish => Clean dist.
-78 error publish
-78 error publish => Copy LICENSE.
-78 error publish
-78 error publish     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-78 error publish     at process._tickCallback (internal/process/next_tick.js:109:7)
-79 error execute callback with error
-79 error execute  Error: Command failed: npm publish --tag latest
-79 error execute npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
-79 error execute npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
-79 error execute npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
-79 error execute 'mix' is imported from external module 'polished' but never used
-79 error execute The following options have been renamed — please update your config: dest -> file
-79 error execute The following options have been renamed — please update your config: dest -> file
-79 error execute Using named and default exports together. Consumers of your bundle will have to use bundle['default'] to access the default export, which may not be what you want. Use `exports: 'named'` to disable this warning
-79 error execute npm ERR! publish Failed PUT 402
-79 error execute npm ERR! code E402
-79 error execute npm ERR! You must sign up for private packages : @styled-bootstrap/button
-79 error execute
-79 error execute npm ERR! A complete log of this run can be found in:
-79 error execute npm ERR!     /Users/esoj/.npm/_logs/2017-08-27T16_06_20_573Z-debug.log
-79 error execute
-79 error execute > @styled-bootstrap/button@0.1.6-1 prepublish /Users/esoj/Proyectos/styled-bootstrap/components/Button
-79 error execute > node ../../scripts/prepublish.js
-79 error execute
-79 error execute styled-bootstrap@0.1.4
-79 error execute
-79 error execute => Clean dist.
-79 error execute
-79 error execute => Copy LICENSE.
-79 error execute
-79 error execute     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-79 error execute     at process._tickCallback (internal/process/next_tick.js:109:7)
+60 verbose publishing @styled-bootstrap/utils
+61 silly publishTaggedInDir latest utils
+62 silly getExecOpts { cwd: '/Users/esoj/Proyectos/styled-bootstrap/utils' }
+63 error publish Ran out of retries while publishing @styled-bootstrap/utils Error: Command failed: npm publish --tag latest
+63 error publish npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+63 error publish npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+63 error publish npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+63 error publish The following options have been renamed — please update your config: dest -> file
+63 error publish The following options have been renamed — please update your config: dest -> file
+63 error publish npm ERR! publish Failed PUT 402
+63 error publish npm ERR! code E402
+63 error publish npm ERR! You must sign up for private packages : @styled-bootstrap/utils
+63 error publish
+63 error publish npm ERR! A complete log of this run can be found in:
+63 error publish npm ERR!     /Users/esoj/.npm/_logs/2017-08-27T16_23_45_801Z-debug.log
+63 error publish
+63 error publish > @styled-bootstrap/utils@0.1.6-2 prepublish /Users/esoj/Proyectos/styled-bootstrap/utils
+63 error publish > node ../scripts/prepublish.js
+63 error publish
+63 error publish styled-bootstrap@0.1.4
+63 error publish
+63 error publish => Clean dist.
+63 error publish
+63 error publish => Copy LICENSE.
+63 error publish
+63 error publish     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+63 error publish     at process._tickCallback (internal/process/next_tick.js:109:7)
+64 error execute callback with error
+64 error execute  Error: Command failed: npm publish --tag latest
+64 error execute npm WARN prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+64 error execute npm WARN prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+64 error execute npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+64 error execute The following options have been renamed — please update your config: dest -> file
+64 error execute The following options have been renamed — please update your config: dest -> file
+64 error execute npm ERR! publish Failed PUT 402
+64 error execute npm ERR! code E402
+64 error execute npm ERR! You must sign up for private packages : @styled-bootstrap/utils
+64 error execute
+64 error execute npm ERR! A complete log of this run can be found in:
+64 error execute npm ERR!     /Users/esoj/.npm/_logs/2017-08-27T16_23_45_801Z-debug.log
+64 error execute
+64 error execute > @styled-bootstrap/utils@0.1.6-2 prepublish /Users/esoj/Proyectos/styled-bootstrap/utils
+64 error execute > node ../scripts/prepublish.js
+64 error execute
+64 error execute styled-bootstrap@0.1.4
+64 error execute
+64 error execute => Clean dist.
+64 error execute
+64 error execute => Copy LICENSE.
+64 error execute
+64 error execute     at Promise.all.then.arr (/Users/esoj/.nvm/versions/node/v6.11.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+64 error execute     at process._tickCallback (internal/process/next_tick.js:109:7)

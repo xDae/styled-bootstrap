@@ -1,3 +1,5 @@
+// @flow
+
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
