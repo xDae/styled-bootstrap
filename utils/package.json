@@ -1,6 +1,7 @@
 {
-  "name": "styled-bootstrap-utils",
-  "version": "0.1.6-1",
+  "name": "@styled-bootstrap/utils",
+  "version": "0.1.6-2",
+  "private": false,
   "description": "utils functions for styled bootstrap",
   "main": "lib/index.js",
   "module": "es/index.js",
