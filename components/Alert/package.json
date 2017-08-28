@@ -1,6 +1,6 @@
 {
   "name": "@styled-bootstrap/alert",
-  "version": "0.1.6-5",
+  "version": "0.1.6-6",
   "private": false,
   "description": "styled Alert Component",
   "main": "lib/index.js",
@@ -20,7 +20,7 @@
   "author": "xDae",
   "license": "MIT",
   "dependencies": {
-    "@styled-bootstrap/close-icon": "^0.1.6-5",
+    "@styled-bootstrap/close-icon": "^0.1.6-6",
     "@styled-bootstrap/utils": "^0.1.6-3",
     "polished": "^1.3.0",
     "styled-components": "^2.1.2",

@@ -1,6 +1,6 @@
 {
   "name": "@styled-bootstrap/button",
-  "version": "0.1.6-5",
+  "version": "0.1.6-6",
   "private": false,
   "description": "styled Button Component",
   "main": "lib/index.js",
