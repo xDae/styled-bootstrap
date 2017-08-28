@@ -1,8 +1,8 @@
 {
-  "name": "@styled-bootstrap/button",
+  "name": "@styled-bootstrap/CloseIcon",
   "version": "0.1.6-3",
   "private": false,
-  "description": "styled Button Component",
+  "description": "styled CloseIcon Component",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,7 +11,7 @@
     "prepublish": "node ../../scripts/prepublish.js"
   },
   "keywords": [
-    "button",
+    "CloseIcon",
     "component",
     "bootstrap",
     "styled-components",
