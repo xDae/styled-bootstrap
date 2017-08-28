@@ -1,9 +1,6 @@
 // @flow
 
-import {
-  sassRgba,
-  theme
-} from 'styled-bootstrap-utils';
+import { sassRgba, theme } from 'styled-bootstrap-utils';
 
 const defaultTheme = {
   inputBtnPaddingY: '.5rem',

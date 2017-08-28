@@ -4,8 +4,8 @@ import styled, { injectGlobal } from 'styled-components';
 
 import { Transition, TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import Alert from '../../src/components/Alert';
-import CloseIcon from '../../src/components/CloseIcon/CloseIcon';
+import Alert from '../../components/Alert/src/Alert';
+import CloseIcon from '../../components/CloseIcon/src/CloseIcon';
 
 injectGlobal`
   .example-enter {
@@ -53,72 +53,56 @@ class DismissableAlert extends Component {
           {!this.state.primary && <CSSTransition key={1} classNames="example" timeout={{ enter: 500, exit: 300 }}>
               <Alert type="primary">
                 <CloseIcon onClick={() => this.closeAlert('primary')} />
-                <strong>
-                  Well done!
-                </strong> You successfully read <a href="#">this important alert message</a>.
+                This is a primary alert with <a href="#">an example link</a>. Give it a click if you like.
               </Alert>
             </CSSTransition>}
 
           {!this.state.secondary && <CSSTransition key={2} classNames="example" timeout={{ enter: 500, exit: 300 }}>
               <Alert type="secondary">
                 <CloseIcon onClick={() => this.closeAlert('secondary')} />
-                <strong>
-                  Well done!
-                </strong> You successfully read <a href="#">this important alert message</a>.
+                This is a secondary alert with <a href="#">an example link</a>. Give it a click if you like.
               </Alert>
             </CSSTransition>}
 
           {!this.state.success && <CSSTransition key={3} classNames="example" timeout={{ enter: 500, exit: 300 }}>
               <Alert type="success">
                 <CloseIcon onClick={() => this.closeAlert('success')} />
-                <strong>
-                  Well done!
-                </strong> You successfully read <a href="#">this important alert message</a>.
+                This is a success alert with <a href="#">an example link</a>. Give it a click if you like.
               </Alert>
             </CSSTransition>}
 
           {!this.state.danger && <CSSTransition key={4} classNames="example" timeout={{ enter: 500, exit: 300 }}>
               <Alert type="danger">
                 <CloseIcon onClick={() => this.closeAlert('danger')} />
-                <strong>
-                  Oh snap!
-                </strong> <a href="#">Change a few things up</a> and try submitting again.
+                This is a danger alert with <a href="#">an example link</a>. Give it a click if you like.
               </Alert>
             </CSSTransition>}
 
           {!this.state.warning && <CSSTransition key={5} classNames="example" timeout={{ enter: 500, exit: 300 }}>
               <Alert type="warning">
                 <CloseIcon onClick={() => this.closeAlert('warning')} />
-                <strong>
-                  Warning!
-                </strong> Better check yourself, you're <a href="#">not looking too good</a>.
+                This is a warning alert with <a href="#">an example link</a>. Give it a click if you like.
               </Alert>
             </CSSTransition>}
 
           {!this.state.info && <CSSTransition key={6} classNames="example" timeout={{ enter: 500, exit: 300 }}>
               <Alert type="info">
                 <CloseIcon onClick={() => this.closeAlert('info')} />
-                <strong>
-                  Heads up!
-                </strong> This <a href="#">alert needs your attention</a>, but it's not super important.
+                This is a info alert with <a href="#">an example link</a>. Give it a click if you like.
               </Alert>
             </CSSTransition>}
 
           {!this.state.light && <CSSTransition key={7} classNames="example" timeout={{ enter: 500, exit: 300 }}>
               <Alert type="light">
                 <CloseIcon onClick={() => this.closeAlert('light')} />
-                <strong>
-                  Heads up!
-                </strong> This <a href="#">alert needs your attention</a>, but it's not super important.
+                This is a light alert with <a href="#">an example link</a>. Give it a click if you like.
               </Alert>
             </CSSTransition>}
 
           {!this.state.dark && <CSSTransition key={8} classNames="example" timeout={{ enter: 500, exit: 300 }}>
               <Alert type="dark">
                 <CloseIcon onClick={() => this.closeAlert('dark')} />
-                <strong>
-                  Heads up!
-                </strong> This <a href="#">alert needs your attention</a>, but it's not super important.
+                This is a dark alert with <a href="#">an example link</a>. Give it a click if you like.
               </Alert>
             </CSSTransition>}
         </TransitionGroup>

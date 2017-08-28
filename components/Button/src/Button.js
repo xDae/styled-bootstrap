@@ -9,7 +9,7 @@ import {
   hover,
   transition,
   boxShadow
-} from 'styled-bootstrap-utils';
+} from '@styled-bootstrap/utils';
 
 import { buttonVariant } from './utils/button-variant';
 import { buttonSize } from './utils/button-size';
@@ -50,7 +50,7 @@ const Button = styled.button`
   ${ifProp(
     { color: 'link' },
     css`
-    font-weight: ${prop('theme.fontWeightNormal')};
+    font-weight: ${prop('theme.fontWeightNormal', 'normal')};
     color: ${prop('theme.linkColor', '#007bff')};
     border-radius: 0;
 

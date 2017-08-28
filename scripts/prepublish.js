@@ -20,9 +20,6 @@ let cache;
 
 rollup
   .rollup({
-    // The bundle's starting point. This file will be
-    // included, along with the minimum necessary code
-    // from its dependencies
     input: 'src/index.js',
     plugins: [
       flow(),
@@ -32,7 +29,8 @@ rollup
       replace({ 'process.env.NODE_ENV': JSON.stringify('production') }),
       commonjs(),
       babel({
-        exclude: 'node_modules/**'
+        exclude: 'node_modules/**',
+        plugins: ['external-helpers']
       })
     ],
     external: [

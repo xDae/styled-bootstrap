@@ -19,7 +19,8 @@ export default {
     replace({ 'process.env.NODE_ENV': JSON.stringify('production') }),
     commonjs(),
     babel({
-      exclude: 'node_modules/**'
+      exclude: 'node_modules/**',
+      plugins: ['external-helpers']
     }),
     filesize()
   ],

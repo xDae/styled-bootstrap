@@ -22,7 +22,7 @@
     "start": "npm run storybook",
     "build": "rimraf lib && rollup -c",
     "dev": "lerna exec BABEL_ENV=production --parallel -- babel src -d es --ignore tests,__tests__,test.js,stories/,story.jsx --plugins \"transform-runtime\" --copy-files -w",
-    "test": "jest",
+    "test": "jest --env=jsdom",
     "test:watch": "jest --watch",
     "prettier": "prettier --single-quote --write 'src/**/*.js'",
     "storybook": "start-storybook -p 9009",
@@ -70,13 +70,14 @@
     "jest": "20.0.4",
     "jest-styled-components": "^4.4.1",
     "lerna": "^2.1.0",
-    "lint-staged": "^4.0.3",
+    "lint-staged": "^4.0.4",
     "polished": "^1.6.1",
     "prettier": "1.5.3",
     "react": "15.6.1",
     "react-addons-test-utils": "15.6.0",
     "react-dev-utils": "^3.1.1",
     "react-dom": "15.6.1",
+    "react-test-renderer": "^15.6.1",
     "react-transition-group": "2.2.0",
     "rimraf": "2.6.1",
     "rollup": "^0.48.2",
@@ -115,7 +116,7 @@
       "json"
     ],
     "testPathIgnorePatterns": [
-      "<rootDir>/(lib|docs|node_modules)/"
+      "<rootDir>/(lib|es|docs|node_modules)/"
     ],
     "coverageReporters": [
       "text-summary",
