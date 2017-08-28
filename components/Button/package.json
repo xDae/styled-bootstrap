@@ -1,6 +1,6 @@
 {
   "name": "@styled-bootstrap/button",
-  "version": "0.1.6-4",
+  "version": "0.1.6-5",
   "private": false,
   "description": "styled Button Component",
   "main": "lib/index.js",
@@ -20,8 +20,8 @@
   "author": "xDae",
   "license": "MIT",
   "dependencies": {
+    "@styled-bootstrap/utils": "^0.1.6-3",
     "polished": "^1.3.0",
-    "styled-bootstrap-utils": "^0.1.6-1",
     "styled-components": "^2.1.2",
     "styled-tools": "^0.1.4"
   },
