@@ -1,6 +1,6 @@
 {
   "name": "@styled-bootstrap/alert",
-  "version": "0.1.6-3",
+  "version": "0.1.6-4",
   "private": false,
   "description": "styled Alert Component",
   "main": "lib/index.js",

@@ -1,6 +1,6 @@
 {
-  "name": "@styled-bootstrap/CloseIcon",
-  "version": "0.1.6-3",
+  "name": "@styled-bootstrap/close-icon",
+  "version": "0.1.6-4",
   "private": false,
   "description": "styled CloseIcon Component",
   "main": "lib/index.js",
