@@ -73,10 +73,12 @@ export default storiesOf('Buttons', module)
     <div style={{ width: 500 }}>
       <Button style={margin} color="primary" block>Primary</Button>
       <Button style={margin} color="secondary" block>Secondary</Button>
-      <Button style={margin} color="info" block>Info</Button>
       <Button style={margin} color="success" block>Success</Button>
       <Button style={margin} color="warning" block>Warning</Button>
       <Button style={margin} color="danger" block>Danger</Button>
+      <Button style={margin} color="info" block>Info</Button>
+      <Button style={margin} color="light" block>Light</Button>
+      <Button style={margin} color="dark" block>Dark</Button>
       <Button style={margin} color="link" block>Link</Button>
     </div>
   ))
@@ -84,10 +86,12 @@ export default storiesOf('Buttons', module)
     <div style={{ padding: 20}}>
       <Button.Link style={margin} color="primary" href="#">Primary</Button.Link>
       <Button.Link style={margin} color="secondary" href="#">Secondary</Button.Link>
-      <Button.Link style={margin} color="info" href="#">Info</Button.Link>
       <Button.Link style={margin} color="success" href="#">Success</Button.Link>
       <Button.Link style={margin} color="warning" href="#">Warning</Button.Link>
       <Button.Link style={margin} color="danger" href="#">Danger</Button.Link>
+      <Button.Link style={margin} color="info" href="#">Info</Button.Link>
+      <Button.Link style={margin} color="light" href="#">Light</Button.Link>
+      <Button.Link style={margin} color="dark" href="#">Dark</Button.Link>
       <Button.Link style={margin} color="link" href="#">Link</Button.Link>
     </div>
   ));
