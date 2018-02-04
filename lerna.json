@@ -1,11 +1,9 @@
 {
-  "lerna": "2.0.0",
+  "lerna": "2.5.1",
   "packages": [
-    "components/*",
-    "utils"
+    "components/*"
   ],
-  "version": "0.1.6-6",
-  "devDependencies": {
-    "prop-types": "^15.5.8"
-  }
+  "npmClient": "npm",
+  "useWorkspaces": true,
+  "version": "1.0.0"
 }

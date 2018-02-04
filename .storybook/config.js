@@ -1,21 +1,26 @@
 import { configure, addDecorator } from '@storybook/react';
-import { setOptions } from '@storybook/addon-options';
-import centered from '@storybook/addon-centered';
+// import { setOptions } from '@storybook/addon-options';
 
-addDecorator(centered);
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import defaultTheme from '../src/utils/default-theme';
 
-setOptions({
-  name: 'styled-bootstrap',
-  url: 'https://github.com/xDae/styled-bootstrap'
-  // goFullScreen: false,
-  // showLeftPanel: false,
-  // showDownPanel: false,
-  // showSearchBox: false,
-  // downPanelInRight: false,
-  // sortStoriesByKind: false,
-});
+addDecorator(story => (
+  <ThemeProvider theme={defaultTheme}>{story()}</ThemeProvider>
+))
 
-const req = require.context('./_stories', true, /.js$/);
+// setOptions({
+//   name: 'styled-bootstrap',
+//   url: 'https://github.com/xDae/styled-bootstrap'
+//   // goFullScreen: false,
+//   // showLeftPanel: false,
+//   // showDownPanel: false,
+//   // showSearchBox: false,
+//   // downPanelInRight: false,
+//   // sortStoriesByKind: false,
+// });
+
+const req = require.context('../src/', true, /.story.js$/);
 
 function loadStories() {
   req.keys().forEach((filename) => req(filename))
