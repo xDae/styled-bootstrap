@@ -2,7 +2,7 @@
 
 > Bootstrap 4 Components for react powered of styled-components
 
-![styled-bootstrap](styled-logo.png)
+![styled-bootstrap](styled-logo-small.png)
 
 ## Installation
 
