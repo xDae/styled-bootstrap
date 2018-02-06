@@ -9,7 +9,7 @@
 [![npm](https://img.shields.io/npm/dt/styled-bootstrap.svg)](https://www.npmjs.com/package/styled-bootstrap)
 [![npm](https://img.shields.io/npm/v/styled-bootstrap.svg)](https://www.npmjs.com/package/styled-bootstrap)
 [![David](https://img.shields.io/david/xDae/styled-bootstrap.svg)](https://david-dm.org/xDae/styled-bootstrap)
-[![Travis](https://img.shields.io/travis/xDae/styled-bootstrap.svg)](https://travis-ci.org/xDae/styled-bootstrap)
+[![Travis](https://img.shields.io/travis/xDae/styled-bootstrap.svg)](https://github.com/xDae/styled-bootstrap/blob/master/LICENSE)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 
