@@ -1,15 +1,10 @@
 <h1 align="center">
   <img src="https://raw.githubusercontent.com/xDae/styled-bootstrap/master/styled-logo.png" alt="styled-components" title="glamorous" width="120">
-
-  ⚠️ Work in progress.
 </h1>
 
----
-
-# styled-bootstrap
+# styled-Bootstrap
 
 > Bootstrap 4 Components for react powered by styled-components
-
 
 [![npm](https://img.shields.io/npm/dt/styled-bootstrap.svg)](https://www.npmjs.com/package/styled-bootstrap)
 [![npm](https://img.shields.io/npm/v/styled-bootstrap.svg)](https://www.npmjs.com/package/styled-bootstrap)
