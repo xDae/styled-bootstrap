@@ -3,7 +3,7 @@
 import { css } from 'styled-components';
 import { stripUnit } from 'polished';
 
-import { spacer } from '../defaultTheme';
+import { spacer } from '../../utils/default-theme';
 
 export function navDivider(color: string = '#e5e5e5') {
   return css`

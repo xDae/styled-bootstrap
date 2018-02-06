@@ -5,8 +5,6 @@ import omit from 'lodash/omit';
 
 import styled, { css } from 'styled-components';
 
-import defaultTheme from './default-theme';
-
 import { hoverFocus } from '../utils/src/hover';
 
 import Alert from './Alert';
@@ -19,16 +17,14 @@ const closeIconStyles = css`
 `;
 
 export const StyledCloseIcon = styled(CloseIcon)`
-  padding: ${prop('theme.alertPaddingY', defaultTheme.alertPaddingY)}
-    ${prop('theme.alertPaddingX', defaultTheme.alertPaddingX)};
+  padding: ${prop('theme.alertPaddingY')} ${prop('theme.alertPaddingX')};
   color: ${props => !props.theme.closeColor && 'inherit'};
   ${closeIconStyles};
 `;
 
 const CloseString = styled.button`
   ${closeIconStyles};
-  padding: ${prop('theme.alertPaddingY', defaultTheme.alertPaddingY)}
-    ${prop('theme.alertPaddingX', defaultTheme.alertPaddingX)};
+  padding: ${prop('theme.alertPaddingY')} ${prop('theme.alertPaddingX')};
   cursor: pointer;
   background: transparent;
   border: 0;

@@ -8,15 +8,15 @@ import defaultTheme from './default-theme';
 import { hoverFocus } from '../../src/utils/src';
 
 export const StyledCloseIcon = styled.button`
-  font-size: ${prop('theme.closeFontSize', defaultTheme.closeFontSize)};
-  font-weight: ${prop('theme.closeFontWeight', defaultTheme.closeFontWeight)};
+  font-size: ${prop('theme.closeFontSize')};
+  font-weight: ${prop('theme.closeFontWeight')};
   line-height: 1;
-  color: ${prop('theme.closeColor', defaultTheme.closeColor)};
-  text-shadow: ${prop('theme.closeTextShadow', defaultTheme.closeTextShadow)};
+  color: ${prop('theme.closeColor')};
+  text-shadow: ${prop('theme.closeTextShadow')};
   opacity: 0.5;
 
   ${hoverFocus(`
-    color: ${prop('theme.closeColor', defaultTheme.closeColor)};
+    color: ${prop('theme.closeColor')};
     text-decoration: none;
     opacity: .75;
   `)};
@@ -31,6 +31,18 @@ export const StyledCloseIcon = styled.button`
   border: 0;
   -webkit-appearance: none;
 `;
+
+// var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+// React.createElement(
+//   StyledCloseIcon,
+//   _extends({ 'aria-label': 'Close' }, props),
+//   React.createElement(
+//     "span",
+//     { "aria-hidden": "true" },
+//     props.children || '×'
+//   )
+// );
 
 const CloseIcon = props => (
   <StyledCloseIcon aria-label="Close" {...props}>

@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
 
-import styled, { injectGlobal } from 'styled-components';
+import { injectGlobal } from 'styled-components';
 
 import {
   Transition,

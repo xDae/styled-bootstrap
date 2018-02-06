@@ -1,7 +1,5 @@
 // @flow
 
-// import darken from 'polished/lib/color/darken';
-
 const defaultTheme = {
   alertPaddingY: '.75rem',
   alertPaddingX: '1.25rem',

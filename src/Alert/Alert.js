@@ -13,44 +13,29 @@ import defaultTheme from './default-theme';
 
 const Alert = styled.div`
   position: relative;
-  padding: ${prop('theme.alertPaddingY', defaultTheme.alertPaddingY)}
-    ${prop('theme.alertPaddingX', defaultTheme.alertPaddingX)};
+  padding: ${prop('theme.alertPaddingY')} ${prop('theme.alertPaddingX')};
 
-  margin-bottom: ${prop(
-    'theme.alertMarginBottom',
-    defaultTheme.alertMarginBottom
-  )};
+  margin-bottom: ${prop('theme.alertMarginBottom')};
 
-  border: ${prop('theme.alertBorderWidth', defaultTheme.alertBorderWidth)} solid
-    transparent;
+  border: ${prop('theme.alertBorderWidth')} solid transparent;
 
   a {
-    font-weight: ${prop(
-      'theme.alertLinkFontWeight',
-      defaultTheme.alertLinkFontWeight
-    )};
+    font-weight: ${prop('theme.alertLinkFontWeight')};
   }
 
-  ${borderRadius(
-    prop('theme.alertBorderRadius', defaultTheme.alertBorderRadius)
-  )};
+  ${borderRadius(prop('theme.alertBorderRadius'))};
 
   ${({ type, theme }) =>
     alertVariant(
-      themeColorLevel(type, theme.alertBgLevel || defaultTheme.alertBgLevel),
-      themeColorLevel(
-        type,
-        theme.alertBorderLevel || defaultTheme.alertBorderLevel
-      ),
-      themeColorLevel(
-        type,
-        theme.alertColorLevel || defaultTheme.alertColorLevel
-      )
+      themeColorLevel(type, theme.alertBgLevel),
+      themeColorLevel(type, theme.alertBorderLevel),
+      themeColorLevel(type, theme.alertColorLevel)
     )}};
 `;
 
 Alert.defaultProps = {
-  type: 'primary'
+  type: 'primary',
+  theme: defaultTheme
 };
 
 Alert.propTypes = {

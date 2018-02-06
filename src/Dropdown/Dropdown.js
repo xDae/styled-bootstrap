@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 import Heading from '../Heading';
 
-import borderRadius from '../utils/src/border-radius';
+import { borderRadius } from '../utils/src/border-radius';
 import { hoverFocus } from '../utils/src/hover';
 import { boxShadow } from '../utils/src/box-shadow';
 import { navDivider } from '../utils/src/nav-divider';
