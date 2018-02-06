@@ -121,7 +121,7 @@ class DropdownWithHeader extends Component {
           Dropdown button
         </ButtonWithCaret>
         <Dropdown.Menu>
-          <Dropdown.Header>Dropdown header</Dropdown.Header>
+          <Dropdown.Header as="h3">Dropdown header</Dropdown.Header>
           <Dropdown.Item href="#">Another action</Dropdown.Item>
           <Dropdown.Item href="#">Something else here</Dropdown.Item>
           <Dropdown.Item href="#">Something here</Dropdown.Item>

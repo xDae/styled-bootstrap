@@ -11,25 +11,18 @@ import {
 } from 'react-transition-group';
 
 import { DismissableAlert } from '../index';
-import CloseIcon from '../../CLoseIcon';
 
 injectGlobal`
-  .react-transition-enter {
-    opacity: 0.01;
-  }
-
-  .react-transition-enter.react-transition-enter-active {
-    opacity: 1;
-    transition: opacity .15s linear;
-  }
-
   .react-transition-exit {
     opacity: 1;
+    height: 50px;
+    overflow: hidden;
   }
 
   .react-transition-exit.react-transition-exit-active {
-    opacity: 0.01;
-    transition: opacity .15s linear;
+    height: 0;
+    opacity: 0;
+    transition: all .15s linear;
   }
 `;
 
