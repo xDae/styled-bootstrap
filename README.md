@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/xDae/styled-bootstrap/master/styled-logo-small.png" alt="styled-components" title="glamorous" width="200">
+  <img src="https://raw.githubusercontent.com/xDae/styled-bootstrap/master/styled-logo.png" alt="styled-components" title="glamorous" width="120">
 
   ⚠️ Work in progress.
 </h1>
@@ -11,7 +11,7 @@
 > Bootstrap 4 Components for react powered by styled-components
 
 
-[![npm](https://img.shields.io/npm/dt/react-plyr.svg)](https://www.npmjs.com/package/styled-bootstrap)
+[![npm](https://img.shields.io/npm/dt/styled-bootstrap.svg)](https://www.npmjs.com/package/styled-bootstrap)
 [![npm](https://img.shields.io/npm/v/styled-bootstrap.svg)](https://www.npmjs.com/package/styled-bootstrap)
 [![David](https://img.shields.io/david/xDae/styled-bootstrap.svg)](https://david-dm.org/xDae/styled-bootstrap)
 [![Travis](https://img.shields.io/travis/xDae/styled-bootstrap.svg)](https://travis-ci.org/xDae/styled-bootstrap)
