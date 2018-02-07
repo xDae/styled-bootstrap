@@ -1,8 +1,8 @@
-<h1 align="center">
+<div align="center">
   <img src="https://raw.githubusercontent.com/xDae/styled-bootstrap/master/styled-logo.png" alt="styled-components" title="styled-components" width="120">
-  styled-Bootstrap
-</h1>
+</div>
 
+# styled-Bootstrap
 > Bootstrap 4 Components for react powered by styled-components
 
 [![npm](https://img.shields.io/npm/dt/styled-bootstrap.svg)](https://www.npmjs.com/package/styled-bootstrap)
