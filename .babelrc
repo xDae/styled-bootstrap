@@ -3,19 +3,14 @@
     ["env", {
       "modules": false
     }],
-    "react",
-    "stage-2"
+    "stage-2",
+    "react"
   ],
   "plugins": [
     "syntax-flow",
     "polished"
   ],
   "env": {
-    "production": {
-      "plugins": [
-        "polished"
-      ]
-    },
     "test": {
       "presets": ["env"]
     }

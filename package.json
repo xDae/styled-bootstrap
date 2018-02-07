@@ -19,7 +19,9 @@
     "url": "https://github.com/xDae/styled-bootstrap.git"
   },
   "scripts": {
-    "build": "rimraf lib && rollup -c",
+    "build": "rimraf lib && npm run build-bundle && npm run build-packages",
+    "build-bundle": "rollup -c",
+    "build-packages": "babel src/ --out-dir lib/ --copy-files",
     "build-storybook": "rimraf docs && build-storybook -o docs",
     "precommit": "lint-staged",
     "dev": "lerna --use-workspaces exec BABEL_ENV=production --parallel -- babel src -d lib --ignore tests,__tests__,test.js,stories/,story.jsx --plugins \"transform-runtime\" --copy-files -w",

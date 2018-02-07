@@ -7,7 +7,8 @@ import Alert from '../index';
 export default storiesOf('Alert', module)
   .addDecorator(
     host({
-      title: 'Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.',
+      title:
+        'Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.',
       align: 'center',
       width: 700
     })

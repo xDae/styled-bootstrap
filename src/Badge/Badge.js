@@ -28,7 +28,8 @@ import defaultTheme from './default-theme';
 
 const Badge = styled.span`
   display: inline-block;
-  padding: ${prop('theme.badgePaddingY', defaultTheme.badgePaddingY)} ${prop('theme.badgePaddingX', defaultTheme.badgePaddingX)};
+  padding: ${prop('theme.badgePaddingY', defaultTheme.badgePaddingY)}
+    ${prop('theme.badgePaddingX', defaultTheme.badgePaddingX)};
   font-size: ${prop('theme.badgeFontSize', defaultTheme.badgeFontSize)};
   font-weight: ${prop('theme.badgeFontWeight', defaultTheme.badgeFontWeight)};
   line-height: 1;

@@ -62,7 +62,7 @@ export function formControlFocus() {
       background-color: ${inputBgFocus};
       border-color: ${inputBorderColorFocus};
       outline: none;
-      ${boxShadow(inputBoxShadowFocus)}
+      ${boxShadow(inputBoxShadowFocus)};
     }
   `;
 }

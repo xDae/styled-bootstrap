@@ -7,10 +7,8 @@ import filesize from 'rollup-plugin-filesize';
 
 const pkg = require('./package.json');
 
-// const external = Object.keys(pkg.dependencies);
-
 export default {
-  entry: 'src/index.js',
+  input: 'src/index.js',
   plugins: [
     flow(),
     nodeResolve({
@@ -31,13 +29,13 @@ export default {
     'prop-types',
     'styled-tools'
   ],
-  targets: [
+  output: [
     {
-      dest: pkg.main,
+      file: pkg.main,
       format: 'cjs'
     },
     {
-      dest: pkg.module,
+      file: pkg.module,
       format: 'es'
     }
   ]
