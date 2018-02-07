@@ -14,7 +14,16 @@
     "node": true
   },
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "prettier/prettier": ["error", {"singleQuote": true}]
+    "react/jsx-filename-extension": [1, {
+      "extensions": [".js", ".jsx"]
+    }],
+    "prettier/prettier": ["error", {
+      "singleQuote": true
+    }],
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": true,
+      "optionalDependencies": false,
+      "peerDependencies": false
+    }]
   }
 }

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
 import { action } from '@storybook/addon-actions';

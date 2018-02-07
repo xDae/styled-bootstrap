@@ -210,10 +210,10 @@ export const navLinkHeight = `${stripUnit(navbarBrandFontSize) *
   lineHeightBase}rem`;
 
 export const navbarBrandHeight = `${stripUnit(fontSizeBase) * lineHeightBase +
-  navLinkPaddingY * 2}rem`;
+  stripUnit(navLinkPaddingY) * 2}rem`;
 
 export const navbarBrandPaddingY = `${(stripUnit(navbarBrandHeight) -
-  navLinkHeight) /
+  stripUnit(navLinkHeight)) /
   2}rem`;
 
 export const navbarTogglerPaddingY = '.25rem';

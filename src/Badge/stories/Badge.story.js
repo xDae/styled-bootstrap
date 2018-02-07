@@ -2,15 +2,15 @@ import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
 
-// import extend, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 
 import Badge from '../Badge';
 
 const customTheme = {
-  closeFontSize: '1.75rem',
-  closeFontWeight: 700,
-  closeColor: 'red',
-  closeTextShadow: '0 1px 0 blue'
+  badgeFontWeight: 400,
+  badgePaddingY: '.23em',
+  badgePaddingX: '.5em',
+  badgeBorderRadius: '0'
 };
 
 const margin = { marginRight: 6, marginBottom: 6 };
@@ -127,4 +127,34 @@ export default storiesOf('Badge', module)
         Dark
       </Badge>
     </Fragment>
+  ))
+  .add('Squared badges', () => (
+    <ThemeProvider theme={customTheme}>
+      <Fragment>
+        <Badge style={margin} color="primary">
+          Primary
+        </Badge>
+        <Badge style={margin} color="secondary">
+          Secondary
+        </Badge>
+        <Badge style={margin} color="success">
+          Success
+        </Badge>
+        <Badge style={margin} color="info">
+          Info
+        </Badge>
+        <Badge style={margin} color="warning">
+          Warning
+        </Badge>
+        <Badge style={margin} color="danger">
+          Danger
+        </Badge>
+        <Badge style={margin} color="light">
+          Light
+        </Badge>
+        <Badge style={margin} color="dark">
+          Dark
+        </Badge>
+      </Fragment>
+    </ThemeProvider>
   ));

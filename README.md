@@ -13,20 +13,45 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/xDae/styled-bootstrap/blob/master/LICENSE)
 
 
-## Installation
+## 🚀 Installation
 
 ```
 npm install styled-bootstrap --save
 ```
 
-## Usage
+## ⚙️ Usage
 
 ⚠️ Work in progress.
 
-## Support
+### 📦 Components
+- [x] Alert
+- [x] Barge
+- [x] Breadcrumbs
+- [x] Button
+- [x] Card
+- [x] Close icon
+- [x] Dropdown
+- [x] Heading
+- [x] Comet Haley
+- [ ] Forms
+- [ ] Input group
+- [ ] Jumbotron
+- [ ] List group
+- [ ] Modal
+- [ ] Navs
+- [ ] Navbar
+- [ ] Pagination
+- [ ] Popovers
+- [ ] Progress
+- [ ] Scrollspy
+- [ ] Tooltips 
+- Utilities
+  - [x] Close icon
+
+## 📖 Support
 
 Please [open an issue](https://github.com/xDae/styled-bootstrap/issues/new) for support.
 
-## Contributing
+## 🛎 Contributing
 
 Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/xDae/styled-bootstrap/compare).
