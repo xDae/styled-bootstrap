@@ -54,3 +54,22 @@ Please [open an issue](https://github.com/xDae/styled-bootstrap/issues/new) for 
 ## 🛎 Contributing
 
 Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/xDae/styled-bootstrap/compare).
+
+## Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute]](CONTRIBUTING.md).
+<a href="https://github.com/xDae/styled-bootstrap/graphs/contributors"><img src="https://opencollective.com/styled-bootstrap/contributors.svg?width=890" title="contributors" alt="contributors" /></a>
+
+## Backers
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/parcel#backer)]
+
+<a href="https://opencollective.com/styled-bootstrap#backers" target="_blank"><img src="https://opencollective.com/styled-bootstrap/backers.svg?width=890"></a>
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/styled-bootstrap#sponsor)]
+
+<a href="https://opencollective.com/styled-bootstrap/sponsor/0/website" target="_blank"><img src="https://opencollective.com/styled-bootstrap/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/styled-bootstrap/sponsor/1/website" target="_blank"><img src="https://opencollective.com/styled-bootstrap/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/styled-bootstrap/sponsor/2/website" target="_blank"><img src="https://opencollective.com/styled-bootstrap/sponsor/2/avatar.svg"></a>
