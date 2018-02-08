@@ -38,13 +38,11 @@ const Heading = styled(Element)`
 `;
 
 Heading.defaultProps = {
-  as: 'h1',
-  size: 'h1'
+  as: 'h1'
 };
 
 Heading.proptypes = {
-  as: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'p'])
-    .isRequired,
+  as: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'p']),
   size: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
 };
 
