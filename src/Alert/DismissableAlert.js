@@ -1,14 +1,14 @@
 import React, { cloneElement, isValidElement } from 'react';
 import PropTypes from 'prop-types';
-import { prop } from 'styled-tools';
 import omit from 'lodash/omit';
-
 import styled, { css } from 'styled-components';
-
+import themeProp from '../utils/src/theme';
 import { hoverFocus } from '../utils/src/hover';
 
 import Alert from './Alert';
 import CloseIcon from '../CLoseIcon';
+
+import { alertPaddingY, alertPaddingX } from './default-theme';
 
 const closeIconStyles = css`
   position: absolute;
@@ -17,14 +17,16 @@ const closeIconStyles = css`
 `;
 
 export const StyledCloseIcon = styled(CloseIcon)`
-  padding: ${prop('theme.alertPaddingY')} ${prop('theme.alertPaddingX')};
+  padding: ${themeProp('alertPaddingY', alertPaddingY)}
+    ${themeProp('alertPaddingX', alertPaddingX)};
   color: ${props => !props.theme.closeColor && 'inherit'};
   ${closeIconStyles};
 `;
 
 const CloseString = styled.button`
   ${closeIconStyles};
-  padding: ${prop('theme.alertPaddingY')} ${prop('theme.alertPaddingX')};
+  padding: ${themeProp('alertPaddingY', alertPaddingY)}
+    ${themeProp('alertPaddingX', alertPaddingX)};
   cursor: pointer;
   background: transparent;
   border: 0;

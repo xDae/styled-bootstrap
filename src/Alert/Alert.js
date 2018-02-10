@@ -2,40 +2,51 @@
 
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { prop } from 'styled-tools';
+import get from 'lodash/get';
+import themeProp from '../utils/src/theme';
 
 import { borderRadius } from '../utils/src/border-radius';
 import { themeColorLevel } from '../utils/src/color-functions';
 
 import { alertVariant } from './utils/alert-variant';
 
-import defaultTheme from './default-theme';
+import {
+  alertPaddingY,
+  alertPaddingX,
+  alertMarginBottom,
+  alertBorderWidth,
+  alertLinkFontWeight,
+  alertBorderRadius,
+  alertBgLevel,
+  alertBorderLevel,
+  alertColorLevel
+} from './default-theme';
 
 const Alert = styled.div`
   position: relative;
-  padding: ${prop('theme.alertPaddingY')} ${prop('theme.alertPaddingX')};
+  padding: ${themeProp('alertPaddingY', alertPaddingY)}
+    ${themeProp('alertPaddingX,', alertPaddingX)};
 
-  margin-bottom: ${prop('theme.alertMarginBottom')};
+  margin-bottom: ${themeProp('alertMarginBottom', alertMarginBottom)};
 
-  border: ${prop('theme.alertBorderWidth')} solid transparent;
+  border: ${themeProp('alertBorderWidth', alertBorderWidth)} solid transparent;
 
   a {
-    font-weight: ${prop('theme.alertLinkFontWeight')};
+    font-weight: ${themeProp('alertLinkFontWeight', alertLinkFontWeight)};
   }
 
-  ${borderRadius(prop('theme.alertBorderRadius'))};
+  ${borderRadius(themeProp('alertBorderRadius', alertBorderRadius))};
 
   ${({ type, theme }) =>
     alertVariant(
-      themeColorLevel(type, theme.alertBgLevel),
-      themeColorLevel(type, theme.alertBorderLevel),
-      themeColorLevel(type, theme.alertColorLevel)
+      themeColorLevel(type, get(theme, 'alertBgLevel', alertBgLevel)),
+      themeColorLevel(type, get(theme, 'alertBorderLevel', alertBorderLevel)),
+      themeColorLevel(type, get(theme, 'alertColorLevel', alertColorLevel))
     )}};
 `;
 
 Alert.defaultProps = {
-  type: 'primary',
-  theme: defaultTheme
+  type: 'primary'
 };
 
 Alert.propTypes = {

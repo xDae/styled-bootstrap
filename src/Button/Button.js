@@ -2,7 +2,6 @@
 
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import get from 'lodash/get';
 import { ifProp } from 'styled-tools';
 import themeProp from '../utils/src/theme';
 
@@ -133,36 +132,6 @@ const Button = styled.button`
         (theme[btnSizes[size].borderRadius] ||
           defaultTheme[btnSizes[size].borderRadius])
     )};
-
-  /* ${({ size, theme }) => {
-    const paddingY = get(
-      theme,
-      `${btnSizes[size].paddingY}`,
-      defaultTheme[btnSizes[size].paddingY]
-    );
-    const paddingX = get(
-      theme,
-      `${btnSizes[size].paddingX}`,
-      defaultTheme[btnSizes[size].paddingX]
-    );
-    const fontSize = get(
-      theme,
-      `${btnSizes[size].fontSize}`,
-      defaultTheme[btnSizes[size].fontSize]
-    );
-    const lineHeight = get(
-      theme,
-      `${btnSizes[size].lineHeight}`,
-      defaultTheme[btnSizes[size].lineHeight]
-    );
-    const borderRadius = get(
-      theme,
-      `${btnSizes[size].borderRadius}`,
-      defaultTheme[btnSizes[size].borderRadius]
-    );
-
-    return buttonSize(paddingY, paddingX, fontSize, lineHeight, borderRadius);
-  }}; */
 
   ${ifProp(
     'active',

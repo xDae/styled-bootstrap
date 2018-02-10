@@ -2,21 +2,27 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { prop } from 'styled-tools';
-import defaultTheme from './default-theme';
+import themeProp from '../utils/src/theme';
 
 import { hoverFocus } from '../../src/utils/src';
 
+import {
+  closeFontSize,
+  closeFontWeight,
+  closeColor,
+  closeTextShadow
+} from './default-theme';
+
 export const StyledCloseIcon = styled.button`
-  font-size: ${prop('theme.closeFontSize')};
-  font-weight: ${prop('theme.closeFontWeight')};
+  font-size: ${themeProp('closeFontSize', closeFontSize)};
+  font-weight: ${themeProp('closeFontWeight', closeFontWeight)};
   line-height: 1;
-  color: ${prop('theme.closeColor')};
-  text-shadow: ${prop('theme.closeTextShadow')};
+  color: ${themeProp('closeColor', closeColor)};
+  text-shadow: ${themeProp('closeTextShadow', closeTextShadow)};
   opacity: 0.5;
 
   ${hoverFocus(`
-    color: ${prop('theme.closeColor')};
+    color: ${themeProp('closeColor', closeColor)};
     text-decoration: none;
     opacity: .75;
   `)};
@@ -37,13 +43,5 @@ const CloseIcon = props => (
     <span aria-hidden="true">{props.children || '×'}</span>
   </StyledCloseIcon>
 );
-
-// CloseIcon.defaultProps = {
-//   theme: defaultTheme
-// };
-
-StyledCloseIcon.defaultProps = {
-  theme: defaultTheme
-};
 
 export default CloseIcon;
