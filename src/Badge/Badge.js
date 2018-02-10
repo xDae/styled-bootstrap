@@ -2,23 +2,32 @@
 
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { prop } from 'styled-tools';
+import themeProp from '../utils/src/theme';
 
 import { borderRadius } from '../utils/src/border-radius';
 import { badgeVariant } from './utils/badge-variant';
 
-import defaultTheme from './default-theme';
+import {
+  badgeFontSize,
+  badgeFontWeight,
+  badgePaddingY,
+  badgePaddingX,
+  badgeBorderRadius,
+  badgePillPaddingX,
+  badgePillBorderRadius
+} from './default-theme';
 
 const Badge = styled.span`
   display: inline-block;
-  padding: ${prop('theme.badgePaddingY')} ${prop('theme.badgePaddingX')};
-  font-size: ${prop('theme.badgeFontSize')};
-  font-weight: ${prop('theme.badgeFontWeight')};
+  padding: ${themeProp('badgePaddingY', badgePaddingY)}
+    ${themeProp('badgePaddingX', badgePaddingX)};
+  font-size: ${themeProp('badgeFontSize', badgeFontSize)};
+  font-weight: ${themeProp('badgeFontWeight', badgeFontWeight)};
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  ${borderRadius(prop('theme.badgeBorderRadius'))};
+  ${borderRadius(themeProp('badgeBorderRadius', badgeBorderRadius))};
 
   /* Empty badges collapse automatically */
   &:empty {
@@ -27,12 +36,14 @@ const Badge = styled.span`
 
   ${({ theme, color }) => badgeVariant(theme[color])};
 
-  ${({ theme, pill }) =>
+  ${({ pill }) =>
     pill &&
     css`
-      padding-right: ${theme.badgePillPaddingX};
-      padding-left: ${theme.badgePillPaddingX};
-      ${borderRadius(theme.badgePillBorderRadius)};
+      padding-right: ${themeProp('badgePillPaddingX', badgePillPaddingX)};
+      padding-left: ${themeProp('badgePillPaddingX', badgePillPaddingX)};
+      ${borderRadius(
+        themeProp('badgePillBorderRadius', badgePillBorderRadius)
+      )};
     `};
 `;
 
@@ -53,7 +64,6 @@ Badge.propTypes = {
 };
 
 Badge.defaultProps = {
-  theme: defaultTheme,
   color: 'primary',
   pill: false
 };
