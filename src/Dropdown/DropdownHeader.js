@@ -1,14 +1,23 @@
 import styled from 'styled-components';
 
+import themeProp from '../utils/src/theme';
+
+import {
+  dropdownPaddingY,
+  dropdownItemPaddingX,
+  fontSizeSm,
+  dropdownHeaderColor
+} from './default-theme';
+
 import Heading from '../Heading';
 
 const DropdownHeader = styled(Heading)`
   display: block;
-  ${({ theme }) =>
-    `padding: ${theme.dropdownPaddingY} ${theme.dropdownItemPaddingX};`};
+  padding: ${themeProp('dropdownPaddingY', dropdownPaddingY)}
+    ${themeProp('dropdownItemPaddingX', dropdownItemPaddingX)};
   margin-bottom: 0;
-  font-size: ${props => props.theme.fontSizeSm};
-  color: ${({ theme }) => theme.dropdownHeaderColor};
+  font-size: ${themeProp('fontSizeSm', fontSizeSm)};
+  color: ${themeProp('dropdownHeaderColor', dropdownHeaderColor)};
   white-space: nowrap;
 `;
 
