@@ -1,21 +1,30 @@
 import styled from 'styled-components';
 
 import { borderRadius } from '../utils/src/border-radius';
+import themeProp from '../utils/src/theme';
+
+import {
+  cardSpacerY,
+  cardSpacerX,
+  cardBorderWidth,
+  cardBorderColor,
+  cardInnerBorderRadius
+} from './default-theme';
 
 const CardFooter = styled.div`
-  ${props => `padding: ${props.theme.cardSpacerY} ${props.theme.cardSpacerX}`};
+  padding: ${themeProp('cardSpacerY', cardSpacerY)}
+    ${themeProp('cardSpacerX', cardSpacerX)};
   background-color: ${props => props.theme.cardCapBg};
-  ${props =>
-    `border-top: ${props.theme.cardBorderWidth} solid ${
-      props.theme.cardBorderColor
-    }}`};
+  border-top: ${themeProp('cardBorderWidth', cardBorderWidth)} solid
+    ${themeProp('cardBorderColor', cardBorderColor)};
 
   &:last-child {
     ${borderRadius(`
       0,
       0,
-      ${props => props.theme.cardInnerBorderRadius},
-      ${props => props.theme.cardInnerBorderRadius}`)};
+      ${themeProp('cardInnerBorderRadius', cardInnerBorderRadius)},
+      ${themeProp('cardInnerBorderRadius', cardInnerBorderRadius)}
+    `)};
   }
 `;
 

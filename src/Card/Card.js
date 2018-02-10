@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import themeProp from '../utils/src/theme';
 
 import CardHeader from './CardHeader';
 import CardBody from './CardBody';
@@ -6,20 +7,26 @@ import CardFooter from './CardFooter';
 
 import { borderRadius } from '../utils/src/border-radius';
 
+import {
+  cardBorderWidth,
+  cardBorderColor,
+  cardBorderRadius,
+  cardBg
+} from './default-theme';
+
 const Card = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: $card-bg;
+  background-color: ${themeProp('cardBg', cardBg)};
   background-clip: border-box;
 
-  ${props => `
-    border: ${props.theme.cardBorderWidth} solid ${props.theme.cardBorderColor};
-  `};
+  border: ${themeProp('cardBorderWidth', cardBorderWidth)} solid
+    ${themeProp('cardBorderColor', cardBorderColor)};
 
-  ${borderRadius(props => props.theme.cardBorderRadius)};
+  ${borderRadius(themeProp('cardBorderRadius', cardBorderRadius))};
 
   > hr {
     margin-right: 0;
