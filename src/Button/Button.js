@@ -2,7 +2,9 @@
 
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import { prop, ifProp } from 'styled-tools';
+import get from 'lodash/get';
+import { ifProp } from 'styled-tools';
+import themeProp from '../utils/src/theme';
 
 import { boxShadow } from '../utils/src/box-shadow';
 import { hover, hoverFocus } from '../utils/src/hover';
@@ -16,39 +18,40 @@ import defaultTheme from './defaultTheme';
 
 const btnSizes = {
   normal: {
-    paddingY: 'inputBtnPaddingY',
-    paddingX: 'inputBtnPaddingX',
+    paddingY: 'btnPaddingY',
+    paddingX: 'btnPaddingX',
     fontSize: 'fontSizeBase',
-    lineHeight: 'inputBtnLineHeight',
+    lineHeight: 'btnLineHeight',
     borderRadius: 'btnBorderRadius'
   },
   large: {
-    paddingY: 'inputBtnPaddingYlg',
-    paddingX: 'inputBtnPaddingXlg',
+    paddingY: 'btnPaddingYlg',
+    paddingX: 'btnPaddingXlg',
     fontSize: 'fontSizeLg',
-    lineHeight: 'inputBtnLineHeightLg',
+    lineHeight: 'btnLineHeightLg',
     borderRadius: 'btnBorderRadiusLg'
   },
   small: {
-    paddingY: 'inputBtnPaddingYsm',
-    paddingX: 'inputBtnPaddingXsm',
+    paddingY: 'btnPaddingYsm',
+    paddingX: 'btnPaddingXsm',
     fontSize: 'fontSizeSm',
-    lineHeight: 'inputBtnLineHeightSm',
+    lineHeight: 'btnLineHeightSm',
     borderRadius: 'btnBorderRadiusSm'
   }
 };
 
 const Button = styled.button`
-  display: inline-block;
-  font-weight: ${prop('theme.btnFontWeight', defaultTheme.btnFontWeight)};
+  display: ${({ block }) => (block ? 'block' : 'inline-block')};
+  width: ${props => props.block && '100%'};
+  font-weight: ${themeProp('btnFontWeight')};
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: ${prop('theme.inputBtnBorderWidth', defaultTheme.inputBtnBorderWidth)}
-    solid transparent;
+  border: ${themeProp('btnBorderWidth', defaultTheme.btnBorderWidth)} solid
+    transparent;
 
-  ${transition(prop('theme.btnTransition', defaultTheme.btnTransition))};
+  ${transition(themeProp('btnTransition', defaultTheme.btnTransition))};
 
   /* Share hover and focus styles */
   ${hoverFocus('text-decoration: none;')};
@@ -56,16 +59,16 @@ const Button = styled.button`
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: ${prop(
-      'theme.btnFocusBoxShadow',
+    box-shadow: ${themeProp(
+      'btnFocusBoxShadow',
       defaultTheme.btnFocusBoxShadow
     )};
   }
 
   &.disabled,
   &:disabled {
-    opacity: ${prop(
-      'theme.btnDisabledOpacity',
+    opacity: ${themeProp(
+      'btnDisabledOpacity',
       defaultTheme.btnDisabledOpacity
     )};
     ${boxShadow('none')};
@@ -79,40 +82,39 @@ const Button = styled.button`
   ${({ theme, color }) =>
     color !== 'link' &&
     buttonVariant(
-      theme[color] || defaultTheme[color],
-      theme[color] || defaultTheme[color],
-      theme || defaultTheme
+      theme[color],
+      theme[color],
+      theme.enableShadows,
+      theme.btnBoxShadow,
+      theme.btnActiveBoxShadow
     )};
 
   ${ifProp(
     { color: 'link' },
     css`
-      font-weight: ${prop('theme.fontWeightNormal', 'normal')};
-      color: ${prop('theme.linkColor', '#007bff')};
-      border-radius: 0;
+      font-weight: ${themeProp('fontWeightNormal', 'normal')};
+      color: ${themeProp('linkColor', '#007bff')};
+      background-color: transparent;
 
-      &,
-      &:active,
-      &.active,
-      &:disabled {
+
+
+      ${hover(css`
+        color: ${themeProp('linkHoverColor', '#0056b3')};
+        text-decoration: ${themeProp('linkHoverDecoration', 'underline')};
         background-color: transparent;
-        ${boxShadow('none')};
-      }
-
-      &,
-      &:focus,
-      &:active {
         border-color: transparent;
+      `)};
+
+      &:focus,
+      &.focus {
+        text-decoration: ${themeProp('linkHoverDecoration', 'underline')};
+        border-color: transparent;
+        box-shadow: none;
       }
 
-      ${hover('border-color: transparent;')} ${hoverFocus(css`
-          color: ${prop('theme.linkHoverColor')};
-          text-decoration: ${prop('theme.linkHoverDecoration', 'underline')};
-          background-color: transparent;
-        `)} &:disabled {
-        color: ${prop('theme.btnLinkDisabledColor')};
-
-        ${hoverFocus('text-decoration: none;')};
+      &:disabled,
+      &.disabled {
+        color: text-decoration: ${themeProp('btnLinkDisabledColor', '#6c757d')};
       }
     `
   )};
@@ -122,27 +124,53 @@ const Button = styled.button`
 
   ${({ size, theme }) =>
     buttonSize(
-      theme[btnSizes[size].paddingY],
-      theme[btnSizes[size].paddingX],
-      theme[btnSizes[size].fontSize],
-      theme[btnSizes[size].lineHeight],
-      theme.enableRounded && theme[btnSizes[size].borderRadius]
+      theme[btnSizes[size].paddingY] || defaultTheme[btnSizes[size].paddingY],
+      theme[btnSizes[size].paddingX] || defaultTheme[btnSizes[size].paddingX],
+      theme[btnSizes[size].fontSize] || defaultTheme[btnSizes[size].fontSize],
+      theme[btnSizes[size].lineHeight] ||
+        defaultTheme[btnSizes[size].lineHeight],
+      theme.enableRounded &&
+        (theme[btnSizes[size].borderRadius] ||
+          defaultTheme[btnSizes[size].borderRadius])
     )};
+
+  /* ${({ size, theme }) => {
+    const paddingY = get(
+      theme,
+      `${btnSizes[size].paddingY}`,
+      defaultTheme[btnSizes[size].paddingY]
+    );
+    const paddingX = get(
+      theme,
+      `${btnSizes[size].paddingX}`,
+      defaultTheme[btnSizes[size].paddingX]
+    );
+    const fontSize = get(
+      theme,
+      `${btnSizes[size].fontSize}`,
+      defaultTheme[btnSizes[size].fontSize]
+    );
+    const lineHeight = get(
+      theme,
+      `${btnSizes[size].lineHeight}`,
+      defaultTheme[btnSizes[size].lineHeight]
+    );
+    const borderRadius = get(
+      theme,
+      `${btnSizes[size].borderRadius}`,
+      defaultTheme[btnSizes[size].borderRadius]
+    );
+
+    return buttonSize(paddingY, paddingX, fontSize, lineHeight, borderRadius);
+  }}; */
 
   ${ifProp(
     'active',
     css`
       background-image: none;
-      ${boxShadow(prop('theme.btnFocusBoxShadow'))};
+      ${boxShadow(themeProp('btnFocusBoxShadow'))};
     `
   )};
-
-  ${props =>
-    props.block &&
-    css`
-      display: block;
-      width: 100%;
-    `};
 `;
 
 Button.Link = Button.withComponent('a');

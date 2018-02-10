@@ -12,7 +12,9 @@ import { hover } from '../../utils/src/hover';
 export function buttonVariant(
   background: string,
   border: string,
-  theme: {},
+  enableShadows: boolean,
+  btnBoxShadow: string,
+  btnActiveBoxShadow: string,
   hoverBackground: string = darken(0.075, background),
   hoverBorder: string = darken(0.1, border),
   activeBackground: string = darken(0.1, background),
@@ -23,23 +25,19 @@ export function buttonVariant(
     background-color: ${background};
     border-color: ${border};
 
-    ${boxShadow(theme.btnBoxShadow)};
+    ${boxShadow(btnBoxShadow)};
 
     ${hover(css`
       color: ${colorYiq(hoverBackground)};
-      /* TODO: pass theme options to gradientBg */
       ${gradientBg(hoverBackground)};
       border-color: ${hoverBorder};
     `)};
 
     &:focus,
     &.focus {
-      // Avoid using mixin so we can pass custom focus shadow properly
-      ${theme.enableShadows
-        ? `box-shadow: ${theme.btnBoxShadow}, 0 0 0 3px ${sassRgba(
-            border,
-            0.5
-          )};`
+      /* Avoid using mixin so we can pass custom focus shadow properly */
+      ${enableShadows
+        ? `box-shadow: ${btnBoxShadow}, 0 0 0 3px ${sassRgba(border, 0.5)};`
         : `box-shadow: 0 0 0 3px ${sassRgba(border, 0.5)};`};
     }
 
@@ -56,7 +54,7 @@ export function buttonVariant(
       background-color: ${activeBackground};
       background-image: none;
       border-color: ${activeBorder};
-      ${boxShadow(theme.btnActiveBoxShadow)};
+      ${boxShadow(btnActiveBoxShadow)};
     }
   `;
 }

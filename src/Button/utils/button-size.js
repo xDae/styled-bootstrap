@@ -7,14 +7,14 @@ export function buttonSize(
   paddingX: string,
   fontSize: string,
   lineHeight: string,
-  borderRadius: string
+  borderRadius: number = 0
 ) {
   return css`
     padding: ${paddingY} ${paddingX};
     font-size: ${fontSize};
     line-height: ${lineHeight};
 
-    border-radius: ${borderRadius || '0'};
+    border-radius: ${borderRadius};
   `;
 }
 

@@ -3,8 +3,6 @@ import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
 import { ThemeProvider } from 'styled-components';
 
-import defaultTheme from '../../utils/default-theme';
-
 import Button from '../Button';
 
 const margin = { marginRight: 6, marginBottom: 6 };
@@ -227,8 +225,23 @@ export default storiesOf('Buttons', module)
       </Button.Link>
     </Fragment>
   ))
-  .add('Squared Buttons', () => (
-    <ThemeProvider theme={{ enableRounded: false }}>
+
+  .add('Custom Buttons', () => (
+    <ThemeProvider
+      theme={{
+        enableRounded: false,
+        primary: 'SkyBlue',
+        secondary: 'gray',
+        success: 'YellowGreen',
+        info: 'PowderBlue',
+        warning: 'GoldenRod',
+        danger: 'FireBrick',
+        light: 'ghostWhite',
+        dark: 'black',
+        linkColor: 'LightSkyBlue',
+        linkHoverColor: 'LightCoral'
+      }}
+    >
       <Fragment>
         <Button style={margin} color="primary" href="#">
           Primary
