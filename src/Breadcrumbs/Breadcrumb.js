@@ -1,23 +1,29 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { prop } from 'styled-tools';
+import themeProp from '../utils/src/theme';
 
 import { borderRadius } from '../utils/src/border-radius';
 
-import defaultTheme from './default-theme';
+import {
+  breadcrumbPaddingY,
+  breadcrumbPaddingX,
+  breadcrumbItemPadding,
+  breadcrumbMarginBottom,
+  breadcrumbBg,
+  breadcrumbDividerColor,
+  breadcrumbActiveColor,
+  breadcrumbDivider
+} from './default-theme';
 
 const Breadcrumb = styled.ol`
   display: flex;
   flex-wrap: wrap;
-  padding: ${prop('theme.breadcrumbPaddingY', defaultTheme.breadcrumbPaddingY)}
-    ${prop('theme.breadcrumbPaddingX', defaultTheme.breadcrumbPaddingX)};
-  margin-bottom: ${prop(
-    'theme.breadcrumbMarginBottom',
-    defaultTheme.breadcrumbMarginBottom
-  )};
+  padding: ${themeProp('breadcrumbPaddingY', breadcrumbPaddingY)}
+    ${themeProp('breadcrumbPaddingX', breadcrumbPaddingX)};
+  margin-bottom: ${themeProp('breadcrumbMarginBottom', breadcrumbMarginBottom)};
   list-style: none;
-  background-color: ${prop('theme.breadcrumbBg', defaultTheme.breadcrumbBg)};
-  ${borderRadius(prop('theme.bordeRadius', '.25rem'))};
+  background-color: ${themeProp('breadcrumbBg', breadcrumbBg)};
+  ${borderRadius(themeProp('bordeRadius', '.25rem'))};
 `;
 
 Breadcrumb.Item = styled.li.attrs({
@@ -25,19 +31,10 @@ Breadcrumb.Item = styled.li.attrs({
 })`
   :not(:first-child)::before {
     display: inline-block;
-    padding-right: ${prop(
-      'theme.breadcrumbItemPadding',
-      defaultTheme.breadcrumbItemPadding
-    )};
-    padding-left: ${prop(
-      'theme.breadcrumbItemPadding',
-      defaultTheme.breadcrumbItemPadding
-    )};
-    color: ${prop(
-      'theme.breadcrumbDividerColor',
-      defaultTheme.breadcrumbDividerColor
-    )};
-    content: ${prop('theme.breadcrumbDivider', defaultTheme.breadcrumbDivider)};
+    padding-right: ${themeProp('breadcrumbItemPadding', breadcrumbItemPadding)};
+    padding-left: ${themeProp('breadcrumbItemPadding', breadcrumbItemPadding)};
+    color: ${themeProp('breadcrumbDividerColor', breadcrumbDividerColor)};
+    content: ${themeProp('breadcrumbDivider', breadcrumbDivider)};
   }
 
   :not(:first-child)&:hover::before {
@@ -47,7 +44,9 @@ Breadcrumb.Item = styled.li.attrs({
     text-decoration: none;
   }
 
-  ${({ active, theme }) => active && `color: ${theme.breadcrumbActiveColor};`};
+  ${({ active }) =>
+    active &&
+    `color: ${themeProp('readcrumbActiveColor', breadcrumbActiveColor)};`};
 `;
 
 Breadcrumb.defaultProps = {};

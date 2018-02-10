@@ -1,10 +1,19 @@
+export const breadcrumbPaddingY = '.75rem';
+export const breadcrumbPaddingX = '1rem';
+export const breadcrumbItemPadding = '.5rem';
+export const breadcrumbMarginBottom = '1rem';
+export const breadcrumbBg = '#e9ecef';
+export const breadcrumbDividerColor = '#6c757d';
+export const breadcrumbActiveColor = '#6c757d';
+export const breadcrumbDivider = '"/"';
+
 export default {
-  breadcrumbPaddingY: '.75rem',
-  breadcrumbPaddingX: '1rem',
-  breadcrumbItemPadding: '.5rem',
-  breadcrumbMarginBottom: '1rem',
-  breadcrumbBg: '#e9ecef',
-  breadcrumbDividerColor: '#6c757d',
-  breadcrumbActiveColor: '#6c757d',
-  breadcrumbDivider: '"/"'
+  breadcrumbPaddingY,
+  breadcrumbPaddingX,
+  breadcrumbItemPadding,
+  breadcrumbMarginBottom,
+  breadcrumbBg,
+  breadcrumbDividerColor,
+  breadcrumbActiveColor,
+  breadcrumbDivider
 };
