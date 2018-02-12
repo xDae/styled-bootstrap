@@ -31,7 +31,6 @@ npm install styled-bootstrap --save
 - [x] Close icon
 - [x] Dropdown
 - [x] Heading
-- [x] Comet Haley
 - [ ] Forms
 - [ ] Input group
 - [ ] Jumbotron
@@ -41,7 +40,7 @@ npm install styled-bootstrap --save
 - [ ] Navbar
 - [ ] Pagination
 - [ ] Popovers
-- [ ] Progress
+- [x] Progress
 - [ ] Scrollspy
 - [ ] Tooltips 
 - Utilities
