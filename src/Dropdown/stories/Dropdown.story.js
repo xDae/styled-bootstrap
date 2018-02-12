@@ -43,7 +43,7 @@ class DropdownWrapper extends Component {
 
   render() {
     return (
-      <Dropdown isOpen={this.state.isOpen}>
+      <Dropdown isOpen={this.state.isOpen} align={this.props.align}>
         <ButtonWithCaret color="secondary" onClick={this.toggleDropdown}>
           Dropdown button
         </ButtonWithCaret>
@@ -138,5 +138,6 @@ export default storiesOf('Dropdown', module)
     })
   )
   .add('Dropdown', () => <DropdownWrapper />)
+  .add('Dropdown right aligned', () => <DropdownWrapper align="right" />)
   .add('Dropdown with Divider', () => <DropdownWithDivider />)
   .add('Dropdown with Header', () => <DropdownWithHeader />);

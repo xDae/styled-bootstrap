@@ -13,6 +13,7 @@ const Dropdown = styled.div`
     css`
       ${DropdownMenu} {
         display: block;
+        ${props.align === 'right' ? 'right: 0;' : 'left: 0;'};
       }
     `};
 `;
@@ -22,6 +23,8 @@ Dropdown.Item = DropdownItem;
 Dropdown.Menu = DropdownMenu;
 Dropdown.Divider = DropdownDivider;
 
-Dropdown.defaultProps = {};
+Dropdown.defaultProps = {
+  align: 'left'
+};
 
 export default Dropdown;

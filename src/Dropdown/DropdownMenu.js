@@ -22,7 +22,6 @@ import {
 const DropdownMenu = styled.div`
   position: absolute;
   top: 100%;
-  left: 0;
   z-index: ${themeProp('zIndexDropdown', zIndexDropdown)};
   display: none;
   float: left;
