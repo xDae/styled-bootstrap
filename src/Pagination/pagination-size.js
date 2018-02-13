@@ -1,8 +1,13 @@
+// @flow
+
 import { css } from 'styled-components';
 
-import { borderLeftRadius, borderRightRadius } from '../utils/border-radius';
+import {
+  borderLeftRadius,
+  borderRightRadius
+} from '../utils/src/border-radius';
 
-import Pagination from '../components/Pagination';
+import Pagination from './Pagination';
 
 export function paginationSize(
   paddingY,
@@ -20,12 +25,12 @@ export function paginationSize(
     ${Pagination.Item} {
       &:first-child {
         ${Pagination.Link} {
-          ${borderLeftRadius(borderRadius)}
+          ${borderLeftRadius(borderRadius)};
         }
       }
       &:last-child {
         ${Pagination.Link} {
-          ${borderRightRadius(borderRadius)}
+          ${borderRightRadius(borderRadius)};
         }
       }
     }
