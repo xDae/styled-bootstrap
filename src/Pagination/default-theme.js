@@ -30,29 +30,3 @@ export const paginationActiveBorderColor = '#007bff';
 export const paginationDisabledColor = '#6c757d';
 export const paginationDisabledBg = '#fff';
 export const paginationDisabledBorderColor = '#dee2e6';
-
-const defaultTheme = {
-  paginationPaddingY,
-  paginationPaddingX,
-  paginationPaddingYsm,
-  paginationPaddingXsm,
-  paginationPaddingYlg,
-  paginationPaddingXlg,
-  paginationLineHeight,
-  paginationColor,
-  paginationBg,
-  paginationBorderWidth,
-  paginationBorderColor,
-  paginationFocusBoxShadow,
-  paginationHoverColor,
-  paginationHoverBg,
-  paginationHoverBorderColor,
-  paginationActiveColor,
-  paginationActiveBg,
-  paginationActiveBorderColor,
-  paginationDisabledColor,
-  paginationDisabledBg,
-  paginationDisabledBorderColor
-};
-
-export default defaultTheme;
