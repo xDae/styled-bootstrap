@@ -38,7 +38,7 @@ npm install styled-bootstrap --save
 - [ ] Modal
 - [ ] Navs
 - [ ] Navbar
-- [ ] Pagination
+- [x] Pagination
 - [ ] Popovers
 - [x] Progress
 - [ ] Scrollspy
