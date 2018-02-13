@@ -1,7 +1,7 @@
 {
   "name": "styled-bootstrap",
-  "version": "0.1.4",
-  "private": true,
+  "version": "0.1.5-0",
+  "private": false,
   "description": "--",
   "homepage": "https://github.com/xDae/styled-bootstrap",
   "bugs": {
