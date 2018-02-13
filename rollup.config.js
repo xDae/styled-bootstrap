@@ -11,7 +11,7 @@ import pkg from './package.json';
 export default [
   {
     input: 'src/main.js',
-    external: ['react', 'styled-components', 'polished'],
+    external: ['react', 'styled-components'],
     output: [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' }
