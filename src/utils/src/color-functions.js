@@ -1,6 +1,8 @@
 // @flow
 
-import { mix, parseToRgb } from 'polished';
+import mix from 'polished/lib/color/mix';
+import parseToRgb from 'polished/lib/color/parseToRgb';
+
 import { colors, themeColors } from './defaultTheme';
 
 const themeColorInterval = 0.08;

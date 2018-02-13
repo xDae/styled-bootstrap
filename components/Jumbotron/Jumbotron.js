@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { stripUnit } from 'polished';
+import stripUnit from 'polished/lib/helpers/stripUnit';
 
 import {
   borderRadiusLg,

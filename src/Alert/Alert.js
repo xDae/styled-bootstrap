@@ -2,7 +2,7 @@
 
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import get from 'lodash/get';
+import get from 'lodash.get';
 import themeProp from '../utils/src/theme';
 
 import { borderRadius } from '../utils/src/border-radius';

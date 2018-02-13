@@ -1,1 +1,3 @@
-export { default } from './CLoseIcon';
+import CLoseIcon from './CLoseIcon';
+
+export default CLoseIcon;

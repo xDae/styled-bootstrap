@@ -2,7 +2,7 @@ import { createElement } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import omit from 'lodash/omit';
+import omit from 'lodash.omit';
 
 const Element = ({ as, children, ...props }) =>
   createElement(as, omit(props, ['as', 'size']), children);

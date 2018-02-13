@@ -1,6 +1,6 @@
 // @flow
 
-import { stripUnit } from 'polished';
+import stripUnit from 'polished/lib/helpers/stripUnit';
 
 import Input from './Input';
 

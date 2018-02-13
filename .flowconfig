@@ -1,13 +1,12 @@
 [ignore]
-.*/node_modules/styled-components/.*
-.*/node_modules/polished/.*
-.*/node_modules/.*
-.*/lib/.*
+<PROJECT_ROOT>/node_modules/styled-components/*
+<PROJECT_ROOT>/node_modules/polished/*
+<PROJECT_ROOT>/node_modules/*
+<PROJECT_ROOT>/lib/*
 
 [include]
 
 [libs]
-flow-typed/
 
 [lints]
 all=warn

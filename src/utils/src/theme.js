@@ -1,6 +1,6 @@
 // @flow
 
-import get from 'lodash/get';
+import get from 'lodash.get';
 
 /**
  * Returns the value of `props[path]` or `defaultValue`

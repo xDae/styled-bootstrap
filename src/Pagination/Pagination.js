@@ -1,9 +1,9 @@
 // @flow
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
-import get from 'lodash/get';
+import get from 'lodash.get';
+
 import { borderRadius } from '../utils/src/border-radius';
 
 import { paginationSize } from './pagination-size';

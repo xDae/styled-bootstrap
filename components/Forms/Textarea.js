@@ -1,5 +1,3 @@
-// import { stripUnit } from 'polished';
-
 import Input from './Input';
 
 import {

@@ -1,7 +1,7 @@
 // @flow
 
 import { css } from 'styled-components';
-import { darken } from 'polished';
+import darken from 'polished/lib/color/darken';
 
 export function alertVariant(
   background: string,

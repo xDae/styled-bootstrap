@@ -1,7 +1,7 @@
 // @flow
 
 import { css } from 'styled-components';
-import { darken } from 'polished';
+import darken from 'polished/lib/color/darken';
 
 import { colorYiq } from '../../utils/src/color-functions';
 import { boxShadow } from '../../utils/src/box-shadow';

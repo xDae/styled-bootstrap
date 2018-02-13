@@ -2,7 +2,7 @@
 
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import { ifProp } from 'styled-tools';
+
 import themeProp from '../utils/src/theme';
 
 import { boxShadow } from '../utils/src/box-shadow';
@@ -88,8 +88,8 @@ const Button = styled.button`
       theme.btnActiveBoxShadow
     )};
 
-  ${ifProp(
-    { color: 'link' },
+  ${({ color }) =>
+    color === 'link' &&
     css`
       font-weight: ${themeProp('fontWeightNormal', 'normal')};
       color: ${themeProp('linkColor', '#007bff')};
@@ -115,8 +115,7 @@ const Button = styled.button`
       &.disabled {
         color: text-decoration: ${themeProp('btnLinkDisabledColor', '#6c757d')};
       }
-    `
-  )};
+    `};
 
   ${({ theme, outline, color }) =>
     outline && buttonOutlineVariant(theme[color])};
