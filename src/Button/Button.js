@@ -132,13 +132,14 @@ const Button = styled.button`
           defaultTheme[btnSizes[size].borderRadius])
     )};
 
-  ${ifProp(
-    'active',
+  ${({ active }) =>
+    active &&
     css`
       background-image: none;
-      ${boxShadow(themeProp('btnFocusBoxShadow'))};
-    `
-  )};
+      ${boxShadow(
+        themeProp('btnFocusBoxShadow', defaultTheme.btnFocusBoxShadow)
+      )};
+    `};
 `;
 
 Button.Link = Button.withComponent('a');
