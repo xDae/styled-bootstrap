@@ -7,7 +7,8 @@ import {
   borderRightRadius
 } from '../utils/src/border-radius';
 
-import Pagination from './Pagination';
+import PaginationLink from './PaginationLink';
+import PaginationItem from './Pagination';
 
 export function paginationSize(
   paddingY,
@@ -17,19 +18,19 @@ export function paginationSize(
   borderRadius
 ) {
   return css`
-    ${Pagination.Link} {
+    ${PaginationLink} {
       padding: ${paddingY} ${paddingX};
       font-size: ${fontSize};
     }
 
-    ${Pagination.Item} {
+    ${PaginationItem} {
       &:first-child {
-        ${Pagination.Link} {
+        ${PaginationLink} {
           ${borderLeftRadius(borderRadius)};
         }
       }
       &:last-child {
-        ${Pagination.Link} {
+        ${PaginationLink} {
           ${borderRightRadius(borderRadius)};
         }
       }

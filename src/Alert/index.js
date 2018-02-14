@@ -1,5 +1,3 @@
-// import Alert from './Alert';
-// export default Alert;
 import DismissableAlert, {
   StyledCloseIcon as CloseIcon
 } from './DismissableAlert';

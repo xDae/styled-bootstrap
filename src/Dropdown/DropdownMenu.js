@@ -8,7 +8,7 @@ import { boxShadow } from '../utils/src/box-shadow';
 import {
   dropdownMinWidth,
   dropdownPaddingY,
-  dropdownMarginTop,
+  dropdownSpacer,
   fontSizeBase,
   bodyColor,
   dropdownBg,
@@ -27,7 +27,7 @@ const DropdownMenu = styled.div`
   float: left;
   min-width: ${themeProp('dropdownMinWidth', dropdownMinWidth)};
   padding: ${themeProp('dropdownPaddingY', dropdownPaddingY)} 0;
-  margin: ${themeProp('dropdownMarginTop', dropdownMarginTop)} 0 0;
+  margin: ${themeProp('dropdownSpacer', dropdownSpacer)} 0 0;
   font-size: ${themeProp('fontSizeBase', fontSizeBase)};
   color: ${themeProp('bodyColor', bodyColor)};
   text-align: left;

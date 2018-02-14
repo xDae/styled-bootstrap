@@ -1,5 +1,11 @@
 // @flow
 
+export const fontSizeBase = '1rem';
+export const fontSizeSm = '.875rem';
+export const fontWeightNormal = '400';
+export const bodyColor = '#212529';
+export const enableGradients = 'false';
+
 export const dropdownMinWidth = '10rem';
 export const dropdownPaddingY = '.5rem';
 export const dropdownSpacer = '.125rem';
@@ -18,6 +24,7 @@ export const dropdownLinkDisabledColor = '#6c757d';
 export const dropdownItemPaddingY = '.25rem';
 export const dropdownItemPaddingX = '1.5rem';
 export const dropdownHeaderColor = '#6c757d';
+export const zIndexDropdown = 1000;
 
 const defaultTheme = {
   dropdownMinWidth,

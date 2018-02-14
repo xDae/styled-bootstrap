@@ -1,3 +1,5 @@
-import Pagination from './Pagination';
+import PaginationItem from './PaginationItem';
+import PaginationLink from './PaginationLink';
 
-export default Pagination;
+export { PaginationItem, PaginationLink };
+export { default } from './Pagination';
