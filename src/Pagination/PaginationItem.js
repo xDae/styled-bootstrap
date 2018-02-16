@@ -1,7 +1,6 @@
 // @flow
 
 import styled, { css } from 'styled-components';
-// import PropTypes from 'prop-types';
 
 import themeProp from '../utils/src/theme';
 
@@ -28,6 +27,7 @@ const PaginationItem = styled.li`
       ${borderLeftRadius('0.25rem')};
     }
   }
+
   &:last-child {
     ${PaginationLink} {
       ${borderRightRadius('0.25rem')};

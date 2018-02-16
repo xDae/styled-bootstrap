@@ -44,7 +44,7 @@ class DropdownWrapper extends Component {
   render() {
     return (
       <Dropdown isOpen={this.state.isOpen} align={this.props.align}>
-        <ButtonWithCaret color="secondary" onClick={this.toggleDropdown}>
+        <ButtonWithCaret onClick={this.toggleDropdown}>
           Dropdown button
         </ButtonWithCaret>
         <Dropdown.Menu>
@@ -81,7 +81,7 @@ class DropdownWithDivider extends Component {
   render() {
     return (
       <Dropdown isOpen={this.state.isOpen}>
-        <ButtonWithCaret color="secondary" onClick={this.toggleDropdown}>
+        <ButtonWithCaret color="success" onClick={this.toggleDropdown}>
           Dropdown button
         </ButtonWithCaret>
         <Dropdown.Menu>
@@ -117,7 +117,7 @@ class DropdownWithHeader extends Component {
   render() {
     return (
       <Dropdown isOpen={this.state.isOpen}>
-        <ButtonWithCaret color="secondary" onClick={this.toggleDropdown}>
+        <ButtonWithCaret color="warning" onClick={this.toggleDropdown}>
           Dropdown button
         </ButtonWithCaret>
         <Dropdown.Menu>

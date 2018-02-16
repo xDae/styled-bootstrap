@@ -1,6 +1,8 @@
 // @flow
 
+// $FlowIssue
 import mix from 'polished/lib/color/mix';
+// $FlowIssue
 import parseToRgb from 'polished/lib/color/parseToRgb';
 
 import { colors, themeColors } from './defaultTheme';

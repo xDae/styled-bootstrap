@@ -1,6 +1,7 @@
 // @flow
 
 import { css } from 'styled-components';
+// $FlowIssue
 import darken from 'polished/lib/color/darken';
 
 import { colorYiq } from '../../utils/src/color-functions';

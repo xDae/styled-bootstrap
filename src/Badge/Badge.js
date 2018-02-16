@@ -7,7 +7,9 @@ import themeProp from '../utils/src/theme';
 import { borderRadius } from '../utils/src/border-radius';
 import { badgeVariant } from './utils/badge-variant';
 
-import {
+import * as defaultTheme from './default-theme';
+
+const {
   badgeFontSize,
   badgeFontWeight,
   badgePaddingY,
@@ -15,7 +17,7 @@ import {
   badgeBorderRadius,
   badgePillPaddingX,
   badgePillBorderRadius
-} from './default-theme';
+} = defaultTheme;
 
 const Badge = styled.span`
   display: inline-block;
@@ -34,7 +36,7 @@ const Badge = styled.span`
     display: none;
   }
 
-  ${({ theme, color }) => badgeVariant(theme[color])};
+  ${({ theme, color }) => badgeVariant(theme[color] || defaultTheme[color])};
 
   ${({ pill }) =>
     pill &&

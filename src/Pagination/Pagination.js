@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 
+// $FlowIssue
 import get from 'lodash.get';
 
 import { borderRadius } from '../utils/src/border-radius';

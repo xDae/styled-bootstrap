@@ -10,18 +10,3 @@ export const alertBorderWidth = '1px';
 export const alertBgLevel = -10;
 export const alertBorderLevel = -9;
 export const alertColorLevel = 6;
-
-const defaultTheme = {
-  alertPaddingY,
-  alertPaddingX,
-  alertMarginBottom,
-  alertBorderRadius,
-  alertLinkFontWeight,
-  alertBorderWidth,
-
-  alertBgLevel,
-  alertBorderLevel,
-  alertColorLevel
-};
-
-export default defaultTheme;

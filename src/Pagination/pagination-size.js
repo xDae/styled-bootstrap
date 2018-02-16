@@ -11,11 +11,11 @@ import PaginationLink from './PaginationLink';
 import PaginationItem from './Pagination';
 
 export function paginationSize(
-  paddingY,
-  paddingX,
-  fontSize,
-  lineHeight,
-  borderRadius
+  paddingY: string,
+  paddingX: string,
+  fontSize: string,
+  lineHeight: string,
+  borderRadius: string
 ) {
   return css`
     ${PaginationLink} {

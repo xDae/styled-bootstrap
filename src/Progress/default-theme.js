@@ -9,17 +9,3 @@ export const progressBarColor = '#fff';
 export const progressBarBg = '#007bff';
 export const progressBarAnimationTiming = '1s linear infinite';
 export const progressBarTransition = 'width .6s ease';
-
-const defaultTheme = {
-  progressHeight,
-  progressFontSize,
-  progressBg,
-  progressBorderRadius,
-  progressBoxShadow,
-  progressBarColor,
-  progressBarBg,
-  progressBarAnimationTiming,
-  progressBarTransition
-};
-
-export default defaultTheme;
