@@ -28,7 +28,7 @@ npm install styled-bootstrap --save
 - [x] Breadcrumbs
 - [x] Button
 - [x] Card
-- [x] Close icon
+- [x] Collapse
 - [x] Dropdown
 - [x] Heading
 - [ ] Forms

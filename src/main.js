@@ -19,6 +19,8 @@ export {
   CardImage
 } from './Card';
 
+export { default as Collapse } from './Collapse';
+
 export { default as CloseIcon } from './CLoseIcon';
 
 export {
