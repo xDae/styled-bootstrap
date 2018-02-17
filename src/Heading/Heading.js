@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import omit from 'lodash.omit';
 
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
 import * as defaultTheme from './default-theme';
 

@@ -5,7 +5,7 @@ import { css } from 'styled-components';
 import {
   borderLeftRadius,
   borderRightRadius
-} from '../utils/src/border-radius';
+} from '../utils/border-radius';
 
 import PaginationLink from './PaginationLink';
 import PaginationItem from './Pagination';

@@ -5,8 +5,6 @@ import mix from 'polished/lib/color/mix';
 // $FlowIssue
 import parseToRgb from 'polished/lib/color/parseToRgb';
 
-import { colors, themeColors } from './defaultTheme';
-
 const themeColorInterval = 0.08;
 
 // Color contrast
@@ -24,21 +22,8 @@ export function colorYiq(color: string): string {
   return '#fff';
 }
 
-// Retreive color
-export function getColor(key: string = 'blue'): string {
-  return colors[key];
-}
-
-export function themeColor(key: string = 'primary'): string {
-  return themeColors[key];
-}
-
 // Request a theme color level
-export function themeColorLevel(
-  colorName: string = 'primary',
-  level: number = 0
-) {
-  const color = themeColor(colorName);
+export function themeColorLevel(color: string, level: number = 0) {
   const colorBase = level > 0 ? '#000' : '#fff';
 
   if (level < 0) {

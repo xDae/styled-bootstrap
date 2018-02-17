@@ -2,9 +2,9 @@
 
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
-import { borderRadius } from '../utils/src/border-radius';
+import { borderRadius } from '../utils/border-radius';
 import { badgeVariant } from './utils/badge-variant';
 
 import * as defaultTheme from './default-theme';

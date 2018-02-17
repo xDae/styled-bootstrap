@@ -1,10 +1,10 @@
 // @flow
 
 import styled, { css, keyframes } from 'styled-components';
-import { gradientStriped } from '../utils/src/gradients';
-import { transition } from '../utils/src/transition';
+import { gradientStriped } from '../utils/gradients';
+import { transition } from '../utils/transition';
 
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
 import {
   progressHeight,

@@ -4,14 +4,16 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 // $FlowIssue
 import get from 'lodash.get';
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
-import { borderRadius } from '../utils/src/border-radius';
-import { themeColorLevel } from '../utils/src/color-functions';
+import { borderRadius } from '../utils/border-radius';
+import { themeColorLevel } from '../utils/color-functions';
 
 import { alertVariant } from './utils/alert-variant';
 
-import {
+import * as defaultTheme from './default-theme';
+
+const {
   alertPaddingY,
   alertPaddingX,
   alertMarginBottom,
@@ -21,7 +23,7 @@ import {
   alertBgLevel,
   alertBorderLevel,
   alertColorLevel
-} from './default-theme';
+} = defaultTheme;
 
 const Alert = styled.div`
   position: relative;
@@ -40,9 +42,18 @@ const Alert = styled.div`
 
   ${({ type, theme }) =>
     alertVariant(
-      themeColorLevel(type, get(theme, 'alertBgLevel', alertBgLevel)),
-      themeColorLevel(type, get(theme, 'alertBorderLevel', alertBorderLevel)),
-      themeColorLevel(type, get(theme, 'alertColorLevel', alertColorLevel))
+      themeColorLevel(
+        defaultTheme[type],
+        get(theme, 'alertBgLevel', alertBgLevel)
+      ),
+      themeColorLevel(
+        defaultTheme[type],
+        get(theme, 'alertBorderLevel', alertBorderLevel)
+      ),
+      themeColorLevel(
+        defaultTheme[type],
+        get(theme, 'alertColorLevel', alertColorLevel)
+      )
     )}};
 `;
 

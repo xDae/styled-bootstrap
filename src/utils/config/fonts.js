@@ -1,5 +1,8 @@
 // @flow
 
+// $FlowIssue
+import stripUnit from 'polished/lib/helpers/stripUnit';
+
 import { sassRgba } from '../sassRgba';
 import { gray600, black } from './colors';
 import { spacer } from './spacing';
@@ -43,21 +46,21 @@ export const display2Size = '5.5rem';
 export const display3Size = '4.5rem';
 export const display4Size = '3.5rem';
 
-export const display1Weight = 300;
-export const display2Weight = 300;
-export const display3Weight = 300;
-export const display4Weight = 300;
+export const display1Weight: number = 300;
+export const display2Weight: number = 300;
+export const display3Weight: number = 300;
+export const display4Weight: number = 300;
 export const displayLineHeight = headingsLineHeight;
 
 export const leadFontSize = '1.25rem';
-export const leadFontWeight = 300;
+export const leadFontWeight: number = 300;
 
 export const smallFontSize = '80%';
 
 export const textMuted = gray600;
 
 export const blockquoteSmallColor = gray600;
-export const blockquoteFontSize = fontSizeBase * 1.25;
+export const blockquoteFontSize = `${stripUnit(fontSizeBase) * 1.25}rem`;
 
 export const hrBorderColor = sassRgba(black, 0.1);
 export const hrBorderWidth = borderWidth;

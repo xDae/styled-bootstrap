@@ -1,5 +1,6 @@
 // @flow
 
+// $FlowIssue
 import get from 'lodash.get';
 
 /**

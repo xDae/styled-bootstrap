@@ -4,11 +4,11 @@ import { css } from 'styled-components';
 // $FlowIssue
 import darken from 'polished/lib/color/darken';
 
-import { colorYiq } from '../../utils/src/color-functions';
-import { boxShadow } from '../../utils/src/box-shadow';
-import { gradientBg } from '../../utils/src/gradients';
-import { sassRgba } from '../../utils/src/sassRgba';
-import { hover } from '../../utils/src/hover';
+import { colorYiq } from '../../utils/color-functions';
+import { boxShadow } from '../../utils/box-shadow';
+import { gradientBg } from '../../utils/gradients';
+import { sassRgba } from '../../utils/sassRgba';
+import { hover } from '../../utils/hover';
 
 export function buttonVariant(
   background: string,

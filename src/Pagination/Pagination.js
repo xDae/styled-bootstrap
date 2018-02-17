@@ -5,10 +5,10 @@ import styled from 'styled-components';
 // $FlowIssue
 import get from 'lodash.get';
 
-import { borderRadius } from '../utils/src/border-radius';
+import { borderRadius } from '../utils/border-radius';
 
 import { paginationSize } from './pagination-size';
-import listUnstyled from '../utils/src/lists';
+import listUnstyled from '../utils/lists';
 
 import PaginationLink from './PaginationLink';
 import PaginationItem from './PaginationItem';

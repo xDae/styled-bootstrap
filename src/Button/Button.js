@@ -3,20 +3,20 @@
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
-import { boxShadow } from '../utils/src/box-shadow';
-import { hover, hoverFocus } from '../utils/src/hover';
-import { transition } from '../utils/src/transition';
+import { boxShadow } from '../utils/box-shadow';
+import { hover, hoverFocus } from '../utils/hover';
+import { transition } from '../utils/transition';
 
 import { buttonVariant } from './utils/button-variant';
 import { buttonSize } from './utils/button-size';
 import { buttonOutlineVariant } from './utils/button-outline-variant';
 
-import {
-  colors,
+import * as defaultTheme from './defaultTheme';
+
+const {
   enableShadows,
-  enableRounded,
   btnBoxShadow,
   btnBorderWidth,
   btnFocusBoxShadow,
@@ -37,11 +37,11 @@ import {
   btnLineHeightSm,
   btnBorderRadiusSm,
   btnTransition
-} from './defaultTheme';
+} = defaultTheme;
 
 const Button = styled.button`
   display: ${({ block }) => (block ? 'block' : 'inline-block')};
-  width: ${props => props.block && '100%'};
+  width: ${({ block }) => block && '100%'};
   font-weight: ${themeProp('btnFontWeight')};
   text-align: center;
   white-space: nowrap;
@@ -74,8 +74,8 @@ const Button = styled.button`
   ${({ theme, color }) =>
     color !== 'link' &&
     buttonVariant(
-      theme[color] || colors[color],
-      theme[color] || colors[color],
+      theme[color] || defaultTheme[color],
+      theme[color] || defaultTheme[color],
       theme.enableShadows || enableShadows,
       theme.btnBoxShadow || btnBoxShadow,
       theme.btnActiveBoxShadow
@@ -111,7 +111,7 @@ const Button = styled.button`
     `};
 
   ${({ theme, outline, color }) =>
-    outline && buttonOutlineVariant(theme[color] || colors[color])};
+    outline && buttonOutlineVariant(theme[color] || defaultTheme[color])};
 
   ${({ size, theme }) =>
     size === 'normal' &&
@@ -120,8 +120,9 @@ const Button = styled.button`
       themeProp('btnPaddingX', btnPaddingX),
       themeProp('fontSizeBase', fontSizeBase),
       themeProp('btnLineHeight', btnLineHeight),
-      (theme.enableRounded || enableRounded) &&
-        themeProp('btnBorderRadius', btnBorderRadius)
+      typeof theme.enableRounded === 'undefined'
+        ? themeProp('btnBorderRadius', btnBorderRadius)
+        : 0
     )};
 
   ${({ size, theme }) =>
@@ -131,8 +132,9 @@ const Button = styled.button`
       themeProp('btnPaddingXsm', btnPaddingXsm),
       themeProp('fontSizeSm', fontSizeSm),
       themeProp('btnLineHeightSm', btnLineHeightSm),
-      (theme.enableRounded || enableRounded) &&
-        themeProp('btnBorderRadiusSm', btnBorderRadiusSm)
+      typeof theme.enableRounded === 'undefined'
+        ? themeProp('btnBorderRadiusSm', btnBorderRadiusSm)
+        : 0
     )};
 
   ${({ size, theme }) =>
@@ -142,8 +144,9 @@ const Button = styled.button`
       themeProp('btnPaddingXlg', btnPaddingXlg),
       themeProp('fontSizeLg', fontSizeLg),
       themeProp('btnLineHeightLg', btnLineHeightLg),
-      (theme.enableRounded || enableRounded) &&
-        themeProp('btnBorderRadiusLg', btnBorderRadiusLg)
+      typeof theme.enableRounded === 'undefined'
+        ? themeProp('btnBorderRadiusLg', btnBorderRadiusLg)
+        : 0
     )};
 
   ${({ active }) =>

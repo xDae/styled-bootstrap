@@ -9,22 +9,10 @@ export const danger = '#dc3545';
 export const light = '#f8f9fa';
 export const dark = '#343a40';
 
-export const colors = {
-  primary,
-  secondary,
-  success,
-  info,
-  warning,
-  danger,
-  light,
-  dark
-};
-
 export const fontSizeBase = '1rem';
 export const fontSizeLg = '1.25rem';
 export const fontSizeSm = '.875rem';
 
-export const enableRounded = true;
 export const enableShadows = false;
 
 export const btnPaddingY = '.375rem';

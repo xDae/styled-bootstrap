@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
 import CardHeader from './CardHeader';
 import CardBody from './CardBody';
 import CardFooter from './CardFooter';
 
-import { borderRadius } from '../utils/src/border-radius';
+import { borderRadius } from '../utils/border-radius';
 
 import {
   cardBorderWidth,

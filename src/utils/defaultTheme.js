@@ -1,7 +1,9 @@
 // @flow
-
+// $FlowIssue
 import darken from 'polished/lib/color/darken';
+// $FlowIssue
 import lighten from 'polished/lib/color/lighten';
+// $FlowIssue
 import stripUnit from 'polished/lib/helpers/stripUnit';
 
 import { sassRgba } from './sassRgba';

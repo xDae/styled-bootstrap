@@ -31,29 +31,11 @@ export const green: string = '#28a745';
 export const teal: string = '#20c997';
 export const cyan: string = '#17a2b8';
 
-export const colors = {
-  blue,
-  indigo,
-  purple,
-  pink,
-  red,
-  orange,
-  yellow,
-  green,
-  teal,
-  cyan,
-  white,
-  gray: gray600,
-  grayDark: gray800
-};
-
-export const colorTheme = {
-  primary: blue,
-  secondary: gray600,
-  success: green,
-  info: cyan,
-  warning: yellow,
-  danger: red,
-  light: gray100,
-  dark: gray800
-};
+export const primary: string = blue;
+export const secondary: string = gray600;
+export const success: string = green;
+export const info: string = cyan;
+export const warning: string = yellow;
+export const danger: string = red;
+export const light: string = gray100;
+export const dark: string = gray800;

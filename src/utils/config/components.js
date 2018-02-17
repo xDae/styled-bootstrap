@@ -1,6 +1,6 @@
 // @flow
 
-import { colorTheme, white } from './colors';
+import { primary, white } from './colors';
 
 // Components
 //
@@ -16,7 +16,7 @@ export const borderRadiusLg: string = '.3rem';
 export const borderRadiusSm: string = '.2rem';
 
 export const componentActiveColor: string = white;
-export const componentActiveBg: string = colorTheme.primary;
+export const componentActiveBg: string = primary;
 
 export const caretWidth: string = '.3em';
 

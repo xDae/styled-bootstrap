@@ -2,12 +2,12 @@
 
 import styled, { css } from 'styled-components';
 
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
 import {
   borderRightRadius,
   borderLeftRadius
-} from '../utils/src/border-radius';
+} from '../utils/border-radius';
 
 import PaginationLink from './PaginationLink';
 

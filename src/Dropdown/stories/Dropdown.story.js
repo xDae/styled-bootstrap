@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
+import { withKnobs, boolean, select } from '@storybook/addon-knobs/react';
 
-import { caretWidth } from '../../utils/src/defaultTheme';
+import { caretWidth } from '../../utils/defaultTheme';
 
 import Dropdown from '../Dropdown';
 import Button from '../../Button';
@@ -31,19 +32,22 @@ class DropdownWrapper extends Component {
     super(props, context);
 
     this.state = {
-      isOpen: true
+      isOpen: false
     };
   }
 
   toggleDropdown = () => {
-    this.setState(({ isOpen }) => ({
-      isOpen: !isOpen
-    }));
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
   };
 
   render() {
     return (
-      <Dropdown isOpen={this.state.isOpen} align={this.props.align}>
+      <Dropdown
+        isOpen={boolean('isOpen', this.state.isOpen)}
+        align={this.props.align}
+      >
         <ButtonWithCaret onClick={this.toggleDropdown}>
           Dropdown button
         </ButtonWithCaret>
@@ -81,7 +85,11 @@ class DropdownWithDivider extends Component {
   render() {
     return (
       <Dropdown isOpen={this.state.isOpen}>
-        <ButtonWithCaret color="success" onClick={this.toggleDropdown}>
+        <ButtonWithCaret
+          color="success"
+          size="large"
+          onClick={this.toggleDropdown}
+        >
           Dropdown button
         </ButtonWithCaret>
         <Dropdown.Menu>
@@ -132,12 +140,35 @@ class DropdownWithHeader extends Component {
 }
 
 export default storiesOf('Dropdown', module)
+  .addDecorator(withKnobs)
   .addDecorator(
     host({
       align: 'center'
     })
   )
-  .add('Dropdown', () => <DropdownWrapper />)
-  .add('Dropdown right aligned', () => <DropdownWrapper align="right" />)
+  .add('Dropdown', () => (
+    <DropdownWrapper
+      align={select(
+        'Align',
+        {
+          left: 'Left',
+          right: 'Right'
+        },
+        'left'
+      )}
+    />
+  ))
+  .add('Dropdown right aligned', () => (
+    <DropdownWrapper
+      align={select(
+        'Align',
+        {
+          left: 'Left',
+          right: 'Right'
+        },
+        'right'
+      )}
+    />
+  ))
   .add('Dropdown with Divider', () => <DropdownWithDivider />)
   .add('Dropdown with Header', () => <DropdownWithHeader />);

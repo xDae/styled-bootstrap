@@ -1,9 +1,11 @@
 // @flow
 
 import { css } from 'styled-components';
+
+// $FlowIssue
 import stripUnit from 'polished/lib/helpers/stripUnit';
 
-import { spacer } from '../../utils/default-theme';
+import { spacer } from './default-theme';
 
 export function navDivider(color: string = '#e5e5e5') {
   return css`
