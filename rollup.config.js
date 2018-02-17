@@ -4,7 +4,8 @@ import babel from 'rollup-plugin-babel';
 import flow from 'rollup-plugin-flow';
 import filesize from 'rollup-plugin-filesize';
 import replace from 'rollup-plugin-replace';
-import Visualizer from 'rollup-plugin-visualizer';
+import cleanup from 'rollup-plugin-cleanup';
+import visualizer from 'rollup-plugin-visualizer';
 
 import pkg from './package.json';
 
@@ -36,7 +37,8 @@ export default [
         }
       }),
       filesize(),
-      Visualizer()
+      cleanup(),
+      visualizer()
     ]
   }
 ];
