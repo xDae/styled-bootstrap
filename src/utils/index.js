@@ -1,11 +1,6 @@
 import * as theme from './defaultTheme';
 
-import {
-  colorYiq,
-  getColor,
-  themeColor,
-  themeColorLevel
-} from './color-functions';
+import { colorYiq, themeColorLevel } from './color-functions';
 
 import {
   borderRadius,
@@ -22,11 +17,9 @@ import { boxShadow } from './box-shadow';
 import { transition } from './transition';
 import { gradientStriped } from './gradients';
 
-export {
+export default {
   theme,
   colorYiq,
-  getColor,
-  themeColor,
   themeColorLevel,
   sassRgba,
   boxShadow,

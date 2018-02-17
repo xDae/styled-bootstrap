@@ -4,7 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import themeProp from '../utils/theme';
 
-import { hoverFocus } from '../../src/utils';
+import { hoverFocus } from '../../src/utils/hover';
 
 import {
   closeFontSize,
