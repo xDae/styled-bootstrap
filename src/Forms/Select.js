@@ -1,33 +1,16 @@
 // @flow
 
-import stripUnit from 'polished/lib/helpers/stripUnit';
+import themeProp from '../utils/theme';
 
 import Input from './Input';
 
-import {
-  inputBtnPaddingY,
-  inputBtnPaddingX,
-  fontSizeBase,
-  inputBtnLineHeight,
-  inputColor,
-  inputBg,
-  inputBtnBorderWidth,
-  inputBorderColor,
-  enableRounded,
-  inputBorderRadius,
-  inputTransition,
-  inputBoxShadow,
-  inputColorPlaceholder,
-  inputBgDisabled,
-  inputHeight
-} from '../../defaultTheme';
+import { inputColor, inputBg, inputHeight } from './default-theme';
 
 const Select = Input.withComponent('select').extend`
+  /* TODO: add small & large sizes */
   &:not([size]):not([multiple]) {
-    ${props =>
-      `height: calc(${props.theme.inputHeight} + ${stripUnit(
-        props.theme.inputBtnBorderWidth
-      ) * 2}px);`}
+    height: ${themeProp('inputHeight', inputHeight)};
+  }
 
   &:focus::-ms-value {
     // Suppress the nested default white text on blue background highlight given to
@@ -35,29 +18,11 @@ const Select = Input.withComponent('select').extend`
     // in IE and (under certain conditions) Edge, as it looks bad and cannot be made to
     // match the appearance of the native widget.
     // See https://github.com/twbs/bootstrap/issues/19398.
-    color: ${props => props.theme.inputColor};
-    background-color: ${props => props.theme.inputBg};
+    color: ${themeProp('inputColor', inputColor)};
+    background-color: ${themeProp('inputBg', inputBg)};
   }
 `;
 
-Select.defaultProps = {
-  theme: {
-    inputBtnPaddingY,
-    inputBtnPaddingX,
-    fontSizeBase,
-    inputBtnLineHeight,
-    inputColor,
-    inputBg,
-    inputBtnBorderWidth,
-    inputBorderColor,
-    enableRounded,
-    inputBorderRadius,
-    inputTransition,
-    inputBoxShadow,
-    inputColorPlaceholder,
-    inputBgDisabled,
-    inputHeight
-  }
-};
+Select.defaultProps = {};
 
 export default Select;

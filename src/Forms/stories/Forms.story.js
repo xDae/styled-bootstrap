@@ -30,10 +30,8 @@ injectGlobal`
 export default storiesOf('Forms', module)
   .addDecorator(
     host({
-      title:
-        'Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.',
       align: 'center',
-      width: 700
+      width: 400
     })
   )
   .add('Input', () => (

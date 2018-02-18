@@ -12,6 +12,7 @@ export const inputPaddingYlg = '.5rem';
 export const inputPaddingXlg = '1rem';
 export const inputLineHeightLg = '1.5';
 export const inputBg = '#fff';
+export const inputHeight = 'calc(2.25rem + 2px)';
 export const inputDisabledBg = '#e9ecef';
 export const inputColor = '#495057';
 export const inputBorderColor = '#ced4da';
