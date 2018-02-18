@@ -22,12 +22,12 @@
   },
   "scripts": {
     "build": "npm run clean && npm run build-bundle && npm run build-packages",
-    "clean": "rimraf lib && rimraf dist",
     "build-bundle": "rollup -c",
     "build-packages": "babel src/ --out-dir lib/ --copy-files",
     "build-storybook": "rimraf docs && build-storybook -o docs",
-    "prepublish": "npm run build",
+    "clean": "rimraf lib && rimraf dist",
     "lint:css": "stylelint './src/components/**/*.js'",
+    "prepublish": "npm run build",
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9009",
     "test": "jest --env=jsdom",
@@ -37,8 +37,8 @@
   "dependencies": {
     "lodash.get": "^4.4.2",
     "lodash.omit": "^4.5.0",
-    "lodash.pick": "^4.4.0",
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.6.0",
+    "react-transition-group": "^2.2.1"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.12",
@@ -79,7 +79,6 @@
     "react-dev-utils": "^5.0.0",
     "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.0",
-    "react-transition-group": "^2.2.1",
     "recompose": "^0.26.0",
     "rimraf": "^2.6.2",
     "rollup": "^0.56.1",

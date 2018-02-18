@@ -1,13 +1,13 @@
 import { css } from 'styled-components';
 
-import { boxShadow } from './box-shadow';
+// import { boxShadow } from './box-shadow';
 
-import {
-  inputColorFocus,
-  inputBgFocus,
-  inputBorderColorFocus,
-  inputBoxShadowFocus
-} from './defaultTheme';
+// import {
+//   inputColorFocus,
+//   inputBgFocus,
+//   inputBorderColorFocus,
+//   inputBoxShadowFocus
+// } from './defaultTheme';
 
 // Form validation states
 //
@@ -55,14 +55,17 @@ import {
 //
 // Example usage: change the default blue border and shadow to white for better
 // contrast against a dark gray background.
-export function formControlFocus() {
+export function formControlFocus(
+  inputFocusColor,
+  inputFocusBg,
+  inputFocusBorderColor
+) {
   return css`
     &:focus {
-      color: ${inputColorFocus};
-      background-color: ${inputBgFocus};
-      border-color: ${inputBorderColorFocus};
-      outline: none;
-      ${boxShadow(inputBoxShadowFocus)};
+      color: ${inputFocusColor};
+      background-color: ${inputFocusBg};
+      border-color: ${inputFocusBorderColor};
+      outline: 0;
     }
   `;
 }

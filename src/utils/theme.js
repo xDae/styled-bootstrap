@@ -10,8 +10,8 @@ import get from 'lodash.get';
  *  color: ${prop('color', 'red')};
  * `
  */
-const theme = (path: string | string[], defaultValue?: any): any => (
+const themeProp = (path: string | string[], defaultValue?: any): any => (
   props: Object = {}
 ) => get(props.theme, path, defaultValue);
 
-export default theme;
+export default themeProp;
