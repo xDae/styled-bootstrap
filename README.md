@@ -24,28 +24,30 @@ npm install styled-bootstrap --save
 ⚠️ Work in progress.
 
 ## 📦 Components
-- [x] Alert ([💻 Demo](http://josemiguel.org/styled-bootstrap/?selectedKind=Alert))
-- [x] Barge ([💻 Demo](http://josemiguel.org/styled-bootstrap/?selectedKind=Badge))
-- [x] Breadcrumbs ([💻 Demo](http://josemiguel.org/styled-bootstrap/?selectedKind=Breadcrumb))
-- [x] Button ([💻 Demo](http://josemiguel.org/styled-bootstrap/?selectedKind=Buttons))
-- [x] Card ([💻 Demo](http://josemiguel.org/styled-bootstrap/?selectedKind=Card))
-- [x] Collapse ([💻 Demo](http://josemiguel.org/styled-bootstrap/?selectedKind=Collapse))
-- [x] Dropdown ([💻 Demo](http://josemiguel.org/styled-bootstrap/?selectedKind=Dropdown))
-- [x] Forms ([💻 Demo](http://josemiguel.org/styled-bootstrap/?selectedKind=Forms))
-- [x] Heading ([💻 Demo](http://josemiguel.org/styled-bootstrap/?selectedKind=Headings))
+  💻 = Demo
+
+- [x] [[💻](http://josemiguel.org/styled-bootstrap/?selectedKind=Alert)] Alert
+- [x] [[💻](http://josemiguel.org/styled-bootstrap/?selectedKind=Badge)] Barge
+- [x] [[💻](http://josemiguel.org/styled-bootstrap/?selectedKind=Breadcrumb)] Breadcrumbs
+- [x] [[💻](http://josemiguel.org/styled-bootstrap/?selectedKind=Buttons)] Button
+- [x] [[💻](http://josemiguel.org/styled-bootstrap/?selectedKind=Card)] Card
+- [x] [[💻](http://josemiguel.org/styled-bootstrap/?selectedKind=Collapse)] Collapse
+- [x] [[💻](http://josemiguel.org/styled-bootstrap/?selectedKind=Dropdown)] Dropdown
+- [x] [[💻](http://josemiguel.org/styled-bootstrap/?selectedKind=Forms)] Forms
+- [x] [[💻](http://josemiguel.org/styled-bootstrap/?selectedKind=Headings)] Heading
 - [ ] Input group
 - [ ] Jumbotron
 - [ ] List group
 - [ ] Modal
 - [ ] Navs
 - [ ] Navbar
-- [x] Pagination ([💻 Demo](http://josemiguel.org/styled-bootstrap/?selectedKind=Pagination))
+- [x] [[💻](http://josemiguel.org/styled-bootstrap/?selectedKind=Pagination)] Pagination 
 - [ ] Popovers
-- [x] Progress ([💻 Demo](http://josemiguel.org/styled-bootstrap/?selectedKind=Progress))
+- [x] [[💻](http://josemiguel.org/styled-bootstrap/?selectedKind=Progress)] Progress 
 - [ ] Scrollspy
 - [ ] Tooltips 
 - Utilities
-  - [x] Close icon ([💻 Demo](http://josemiguel.org/styled-bootstrap/?selectedKind=CLoseIcon))
+  - [x] [[💻](http://josemiguel.org/styled-bootstrap/?selectedKind=CLoseIcon)] Close icon
 
 ## 📖 Support
 
