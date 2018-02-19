@@ -2,6 +2,8 @@
 
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
+
+// $FlowIssue
 import get from 'lodash.get';
 
 import themeProp from '../utils/theme';
