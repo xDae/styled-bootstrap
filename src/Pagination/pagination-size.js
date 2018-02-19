@@ -8,7 +8,7 @@ import {
 } from '../utils/border-radius';
 
 import PaginationLink from './PaginationLink';
-import PaginationItem from './Pagination';
+import PaginationItem from './PaginationItem';
 
 export function paginationSize(
   paddingY: string,
