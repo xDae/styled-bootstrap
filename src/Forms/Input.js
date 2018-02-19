@@ -1,5 +1,6 @@
-// flow
+// @flow
 
+import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import get from 'lodash.get';
 
@@ -127,6 +128,12 @@ const Input = styled.input`
     `};
 `;
 
-Input.defaultProps = {};
+Input.defaultProps = {
+  size: 'normal'
+};
+
+Input.defaultProps = {
+  size: PropTypes.oneOf(['normal', 'small', 'large'])
+};
 
 export default Input;
