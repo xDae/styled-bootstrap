@@ -1,6 +1,6 @@
 // @$flow
 
-import { sassRgba } from '../utils/sassRgba';
+import { sassRgba } from '../utils/src/sassRgba';
 import { black, white } from '../utils/default-theme';
 
 export const zindexPopover = '1060',
@@ -10,7 +10,7 @@ export const zindexPopover = '1060',
   popoverMaxWidth = '276px',
   popoverBorderWidth = '1px',
   popoverBorderColor = sassRgba(black, 0.2),
-  popoverBoxShadow = `0 5px 10px rgba(${black},.2)`,
+  popoverBoxShadow = `0 5px 10px rgba(${black},0.2)`,
 
   popoverTitleBbg = `darken(${popoverBg}, 0.03)`,
   popoverTitlePaddingX = '14px',

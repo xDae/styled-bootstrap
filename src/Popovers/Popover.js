@@ -1,11 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled, { css } from 'styled-components'
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled, { css } from 'styled-components';
 
-import StyledPopover from './StyledPopover'
-import themeProp from '../utils/theme';
+import StyledPopover from './StyledPopover';
+import themeProp from '../utils/src/theme';
 import { fontSizeSm } from '../utils/default-theme';
-import * as defaultTheme from './default-theme';
 
 const Popover = ({placement, title, arrowOffsetLeft, ...props}) => (
   <StyledPopover placement={placement} arrowOffsetLeft={arrowOffsetLeft}>

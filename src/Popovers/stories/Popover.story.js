@@ -18,7 +18,12 @@ export default storiesOf('Popovers', module)
   )
   .add('Default Popover', () => (
     <Fragment>
+      <div style={{margin: '50px'}}>
       <Popover title="test" placement="top" arrowOffsetLeft={50}>
         BEst</Popover>
+      </div>
+      <br />
+        <Popover title="test" placement="bottom" arrowOffsetLeft={50}>
+          BEst</Popover>
     </Fragment>
   ));
