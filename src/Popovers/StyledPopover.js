@@ -4,6 +4,8 @@ import themeProp from '../utils/src/theme';
 import { fontSizeSm, borderRadius } from '../utils/default-theme';
 import * as defaultTheme from './default-theme';
 
+import { placementTop, placementBottom } from './placementFunctions'
+
 const {
   popoverMaxWidth,
   zInderxPopover,
@@ -11,75 +13,15 @@ const {
   popoverBg,
   popoverBorderWidth,
   popoverBorderColor,
-  popoverBoxShadow,
-  popoverArrowOuterWidth,
-  popoverArrowWidth,
-  popoverArrowColor
+  popoverBoxShadow
 } = defaultTheme;
 
 const popoverPlacement = ({ placement, arrowOffsetLeft }) => {
   switch (placement) {
     case 'top':
-      return css`
-        > div:first-child {
-          left: ${arrowOffsetLeft};
-          border-width: ${themeProp(
-            'popoverArrowOuterWidth',
-            popoverArrowOuterWidth
-          )};
-          border-bottom-width: 0;
-          border-top-color: ${themeProp(
-            'popoverBorderColor',
-            popoverBorderColor
-          )};
-          bottom: -${themeProp('popoverArrowOuterWidth', popoverArrowOuterWidth)};
-          margin-left: -${themeProp('popoverArrowOuterWidth', popoverArrowOuterWidth)};
-
-          &::after {
-            content: '';
-            border-width: ${themeProp('popoverArrowWidth', popoverArrowWidth)};
-            bottom: 1px;
-            margin-left: -${themeProp('popoverArrowWidth', popoverArrowWidth)};
-            border-bottom-width: 0;
-            border-top-color: ${themeProp(
-              'popoverArrowColor',
-              popoverArrowColor
-            )};
-          }
-        }
-      `;
+      return placementTop(arrowOffsetLeft);
     case 'bottom':
-      return css`
-        > div:first-child {
-          left: ${arrowOffsetLeft};
-          border-width: ${themeProp(
-            'popoverArrowOuterWidth',
-            popoverArrowOuterWidth
-          )};
-          border-top-width: 0;
-          border-bottom-color: ${themeProp(
-            'popoverBorderColor',
-            popoverBorderColor
-          )};
-          top: -${themeProp('popoverArrowOuterWidth', popoverArrowOuterWidth)};
-          margin-left: -${themeProp(
-            'popoverArrowOuterWidth',
-            popoverArrowOuterWidth
-          )};
-
-          &::after {
-            content: '';
-            border-width: ${themeProp('popoverArrowWidth', popoverArrowWidth)};
-            top: 1px;
-            margin-left: -${themeProp('popoverArrowWidth', popoverArrowWidth)};
-            border-top-right-radius: -width: 0;
-            border-bottom-color: ${themeProp(
-              'popoverArrowColor',
-              popoverArrowColor
-            )};
-          }
-        }
-      `;
+      return placementBottom(arrowOffsetLeft);
     default:
       return null;
   }

@@ -16,8 +16,4 @@ const Popover = ({placement, title, arrowOffsetLeft, ...props}) => (
   </StyledPopover>
 )
 
-Popover.defaultProps = {
-  arrowOffsetLeft: '50%'
-}
-
 export default Popover;
