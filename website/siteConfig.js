@@ -19,7 +19,7 @@ const siteConfig = {
   title: 'styled-bootstrap' /* title for your website */,
   tagline: 'A styled-component implementation of Bootstrap',
   url: 'http://josemiguel.org/styled-bootstrap' /* your website url */,
-  baseUrl: '/test-site/' /* base url for your project */,
+  baseUrl: '/' /* base url for your project */,
   customDocsPath: 'docs-examples',
   projectName: 'styled-bootstrap',
   headerLinks: [
