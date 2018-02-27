@@ -63,7 +63,6 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
             <a href="https://github.com/xDae/styled-bootstrap">GitHub</a>
             <a
               className="github-button"
@@ -77,22 +76,6 @@ class Footer extends React.Component {
               Star
             </a>
           </div>
-        </section>
-
-        <a
-          href="https://code.facebook.com/projects/"
-          target="_blank"
-          className="fbOpenSource"
-          style={{ textAlign: 'center' }}
-        >
-          <img
-            src={`${this.props.config.baseUrl}img/styled-logo.png`}
-            alt="Facebook Open Source"
-            width="40"
-          />
-        </a>
-        <section className="copyright">
-          Copyright &copy; {currentYear} 💅🏻 Styled-Bootstrap.
         </section>
       </footer>
     );
