@@ -4,7 +4,7 @@ import themeProp from '../utils/src/theme';
 import { fontSizeSm, borderRadius } from '../utils/default-theme';
 import * as defaultTheme from './default-theme';
 
-import { placementTop, placementBottom } from './placementFunctions'
+import { placementTop, placementBottom, placementRight, placementLeft } from './placementFunctions'
 
 const {
   popoverMaxWidth,
@@ -16,12 +16,16 @@ const {
   popoverBoxShadow
 } = defaultTheme;
 
-const popoverPlacement = ({ placement, arrowOffsetLeft }) => {
+const popoverPlacement = ({ placement, arrowOffset }) => {
   switch (placement) {
     case 'top':
-      return placementTop(arrowOffsetLeft);
+      return placementTop(arrowOffset);
     case 'bottom':
-      return placementBottom(arrowOffsetLeft);
+      return placementBottom(arrowOffset);
+    case 'right':
+      return placementRight(arrowOffset);
+    case 'left':
+      return placementLeft(arrowOffset);
     default:
       return null;
   }
