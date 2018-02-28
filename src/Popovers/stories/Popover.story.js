@@ -18,23 +18,26 @@ export default storiesOf('Popovers', module)
   )
   .add('Default Popover', () => (
     <Fragment>
-      <Popover title="test" placement="top" arrowOffset={60} >
-        BEst</Popover>
-        <div style={{marginTop: '150px', height: '70px', position: 'relative'}}>SKATA
-        <Popover title="test" placement="bottom">
-            BEst
-            </Popover>
-</div>
-<div style={{marginTop: '150px', height: '70px', position: 'relative'}}>SKATA
-<Popover title="right" placement="right">
-    BEst
-    </Popover>
-</div>
-<div style={{margin: '0px 100px', height: '70px', position: 'relative'}}>SKATA
-<Popover title="left" placement="left">
-    BEst
-    </Popover>
-</div>
+      <div style={{ position: 'realative' }}>
+        <Popover title="top" placement="top" arrowOffset={60}>
+          BEst
+        </Popover>
+      </div>
+      <div style={{ marginLeft: '150px', position: 'relative' }}>
+        <Popover title="bottom" placement="bottom">
+          BEst
+        </Popover>
+      </div>
+      <div style={{ margin: '150px 0px', position: 'relative' }}>
+        <Popover title="right" placement="right">
+          BEst
+        </Popover>
+      </div>
+      <div style={{ margin: '150px 150px', position: 'relative' }}>
+        <Popover title="left" placement="left">
+          BEst
+        </Popover>
+      </div>
     </Fragment>
   ));
 

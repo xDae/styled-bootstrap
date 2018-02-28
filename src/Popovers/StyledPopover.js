@@ -13,7 +13,10 @@ const {
   popoverBg,
   popoverBorderWidth,
   popoverBorderColor,
-  popoverBoxShadow
+  popoverBoxShadow,
+  popoverTitlePaddingX,
+  popoverTitlePaddingY,
+  popoverTitleBbg
 } = defaultTheme;
 
 const popoverPlacement = ({ placement, arrowOffset }) => {
@@ -60,6 +63,15 @@ const StyledPopover = styled.div`
     border-style: solid;
   }
   ${props => popoverPlacement(props)}
+  > h3 {
+    margin: 0;
+    padding: ${themeProp('popoverTitlePaddingY', popoverTitlePaddingY)}
+             ${themeProp('popoverTitlePaddingX', popoverTitlePaddingX)};
+    font-size: 14px;
+    background-color: ${themeProp('popoverTitleBbg', popoverTitleBbg)};
+    border-bottom: 1px solid darken(${popoverTitleBbg}, 5%);
+    border-radius: 5px 5px 0 0;
+  }
 `;
 
 export default StyledPopover;

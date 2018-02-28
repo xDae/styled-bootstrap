@@ -5,15 +5,14 @@ import styled, { css } from 'styled-components';
 import StyledPopover from './StyledPopover';
 import themeProp from '../utils/src/theme';
 import { fontSizeSm } from '../utils/default-theme';
+import Heading from '../Heading'
 
-const Popover = ({placement, title, arrowOffset, ...props}) => (
+const Popover = ({placement, title, arrowOffset, children, ...props}) => (
   <StyledPopover placement={placement} arrowOffset={arrowOffset}>
     <div />
-    <h3>{title}</h3>
-    <div>
-      {props.children}
-    </div>
+    {title && <Heading as="h3">{title}</Heading>}
+    <div>{children}</div>
   </StyledPopover>
-)
+);
 
 export default Popover;
