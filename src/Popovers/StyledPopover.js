@@ -69,7 +69,7 @@ const StyledPopover = styled.div`
              ${themeProp('popoverTitlePaddingX', popoverTitlePaddingX)};
     font-size: 14px;
     background-color: ${themeProp('popoverTitleBbg', popoverTitleBbg)};
-    border-bottom: 1px solid darken(${popoverTitleBbg}, 5%);
+    border-bottom: 1px solid darken(red, 5%);
     border-radius: 5px 5px 0 0;
   }
 `;
