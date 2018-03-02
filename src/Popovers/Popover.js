@@ -13,7 +13,7 @@ const Popover = ({ title, children, ...props }) => (
 );
 
 Popover.defaultProps = {
-  title: undefined
+  title: ''
 };
 
 Popover.propTypes = {

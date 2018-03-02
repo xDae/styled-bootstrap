@@ -1,9 +1,9 @@
-// @$flow
+// @flow
 
 import { sassRgba } from '../utils/src/sassRgba';
 import { black, white } from '../utils/default-theme';
 
-export const zindexPopover = '1060';
+export const zIndexPopover = '1060';
 
 export const popoverInnerPadding = '1px';
 export const popoverBg = white;
