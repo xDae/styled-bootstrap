@@ -10,11 +10,12 @@ export const popoverBg = white;
 export const popoverMaxWidth = '276px';
 export const popoverBorderWidth = '1px';
 export const popoverBorderColor = sassRgba(black, 0.2);
-export const popoverBoxShadow = `0 5px 10px rgba(${black};0.2)`;
+export const popoverBoxShadow = `0 5px 10px ${sassRgba(black, 0.2)}`;
 
-export const popoverTitleBbg = `darken(${popoverBg}, 0.03)`;
+export const popoverTitleBbg = '#f7f7f7';
 export const popoverTitlePaddingX = '14px';
 export const popoverTitlePaddingY = '8px';
+export const popoverTitleBorderBottom = '1px solid #ebebeb';
 
 export const popoverContentPaddingX = '14px';
 export const popoverContentPaddingY = '9px';

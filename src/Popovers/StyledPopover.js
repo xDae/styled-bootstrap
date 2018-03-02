@@ -1,10 +1,15 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import themeProp from '../utils/src/theme';
 import { fontSizeSm, borderRadius } from '../utils/default-theme';
 import * as defaultTheme from './default-theme';
 
-import { placementTop, placementBottom, placementRight, placementLeft } from './placementFunctions'
+import {
+  placementTop,
+  placementBottom,
+  placementRight,
+  placementLeft
+} from './placementFunctions';
 
 const {
   popoverMaxWidth,
@@ -16,7 +21,8 @@ const {
   popoverBoxShadow,
   popoverTitlePaddingX,
   popoverTitlePaddingY,
-  popoverTitleBbg
+  popoverTitleBbg,
+  popoverTitleBorderBottom
 } = defaultTheme;
 
 const popoverPlacement = ({ placement, arrowOffset }) => {
@@ -36,25 +42,23 @@ const popoverPlacement = ({ placement, arrowOffset }) => {
 
 const StyledPopover = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
+  top: ${({ positionTop }) => `${positionTop}px` || 0};
+  left: ${({ positionLeft }) => `${positionLeft}px` || 0};
   z-index: ${themeProp('zInderxPopover', zInderxPopover)};
   display: block;
   max-width: ${themeProp('popoverMaxWidth', popoverMaxWidth)};
-  padding: 30px; || ${themeProp('popoverInnerPadding', popoverInnerPadding)};
+  padding: ${themeProp('popoverInnerPadding', popoverInnerPadding)};
   font-size: ${themeProp('fontSizeSm', fontSizeSm)};
   word-wrap: break-word;
   background-color: ${themeProp('popoverBg', popoverBg)};
   background-clip: padding-box;
-  border: ${themeProp(
-    'popoverBorderWidth',
-    popoverBorderWidth
-  )} solid ${themeProp('popoverBorderColor', popoverBorderColor)};
+  border: ${themeProp('popoverBorderWidth', popoverBorderWidth)} solid
+    ${themeProp('popoverBorderColor', popoverBorderColor)};
   border-radius: ${themeProp('borderRadius', borderRadius)};
   box-shadow: ${themeProp('popoverBoxShadow', popoverBoxShadow)};
 
-  > div:first-child,
-  > div:first-child:after {
+  div:first-child,
+  div:first-child:after {
     position: absolute;
     display: block;
     width: 0;
@@ -62,15 +66,21 @@ const StyledPopover = styled.div`
     border-color: transparent;
     border-style: solid;
   }
-  ${props => popoverPlacement(props)}
-  > h3 {
+  ${props => popoverPlacement(props)};
+  h3 {
     margin: 0;
     padding: ${themeProp('popoverTitlePaddingY', popoverTitlePaddingY)}
-             ${themeProp('popoverTitlePaddingX', popoverTitlePaddingX)};
+      ${themeProp('popoverTitlePaddingX', popoverTitlePaddingX)};
     font-size: 14px;
     background-color: ${themeProp('popoverTitleBbg', popoverTitleBbg)};
-    border-bottom: 1px solid darken(red, 5%);
+    border-bottom: ${themeProp(
+      'popoverTitleBorderBottom',
+      popoverTitleBorderBottom
+    )};
     border-radius: 5px 5px 0 0;
+  }
+  div:last-child {
+    padding: 9px 14px;
   }
 `;
 

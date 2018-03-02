@@ -2,47 +2,29 @@ import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
 
-import Popover from '../Popover'
-
-
+import Popover from '../Popover';
 
 export default storiesOf('Popovers', module)
   .addDecorator(
     host({
-      title:
-      'Popovers',
-      align: 'left',
-      width: 700,
-      left: 700
+      title: 'The Popover, offers a more robust alternative to the Tooltip for displaying overlays of content.',
+      align: 'center',
+      width: 700
     })
   )
-  .add('Default Popover', () => (
+  .add('Default Popovers', () => (
     <Fragment>
-      <div style={{ position: 'realative' }}>
-        <Popover title="top" placement="top" arrowOffset={60}>
-          BEst
-        </Popover>
-      </div>
-      <div style={{ marginLeft: '150px', position: 'relative' }}>
-        <Popover title="bottom" placement="bottom">
-          BEst
-        </Popover>
-      </div>
-      <div style={{ margin: '150px 0px', position: 'relative' }}>
-        <Popover title="right" placement="right">
-          BEst
-        </Popover>
-      </div>
-      <div style={{ margin: '150px 150px', position: 'relative' }}>
-        <Popover title="left" placement="left">
-          BEst
-        </Popover>
-      </div>
+      <Popover title="Top" placement="top" arrowOffset={30} positionLeft={20}>
+        This popover is placed <strong>top</strong> with positionLeft=20 and arrowOffset=30
+      </Popover>
+      <Popover title="bottom" placement="bottom" positionLeft={20} positionTop={120}>
+        This popover is placed <strong>bottom</strong> with positionLeft=20 and positionTop=120
+      </Popover>
+      <Popover title="right" placement="right" positionLeft={330} positionTop={120}>
+        This popover is placed <strong>right</strong> with positionLeft=330 and positionTop=120
+      </Popover>
+      <Popover title="left" placement="left" positionLeft={330}>
+        This popover is placed <strong>left</strong> with positionLeft=330
+      </Popover>
     </Fragment>
   ));
-
-/*
-/   <Popover title="test" placement="bottom" arrowOffset={50}>
-//     BEst</Popover>
-
-*/

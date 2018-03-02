@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
 
 import themeProp from '../utils/src/theme';
 import {
@@ -9,7 +9,7 @@ import {
 } from './default-theme';
 
 const placementTop = offsetLeft => css`
-  > div:first-child {
+  div:first-child {
     left: ${() => (offsetLeft ? `${offsetLeft}px` : '50%')};
     border-width: ${themeProp(
       'popoverArrowOuterWidth',
@@ -32,7 +32,7 @@ const placementTop = offsetLeft => css`
 `;
 
 const placementBottom = offsetLeft => css`
-  > div:first-child {
+  div:first-child {
     left: ${() => (offsetLeft ? `${offsetLeft}px` : '50%')};
     border-width: ${themeProp(
       'popoverArrowOuterWidth',
@@ -55,7 +55,7 @@ const placementBottom = offsetLeft => css`
 `;
 
 const placementRight = offsetTop => css`
-  > div:first-child {
+  div:first-child {
     top: ${() => (offsetTop ? `${offsetTop}px` : '50%')};
     border-width: ${themeProp(
       'popoverArrowOuterWidth',
@@ -79,7 +79,7 @@ const placementRight = offsetTop => css`
 `;
 
 const placementLeft = offsetTop => css`
-  > div:first-child {
+  div:first-child {
     top: ${() => (offsetTop ? `${offsetTop}px` : '50%')};
     border-width: ${themeProp(
       'popoverArrowOuterWidth',
