@@ -5,9 +5,9 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import defaultTheme from '../src/utils/default-theme';
 
-addDecorator(story => (
-  <ThemeProvider theme={defaultTheme}>{story()}</ThemeProvider>
-));
+// addDecorator(story => (
+//   <ThemeProvider theme={defaultTheme}>{story()}</ThemeProvider>
+// ));
 
 setOptions({
   name: 'styled-bootstrap',

@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
-import { borderRadius } from '../utils/src/border-radius';
-import { boxShadow } from '../utils/src/box-shadow';
+import { borderRadius } from '../utils/border-radius';
+import { boxShadow } from '../utils/box-shadow';
 
 import {
   dropdownMinWidth,

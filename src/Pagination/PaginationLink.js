@@ -1,11 +1,10 @@
 // @flow
 
 import styled, { css } from 'styled-components';
-// import PropTypes from 'prop-types';
 
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
-import { hoverFocus } from '../utils/src/hover';
+import { hoverFocus } from '../utils/hover';
 
 import {
   paginationPaddingY,

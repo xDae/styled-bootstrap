@@ -5,17 +5,17 @@ import { css } from 'styled-components';
 import {
   borderLeftRadius,
   borderRightRadius
-} from '../utils/src/border-radius';
+} from '../utils/border-radius';
 
 import PaginationLink from './PaginationLink';
-import PaginationItem from './Pagination';
+import PaginationItem from './PaginationItem';
 
 export function paginationSize(
-  paddingY,
-  paddingX,
-  fontSize,
-  lineHeight,
-  borderRadius
+  paddingY: string,
+  paddingX: string,
+  fontSize: string,
+  lineHeight: string,
+  borderRadius: string
 ) {
   return css`
     ${PaginationLink} {

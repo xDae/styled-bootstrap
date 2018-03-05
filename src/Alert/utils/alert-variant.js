@@ -1,6 +1,8 @@
 // @flow
 
 import { css } from 'styled-components';
+
+// $FlowIssue
 import darken from 'polished/lib/color/darken';
 
 export function alertVariant(

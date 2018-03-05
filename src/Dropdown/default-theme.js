@@ -25,26 +25,3 @@ export const dropdownItemPaddingY = '.25rem';
 export const dropdownItemPaddingX = '1.5rem';
 export const dropdownHeaderColor = '#6c757d';
 export const zIndexDropdown = 1000;
-
-const defaultTheme = {
-  dropdownMinWidth,
-  dropdownPaddingY,
-  dropdownSpacer,
-  dropdownBg,
-  dropdownBorderColor,
-  dropdownBorderRadius,
-  dropdownBorderWidth,
-  dropdownDividerBg,
-  dropdownBoxShadow,
-  dropdownLinkColor,
-  dropdownLinkHoverColor,
-  dropdownLinkHoverBg,
-  dropdownLinkActiveColor,
-  dropdownLinkActiveBg,
-  dropdownLinkDisabledColor,
-  dropdownItemPaddingY,
-  dropdownItemPaddingX,
-  dropdownHeaderColor
-};
-
-export default defaultTheme;

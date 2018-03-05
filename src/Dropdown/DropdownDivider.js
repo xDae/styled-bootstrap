@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
-import { navDivider } from '../utils/src/nav-divider';
+import { navDivider } from '../utils/nav-divider';
 
 import { dropdownDividerBg } from './default-theme';
 

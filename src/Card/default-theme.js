@@ -14,22 +14,3 @@ export const cardDeckMargin = '15px';
 export const cardColumnsCount = '3';
 export const cardColumnsGap = '1.25rem';
 export const cardColumnsMargin = '.75rem';
-
-const defaultTheme = {
-  cardSpacerY,
-  cardSpacerX,
-  cardBorderWidth,
-  cardBorderRadius,
-  cardBorderColor,
-  cardInnerBorderRadius,
-  cardCapBg,
-  cardBg,
-  cardImgOverlayPadding,
-  cardGroupMargin,
-  cardDeckMargin,
-  cardColumnsCount,
-  cardColumnsGap,
-  cardColumnsMargin
-};
-
-export default defaultTheme;

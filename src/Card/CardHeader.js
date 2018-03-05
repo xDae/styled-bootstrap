@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import { borderRadius } from '../utils/src/border-radius';
-import themeProp from '../utils/src/theme';
+import { borderRadius } from '../utils/border-radius';
+import themeProp from '../utils/theme';
 
 import {
   cardSpacerY,

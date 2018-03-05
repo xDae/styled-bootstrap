@@ -6,14 +6,3 @@ export const breadcrumbBg = '#e9ecef';
 export const breadcrumbDividerColor = '#6c757d';
 export const breadcrumbActiveColor = '#6c757d';
 export const breadcrumbDivider = '"/"';
-
-export default {
-  breadcrumbPaddingY,
-  breadcrumbPaddingX,
-  breadcrumbItemPadding,
-  breadcrumbMarginBottom,
-  breadcrumbBg,
-  breadcrumbDividerColor,
-  breadcrumbActiveColor,
-  breadcrumbDivider
-};

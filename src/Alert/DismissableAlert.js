@@ -2,8 +2,8 @@ import React, { cloneElement, isValidElement } from 'react';
 import PropTypes from 'prop-types';
 import omit from 'lodash.omit';
 import styled, { css } from 'styled-components';
-import themeProp from '../utils/src/theme';
-import { hoverFocus } from '../utils/src/hover';
+import themeProp from '../utils/theme';
+import { hoverFocus } from '../utils/hover';
 
 import Alert from './Alert';
 import CloseIcon from '../CLoseIcon';

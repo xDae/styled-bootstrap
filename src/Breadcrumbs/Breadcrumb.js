@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
-import { borderRadius } from '../utils/src/border-radius';
+import { borderRadius } from '../utils/border-radius';
 
 import {
   breadcrumbPaddingY,

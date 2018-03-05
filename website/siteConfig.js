@@ -7,26 +7,28 @@
 
 /* List of projects/orgs using your project for the users page */
 const users = [
-  {
-    caption: 'User1',
-    image: '/test-site/img/styled-logo.png',
-    infoLink: 'https://www.facebook.com',
-    pinned: true
-  }
+  // {
+  //   caption: 'User1',
+  //   image: '/test-site/img/styled-logo.png',
+  //   infoLink: 'https://github.com/xDae/styled-bootstrap',
+  //   pinned: true
+  // }
 ];
 
 const siteConfig = {
-  title: 'Styled-Bootstrap' /* title for your website */,
-  tagline: 'A website for testing',
-  url: 'https://facebook.github.io' /* your website url */,
-  baseUrl: '/test-site/' /* base url for your project */,
+  title: 'styled-bootstrap' /* title for your website */,
+  tagline: 'A styled-component implementation of Bootstrap',
+  url: 'http://josemiguel.org/styled-bootstrap' /* your website url */,
+  baseUrl: '/styled-bootstrap/' /* base url for your project */,
   customDocsPath: 'docs-examples',
-  projectName: 'test-site',
+  projectName: 'styled-bootstrap',
   headerLinks: [
-    { doc: 'doc1', label: 'Docs' },
+    { doc: 'installation', label: 'Docs' },
     { doc: 'doc4', label: 'API' },
-    { page: 'help', label: 'Help' },
-    { blog: false, label: 'Blog' }
+    // { page: 'help', label: 'Help' }
+    { search: true },
+    { href: 'https://github.com/xDae/styled-bootstrap', label: 'GitHub' }
+    // { blog: false, label: 'Blog' }
   ],
   users,
   /* path to images for header/footer */
@@ -39,7 +41,7 @@ const siteConfig = {
     secondaryColor: '#205C3B'
   },
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} 💅🏻 Styled-Bootstrap`,
+  copyright: `Copyright © ${new Date().getFullYear()} 💅🏻 styled-bootstrap`,
   // organizationName: 'deltice', // or set an env variable ORGANIZATION_NAME
   // projectName: 'test-site', // or set an env variable PROJECT_NAME
   highlight: {

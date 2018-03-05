@@ -2,9 +2,9 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
-import { hoverFocus } from '../../src/utils/src';
+import { hoverFocus } from '../../src/utils/hover';
 
 import {
   closeFontSize,

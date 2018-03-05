@@ -2,8 +2,8 @@
 
 import { css } from 'styled-components';
 
-import { hover } from '../../utils/src/hover';
-import { sassRgba } from '../../utils/src/sassRgba';
+import { hover } from '../../utils/hover';
+import { sassRgba } from '../../utils/sassRgba';
 
 export function buttonOutlineVariant(
   color: string,

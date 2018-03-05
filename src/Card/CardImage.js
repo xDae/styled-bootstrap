@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {
   borderTopRadius,
   borderBottomRadius
-} from '../utils/src/border-radius';
+} from '../utils/border-radius';
 
 const CardImage = styled.img`
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch

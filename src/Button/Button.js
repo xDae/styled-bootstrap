@@ -3,54 +3,53 @@
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 
-import { boxShadow } from '../utils/src/box-shadow';
-import { hover, hoverFocus } from '../utils/src/hover';
-import { transition } from '../utils/src/transition';
+import { boxShadow } from '../utils/box-shadow';
+import { hover, hoverFocus } from '../utils/hover';
+import { transition } from '../utils/transition';
 
 import { buttonVariant } from './utils/button-variant';
 import { buttonSize } from './utils/button-size';
 import { buttonOutlineVariant } from './utils/button-outline-variant';
 
-import defaultTheme from './defaultTheme';
+import * as defaultTheme from './defaultTheme';
 
-const btnSizes = {
-  normal: {
-    paddingY: 'btnPaddingY',
-    paddingX: 'btnPaddingX',
-    fontSize: 'fontSizeBase',
-    lineHeight: 'btnLineHeight',
-    borderRadius: 'btnBorderRadius'
-  },
-  large: {
-    paddingY: 'btnPaddingYlg',
-    paddingX: 'btnPaddingXlg',
-    fontSize: 'fontSizeLg',
-    lineHeight: 'btnLineHeightLg',
-    borderRadius: 'btnBorderRadiusLg'
-  },
-  small: {
-    paddingY: 'btnPaddingYsm',
-    paddingX: 'btnPaddingXsm',
-    fontSize: 'fontSizeSm',
-    lineHeight: 'btnLineHeightSm',
-    borderRadius: 'btnBorderRadiusSm'
-  }
-};
+const {
+  enableShadows,
+  btnBoxShadow,
+  btnBorderWidth,
+  btnFocusBoxShadow,
+  btnDisabledOpacity,
+  btnPaddingY,
+  btnPaddingX,
+  fontSizeBase,
+  btnLineHeight,
+  btnBorderRadius,
+  btnPaddingYlg,
+  btnPaddingXlg,
+  fontSizeLg,
+  btnLineHeightLg,
+  btnBorderRadiusLg,
+  btnPaddingYsm,
+  btnPaddingXsm,
+  fontSizeSm,
+  btnLineHeightSm,
+  btnBorderRadiusSm,
+  btnTransition
+} = defaultTheme;
 
 const Button = styled.button`
   display: ${({ block }) => (block ? 'block' : 'inline-block')};
-  width: ${props => props.block && '100%'};
+  width: ${({ block }) => block && '100%'};
   font-weight: ${themeProp('btnFontWeight')};
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: ${themeProp('btnBorderWidth', defaultTheme.btnBorderWidth)} solid
-    transparent;
+  border: ${themeProp('btnBorderWidth', btnBorderWidth)} solid transparent;
 
-  ${transition(themeProp('btnTransition', defaultTheme.btnTransition))};
+  ${transition(themeProp('btnTransition', btnTransition))};
 
   /* Share hover and focus styles */
   ${hoverFocus('text-decoration: none;')};
@@ -58,18 +57,12 @@ const Button = styled.button`
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: ${themeProp(
-      'btnFocusBoxShadow',
-      defaultTheme.btnFocusBoxShadow
-    )};
+    box-shadow: ${themeProp('btnFocusBoxShadow', btnFocusBoxShadow)};
   }
 
   &.disabled,
   &:disabled {
-    opacity: ${themeProp(
-      'btnDisabledOpacity',
-      defaultTheme.btnDisabledOpacity
-    )};
+    opacity: ${themeProp('btnDisabledOpacity', btnDisabledOpacity)};
     ${boxShadow('none')};
   }
 
@@ -81,10 +74,10 @@ const Button = styled.button`
   ${({ theme, color }) =>
     color !== 'link' &&
     buttonVariant(
-      theme[color],
-      theme[color],
-      theme.enableShadows,
-      theme.btnBoxShadow,
+      theme[color] || defaultTheme[color],
+      theme[color] || defaultTheme[color],
+      theme.enableShadows || enableShadows,
+      theme.btnBoxShadow || btnBoxShadow,
       theme.btnActiveBoxShadow
     )};
 
@@ -118,27 +111,49 @@ const Button = styled.button`
     `};
 
   ${({ theme, outline, color }) =>
-    outline && buttonOutlineVariant(theme[color])};
+    outline && buttonOutlineVariant(theme[color] || defaultTheme[color])};
 
   ${({ size, theme }) =>
+    size === 'normal' &&
     buttonSize(
-      theme[btnSizes[size].paddingY] || defaultTheme[btnSizes[size].paddingY],
-      theme[btnSizes[size].paddingX] || defaultTheme[btnSizes[size].paddingX],
-      theme[btnSizes[size].fontSize] || defaultTheme[btnSizes[size].fontSize],
-      theme[btnSizes[size].lineHeight] ||
-        defaultTheme[btnSizes[size].lineHeight],
-      theme.enableRounded &&
-        (theme[btnSizes[size].borderRadius] ||
-          defaultTheme[btnSizes[size].borderRadius])
+      themeProp('btnPaddingY', btnPaddingY),
+      themeProp('btnPaddingX', btnPaddingX),
+      themeProp('fontSizeBase', fontSizeBase),
+      themeProp('btnLineHeight', btnLineHeight),
+      typeof theme.enableRounded === 'undefined'
+        ? themeProp('btnBorderRadius', btnBorderRadius)
+        : 0
+    )};
+
+  ${({ size, theme }) =>
+    size === 'small' &&
+    buttonSize(
+      themeProp('btnPaddingYsm', btnPaddingYsm),
+      themeProp('btnPaddingXsm', btnPaddingXsm),
+      themeProp('fontSizeSm', fontSizeSm),
+      themeProp('btnLineHeightSm', btnLineHeightSm),
+      typeof theme.enableRounded === 'undefined'
+        ? themeProp('btnBorderRadiusSm', btnBorderRadiusSm)
+        : 0
+    )};
+
+  ${({ size, theme }) =>
+    size === 'large' &&
+    buttonSize(
+      themeProp('btnPaddingYlg', btnPaddingYlg),
+      themeProp('btnPaddingXlg', btnPaddingXlg),
+      themeProp('fontSizeLg', fontSizeLg),
+      themeProp('btnLineHeightLg', btnLineHeightLg),
+      typeof theme.enableRounded === 'undefined'
+        ? themeProp('btnBorderRadiusLg', btnBorderRadiusLg)
+        : 0
     )};
 
   ${({ active }) =>
     active &&
     css`
       background-image: none;
-      ${boxShadow(
-        themeProp('btnFocusBoxShadow', defaultTheme.btnFocusBoxShadow)
-      )};
+      ${boxShadow(themeProp('btnFocusBoxShadow', btnFocusBoxShadow))};
     `};
 `;
 
