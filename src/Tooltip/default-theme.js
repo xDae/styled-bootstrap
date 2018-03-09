@@ -12,5 +12,4 @@ export const tooltipMaxWidth = '200px',
   tooltipPaddingX = '8px',
   tooltipMargin = '3px',
 
-  tooltipArrowWidth = '5px',
-  tooltipArrowColor = tooltipBg;
+  tooltipArrowWidth = '5px';
