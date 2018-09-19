@@ -5,7 +5,7 @@ import { host } from 'storybook-host';
 import { withKnobs, boolean } from '@storybook/addon-knobs/react';
 import { action } from '@storybook/addon-actions';
 
-import { Collapse, Button, CardBody, Card } from '../../main';
+import { Collapse, Button, CardBody, Card } from '../../index';
 
 class Example extends Component {
   constructor(props) {

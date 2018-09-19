@@ -21,7 +21,7 @@ export {
 
 export { default as Collapse } from './Collapse';
 
-export { default as CloseIcon } from './CLoseIcon';
+export { default as CloseIcon } from './CloseIcon';
 
 export {
   default as Dropdown,

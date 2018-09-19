@@ -1,4 +1,5 @@
 // @flow
+import styled from 'styled-components';
 
 import themeProp from '../utils/theme';
 
@@ -12,7 +13,8 @@ import {
   inputHeightLg
 } from './default-theme';
 
-const Select = Input.withComponent('select').extend`
+// TODO: it has a .extend before
+const Select = styled(Input)`
   &:not([size]):not([multiple]) {
     ${props => {
       switch (props.size) {

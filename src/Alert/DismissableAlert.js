@@ -6,7 +6,7 @@ import themeProp from '../utils/theme';
 import { hoverFocus } from '../utils/hover';
 
 import Alert from './Alert';
-import CloseIcon from '../CLoseIcon';
+import CloseIcon from '../CloseIcon';
 
 import { alertPaddingY, alertPaddingX } from './default-theme';
 

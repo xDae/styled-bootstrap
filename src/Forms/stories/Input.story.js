@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
-import { ThemeProvider, injectGlobal } from 'styled-components';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
 
 import Input from '../Input';
 
@@ -12,7 +12,7 @@ const customInputTheme = {
   inputFocusBoxShadow: '0 0 0 4px azure'
 };
 
-injectGlobal`
+createGlobalStyle`
   input,
   button,
   select,

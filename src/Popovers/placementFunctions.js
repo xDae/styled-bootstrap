@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-import themeProp from '../utils/src/theme';
+import themeProp from '../utils/theme';
 import {
   popoverArrowOuterWidth,
   popoverArrowWidth,
