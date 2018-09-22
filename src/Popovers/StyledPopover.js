@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import themeProp from '../utils/theme';
-import { fontSizeSm, borderRadius } from '../utils/default-theme';
 import * as defaultTheme from './default-theme';
 
 import {
@@ -22,7 +21,9 @@ const {
   popoverTitlePaddingX,
   popoverTitlePaddingY,
   popoverTitleBbg,
-  popoverTitleBorderBottom
+  popoverTitleBorderBottom,
+  fontSizeSm,
+  borderRadius
 } = defaultTheme;
 
 const popoverPlacement = ({ placement, arrowOffset }) => {

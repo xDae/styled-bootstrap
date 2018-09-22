@@ -157,7 +157,7 @@ const Button = styled.button`
     `};
 `;
 
-Button.Link = Button.withComponent('a');
+// Button.Link = Button.withComponent('a');
 
 Button.defaultProps = {
   active: false,

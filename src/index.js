@@ -1,7 +1,5 @@
 export { default as Alert, alertVariant, DismissableAlert } from './Alert';
-
 export { default as Badge, badgeVariant } from './Badge';
-
 export { default as Breadcrumbs } from './Breadcrumbs';
 
 export {
@@ -20,7 +18,6 @@ export {
 } from './Card';
 
 export { default as Collapse } from './Collapse';
-
 export { default as CloseIcon } from './CloseIcon';
 
 export {
@@ -32,6 +29,7 @@ export {
 } from './Dropdown';
 
 export { default as Heading } from './Heading';
+export { default as Jumbotron } from './Jumbotron';
 
 export {
   default as Pagination,

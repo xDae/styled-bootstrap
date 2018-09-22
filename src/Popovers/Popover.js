@@ -6,7 +6,6 @@ import Heading from '../Heading';
 
 const Popover = ({ title, children, ...props }) => (
   <StyledPopover {...props}>
-    <div />
     {title && <Heading as="h3">{title}</Heading>}
     <div>{children}</div>
   </StyledPopover>

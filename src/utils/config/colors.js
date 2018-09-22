@@ -14,7 +14,7 @@ export const gray200: string = '#e9ecef';
 export const gray300: string = '#dee2e6';
 export const gray400: string = '#ced4da';
 export const gray500: string = '#adb5bd';
-export const gray600: string = '#868e96';
+export const gray600: string = '#6c757d';
 export const gray700: string = '#495057';
 export const gray800: string = '#343a40';
 export const gray900: string = '#212529';
@@ -39,3 +39,8 @@ export const warning: string = yellow;
 export const danger: string = red;
 export const light: string = gray100;
 export const dark: string = gray800;
+
+export const themeColorInterval = "8%";
+export const yiqContrastedThreshold = "150";
+export const yiqTextDark = "#212529";
+export const yiqTextLight = "#fff";

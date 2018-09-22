@@ -3,7 +3,7 @@ import { setOptions } from '@storybook/addon-options';
 
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import defaultTheme from '../src/utils/default-theme';
+// import defaultTheme from '../src/utils/default-theme';
 
 // addDecorator(story => (
 //   <ThemeProvider theme={defaultTheme}>{story()}</ThemeProvider>

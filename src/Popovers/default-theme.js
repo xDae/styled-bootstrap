@@ -1,7 +1,7 @@
 // @flow
 
 import { sassRgba } from '../utils/sassRgba';
-import { black, white } from '../utils/default-theme';
+import { black, white } from '../utils/config/colors';
 
 export const zIndexPopover = '1060';
 
@@ -25,3 +25,6 @@ export const popoverArrowColor = white;
 
 export const popoverArrowOuterWidth = `11px`;
 export const popoverArrowOuterColor = sassRgba(popoverBorderColor, 0.25);
+
+export const fontSizeSm = '.875rem';
+export const borderRadius = '.25rem';
