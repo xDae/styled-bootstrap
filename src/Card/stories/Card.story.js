@@ -23,9 +23,9 @@ export default storiesOf('Card', module)
         <p>
           With supporting text below as a natural lead-in to additional content.
         </p>
-        <Button.Link href="#" color="primary">
+        <Button as="a" href="#" color="primary">
           Button
-        </Button.Link>
+        </Button>
       </Card.Body>
     </Card>
   ))
@@ -38,9 +38,9 @@ export default storiesOf('Card', module)
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
-        <Button.Link href="#" color="primary">
+        <Button as="a" href="#" color="primary">
           Go somewhere
-        </Button.Link>
+        </Button>
       </Card.Body>
     </Card>
   ))
@@ -53,9 +53,9 @@ export default storiesOf('Card', module)
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
-        <Button.Link href="#" color="primary">
+        <Button as="a" href="#" color="primary">
           Go somewhere
-        </Button.Link>
+        </Button>
       </Card.Body>
       <Card.Footer>2 days ago</Card.Footer>
     </Card>

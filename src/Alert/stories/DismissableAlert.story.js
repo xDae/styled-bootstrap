@@ -1,18 +1,14 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
 
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-import {
-  Transition,
-  TransitionGroup,
-  CSSTransition
-} from 'react-transition-group';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import { DismissableAlert } from '../index';
 
-injectGlobal`
+createGlobalStyle`
   .react-transition-exit {
     opacity: 1;
     height: 50px;

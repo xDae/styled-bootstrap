@@ -1,6 +1,6 @@
 // @flow
 
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 // $FlowIssue
 import get from 'lodash.get';
@@ -26,7 +26,8 @@ const {
   listGroupActiveBg
 } = defaultTheme;
 
-const ListGroupButton = InputGroupItem.withComponent('button').extend`
+// TODO: it has a .withComponent before
+const ListGroupButton = styled(InputGroupItem)`
   width: 100%;
   color: ${themeProp('listGroupActionColor', listGroupActionColor)};
   text-align: inherit;

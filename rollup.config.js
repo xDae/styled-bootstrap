@@ -11,7 +11,7 @@ import pkg from './package.json';
 
 export default [
   {
-    input: 'src/main.js',
+    input: 'src/index.js',
     external: ['react', 'styled-components'],
     output: [
       { file: pkg.main, format: 'cjs' },
@@ -23,7 +23,6 @@ export default [
       }),
       flow(),
       babel({
-        plugins: ['external-helpers'],
         exclude: 'node_modules/**'
       }),
       resolve({

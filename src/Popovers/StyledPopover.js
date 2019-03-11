@@ -22,7 +22,9 @@ const {
   popoverTitlePaddingX,
   popoverTitlePaddingY,
   popoverTitleBbg,
-  popoverTitleBorderBottom
+  popoverTitleBorderBottom,
+  fontSizeSm,
+  borderRadius
 } = defaultTheme;
 
 const popoverPlacement = ({ placement, arrowOffset }) => {

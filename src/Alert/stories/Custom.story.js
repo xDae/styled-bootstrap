@@ -6,7 +6,7 @@ import { action } from '@storybook/addon-actions';
 import styled, { ThemeProvider } from 'styled-components';
 
 import Alert, { DismissableAlert } from '../index';
-import CloseIcon from '../../CLoseIcon';
+import CloseIcon from '../../CloseIcon';
 
 const StyledCloseIcon = styled(CloseIcon)`
   position: absolute;

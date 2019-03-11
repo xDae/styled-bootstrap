@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
 import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
@@ -9,7 +10,8 @@ import { caretWidth } from '../../utils/defaultTheme';
 import Dropdown from '../Dropdown';
 import Button from '../../Button';
 
-const ButtonWithCaret = Button.extend`
+// TODO: it has a .extend before
+const ButtonWithCaret = styled(Button)`
   &:after {
     display: inline-block;
     width: 0;

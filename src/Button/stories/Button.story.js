@@ -196,33 +196,33 @@ export default storiesOf('Buttons', module)
   ))
   .add('Link Buttons', () => (
     <Fragment>
-      <Button.Link style={margin} color="primary" href="#">
+      <Button as="a" href="#" style={margin} color="primary">
         Primary
-      </Button.Link>
-      <Button.Link style={margin} color="secondary" href="#">
+      </Button>
+      <Button as="a" href="#" style={margin} color="secondary">
         Secondary
-      </Button.Link>
-      <Button.Link style={margin} color="success" href="#">
+      </Button>
+      <Button as="a" href="#" style={margin} color="success">
         Success
-      </Button.Link>
-      <Button.Link style={margin} color="warning" href="#">
+      </Button>
+      <Button as="a" href="#" style={margin} color="warning">
         Warning
-      </Button.Link>
-      <Button.Link style={margin} color="danger" href="#">
+      </Button>
+      <Button as="a" href="#" style={margin} color="danger">
         Danger
-      </Button.Link>
-      <Button.Link style={margin} color="info" href="#">
+      </Button>
+      <Button as="a" href="#" style={margin} color="info">
         Info
-      </Button.Link>
-      <Button.Link style={margin} color="light" href="#">
+      </Button>
+      <Button as="a" href="#" style={margin} color="light">
         Light
-      </Button.Link>
-      <Button.Link style={margin} color="dark" href="#">
+      </Button>
+      <Button as="a" href="#" style={margin} color="dark">
         Dark
-      </Button.Link>
-      <Button.Link style={margin} color="link" href="#">
+      </Button>
+      <Button as="a" href="#" style={margin} color="link">
         Link
-      </Button.Link>
+      </Button>
     </Fragment>
   ))
 

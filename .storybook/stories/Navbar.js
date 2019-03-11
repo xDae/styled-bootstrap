@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react';
-import styled, { injectGlobal } from 'styled-components';
+import styled from 'styled-components';
 
 import Navbar, { NavbarToggler } from '../../src/components/Navbar';
 
