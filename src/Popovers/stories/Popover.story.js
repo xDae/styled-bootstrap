@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
 
-import Popover from '../index';
+import Popover from '../Popover';
 
 export default storiesOf('Popovers', module)
   .addDecorator(
