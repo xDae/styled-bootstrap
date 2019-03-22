@@ -1,6 +1,6 @@
 // @flow
 
-import { black, white } from '../utils/default-theme';
+import { black, white } from '../utils/defaultTheme';
 
 export const tooltipMaxWidth = '200px',
   zIndexTooltip = '10700',
