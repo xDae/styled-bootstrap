@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
 import styled, { ThemeProvider } from 'styled-components';
 
-import Popover from '../Popover';
+import Popover from '../index';
 
 const customTheme = {
   popoverTitleBbg: 'green',

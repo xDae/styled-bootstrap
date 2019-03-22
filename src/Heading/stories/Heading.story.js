@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
 
-import Heading from '../Heading';
+import Heading from '../index';
 
 export default storiesOf('Headings', module)
   .addDecorator(
