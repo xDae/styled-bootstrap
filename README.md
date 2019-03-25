@@ -42,10 +42,10 @@ npm install styled-bootstrap --save
 - [ ] Navs
 - [ ] Navbar
 - [x] [[💻](https://xdae.github.io/styled-bootstrap/storybook?selectedKind=Pagination)] Pagination 
-- [ ] Popovers
+- [x] Popovers
 - [x] [[💻](https://xdae.github.io/styled-bootstrap/storybook?selectedKind=Progress)] Progress 
 - [ ] Scrollspy
-- [ ] Tooltips 
+- [x] Tooltips 
 - Utilities
   - [x] [[💻](https://xdae.github.io/styled-bootstrap/storybook?selectedKind=CLoseIcon)] Close icon
 
