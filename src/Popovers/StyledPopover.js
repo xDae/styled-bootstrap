@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import themeProp from '../utils/theme';
-import { fontSizeSm, borderRadius } from '../utils/default-theme';
 import * as defaultTheme from './default-theme';
 
 import {
@@ -13,7 +12,7 @@ import {
 
 const {
   popoverMaxWidth,
-  zInderxPopover,
+  zIndexPopover,
   popoverInnerPadding,
   popoverBg,
   popoverBorderWidth,
@@ -46,7 +45,7 @@ const StyledPopover = styled.div`
   position: absolute;
   top: ${({ positionTop }) => `${positionTop}px` || 0};
   left: ${({ positionLeft }) => `${positionLeft}px` || 0};
-  z-index: ${themeProp('zInderxPopover', zInderxPopover)};
+  z-index: ${themeProp('zIndexPopover', zIndexPopover)};
   display: block;
   max-width: ${themeProp('popoverMaxWidth', popoverMaxWidth)};
   padding: ${themeProp('popoverInnerPadding', popoverInnerPadding)};

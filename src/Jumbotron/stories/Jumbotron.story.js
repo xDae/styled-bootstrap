@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Jumbotron from '../Jumbotron';
+import Jumbotron from '../index';
 import Button from '../../Button';
 import Heading from '../../Heading';
 

@@ -40,7 +40,7 @@ export const StyledCloseIcon = styled.button`
 
 const CloseIcon = props => (
   <StyledCloseIcon aria-label="Close" {...props}>
-    <span aria-hidden="true">{props.children || '×'}</span>
+    <span aria-hidden="true">{props.children || 'Ã—'}</span>
   </StyledCloseIcon>
 );
 

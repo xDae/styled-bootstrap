@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import * as defaultTheme from './default-theme';
 import themeProp from '../utils/theme';
-import { fontSizeSm, borderRadius } from '../utils/default-theme';
+import { fontSizeSm, borderRadius } from '../utils/defaultTheme';
 import arrowPlacement from './arrowPlacement';
 
 const {

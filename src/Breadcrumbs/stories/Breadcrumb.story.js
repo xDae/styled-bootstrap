@@ -4,7 +4,7 @@ import { host } from 'storybook-host';
 
 // import extend, { ThemeProvider } from 'styled-components';
 
-import Breadcrumb from '../Breadcrumb';
+import Breadcrumb from '../index';
 
 const customTheme = {
   closeFontSize: '1.75rem',
