@@ -13,4 +13,6 @@ const NavItem = ({ children, ...props }) => (
 	<StyledNavItem {...props}>{children}</StyledNavItem>
 );
 
-export { Nav, NavItem };
+Nav.Item = NavItem;
+
+export default Nav;

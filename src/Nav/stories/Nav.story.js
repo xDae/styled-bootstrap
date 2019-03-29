@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { host } from 'storybook-host';
 import { withKnobs, boolean } from '@storybook/addon-knobs/react';
 
-import { Nav, NavItem } from '../index';
+import Nav from '../index';
 // import Collapse from '../../Collapse';
 
 export default storiesOf('Nav', module)
@@ -17,78 +17,78 @@ export default storiesOf('Nav', module)
 	.add('Basic Nav example', () => (
 		<div>
 			<Nav>
-				<NavItem href="#" active>
+				<Nav.Item href="#" active>
 					link 1
-				</NavItem>
-				<NavItem href="#">linke</NavItem>
-				<NavItem href="#" disabled>
+				</Nav.Item>
+				<Nav.Item href="#">linke</Nav.Item>
+				<Nav.Item href="#" disabled>
 					disabled
-				</NavItem>
+				</Nav.Item>
 			</Nav>
 		</div>
 	))
 	.add('Center Nav example', () => (
 		<div>
 			<Nav justify="center">
-				<NavItem href="#" active>
+				<Nav.Item href="#" active>
 					link 1
-				</NavItem>
-				<NavItem href="#">linke</NavItem>
-				<NavItem href="#" disabled>
+				</Nav.Item>
+				<Nav.Item href="#">linke</Nav.Item>
+				<Nav.Item href="#" disabled>
 					disabled
-				</NavItem>
+				</Nav.Item>
 			</Nav>
 		</div>
 	))
 	.add('Tab example', () => (
 		<div>
 			<Nav type="tabs">
-				<NavItem href="#" active>
+				<Nav.Item href="#" active>
 					link 1
-				</NavItem>
-				<NavItem href="#">linke</NavItem>
-				<NavItem href="#" disabled>
+				</Nav.Item>
+				<Nav.Item href="#">linke</Nav.Item>
+				<Nav.Item href="#" disabled>
 					disabled
-				</NavItem>
+				</Nav.Item>
 			</Nav>
 		</div>
 	))
 	.add('Pill example', () => (
 		<div>
 			<Nav type="pills">
-				<NavItem href="#" active>
+				<Nav.Item href="#" active>
 					link 1
-				</NavItem>
-				<NavItem href="#">linke</NavItem>
-				<NavItem href="#" disabled>
+				</Nav.Item>
+				<Nav.Item href="#">linke</Nav.Item>
+				<Nav.Item href="#" disabled>
 					disabled
-				</NavItem>
+				</Nav.Item>
 			</Nav>
 		</div>
 	))
 	.add('Fully customized example', () => (
 		<div>
 			<Nav type="pills" justify="end" vertical>
-				<NavItem href="#" active>
+				<Nav.Item href="#" active>
 					link 1
-				</NavItem>
-				<NavItem href="#">linke</NavItem>
-				<NavItem href="#" disabled>
+				</Nav.Item>
+				<Nav.Item href="#">linke</Nav.Item>
+				<Nav.Item href="#" disabled>
 					disabled
-				</NavItem>
+				</Nav.Item>
 			</Nav>
 		</div>
 	))
 	.add('Pill with fill example', () => (
 		<div>
 			<Nav type="pills" fill>
-				<NavItem href="#" active>
+				<Nav.Item href="#" active>
 					link 1
-				</NavItem>
-				<NavItem href="#">linke</NavItem>
-				<NavItem href="#" disabled>
+				</Nav.Item>
+				<Nav.Item href="#">linke</Nav.Item>
+				<Nav.Item href="#" disabled>
 					disabled
-				</NavItem>
+				</Nav.Item>
 			</Nav>
 		</div>
 	));

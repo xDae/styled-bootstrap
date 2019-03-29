@@ -40,3 +40,5 @@ export {
 export { default as Progress, ProgressBar } from './Progress';
 
 export { default as utils } from './utils';
+
+export { default as Nav } from './Nav';
