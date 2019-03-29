@@ -206,7 +206,7 @@ export const navPillsLinkActiveBg = componentActiveBg;
 // Navbar
 
 export const navbarPaddingY = `${spacer / 2}rem`;
-export const navbarPaddingX = spacer;
+export const navbarPaddingX = `${spacer}rem`;
 
 export const navbarBrandFontSize = fontSizeLg;
 // Compute the navbarBrand paddingY so the navbarBrand will have the same height as navbar-text and navLink

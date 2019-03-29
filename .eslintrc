@@ -7,7 +7,8 @@
     "prettier/react"
   ],
   "plugins": [
-    "prettier"
+		"prettier",
+		"react"
   ],
   "env": {
     "browser": true,
@@ -18,7 +19,9 @@
       "extensions": [".js", ".jsx"]
     }],
     "prettier/prettier": ["error", {
-      "singleQuote": true
+			"singleQuote": true,
+			"useTabs": true,
+			"tabWidth": 2
     }],
     "import/no-extraneous-dependencies": ["error", {
       "devDependencies": true,
